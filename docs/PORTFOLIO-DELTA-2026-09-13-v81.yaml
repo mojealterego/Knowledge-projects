@@ -1,0 +1,44 @@
+version: v81
+date: 2026-09-13
+iteration: 86
+new_project:
+  id: P126
+  name: Communications Execution Fabric MAX
+  path: projekty/126-communications-execution-fabric-max.md
+  classification: reusable_execution_substrate
+amended_projects:
+  - P100
+  - P07
+  - P86
+  - P108
+  - P110
+  - P113
+  - P115
+  - P119
+  - P120
+  - P123
+  - P125
+p115_extension:
+  - email_masks
+  - temporary_mailboxes
+  - virtual_numbers
+  - voip_sip
+  - esim_identity_abstraction
+  - verification_suitability
+  - cross_channel_identity_lifecycle
+p126_capabilities:
+  - goal_contracts
+  - goal_runs
+  - idempotent_execution
+  - asynchronous_state
+  - structured_results
+  - webhook_deduplication
+  - postcondition_verification
+  - provider_adapters
+  - audit_evidence
+security:
+  - alias_is_not_anonymity
+  - provider_acceptance_is_not_verification
+  - retry_is_not_new_action
+  - webhook_is_not_outcome_verification
+  - sensitive_telecom_material_excluded_from_knowledge
