@@ -1,0 +1,60 @@
+schema: portfolio-delta/v1
+date: 2026-09-13
+iteration: 87
+project_added:
+  id: P126
+  name: OmniCommunications Execution Fabric MAX
+  path: projekty/126-omnicommunications-execution-fabric-max.md
+classification: communications_infrastructure_substrate
+status: architecture_baseline
+mission: provider_neutral_governed_communications_execution
+capability_domains:
+  - agentic_phone_execution
+  - sip_pbx_telephony
+  - mobile_esim_identity_lifecycle
+  - voice_provider_federation
+  - communication_events
+  - structured_results
+  - evidence_assessment
+  - business_postcondition_verification
+  - provider_adapter_governance
+integrations:
+  - P100
+  - P115
+  - P120
+  - P123
+  - P119
+  - P32
+  - P108
+new_primitives:
+  - communication-intent
+  - communication-identity-ref
+  - authorization-envelope
+  - provider-plan
+  - provider-execution
+  - communication-event
+  - result-contract
+  - evidence-assessment
+  - business-postcondition
+  - provider-adapter-manifest
+  - communication-lineage
+  - voice-provenance-record
+  - subscriber-profile-lifecycle
+governance:
+  - model_output_is_not_authorization
+  - provider_capability_is_not_permission
+  - voice_is_not_identity_proof
+  - esim_profile_is_not_trust_root
+  - webhook_is_not_trusted_input
+  - structured_result_is_not_truth
+  - execution_success_is_not_business_success
+  - secrets_are_not_source_artifacts
+verification:
+  - provider_contract_conformance
+  - idempotency_and_retry
+  - replay_and_duplicate_event_tests
+  - stale_state_rejection
+  - identity_binding
+  - credential_boundary
+  - postcondition_readback
+  - abuse_regression
