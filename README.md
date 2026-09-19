@@ -1,3 +1,13 @@
+<div align="center">
+
+<img src="./assets/social-preview.svg" alt="KNOWLEDGE-PROJECTS — project visual" width="100%">
+
+## MOJEALTEREGO · PROJECT PROFILE
+
+</div>
+
+---
+
 # Knowledge & Projects — Omni-Architect Repository
 
 ## [2026-09-09 / Iteration 11] — Compound reasoning, GEM, Apeiron/AURA lineage and voice-native AI game runtime
