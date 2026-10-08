@@ -361,3 +361,13 @@ Apply formal methods selectively to critical state machines and authorization in
 - documentation synchronized with implementation;
 - reproducible test commands and results;
 - no secret material in source or fixtures.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: externally reviewed tool admission before execution
+
+The five `Analiza wykonalności nowych integracji i funkcji a...` reports propose Zero-Shot Tool Synthesis, hot `importlib` loading and **temporary execution of generated Python**. Neither a transient file nor a Python import boundary is a security sandbox. Protecting MCP, Computer Use, ROS hardware and credit/payment contexts requires an external, typed permission boundary **before** any generated code or tool can run.
+
+Implemented proof: `tools/agent_tool_admission_gate.py`, a **non-executing** prototype that checks artifact SHA-256, externally supplied approvals by hash, capability allowlist, expiry, short timeout, read-only/no-network sandbox declaration and disabled side effects; unit tests include self-declared approvals, hash mismatch and privileged capability attempts. Passing the gate does **not** create an actual sandbox/cryptographic attestation and cannot replace human signature verification, OS-level process isolation or network egress firewall.
+
+`TrustDecision` output is never promoted to real tool execution without independent sandbox, trusted issuer, telemetry, review and rollback. The token-manipulation source adds client-side state/API as untrusted inputs; an agent cannot grant itself credits or user permission.

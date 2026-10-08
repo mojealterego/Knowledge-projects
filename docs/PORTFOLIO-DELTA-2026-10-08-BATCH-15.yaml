@@ -1,0 +1,37 @@
+date: "2026-10-08"
+batch: 15
+repository: mojealterego/Knowledge-projects
+source_total: 10
+pdf_total: 10
+total_pages: 146
+file_sha256_unique_count: 10
+text_duplicate_family:
+  members:
+    - "Analiza wykonalności nowych integracji i funkcji a..(2).PDF"
+    - "Analiza wykonalności nowych integracji i funkcji a..(3).PDF"
+  normalized_extracted_text_similarity: 1.0
+  byte_sha256_same: false
+canonical_updated: [P33, P45, P47, P56, P70, P72, P91, P100, P105, P114, P115, P119]
+new_projects:
+  - id: P125
+    canonical_path: projekty/125-sovereign-contextual-android-launcher/README.md
+    status: SOURCE_SCAFFOLD_NOT_COMPILED
+code:
+  - tools/agent_tool_admission_gate.py
+  - tools/test_agent_tool_admission_gate.py
+  - tools/test_sovereign_launcher_policy.py
+  - projekty/125-sovereign-contextual-android-launcher/android/app/src/main/java/org/mojealterego/sovereignlauncher/MainActivity.kt
+security:
+  third_party_token_manipulation: forbidden
+  real_harmful_chemical_synthesis: not_included
+  unauthorized_surveillance: forbidden
+  agent_generated_python_execution: not_implemented
+  read_only_tool_admission_only: true
+verification:
+  source_sha256_measured: true
+  nine_page_excerpt_visually_reviewed: true
+  odyn_ai_code_verified_against_report: false
+  launcher_apk_built: false
+  launcher_android16_real_device_tested: false
+  external_builder_repos_current_status_verified: false
+  commercially_realized_revenue: false

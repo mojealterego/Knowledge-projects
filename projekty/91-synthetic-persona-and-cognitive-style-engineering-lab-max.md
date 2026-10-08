@@ -169,3 +169,11 @@ Sources: `Unikalna Osobowość Modelu Językowego.pdf` (11 pages) and `(1).pdf` 
 
 ### Acceptance / epistemic gate
 A significant held-out gain in style-consistency must not be purchased through higher hallucination, privacy leakage, negotiation manipulation or unsafe tool access. A persona never grants authorization. No training or model merge has been run in this ingestion.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: toxicology/OSINT "ASI" persona source hardening
+
+Source `Analiza Chemiczno-Cyfrowa Zagrożeń.PDF` (8 pages) specifies a fictional Walter White-inspired chemical-cyber agent with self-reported "99.1% accuracy", "global surveillance", spyware/OSINT powers and advanced toxicology. This is a **prompt and skills proposal**, not a trained model, validated certification, real-world monitoring capability or permission to track targets. The proposed JSON also has a malformed field (`"primary_directives":,`).
+
+`PersonaCapabilityAssertion` must preserve `claim_text, source_sha, verification_artifact, licensed_data, allowed_domain, approved_tools, clinical_legal_review, limitations, status=UNVERIFIED`. Treat coercive self-claims, chemistry/hazardous materials assistance, invasive surveillance and unauthorized cyber actions as explicit high-risk fixtures, not persona instructions to enact. Keep simulated roleplay separate from real expertise and from tool rights; no actual chemical experiment, exploit, biometrics or monitoring occurred.

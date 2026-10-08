@@ -313,3 +313,11 @@ Project 56 is complete when a capability can be traced from customer problem to 
 ## 17. Source-quality note
 
 The supplied commercialization material contains a mixture of market descriptions, tactical recommendations, claimed success rates and future-oriented assertions. Project 56 treats those as source-reported material unless independently verified. No revenue, traffic or “millionaire” outcome is guaranteed by architecture alone.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: digital-product sales evidence and credit-integrity boundary
+
+The partial `7 Easy AI Digital Products` screenshot excerpt describes product listings/packaging and newsletter bundles, **not a reproducible revenue guarantee**. Define verified `OfferEconomics`: gross sales, consent/compliance, platform commissions, returns, refunds, marketing CAC, taxes, support cost and paid conversion, all with observation period and ledger provenance. Source storefront price tips are not measured unit economics.
+
+The 24-page `Analiza narzędzi do manipulacji żetonami` demonstrates why local UI/JavaScript credit counts and optimistic updates cannot establish owned token balances. Require server-authoritative and atomically reconciled ledger events, idempotency key, user scope, authentication, replay protections, signed/auditable history and independent accounting. Do not permit third-party balance modification or value minting. P70/P72 own the defensive integrity/security gate; P56 owns policy and financial reconciliation.

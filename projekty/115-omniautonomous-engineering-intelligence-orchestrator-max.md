@@ -214,3 +214,13 @@ Sources: two task-management PDFs and `--AI w Tworzeniu Systemów Operacyjnych--
 Two files `Automatyzacja Tworzenia Oprogramowania z AI...` are byte-distinct (different SHA-256) but have identical extracted text after whitespace normalization. They count as **one source lineage** for P115, not proof from two independent authors.
 
 `BuildRoleContract` defines expected output, task graph, agent capabilities, resource/secret scope, independent reviewer and provider version, independent of speculative Cursor/Windsurf/Devin vendor descriptions. `BuildEvidencePacket`: actual commit hash, compiler outputs, QEMU log, tool receipts, failure evidence, rollback and permission gate. Source proposes autonomous Ring-0 changes and vendor-linked agents; P115 does not grant the agent those powers. Textual "system built" is never equivalent to an installed and tested kernel.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: ODYN MAS staged capability admission / no model self-authorization
+
+The five versioned feasibility PDFs suggest Skills, HermesClaw, bitemporal memory, Dual LLM, Zero-Shot Tool Synthesis, ROS Noetic AlterEgo, Jevbridge MCP and later latency budgets, strict input validation, Semantic Caching, Throwaway Scripts. Source text says these were coded, but **repo-level verification of ODYN-AI has NOT been performed in this batch**.
+
+Proposed `ToolProposalLifecycle`: `model_output → typed candidate → digest/hash → independently approved scope → non-executing admission gate → isolated interpreter/container → time/memory/network limit → test receipt → reviewed promotion/rollback`. Dynamic `importlib.exec_module` and `subprocess.run(["python3", path])` shown in source cannot be promoted merely by writing a temporary file or naming a function sandbox. Physical robot commands require a separate safety-rated policy and human supervisor. Hermes JSON formatting does not guarantee correct tools or 100% behavior.
+
+**Actual implementation:** `tools/agent_tool_admission_gate.py` (non-executing, narrow allowlist) with 14 test cases; does **not** run arbitrary Python or replace a real sandbox. Broker rejects model-declared approval, unrecognized capabilities and mutable/harmful side effects. Provider/cloud integrations are future work, not completed by this markdown addition.

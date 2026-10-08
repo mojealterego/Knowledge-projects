@@ -177,3 +177,11 @@ Run:
 ## Definition of Done
 
 Project 45 is complete when it can discover opportunities, formulate evidence-backed offers, produce reusable multi-format products, validate every publishable claim, execute external actions only through authorized capabilities, confirm real-world outcomes and continuously improve economics without turning manipulation or unverified content volume into the optimization target.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: digital product packaging based on nine-page **incomplete** book excerpt
+
+`7 Easy AI Digital Products.pdf` consists of 9 image-only pages from the **end of chapter 7 plus chapters 8–10**, not a complete seven-products guide. Visible source advocates email newsletter templates, five-email onboarding sequence proposals, editable Google Docs placeholders, niche bundles, Etsy/Gumroad/Shopify/Teachers Pay Teachers and customer feedback.
+
+`DigitalProductOffer` requires `audience, customer_problem, owned_or_licensed_assets, originality_review, editable_templates, disclosure, user_consent_for_emails, checkout_channel, channel_terms_checked, costs, pricing_experiment, actual_revenue, refund_and_support_policy`. Claims of passive income and marketing superiority are hypotheses until genuine seller evidence. No fabricated reviews, spam or scraped copyright-protected template redistribution; AI output needs human QA. P56 owns economics, P34 strategy; P45 owns content/product packaging.

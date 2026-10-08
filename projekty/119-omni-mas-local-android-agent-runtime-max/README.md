@@ -157,3 +157,11 @@ P119 advances beyond architecture baseline when the runtime builds reproducibly,
 ## Dependencies
 
 P40, P54, P57, P59, P61, P72, P100, P114, P117.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: P125 HOME launcher as optional unprivileged entrypoint
+
+Android AI-launcher report (10 pages) suggests on-device AI and contextual application recommendations, but a default HOME role alone does not grant Android Accessibility, notification history, package-wide visibility, location or OS shell privileges.
+
+New [P125 HOME launcher](../125-sovereign-contextual-android-launcher/README.md) is a *separate product*: Kotlin source MVP lists only launchable apps and opens a specific activity on human click, without network or sensitive permissions. P119 remains the local planner/grounding/executor/supervisor runtime; it cannot silently piggyback privileged actions through the launcher. Any future local-LLM adapter must be opt-in, offline or user-approved provider, narrow capability scope, rollback and independently verified Android postcondition. No APK was compiled or installed from this material.

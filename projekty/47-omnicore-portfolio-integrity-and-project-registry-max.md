@@ -291,3 +291,13 @@ P32 OSINT provenance gate is a shared **tooling** enhancement and not a new prod
 Two 11-page `Automatyzacja Tworzenia Oprogramowania z AI` PDFs have **different SHA-256 byte fingerprints** but identical text after normalized extraction (`text_similarity=1.0`), so count them as one document lineage for research independence. Existing AURA P50/P71, GCG P60/P108, OmniCore P09/P26/P80, SOP P90/P115, strategy P66 and language P75 justify **no new numbered projects**.
 
 Add `SourceCompletenessAudit`: AURA 60 declared cards, 30 item instances sufficiently identified (20 domain + 10 anomaly), 30 unresolved; thermochrom 29 vs 26–27°C contradictory. Add `FileNameAuthorityAudit`: UX581 laptop-model filename is not authoritative model/serial hardware evidence. Portfolio promotion requires GitHub readback of **canonical** modifications plus code tests, not only separate extension files.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: batch 15 source family dedupe and new P125 identity
+
+Among five ODYN/Nexus feasibility PDF variants, files `...(2).PDF` and `...(3).PDF` have **distinct SHA-256 byte digests but identical normalized extracted text** (similarity=1.0). `...(1)` introduces Jevbridge/AlterEgo/Hermes, `...(2)/(3)` latency/validation/memory-of-failure, `...(4)` semantic caching and ephemeral scripts. Track these as a single evolving architecture witness series, not five independently demonstrated deployments.
+
+The 9 scanned pages in `7 Easy AI Digital Products.pdf` are a partial chapter 8–10 excerpt; source completeness must reflect that. `Analiza Chemiczno-Cyfrowa Zagrożeń` declares an "ASI" persona but that is author text, not validated capability.
+
+P125 `sovereign-contextual-android-launcher` is assigned the previously unoccupied project number for a genuinely new Android HOME screen product; P105 actuation and P119 Android local agents remain separate owners. Verify ID uniqueness against current main before merge. Do not use report assertions as execution receipts. [Batch manifest](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-15.md).
