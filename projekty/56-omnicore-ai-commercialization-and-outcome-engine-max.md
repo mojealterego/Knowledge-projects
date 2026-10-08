@@ -327,3 +327,9 @@ The 24-page `Analiza narzędzi do manipulacji żetonami` demonstrates why local 
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 Third-party marketplace listings present overlapping but non-identical cost terms: GitHub Agent Apps may require paid Copilot plans despite app listing Free; Packfiles Agent needs Packfiles Warp; Bright Security describes a time-limited trial; Miro/Octopus/LaunchDarkly rely on separate vendor accounts. Privé describes free intro and one-time paid tiers; LovePlay home/blog/free marketing claims conflict and cannot be merged into a verified pricing table. `ProviderOfferEvidence` records claim URL, date, locale, prerequisite platform, trial duration, third-party plan, billing opt-in and verified cost; never promise universal zero-cost access or create checkout transactions automatically.
+
+---
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
+
+**Opportunity evidence pipeline:** Open-source contributions at Zed Guild, Railway templates, and WordPress paid plugins are three distinct economic contexts. Zed offers mentorship/recognition in public materials but **no verified per-issue cash reward**; Railway Station shows historical $150 SOLVED template tasks but no validated open offer from project #2; a WordPress paid plugin means **possible cost**, not a payout. Introduce `OpportunityEvidence`: provider, exact offer/task URL, official timestamp, task status, acceptance/eligibility, source of reward and verified payout terms, prerequisites, expected costs, user approval, receipt and confidence. New `tools/external_opportunity_evidence_gate.py` checks an independently supplied source status + recency, allows local prototypes only for verified open issue/bounty and forbids cross-repo writes/buy actions; it does not fetch offers, send applications, check balances or pay. Present old solved examples only as proof that the program existed, never as active earnings.

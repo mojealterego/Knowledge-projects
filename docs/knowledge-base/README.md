@@ -161,3 +161,12 @@ Critical: the **official upstream Hermes Termux APT guide currently states the p
 ## Korekta polityki operacyjnej — 2026-10-09
 
 **Jedyny repozytorium zapisu: [Knowledge-projects](../../AGENTS.md).** ODYN-AI, Hermes Agent, NousResearch, wszystkie forki i pozostałe przekazywane linki pozostają **zewnętrznymi źródłami tylko do odczytu**. Poprzednia partia 20 zawierała nieuprawniony PR do ODYN-AI; jest to [udokumentowany błąd](../REPOSITORY-SCOPE-ERRATUM-2026-10-09.md), nie deklaracja docelowego workflow. Nowy [offline preflight](../../tools/single_repository_scope_gate.py) i jego testy sprawdzają docelowe repo i gałęzie, ale nie zastępują prawdziwych uprawnień GitHub.
+
+## 2026-10-09 — batch 21: Zed Guild/Railway Bounties/WordPress paid plugin sources
+
+- [Three URL sources + Zed REST issue state + Railway historical solved bounty + WordPress 2026 plugin policy](../WEB-SOURCE-INGESTION-2026-10-09-BATCH-21.md).
+- [Technical evidence/confidence synthesis: agent tool-loop guard, opportunity qualification, WordPress cost controls](2026-10-09-zed-railway-wordpress-opportunity-evidence.md).
+- [Eight canonical project deltas](../PROJECT-EVOLUTION-2026-10-09-BATCH-21.md).
+- [Offline agent loop policy](../../tools/agent_tool_loop_guard.py) and [offline opportunity evidence qualification](../../tools/external_opportunity_evidence_gate.py).
+
+**Private account/board details not retrieved.** No payment, public Zed/Railway PR, WordPress plugin activation, actual cloud deployment or currently payable task claimed.

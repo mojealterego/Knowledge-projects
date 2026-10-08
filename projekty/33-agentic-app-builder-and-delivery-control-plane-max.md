@@ -272,3 +272,9 @@ Source `Analiza Repozytoriów i Projekt Aplikacji.PDF` (34 pages) describes Conv
 ## 2026-10-08 — batch 18: public web source evolution
 
 Google Cloud 101 gen-AI technical blueprints (2025) are **illustrative architecture patterns**, not 101 ready applications. Add BlueprintQualification with user problem, canonical source and license, required vs optional cloud stack, privacy/consent, vendor quotes and predictable charges, measurable acceptance tests, actual build/deploy receipt and rollback. Gemini CLI/Antigravity optional build adapters require independent tool authorization and CI. Zed/Railway project boards showed shell/title but no inspectable bounty/task records; no paid WordPress plugin purchase or bounty claim.
+
+---
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
+
+**Railway Template Bounties — actionable qualification instead of invented task status.** Source `github.com/orgs/railwayapp/projects/2` renders only a board shell. The official `railwayapp/templates` repository confirms a template bounty scheme, and Railway Station provides task-specific examples, but two verified example rewards ($150 each for NodeBB and GPT OSS) are **historical SOLVED tasks**, not current offers. `RailwayTemplateAcceptance`: current open task URL+timestamp, licensing/public source repo, environment/secret boundaries, correct service graph, ordered startup and health checks, persistent volumes, validated domain/network paths, cost cap, independent deploy/test receipt and actual acceptance. No Railway app deploy or new project creation; P33 remains application-delivery owner. [Evidence ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-21.md).

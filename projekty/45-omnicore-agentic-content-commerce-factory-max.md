@@ -185,3 +185,9 @@ Project 45 is complete when it can discover opportunities, formulate evidence-ba
 `7 Easy AI Digital Products.pdf` consists of 9 image-only pages from the **end of chapter 7 plus chapters 8–10**, not a complete seven-products guide. Visible source advocates email newsletter templates, five-email onboarding sequence proposals, editable Google Docs placeholders, niche bundles, Etsy/Gumroad/Shopify/Teachers Pay Teachers and customer feedback.
 
 `DigitalProductOffer` requires `audience, customer_problem, owned_or_licensed_assets, originality_review, editable_templates, disclosure, user_consent_for_emails, checkout_channel, channel_terms_checked, costs, pricing_experiment, actual_revenue, refund_and_support_policy`. Claims of passive income and marketing superiority are hypotheses until genuine seller evidence. No fabricated reviews, spam or scraped copyright-protected template redistribution; AI output needs human QA. P56 owns economics, P34 strategy; P45 owns content/product packaging.
+
+---
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
+
+**WordPress.com premium marketplace is not a source of already-owned plugins.** User-specific `wordpress.com/plugins/browse/paid/mojealteregopl.wordpress.com` requires account access; no site plugin list/pricing/plan was read. Official 2026-10-05 WordPress.com support currently states plugins are available with paid plans, but older-plan entitlement can differ. Add `WordPressPluginOffer`: customer feature need, built-in/free alternatives, source/version, exact paid plugin slug, site-plan entitlement independently checked, compatibility/security/privacy, total recurring cost, activation rollback and explicit purchase approval. No install, purchase or site modification.

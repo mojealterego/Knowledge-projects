@@ -1,0 +1,43 @@
+date: "2026-10-09"
+batch: 21
+target_repository: mojealterego/Knowledge-projects
+read_only_source_urls:
+  - https://github.com/orgs/zed-industries/projects/74
+  - https://github.com/orgs/railwayapp/projects/2
+  - https://wordpress.com/plugins/browse/paid/mojealteregopl.wordpress.com
+source_access:
+  zed_board: PUBLIC_SHELL_ONLY
+  zed_guild_official: PUBLIC_READ
+  github_issues:
+    - number: 51333
+      state_at_review: open
+    - number: 65199
+      state_at_review: open
+    - number: 65205
+      state_at_review: closed
+  railway_board: PUBLIC_SHELL_ONLY
+  railway_templates_repo: PUBLIC_READ
+  railway_station_examples: HISTORICAL_SOLVED_NOT_OPEN
+  wordpress_site_premium_catalog: AUTH_REQUIRED
+  wordpress_public_plugin_support: PUBLIC_READ
+canonical_evolution: [P33, P45, P47, P56, P59, P72, P100, P121]
+new_numbered_projects: 0
+code:
+  - tools/agent_tool_loop_guard.py
+  - tools/test_agent_tool_loop_guard.py
+  - tools/external_opportunity_evidence_gate.py
+  - tools/test_external_opportunity_evidence_gate.py
+unverified:
+  zed_guild_user_acceptance: true
+  zed_issue_rewards: true
+  railway_open_bounty_on_project_2: true
+  railway_payout_received: true
+  wordpress_user_site_plan: true
+  wordpress_installed_plugins: true
+  wordpress_premium_plugin_prices: true
+operations_not_performed:
+  - external_repo_write
+  - railway_deployment
+  - wordpress_purchase
+  - wordpress_plugin_activation
+  - third_party_accounts_login
