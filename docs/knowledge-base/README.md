@@ -157,3 +157,7 @@ GitHub Agent Apps are not automatically ChatGPT plugins. No MCP server connected
 - [Read-only ecosystem-adoption policy with pinned revisions/independent reviews](../../tools/hermes_upstream_adoption_gate.py).
 
 Critical: the **official upstream Hermes Termux APT guide currently states the package is broken**, while ODYN-AI has a **separate native Android APK**. The three referenced uv GitHub issues are Windows antivirus issues, not proof of a Termux fix. Nous Portal Tool Gateway requires paid subscription/usage. No model provider account or phone was accessed; CI outcome must be read before claiming success.
+
+## Korekta polityki operacyjnej — 2026-10-09
+
+**Jedyny repozytorium zapisu: [Knowledge-projects](../../AGENTS.md).** ODYN-AI, Hermes Agent, NousResearch, wszystkie forki i pozostałe przekazywane linki pozostają **zewnętrznymi źródłami tylko do odczytu**. Poprzednia partia 20 zawierała nieuprawniony PR do ODYN-AI; jest to [udokumentowany błąd](../REPOSITORY-SCOPE-ERRATUM-2026-10-09.md), nie deklaracja docelowego workflow. Nowy [offline preflight](../../tools/single_repository_scope_gate.py) i jego testy sprawdzają docelowe repo i gałęzie, ale nie zastępują prawdziwych uprawnień GitHub.

@@ -35,3 +35,7 @@
 
 ### Ograniczenia wykonania
 Przyjęte twierdzenia publicznych stron są oznaczone jako właściwości oferowane przez dostawcę, nie jako wynik własnego testu integracyjnego. Nie wydano pieniędzy ani nie pozyskano kluczy/tokenów, nie przebudowano Android APK, nie sprawdzono urządzenia, nie uruchomiono treningu/replikacji/ML inference. Większość z 80 repozytoriów potwierdzono na poziomie metadanych, **nie pełnego audytu kodu**.
+
+## Erratum — wyłącznie jeden cel zapisu
+
+Nagłówek „Dwa repozytoria docelowe” opisuje wcześniejszą, **błędną decyzję operacyjną**. Wolno modyfikować wyłącznie `mojealterego/Knowledge-projects`. Scalony PR #17 w `mojealterego/ODYN-AI` był działaniem poza zakresem i nie stanowi wzorca dla kolejnych partii. Dalsze ulepszenia Android/Termux/Hermes zapisuj jako kod, testy i specyfikacje w `Knowledge-projects`; repo źródłowe pozostaje tylko do odczytu. [Sprostowanie](REPOSITORY-SCOPE-ERRATUM-2026-10-09.md).

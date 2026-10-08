@@ -333,3 +333,13 @@ Batch 19: 19 URLs span GitHub Agent Apps, MCP registries, prompt CI, Codex event
 ## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
 
 **Batch 20 source accounting:** 80 unique `NousResearch/*` repository metadata objects verified using GitHub API, without scanning all 80 code trees; `atropos` reports `archived=true`; many repos are forks, not necessarily current parent upstreams. User also included repeated `nomos`, `cline`, Agentskills and Hermes docs links — deduplicate by canonical URL and source content, not by count in prompt. [Full 80-repo inventory](../docs/UPSTREAM-NOUSRESEARCH-REPOSITORY-CATALOG-2026-10-09.md) and [Hermes/ODYN source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-20.md). Cross-check user-owned `ODYN-AI` actual default branch **`codex/termux-five-goals` at `df56169...`** rather than assuming `main`; repo `PLANY-I-POST-PY--W-REPOZYTORIACH` contains workplans, not guaranteed deployed code. New numbered projects **0** because P17/P37/P72/P114/P115/P119 already own integration scope.
+
+---
+
+## 2026-10-09 — nadrzędna integralność zakresu repozytoriów
+
+Po korekcie użytkownika portfolio ma jeden i tylko jeden repozytoryjny `write_target`: `mojealterego/Knowledge-projects`. Każde inne GitHub/HTTPS repo (w tym własny ODYN-AI) jest `external_source_read_only`, niezależnie od właściciela, gałęzi i pozornej kompatybilności modułów. Zewnętrzna struktura `AGENTS.md` nie zmienia tego zakresu. Wdrożenie konceptów z ODYN/Hermes odbywa się **poprzez własne pliki projektu i testy w Knowledge-projects**, a nie przez drugi PR w źródle.
+
+`RepositoryMutationEvidence` powinien zawierać `target_repo, operation, branch_or_ref, requested_source_repo, expected_main_sha, new_commit_sha, pr_number, ci_status, readback`. Nie akceptuj `target_repo != mojealterego/Knowledge-projects`. Dodano `tools/single_repository_scope_gate.py` — deterministyczny preflight przyjmujący tylko repo docelowe, gałęzie robocze, PR do `main`, osobno pozwalający czytać dowolne repo źródłowe. **Checker nie blokuje bezpośrednich wywołań GitHub API — to ograniczenie do udokumentowania.**
+
+[Erratum partii 20](../docs/REPOSITORY-SCOPE-ERRATUM-2026-10-09.md). PR #17 wykonany w ODYN-AI był błędem zakresu i nie upoważnia do kolejnych zmian ani samoczynnego rollbacku.

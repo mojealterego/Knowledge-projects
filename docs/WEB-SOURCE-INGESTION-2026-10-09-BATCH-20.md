@@ -52,3 +52,7 @@ Oficjalne przewodniki `/docs/user-guide/features/{tools,skills,memory,mcp,cron,c
 - Zmiany w **Knowledge-projects**: kanoniczne projekty + katalog 80 repo + [offline gate adopcji upstream](../tools/hermes_upstream_adoption_gate.py) wymagający rewizji, legalnego użycia, zgody właściciela, testów i aktualności przy próbie runtime adopcji.
 - Nie zmieniano gałęzi domyślnej; integracje do Cloud/Nous/HF/MiMo/Kimi/MiniMax/Z.ai nie wykonują żadnych płatnych działań.
 - Ocena własności telefonu i rzeczywistej instalacji: **NOT TESTED**. Wywołania funkcji/modeli, twierdzenia o benchmarkach, poziom kont i „wszystko zainstalowane”: **NOT VERIFIED**.
+
+## Sprostowanie zakresu prac — 2026-10-09
+
+**Korekta nadrzędna:** użytkownik upoważnił agenta do rozbudowy **jednego repozytorium docelowego: `mojealterego/Knowledge-projects`**. Wykonanie zmian w dodatkowym `ODYN-AI` było **błędem**, choć wcześniejszy raport odnotowuje je jako fakt historyczny. Nie kontynuować tej ścieżki ani jej nie traktować jako standardowego przepływu. Wykorzystanie ODYN-AI i Hermes ogranicza się do **odczytu, analizy i integracji wiedzy oraz prototypów wyłącznie w Knowledge-projects**. [Pełne sprostowanie](REPOSITORY-SCOPE-ERRATUM-2026-10-09.md).
