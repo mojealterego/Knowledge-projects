@@ -1,0 +1,31 @@
+date: "2026-10-08"
+batch: 13
+repository: mojealterego/Knowledge-projects
+source_count: 10
+source_types:
+  pdf: 9
+  legacy_doc: 1
+source_sha256_logged: true
+aether_source_type: scanned_pdf_of_code
+new_projects:
+  - id: P124
+    name: Adult Safety Support Evidence Navigation Lab
+    path: projekty/124-adult-safety-support-evidence-navigation-lab/README.md
+    status: ARCHITECTURE
+    live_support_available: false
+existing_canonical_updated: [P26, P32, P36, P47, P57, P66, P90, P115]
+engineering:
+  osint_provenance_gate:
+    code: tools/osint_provenance_gate.py
+    tests: tools/test_osint_provenance_gate.py
+    local_unittest_passed: 8
+    network_calls: false
+    claimed_verified_osint_facts: false
+limitations:
+  historical_research_current_law_checked: false
+  current_marketing_metrics_verified: false
+  live_osint_scan: false
+  original_aether_browser_app_deployed: false
+  dom_violence_victim_records_in_repo: false
+  clinical_legal_professional_signoff: false
+  cloud_agent_or_kernel_deployment: false

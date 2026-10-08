@@ -205,3 +205,24 @@ The report's `AS-IS → TO-BE → DRAFT → REVIEW → PUBLISH → DRIFT` trajec
 
 ### Tests and operations
 Human-in-the-loop gates for external messages/payments/infrastructure changes; idempotency on retries; privilege isolation by step; path through partial failure; secrets redaction in screenshot/recording evidence; versioned SOP rollback; experiment with novice-reader clarity and stale procedure detection. No external workflow execution or business-process automation is claimed from this source alone.
+
+---
+
+## 2026-10-08 — batch 13: executable AI instructions from task decomposition
+
+Source: `AI_ Instrukcje i Automatyzacja Zadań.pdf` (15 pages), with `AI w Zarządzaniu Projektami- Automatyzacja i Instr....pdf` (11 pages). These extend existing HTA/WBS/SOP material rather than creating a second procedure compiler.
+
+### SOP compilation increment
+```text
+HUMAN OUTCOME / AUTHORIZED SCOPE
+ → HTA (subgoals and elemental operations)
+ → WBS (dependencies / resources / delivery milestones)
+ → TYPED TASK STATE MACHINE (preconditions, tools, owner, deadline)
+ → PERMISSION BROKER + DRY-RUN
+ → EXECUTION WITH REAL TOOL RECEIPTS
+ → INDEPENDENT POSTCONDITION CHECK
+ → ROLLBACK / DRIFT REPORT
+```
+`ActionSpec` must encode `id, expected_input, precondition, allowed_tool, side_effect_class, output_contract, acceptance_test, retry_budget, approval_gate, rollback`. A workflow cannot make a model responsible for granting itself tools. A prose report is **not** evidence that a task ran; no automated communication/payment/credential operations without separate authorization.
+
+**Acceptance:** dependency cycles, missing approval, failure recovery, bounded retry, idempotency, rollback, source-injection and receipt-reference tests. No real external task execution in this batch.

@@ -87,3 +87,13 @@ Dwa identyczne bajtowo raporty monetizacji nie są ponownie promowane do projekt
 - [P122 CHEMIA versus P123 gas project identity reconciliation](../PROJECT-NUMBER-RECONCILIATION-2026-10-08.md)
 
 Updated P01, P11, P19, P23, P36, P47, P80, P87, P90, P91. No new concept ID allocated to previously owned source domains.
+
+## Batch 13 — 2026-10-08: AI systems, OSINT, influence, marketing and safeguarding
+
+- [10 sources, file hashes, deduplication and project decisions](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-13.md).
+- [Interdisciplinary source-derived analysis](2026-10-08-corpus-agents-osint-marketing-influence-and-safeguarding.md).
+- [Adult domestic-abuse support: survey limitations, privacy and professional safeguards](2026-10-08-adult-safeguarding-evidence-boundary.md).
+- [Canonical project evolution / new P124](../PROJECT-EVOLUTION-2026-10-08-BATCH-13.md).
+- [AETHER prototype](aether-nexus-omega-interface-prototype-analysis.md) remains a simulated browser demonstration; no actual kernel/secure-link capability demonstrated.
+
+No copyrighted books or case histories republished. 2014 marketing data, 2016 abuse-survivor survey and 2017 legal descriptions are historical sources, not evidence of current laws or services.

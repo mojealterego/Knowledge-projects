@@ -258,3 +258,18 @@ The document is an example/historical artifact, not current legal advice.
 
 ## Definition of Done
 Project 57 is complete when any consequential result can be traced from intent through multimodal observations, provenance, context compilation, reasoning, typed capability request, authorization, execution, authoritative readback, verification and auditable outcome; when identity and symbolic interpretation remain appropriately uncertain; and when PUI/physical interfaces cannot silently become covert behavioral-control mechanisms.
+
+---
+
+## 2026-10-08 — batch 13: AETHER source-visualization integrity
+
+Source: `AETHER.pdf` (13-page, image-only HTML/JS screenshot). Previously described in `docs/knowledge-base/aether-nexus-omega-interface-prototype-analysis.md`. The display shows Three.js WebGL bloom, audio synthesis, terminal commands, `TARGET <IP>` HTTP calls, fake CPU/memory, demo decryption and no real local kernel.
+
+### Integrated architecture
+- `SimulationProvenance` is visually persistent: simulated CPU, "128TB virtual memory", target triangulation, matrix decryption and glitch animations must be labelled demo and never represented as telemetry or proofs of a secure connection.
+- `BrowserCapabilities` isolates WebGL renderer, Web Audio, DOM and optional network adapter in distinct permission domains; no background collection.
+- `MediaSafety` supports reduced motion, sensible animation frame/rate limits, no dangerous flashing, reduced-sensory fallback and explicit activation before audio.
+- `CommandRegistry` uses typed dispatch, input validation and inert `DEEP DIVE/DECRYPT` demos; a `TARGET` command may not call an external IP API by default. Any future real lookup must satisfy P32 scope, HTTPS, privacy, egress and source provenance.
+- `UIEvidenceCard` distinguishes output rendered in the browser from independently observed device/kernel state.
+
+**Testing:** browser static resource checks, output disclosure, screen-reader+keyboard access, offline demo operation, no external requests by default and graceful WebGL failures. No AETHER web page was deployed here.

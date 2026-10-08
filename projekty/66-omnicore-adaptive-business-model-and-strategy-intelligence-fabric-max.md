@@ -204,3 +204,25 @@ BrandPositioningExperiment:
 ```
 
 **Zasady:** odróżnij strategię cenowo-marżową, markę i model biznesowy. Formułowanie przewagi lub pozycjonowania to hipoteza wymagająca badania odbiorców i realnych wyników; nie obiecuj zysków na podstawie teorii. P34 i P67 pozostają odpowiedzialne za wykonanie testów i analizę ekonomiki. Żadna treść całej chronionej publikacji nie została skopiowana do repo.
+
+---
+
+## 2026-10-08 — batch 13: historical hybrid-channel evidence with Ansoff matrix
+
+Source: Grażyna Golik-Górecka (2015), `Współczesne strategie marketingowe realne i wirtualne`, 22-page academic article. Uses extended Ansoff matrix and Company X case; 2014 survey data and case-specific outcomes are **historical**, not 2026 industry facts.
+
+### New `HybridMarketExperiment`
+```yaml
+HybridMarketExperiment:
+  source_date: "2015"
+  market_definition: null
+  product_novelty: existing|new|uncertain
+  market_novelty: existing|new|uncertain
+  channel_mix: [offline, online]
+  attribution_window: null
+  control_or_baseline: null
+  acquisition_and_delivery_cost: null
+  privacy_and_marketing_law_review: pending
+  outcome: untested
+```
+Project P34/P67 can use a controlled offline-vs-online channel test with coherent unit economics and actual acquisition data. Don't generalize the paper's example or claim causal superiority of a hybrid strategy without counterfactuals.

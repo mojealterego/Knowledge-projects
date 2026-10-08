@@ -365,3 +365,19 @@ OSINTObservation:
 Na obrazie strony 10 kod zawiera `simulateScan`: wyniki wytwarzane przez opóźnienie i fikcyjne dane **nigdy nie mogą udawać prawdziwych danych OSINT**. Również losowo rysowane krawędzie Canvas nie są zweryfikowaną siatką powiązań. Wdrożyć etykietę „SIMULATED”, provenance także w eksporcie, reguły Firestore izolujące tenantów, test anonimowego uwierzytelnienia, cleanup `onSnapshot`/resize/`requestAnimationFrame`, etykiety dostępności oraz rozróżnienie UI state od backend truth.
 
 **Testy:** zabroniony odczyt innego tenant, brak fałszywego awansowania mock→verified, brak fałszywego przypisania relacji, UI unmount bez wiszących subskrypcji, wymagana zgoda na aktywne kolektory. Brak automatycznego skanowania rzeczywistych systemów.
+
+---
+
+## 2026-10-08 — batch 13: 4-page OSINT script hardening and evidence claims
+
+Source: `Agent OSINT.pdf`. The uploaded Python text contains zero-width formatting characters, direct `http://ip-api.com` calls, imitated browser UA, DNS resolution, redirect-following HTTP HEAD and HTTP 200/404 username heuristics. These patterns are **source risks**, not accepted production design or proof of identity.
+
+### Upgraded tool/evidence controls
+1. `ScopeTicket`: explicit owner/authorized target types, bounds, expiry, privacy retention, tool allowlist and request rate caps. Active queries require pre-authorized scope outside model text.
+2. `TransportPolicy`: approved provider HTTPS, redirects restricted to permitted hosts, private/link-local/metadata IP destinations denied and DNS re-resolution checked before transport (SSRF controls). No UA spoofing for evasion.
+3. `ClaimClassifier`: `simulated | observed | verified` with mandatory source hash, timestamp and independent verifier reference; HTTP status alone yields `inconclusive_http_response`, never "username belongs to person".
+4. `GeolocationBoundary`: API IP-to-region data must never be asserted as a physical location or identity of a person; backend provider/precision and timestamps recorded.
+5. `ArchiveNormalizer`: remove invisible PDF formatting artifacts before code review; never execute PDF-extracted source code blindly.
+6. `DemoSeparation`: AETHER and VANTAGE visual demos remain unequivocally simulated; offline test data cannot be silently promoted to verified results.
+
+**Executable evidence in this batch:** `tools/osint_provenance_gate.py` (pure data, zero network calls) and `tools/test_osint_provenance_gate.py` (8 locally passing tests). These tests check provenance invariants, **not scanner correctness, privacy compliance or real OSINT findings**.

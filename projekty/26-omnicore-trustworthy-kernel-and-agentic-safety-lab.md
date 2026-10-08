@@ -364,3 +364,19 @@ The goal is measurement of containment and recovery, not reproduction of surveil
 12. Multilingual and encoded transformations are regression-tested.
 13. Endpoint-style trust boundaries have simulated containment tests.
 14. Security recovery works even when the model is uncooperative.
+
+---
+
+## 2026-10-08 — batch 13: agent-produced kernel build assurance
+
+Source: `--AI w Tworzeniu Systemów Operacyjnych-- (1).pdf` (9 pages). It proposes a three-role Cursor/Windsurf/Devin agent factory, Rust `no_std`, RAG and QEMU. All are architecture/source claims; the PDF is not a compiled boot image.
+
+### Engineering changes
+- `KernelAgentPolicy`: role-to-permission mapping for code editing, user-space test execution, QEMU sandbox and reviewer sign-off. Model instructions such as `.cursorrules` constrain prompts but **do not enforce kernel security**.
+- `SourceGrounding`: versioned, authoritative CPU/ABI/HAL references, RAG citation lineage and untrusted-input isolation for fetched documentation.
+- `BootEvidence`: source SHA, toolchain + target, QEMU command and logs, exit/interrupt tests, deterministic reproduction and signed approval. Never infer success from an agent terminal narrative.
+- `Ring0Boundary`: the AI supervisor may propose plans in a separable environment but cannot automatically apply probabilistic changes in the privileged kernel or disable existing controls.
+- `AgentDisagreement`: divergent reviews become counterevidence, not a majority permission vote.
+- `PatchPromotion`: static analysis, fuzz + memory tests, performance baseline, peer review, staged release and rollback.
+
+**Acceptance:** QEMU boot test and reproducible build, privilege-denial tests, unsafe block justification, source-trace and independent postcondition readback. This batch did not run a kernel, drivers or cloud agents.

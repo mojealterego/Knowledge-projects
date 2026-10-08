@@ -273,3 +273,13 @@ Observed repository defect: **P122 was assigned to two unrelated owners**: `CHEM
 `ProjectIdentity` = stable numeric ID + canonical owner/path + product-boundary description. Future genesis must query the complete current tree (including folder projects and legacy Markdown) to test uniqueness before allocation. Multiple files for a **single** project ID are valid only when they share the same owner lineage; distinct products sharing an ID are an **error**.
 
 **Acceptance:** P122-CHEMIA remains readable, P123 gas read-only artifact exists, old gas path absent, all new current-state references point to P123, and no claim of tested model control. This repair is a repository integrity correction, not a new scientific discovery.
+
+---
+
+## 2026-10-08 — batch 13: project genesis and source maturity bookkeeping
+
+Checked the actual `main` tree before assignment: **P124 was unallocated**. The new P124 `Adult Safety Support Evidence Navigation Lab` is distinct from P36 influence security and P90 SOP, and is explicitly restricted to architecture/research due to the vulnerable-survivor, historical-law and shared-device threat model. Do not promote this proposed public-interest product to a live resource or claim current hotline/clinical availability without independently verified providers and professional safeguarding sign-off.
+
+Maintain `ProjectIdentity{id:P124,owner_slug:adult-safety-support-evidence-navigation-lab,source_batch:13,status:ARCHITECTURE}`. Project ID uniqueness alone does not certify safety or avoid duplicates in substance; link existing projects as non-owning collaborators. Follow the existing `tools/project_id_gate.py` and re-check remote main prior to merge.
+
+P32 OSINT provenance gate is a shared **tooling** enhancement and not a new product; tests checking simulated/observed/verified labels do not constitute real OSINT evidence.
