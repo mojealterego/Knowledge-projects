@@ -190,3 +190,19 @@ Refusal-vector, CAST and ablation material from the source is restricted to defe
 ## Exit criterion
 
 P115 remains an architecture baseline until an independently reproducible implementation demonstrates that autonomous cycles can improve bounded engineering objectives without violating verification, authorization, provenance, rollback or security invariants.
+
+---
+
+## 2026-10-08 — batch 13: multi-agent WBS/HTA build-plane for OmniCore
+
+Sources: two task-management PDFs and `--AI w Tworzeniu Systemów Operacyjnych-- (1).pdf`. Existing P115 engineering orchestrator owns this capability. Earlier P90 is the procedure compiler, P26 kernel assurance.
+
+### Build-and-verify workflow
+- `ProjectIntent`: objective, non-goals, budget, sponsor, acceptance metrics and risk class.
+- `DecompositionGraph`: HTA atomic operations + WBS deliverables, typed dependencies and critical path, no circular capability escalation.
+- `AgentAssignment`: optional Cursor/Windsurf/Devin roles as *replaceable interfaces*, provider availability dynamically verified; no hard-coded agent abilities taken from a 2025 source PDF.
+- `ExecutionBroker`: least privilege, scoped tokens, blocked public upload of proprietary or personal materials, budget ceilings, expiration and human approval for consequential actions.
+- `VerificationPacket`: source/commit SHA, actual tool receipt, test log, independent reviewer, before/after diff, rollback proof and completeness state.
+- `ExitCriteria`: fail closed on hidden scope changes, tests missing, stale information, unverifiable receipts or external side effect without approval.
+
+**Acceptance:** a fully simulated build scenario, deterministic failure/rollback test and a clean-room reproducibility dossier; no actual GCP/Ring-0 access or Devin/Cursor/Windsurf orchestration was executed.

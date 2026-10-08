@@ -271,3 +271,11 @@ Reasoning traces are useful evidence when available but are not a security bound
 ## Project evolution — batch 12 (2026-10-08)
 
 Ten new PDFs were correlated with the existing knowledge portfolio; actual canonical extensions were integrated into **P01, P11, P19, P23, P36, P47, P80, P87, P90 and P91**. Source domains are already covered, so **new conceptual projects = 0**. The duplicate P122 allocation inherited from batch 11 was corrected: **CHEMIA stays P122**; gas appliance reference is now [P123](123-gas-appliance-safety-evidence-companion/README.md). The new [project-ID preflight gate](../tools/project_id_gate.py) prevents reusing an occupied number for new genesis proposals. [Detailed reconciliation](../docs/PROJECT-NUMBER-RECONCILIATION-2026-10-08.md) · [source evolution](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-12.md).
+
+## Batch 13 — 2026-10-08: source knowledge and safety-first genesis
+
+**Existing canonical projects evolved:** P26 (kernel agent verification), P32 (authorized OSINT and evidence), P36 (manipulation safety), P47 (project registry), P57 (AETHER demo transparency), P66 (historical hybrid marketing experiments), P90 (HTA/WBS/SOP) and P115 (bounded engineering agent orchestration).
+
+**New project:** [P124 — Adult Safety Support Evidence Navigation Lab](124-adult-safety-support-evidence-navigation-lab/README.md). Architecture/research only: voluntary resource discovery with professional safeguarding, no victim-data collection or live advice until services and law are independently verified.
+
+**Implemented utility:** [OSINT evidence/provenance gate](../tools/osint_provenance_gate.py) and [8 unit tests](../tools/test_osint_provenance_gate.py), data-only and network-free. [Provenance ledger](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-13.md) · [evolution report](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-13.md).

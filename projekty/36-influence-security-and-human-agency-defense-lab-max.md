@@ -339,3 +339,19 @@ Source: `Ukryte Komendy w Tekście.PDF` (10 pages). The report describes Milton-
 - `EvidenceCard` records original/rendered view, transform, source hash, detection rationale, reviewer decision, privacy retention and counterexamples.
 
 **Test suite:** plain benign Polish prose, bilingual HTML, zero-width/Bidi controls, confusable text, PDF hidden layers, false alarms and human review. Not a system for creating imperceptible behavioral commands; no claims of reliable subliminal control.
+
+---
+
+## 2026-10-08 — batch 13: comparative influence literacy and coercion-sensitive safeguard
+
+Sources: `55_wskazowki_Ukryta_perswazja_Hogan (1).pdf` (73 pages), `Anna Grzywa - Manipulacja - mechanizmy psychologiczne.doc` (1997), `alchemia uwodzenia, czyli erotyczna manipulacja mężczyznami scan.pdf` (405-page noisy scan), and 2017 adult domestic-abuse dissertation.
+
+### Defensive extension
+- `InfluenceSignal`: overt framing, concealment, guilt/authority pressure, false intimacy, false choices, manufactured urgency, persuasive emotional scripting, status/source coercion and non-reversible consent.
+- Distinguish ethical, transparent persuasion and ordinary attraction from coercive or deceptive pressure. Book claims of universal covert effectiveness are not scientific validation.
+- `ContextualConsentReview`: asks whether refusal is safe, reversible and unpenalized; apparent compliance under coercion is not evidence of freely given consent.
+- `CrossReferenceReviewer`: P40 literacy materials and P124 safeguarding domain may reuse the taxonomy, but **do not profile an individual** or infer guilt, deception or mental state from text alone.
+- `PublishingBoundary`: produce concise source commentary, not reconstructed copyrighted persuasion chapters or coaching scripts for exploiting recipients.
+- `RiskSeverity`: under-determined without context, so false-positive tracking and human review are mandatory.
+
+**Acceptance:** benign-versus-deceptive communication fixtures, review for overdiagnosis/stigma, user exit/opt-out, content provenance, copyright compliance and protective efficacy evaluation. No behavioral manipulation tests on people.
