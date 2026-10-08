@@ -256,3 +256,20 @@ SAFE MODIFICATION PLAN
 - ambiguity queue;
 - auditable registry revisions;
 - agent mutation blocked until canonical identity is resolved.
+
+---
+
+## 2026-10-08 — batch 12: numbered-project identity collision repair
+
+Observed repository defect: **P122 was assigned to two unrelated owners**: `CHEMIA` consent-aware mobile game and gas-appliance manual safety reference. The gas project came from the previous auto-ingestion batch despite the portfolio already containing CHEMIA/P122.
+
+### Correction
+- Keep CHEMIA canonical project **P122** with all its existing material, unchanged.
+- Reassign gas-appliance safety reference to the next unused number **P123** and move its README/Python files without altering their tested lookup logic.
+- Update ingestion reports, YAML delta, indexes and external canonical references that describe the gas appliance.
+- Treat historical git commits as immutable provenance; append a reconciliation document rather than rewrite ancestry.
+
+### Permanent registry gate
+`ProjectIdentity` = stable numeric ID + canonical owner/path + product-boundary description. Future genesis must query the complete current tree (including folder projects and legacy Markdown) to test uniqueness before allocation. Multiple files for a **single** project ID are valid only when they share the same owner lineage; distinct products sharing an ID are an **error**.
+
+**Acceptance:** P122-CHEMIA remains readable, P123 gas read-only artifact exists, old gas path absent, all new current-state references point to P123, and no claim of tested model control. This repair is a repository integrity correction, not a new scientific discovery.

@@ -9,7 +9,7 @@ Przetworzono 10 PDF. SHA-256 odnosi się do bajtów lokalnych uploadów. Orygina
 |---:|---|---|---|
 | 1 | `Uruchomienie Agentów AI w Chmurze.pdf` | `1fa5fc00c76d4233a22363d85f0f9891b20dd889f01e56b7623e477c4ff24fd4` | P31; prior GCP Forge |
 | 2 | `Unreal Engine 5- Tworzenie Gry Krok po Kroku.pdf` | `75c08311f64ae852674177fa12c4ae106509a7e8199f168a22024a09d1927657` | P89/P82; prior CCR |
-| 3 | `vitrix_20_plus_s_instrukcja.pdf` | `f4f8e2b36e4aa6cc9a77636a3e1bca6d002f5b8e884ac275bddeafdbc9e3b71e` | NEW P122 |
+| 3 | `vitrix_20_plus_s_instrukcja.pdf` | `f4f8e2b36e4aa6cc9a77636a3e1bca6d002f5b8e884ac275bddeafdbc9e3b71e` | NEW P123 |
 | 4 | `VANTAGE POINT(1).pdf` | `250d17f3c5c7696c49f6145ef33b4ba410dc1f006be49774a21ea7056c6f6162` | P32; image-only prototype |
 | 5 | `zlota-strategia-marki-droga-do-przewagi-rynkowej-i-wyzszych-zyskow-jarek-szczepanski.pdf` | `1066f5a05e966be9c6e4a11a4dba2487163768fccd2b5c10c19e212769ac0b9b` | P66; partial book excerpt |
 | 6 | `Zarabianie Pieniędzy z Wykorzystaniem AI.pdf` | `fe0ba90d2af73eb3bd68820d02c2f4fbd52ca704ed7d9463771ce5d042ddad96` | EXACT duplicate from batch 10 |
@@ -29,8 +29,8 @@ Przetworzono 10 PDF. SHA-256 odnosi się do bajtów lokalnych uploadów. Orygina
 
 ## Wynik decyzji
 - Canonical project evolution: **P24, P31, P32, P66, P89**.
-- Project genesis: **P122 — Gas Appliance Safety Evidence Companion**. Wyodrębniona dziedzina safety/qualified-service, odrębna od pojazdów, DePIN i chmury.
-- Project P122: read-only Python reference lookup oraz 5 pomyślnych lokalnych testów jednostkowych. **Nie podłączono kotła ani nie wdrożono urządzeń sterujących**.
+- Project genesis: **P123 — Gas Appliance Safety Evidence Companion**. Wyodrębniona dziedzina safety/qualified-service, odrębna od pojazdów, DePIN i chmury.
+- Project P123: read-only Python reference lookup oraz 5 pomyślnych lokalnych testów jednostkowych. **Nie podłączono kotła ani nie wdrożono urządzeń sterujących**.
 
 ## Granice weryfikacji
 - Aktualne GCP machine/GPU/nested-virtualization compatibility, quotas i ceny nie zostały sprawdzone u dostawcy.
@@ -39,3 +39,8 @@ Przetworzono 10 PDF. SHA-256 odnosi się do bajtów lokalnych uploadów. Orygina
 - Twierdzenia ekonomiczne i wpływu promptów wymagają niezależnej walidacji.
 - Model coding nie dowodzi bezpieczeństwa gazowego urządzenia; dokumentacja podlega weryfikacji technika i aktualnej instrukcji.
 - Nie upubliczniono chronionej treści książki, danych klienta ani dokumentów źródłowych.
+
+
+## 2026-10-08 identity reconciliation
+
+The initial batch-11 Git revision mistakenly used P122 for gas-appliance reference while P122 was already allocated to CHEMIA. The distinct gas project is now **P123**. This editorial correction does not change the source hash or the historical Git commit; see [collision reconciliation](PROJECT-NUMBER-RECONCILIATION-2026-10-08.md).

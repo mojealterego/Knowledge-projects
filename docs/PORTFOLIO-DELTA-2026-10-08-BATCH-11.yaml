@@ -10,8 +10,8 @@ sources:
   scanned_source_code_pdf: 1
 project_evolution:
   updated_canonical: [P24, P31, P32, P66, P89]
-  new_projects: [P122]
-  new_project_dir: projekty/122-gas-appliance-safety-evidence-companion
+  new_projects: [P123]
+  new_project_dir: projekty/123-gas-appliance-safety-evidence-companion
   architecture_only_existing_updates: true
   new_project_read_only_python_prototype: true
   no_gas_device_control: true
@@ -24,3 +24,9 @@ validation:
   live_appliance_connected: false
   current_external_provider_details_verified: false
   full_brand_strategy_book_received: false
+
+numbering_reconciliation:
+  original_incorrect_number: P122
+  corrected_number: P123
+  unaffected_project: P122_CHEMIA
+  reconciliation_doc: docs/PROJECT-NUMBER-RECONCILIATION-2026-10-08.md

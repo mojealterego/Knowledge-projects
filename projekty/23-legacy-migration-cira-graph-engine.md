@@ -84,3 +84,23 @@ Use an LSP-compatible client so the same CIRA service can support VS Code, JetBr
 ## Definition of done
 
 A migration is complete only when the new implementation preserves declared business behavior, passes the verification suite and has a machine-readable provenance chain from original code to final change.
+
+---
+
+## 2026-10-08 — batch 12: CIRA staged migration and equivalence dossier
+
+Source: `Unifikacja Języków i Kodu Legacy.pdf` (7 pages). P87 owns the hybrid language/compiler, P23 owns legacy migration evidence.
+
+```text
+LEGACY BUILD + TEST BASELINE
+ → DEPENDENCY / FFI / ABI GRAPH
+ → NONDESTRUCTIVE REFACTOR PROPOSAL
+ → PATCH + SOURCE / IR DIFF
+ → STATIC ANALYSIS + FUZZ / DIFFERENTIAL TEST
+ → POLICY / SECURITY / PERF GATES
+ → HUMAN REVIEW + ROLLBACK
+ → STAGED READBACK
+```
+New `EquivalenceDossier` records original and transformed hashes, interface behavior matrix, test coverage, unsupported semantics, exception/latency differences, version locks, provenance, counterexamples and rollback. MLIR IR lowering is not universally semantics preserving; its adequacy is a testable property of a specific domain subset.
+
+Acceptance includes representative legacy integrations, stable ABI, exception and concurrency behavior, reversible deployment and detection of falsely asserted equivalence. No legacy repository was migrated as part of this batch.

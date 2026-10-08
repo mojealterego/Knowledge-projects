@@ -29,3 +29,9 @@ W razie braku użytecznego nowego projektu należy jawnie podać decyzję `new_n
 **Zasada domyślna:** Po otrzymaniu kolejnego pliku lub partii plików w aktywnej rozmowie **rozpocznij analizę bez oczekiwania na polecenie „Analizuj”**. Dla wielu uploadów widocznych w tym samym komunikacie uruchom jeden spójny proces ingestii. Dalsze kroki: kontrola typów i hashy, odczyt całych źródeł/obrazów, identyfikacja duplikatów i sprzeczności, porównanie z portfolio, aktualizacja **kanonicznych** plików projektów lub uzasadniony genesis nowego numeru, testy tam gdzie wykonalne, commit/PR/readback i raport ze stanem potwierdzenia.
 
 Nie czekaj na drugie potwierdzenie tylko po to, by rozpocząć research/zmiany w repozytorium w ramach udzielonego upoważnienia. Nie oznacza to zgody na nieodwracalne działania, płatne wdrożenia, nieautoryzowany dostęp lub niebezpieczne sterowanie sprzętem. Automatyczna reakcja zachodzi w aktualnie obsługiwanej rozmowie; **nie jest deklaracją stale działającego monitora uploadów w tle**.
+
+## Unikalność numeru nowego projektu — kontrola obowiązkowa
+
+Przed nadaniem numeru nowemu projektowi wykonaj `python tools/project_id_gate.py <numer>` na aktualnym checkout i sprawdź aktualny zdalny `main` przed scalenieniem. Skrypt rozpoznaje zarówno numerowane pliki Markdown, jak i README-backed katalogi projektu. Każdy istniejący numer jest zarezerwowany nawet wtedy, gdy ma wiele historycznych plików. Nie wolno przydzielać jednego ID różnym produktom; przy konflikcie zatrzymaj genesis i udokumentuj uzgodnienie numeracji. Patrz [reconciliation 2026-10-08](PROJECT-NUMBER-RECONCILIATION-2026-10-08.md).
+
+Zmiany nie mogą fałszować dawnych commitów; korekty numeracji zapisuje się jawnie, utrzymując readback i identyfikatory projektu w bieżących indeksach.

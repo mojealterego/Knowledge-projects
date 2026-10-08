@@ -324,3 +324,18 @@ Każdy materiał wizualny otrzymuje referencję do źródła, hash, kanał dystr
 
 ### Testy akceptacyjne
 Dostępność ruchu/migania, ujawnianie reklam i treści syntetycznych, równorzędna możliwość odmowy, regresje po zmianie treści, zgodność z zasadą human agency. Wyniki dotyczą **cech projektu interfejsu**, nie diagnozy psychicznej odbiorcy.
+
+---
+
+## 2026-10-08 — batch 12: concealed-text directive and visual-language defense
+
+Source: `Ukryte Komendy w Tekście.PDF` (10 pages). The report describes Milton-model NLP, embedded imperatives, typoglycemia, repetition blindness, steganography and Polish morphology. It also advances strong claims about bypassing conscious judgment that are **not established by the source**.
+
+### Defensive `ConcealedDirectiveReview`
+- Preserve raw UTF-8 bytes, normalized text and display rendering separately; identify Bidi controls, invisible format characters, homoglyph/script-mixing, misleading whitespace, alternate-text/image inconsistencies and hidden metadata where lawfully inspected.
+- `SemanticPressureAssessment` flags undisclosed persuasion/deceptive urgency in user-facing UX but **must not classify recipients as psychologically controllable**.
+- `PromptInjectionBoundary` labels retrieved documents/hidden directives as *data*, never control instructions for an AI agent or authorization to call tools.
+- `MultilingualReview` tests Polish diacritics, morphological ambiguity, accessibility screen-reader behavior and false-positive rates.
+- `EvidenceCard` records original/rendered view, transform, source hash, detection rationale, reviewer decision, privacy retention and counterexamples.
+
+**Test suite:** plain benign Polish prose, bilingual HTML, zero-width/Bidi controls, confusable text, PDF hidden layers, false alarms and human review. Not a system for creating imperceptible behavioral commands; no claims of reliable subliminal control.
