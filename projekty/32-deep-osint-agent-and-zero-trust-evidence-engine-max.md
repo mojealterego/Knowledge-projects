@@ -322,3 +322,23 @@ Project 32 integruje Projects 06, 12, 15, 19, 25, 26, 27, 29 i 30 oraz nową wie
 - resumable investigations;
 - adversarial evaluation;
 - audytowalny raport końcowy.
+
+---
+
+## Integracja wiedzy — 2026-10-08: propozycja migracji tożsamości OSINT „Andre”
+
+**Status:** SPECIFIED / REBRANDING NOT EXECUTED; źródło: `Zmiana Nazwy Projektu na Andre_ Manualnie i AI.pdf`.
+**Specyfikacja:** [P32 Andre migration extension](32-deep-osint-agent-and-zero-trust-evidence-engine-max-andre-migration-extension-2026-10-08.md); [dokument wymagań migracyjnych](../docs/knowledge-base/2026-10-08-andre-migration-assurance.md).
+
+### Granica projektu
+„Andre” jest docelową **propozycją** wspólnej tożsamości konkretnej rodziny narzędzi Nexus-Eye/Omega Infinity/Ghost Protocol/Vantage Point/Aether. Nazwa nie jest automatycznie zmieniana w tym repozytorium, ODYN AI, innych systemach OMEGA ani zewnętrznych projektach.
+
+### Obowiązkowa procedura rozbudowy
+1. `IdentityInventory`: zinwentaryzuj rzeczywiste klasy/importy Python, moduły React, CLI/API, prompty, artefakty raportów i identyfikatory utrwalone.
+2. `MigrationManifest`: dla każdego symbolu podaj `old_identifier`, `new_identifier`, `owner_project`, zależności, test zgodności, alias lub migrację, plan odwrócenia.
+3. `CompatibilityLayer`: zachowuj aliasy/importy i wersjonowanie raportów; nie zmieniaj kluczy baz ani endpointów bez procedury migracyjnej.
+4. `AgentIdentityPolicy`: odrębnie wersjonuj nazwę/personę i uprawnienia narzędzi, bez obchodzenia zasad dostępu albo nieprawdziwej identyfikacji klienta sieciowego.
+5. `RegressionHarness`: uruchom testy importów, generowania raportów, UI, serializacji, historii śledczej, granic autoryzacji i odczytu artefaktów sprzed migracji.
+
+### Warunki wejścia do implementacji
+Zidentyfikowany kod źródłowy, zgoda właściciela na zakres zmiany nazwy, raport zależności, plan kompatybilności oraz zestaw testów. Same fragmenty kodu wymienione w PDF nie dowodzą istnienia plików w tym repozytorium. Dotychczasowy zakres defensywnego OSINT i ochrony dowodów nie ulega rozszerzeniu na nieautoryzowane zbieranie danych.

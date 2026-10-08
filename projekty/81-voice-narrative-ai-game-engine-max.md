@@ -428,3 +428,20 @@ Project 81 reaches its first validated milestone when:
 **PROPOSED:** Project 81 is a new portfolio project because this complete digital voice-narrative runtime is not owned by an existing project.
 
 **NOT ESTABLISHED:** The source documents do not establish that covert NLP commands, emotional monetization or compulsive design reliably create long-term retention, nor that such mechanisms are legally or ethically acceptable.
+
+---
+
+## Integracja wiedzy — 2026-10-08: walidacja zasobów syntezy mowy
+
+**Status:** SPECIFIED / NO AUDIO ASSET IMPORTED; źródło: `voice_preview_ian — polish narrator (warm_deep).mp3.html`.
+**Specyfikacja:** [P81 TTS artifact gate](81-voice-narrative-ai-game-engine-max-2026-10-08-tts-artifact-gate.md); [ustalenie formatu pliku](../docs/knowledge-base/2026-10-08-voice-preview-html-validation.md).
+
+### Rozbudowa warstwy voice response
+1. `AudioTypeValidator` sprawdza sygnaturę danych i możliwość dekodowania, nie rozszerzenie. Plik kończący się `.mp3.html` pozostaje w klasie HTML; nie jest transkodowany w oparciu o nazwę.
+2. `VoiceRightsRegistry` wersjonuje dostawcę, `voice_id`, model, licencję, zgodę oraz zakres dopuszczonego wykorzystania głosu. Nie upublicznia sekretów API.
+3. `SpeechQualityEvaluator` definiuje zestaw polskich próbek, wymowę imion i liczb, pauzy, zrozumiałość, opóźnienie, głośność i jakość na różnych urządzeniach.
+4. `AccessibilityFallback` udostępnia napisy, możliwość wyłączenia dźwięku i sterowanie tekstowe.
+5. `NarrationGameBoundary`: wynik TTS/ASR ani dowolny tekst narratora nie mutuje samodzielnie autorytatywnego stanu gry, RNG ani ekonomii.
+
+### Kryteria akceptacyjne
+Negatywny test: przesłany HTML nie zostaje zaakceptowany jako audio. Pozytywny test wymaga prawdziwych zdekodowanych danych audio wraz z metadanymi i prawami użycia. Przed wdrożeniem konieczny jest pomiar jakości polskiego głosu na rzeczywistym nagraniu.

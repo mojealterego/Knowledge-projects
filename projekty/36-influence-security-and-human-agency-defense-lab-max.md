@@ -305,3 +305,22 @@ Project 36 becomes the defensive influence layer for:
 6. Vulnerability targeting is prohibited.
 7. The system exposes meaningful opt-out and decision rationale.
 8. Influence-risk evaluations are versioned and reproducible.
+
+---
+
+## Integracja wiedzy — 2026-10-08: wizualne wzorce wpływu i dostępność
+
+**Status:** SPECIFIED / NOT DEPLOYED; źródło: `Wpływ Wizualny na Ludzki Umysł.pdf`.
+**Specyfikacja:** [P36 visual threat evaluation](36-influence-security-and-human-agency-defense-lab-max-visual-threat-eval-extension-2026-10-08.md); [materiał naukowo-krytyczny](../docs/knowledge-base/2026-10-08-visual-influence-defense.md).
+
+### Nowa warstwa: VisualInfluenceRisk
+Każdy materiał wizualny otrzymuje referencję do źródła, hash, kanał dystrybucji, ocenę jawności przekazu, ocenę zgody/rezygnacji, ryzyka migania/ruchu, dostępność wariantu `prefers-reduced-motion` i ścieżkę przeglądu ludzkiego.
+
+- `DisclosureInspector`: odróżnia reklamę, grafikę syntetyczną i komunikat informacyjny; wykryte braki przekazuje do recenzji.
+- `ChoiceParityInspector`: bada, czy odmowa/rezygnacja nie jest ukryta, utrudniona lub przedstawiona asymetrycznie.
+- `PhotosensitivityGuard`: kieruje animacje do kontroli migania, kontrastu i szybkiego ruchu według aktualnych kryteriów dostępności; nie uruchamia ryzykownej ekspozycji na użytkownikach.
+- `InfluenceClaimVerifier`: wyklucza przyjęcie jako pewnika twierdzeń o „dezaktywacji ACC”, podprogowej kontroli czy przymusowym sterowaniu wolą na podstawie samej narracji PDF.
+- `SyntheticMediaProvenance`: przechowuje pochodzenie materiału i informację o syntetycznym charakterze obrazu, jeżeli jest to istotne dla interpretacji.
+
+### Testy akceptacyjne
+Dostępność ruchu/migania, ujawnianie reklam i treści syntetycznych, równorzędna możliwość odmowy, regresje po zmianie treści, zgodność z zasadą human agency. Wyniki dotyczą **cech projektu interfejsu**, nie diagnozy psychicznej odbiorcy.

@@ -364,3 +364,30 @@ VentureRecord:
 - influence-risk review;
 - implementation gate;
 - pełny lineage decyzji.
+
+---
+
+## Integracja wiedzy — 2026-10-08: weryfikacja opłacalności agentowych produktów
+
+**Status:** SPECIFIED / NOT VALIDATED IN MARKET; źródła: `Zarabianie Pieniędzy z Wykorzystaniem AI.pdf` oraz `Zarabianie Pieniędzy Online i Offline 2026.pdf`.
+**Specyfikacja:** [P34 business validation gates](34-agentic-venture-and-business-model-foundry-max-2026-10-08-evidence-gates.md); zachowano wcześniejszą linię P34/P66/P67.
+
+### Rozbudowa przepływu biznesowego
+```text
+OPPORTUNITY HYPOTHESIS
+ -> CUSTOMER SEGMENT / PROBLEM INTERVIEWS
+ -> BUSINESS EXPERIMENT + EVIDENCE LINKS
+ -> PRICE / DELIVERY COST / ACQUISITION COST / MARGIN
+ -> POLICY / TAX / LEGAL / DATA RIGHTS REVIEW
+ -> PILOT AND PAID DEMAND VALIDATION
+ -> STOP / PIVOT / SCALE DECISION
+```
+
+- Rejestr `BusinessExperiment` obejmuje hipotezę, grupę klientów, ofertę, źródła, koszt wykonania, CAC, marżę, mierzalny popyt i status weryfikacji.
+- `ExperimentEvidenceGate` rozdziela prognozę twórcy dokumentu od obserwacji rzeczywistej sprzedaży, klientów i kosztów.
+- `PortfolioRevenueRouter` może porównywać hipotezy typu agencja AI, micro-SaaS, pSEO, twórczość wideo, usługi hybrydowe, ale nie jest silnikiem gwarantowania przychodów.
+- `ComplianceGate`: potwierdzenie bieżących podatków, prawa konsumenckiego, licencji danych i zasad reklamowych na podstawie datowanych źródeł pierwotnych.
+- Zakaz fabrykowania opinii, symulowania kupujących, ukrywania sponsoringu i wykorzystywania podatności odbiorcy.
+
+### Kryteria ukończenia
+Zestaw rzeczywistych eksperymentów z liczbą kontaktów, konwersją, kosztem obsługi, marżą oraz decyzją opartą na danych. Bez wyników terenowych wszystkie wielkości ekonomiczne pozostają hipotezami.

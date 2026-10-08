@@ -39,3 +39,15 @@ CLAIM + SOURCE HASH + VERSION + OWNER
 ```
 
 No source-defined profit, legal status, model optimization performance, behavioral interpretation or token-economy yield is promoted to established truth without evidence. No repository or product was renamed as a side-effect of reading a rebranding PDF.
+
+## Canonical integration — 2026-10-08 follow-up
+
+Pierwotny PR #4 dodał nowe pliki rozszerzeń projektowych, ale **nie zmodyfikował kanonicznych dokumentów istniejących projektów**. Ten etap wdraża wprost zmianę architektury w plikach macierzystych:
+
+- `projekty/14-gemini-3-adaptive-reasoning-multimodal-agent.md`
+- `projekty/32-deep-osint-agent-and-zero-trust-evidence-engine-max.md`
+- `projekty/34-agentic-venture-and-business-model-foundry-max.md`
+- `projekty/36-influence-security-and-human-agency-defense-lab-max.md`
+- `projekty/81-voice-narrative-ai-game-engine-max.md`
+
+Dodano trwały protokół decyzyjny `docs/KNOWLEDGE-EVOLUTION-PROTOCOL.md`, aby kolejne partie nie kończyły się tylko osobnymi rozszerzeniami. Nie uruchamiano kodu produkcyjnego, benchmarków ani testów end-to-end; rozbudowa dotyczy projektowych specyfikacji i kontraktów, nie zaimplementowanych funkcji aplikacji.

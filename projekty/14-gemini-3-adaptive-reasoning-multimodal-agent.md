@@ -76,3 +76,25 @@ A release requires passing deterministic schema tests, tool-contract tests, stat
 
 ## Evidence boundary
 Claims about exact Gemini model behavior, limits and API fields must be revalidated against current official Google documentation before production deployment. This document preserves the supplied material as source input rather than asserting that every cited behavior remains current.
+
+---
+
+## Integracja wiedzy — 2026-10-08: adaptacyjna efektywność Gemini Pro
+
+**Status:** SPECIFIED / NOT IMPLEMENTED; źródło: `Zwiększanie Wydajności Gemini Pro.pdf`.
+**Specyfikacja rozszerzenia:** [P14 optimization extension](14-gemini-3-adaptive-reasoning-multimodal-agent-2026-10-08-optimization-extension.md); [analiza i ograniczenia](../docs/knowledge-base/2026-10-08-gemini-performance-evidence.md).
+
+### Nowe komponenty architektury
+1. `InferencePolicy` — wersjonowany kontrakt określający `task_class`, `model_id`, limity kosztu i opóźnienia, politykę cache, wsadowość i metodę niezależnej weryfikacji.
+2. `ProviderCapabilityProbe` — weryfikacja faktycznie obsługiwanych opcji modelu, API, cache i batch przed wykonaniem zadania; brak hardcoded cenników z PDF.
+3. `CacheBoundary` — klucz kontekstu powiązany z właścicielem, wersją promptu/modelu, TTL i poziomem poufności; brak nieuprawnionego współdzielenia między użytkownikami.
+4. `BatchReconciler` — idempotentne identyfikatory zadań, obsługa częściowych błędów, timeouts, kontrola kosztu oraz odczyt rezultatów.
+5. `InferenceEvaluator` — porównanie FAST/BALANCED/DEEP na niezmiennym zbiorze testowym z p50/p95, rzeczywistym wykorzystaniem tokenów, kosztami, błędami i wskaźnikami jakości.
+6. `EvidenceGate` — typowany wynik, niezależna kontrola źródeł, bounded retry/escalation i zakaz traktowania odpowiedzi modelu jako autoryzacji narzędzia.
+
+### Kryteria ukończenia
+- Test kontrolny pojedynczego modelu oraz test wielowariantowy na tym samym zbiorze i wersjach danych.
+- Wyraźne odróżnienie potwierdzonej funkcjonalności API od historycznej deklaracji źródłowej.
+- Raport koszt/jakość/opóźnienie/błędy z odtwarzalnym identyfikatorem eksperymentu.
+- Symulacja prompt injection, wygaśnięcia cache, utraty dostawcy i niepełnej odpowiedzi batch.
+- Implementacja i realne benchmarki pozostają osobnym etapem; dokument nie stanowi dowodu równoważności „Pro = Ultra”.
