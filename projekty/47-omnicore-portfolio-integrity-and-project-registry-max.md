@@ -315,3 +315,9 @@ Batch 16: 10 PDFs, 556 pages. Five feasibility PDFs (5)–(9) are one evolving M
 Nine shared collections advertised **101 files (~489.2 MB)**. Rendered manifests exposed 96 filenames, but **no underlying document bytes** were available to inspect/hash in the current tool environment; the ninth collection advertised five files still uploading. This is a **LISTED_ONLY** state, NOT ingestion, duplicate confirmation or project genesis. [Acquisition ledger](../docs/QUICKSHARE-INTAKE-2026-10-08-BATCH-17.md).
 
 New executable `tools/source_bundle_audit.py` checks ZIP-member integrity and SHA-256 offline, without extracting, executing or transmitting contents. It rejects path traversal, symlinks, encrypted members, case-insensitive path collisions, extreme decompression ratios and size overflows; filenames are omitted from the default report. It does not read document semantics. Portfolio lifecycle is now `LISTED_ONLY → BYTES_RECEIVED → HASHED → CONTENT_READ → OWNER_MAPPED → VERIFIED → COMMITTED`. No automatically assigned project IDs or claims of technical improvements based on filename matches. Potentially sensitive named-person OSINT/private correspondence must be redacted or excluded from the public repository.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Web-source batch 18: 34 supplied URLs, 33 distinct after duplicate Cloud Translation URL. Public provider docs and Gemini CLI descriptions were readable; private console/API key/payment pages, Zed/Railway board items and unavailable bug-bash site were not. P21/P29/P37/P57/P100/P105/P106/P108/P115/P121/P125 already cover their topics — new numbered projects = 0. Never mark user account settings, API keys, bounty reward state, malware sample binaries or private workspaces as extracted from URL alone. See `docs/WEB-SOURCE-INGESTION-2026-10-08-BATCH-18.md`.

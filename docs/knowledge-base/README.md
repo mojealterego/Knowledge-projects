@@ -130,3 +130,12 @@ GGUF input is a 372-page discussion/document, not a packaged running application
 ## 2026-10-08 — batch 17 (external links, NOT yet ingested)
 
 Nine Samsung Quick Share collections were inventoried at the **metadata-only** level: 101 declared files, 96 visible filenames and five still uploading, approximately 489.2 MB in total. **No original document content or SHA-256 has yet been obtained from these links.** Do not treat this source group as analyzed knowledge or create numbered projects from filenames. The [acquisition-status ledger](../QUICKSHARE-INTAKE-2026-10-08-BATCH-17.md) records the limitation. [Offline ZIP structure/hash scanner](../../tools/source_bundle_audit.py) is implemented and has unit tests; semantic ingestion still awaits actual source bytes.
+
+## 2026-10-08 — batch 18: Google developer and cloud services, GitHub security/reward sources
+
+- [34 submitted URLs / 33 distinct; public vs authenticated/unavailable source-state ledger](../WEB-SOURCE-INGESTION-2026-10-08-BATCH-18.md).
+- [Multimodal Gemini Embedding 2 + Gemma 4 + Agent Platform / Android Googlebook / Gemini CLI / security analysis](2026-10-08-google-gemma-embedding-agent-platform-android-security.md).
+- [Actual canonical project evolutions, new-project decision and tests](../PROJECT-EVOLUTION-2026-10-08-BATCH-18.md).
+- [Offline Gemini Embedding 2 input policy](../../tools/multimodal_embedding_intake_gate.py) and [offline cloud spending/operation policy](../../tools/cloud_operation_budget_gate.py).
+
+No private Google Cloud account, AI Studio API keys, Notebook data, paid WordPress plugin catalog purchases, bounties, malware archive, VM/bucket or device was accessed/modified. CI readback is required before reporting the test gates as successful.

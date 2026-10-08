@@ -41,3 +41,9 @@ FUTURE OPT-IN LOCAL MODEL (separate capability gate)
 `python -m unittest discover -s tools -p 'test_*.py' -v` from repo root tests static policy assertions; Android/Gradle build and human-device validation are still required.
 
 [Batch-15 evidence](../../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-15.md) · [Source synthesis](../../docs/knowledge-base/2026-10-08-corpus-mobile-builders-security-odyn.md).
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Android Developers Googlebook Sept 22 2026 adaptive apps article contributes an explicit **pending** emulator/device acceptance matrix: compact/medium/expanded window width, freeform drag-resize, split-screen, dual instances, keyboard/trackpad navigation, TalkBack and focus order, rotation/process recreation, safe HOME fallback, touch targets and contrast. Use actual window classes rather than assumed physical screen dimensions; no Googlebook Play badge or acceptance is claimed. Existing Kotlin source remains **not built or installed**; these are test requirements, not adaptive Compose code implementation.

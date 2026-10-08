@@ -230,3 +230,9 @@ Proposed `ToolProposalLifecycle`: `model_output → typed candidate → digest/h
 ## Knowledge evolution — batch 16 / 2026-10-08
 
 Feasibility (5)–(9) and 3 DGM reports define ModelScout→TechRecon→Strategist→DGM_Core with Hugging Face/GitLab, speculative 33+33 apps and GameBuilder. Treat S[t+1]=Phi(S[t],R(Omega_recon ∪ Omega_models)) as **notation, not a consistency proof**. DGMRun requires model hash+license, research citations, typed roadmap, candidate integration branch, independent CI receipts, human/tool-owner approval, rollback and readback; disallow auto-main updates or secret fallback tokens. Actual tools/dgm_cycle_gate.py is a NON-EXECUTING admission check with 13 unit tests. External model download/GitLab evolution not executed.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Gemini CLI/Antigravity SDK/CLI and Gemini Enterprise Agent Platform offer candidate agent coding/workflow interfaces. GoogleAgentExecutionPacket binds separately supplied tool scope/IAM, prompt/source provenance, source+commit revisions, isolated runtime, rate/cost cap, actual tool+CI receipts, human approval and rollback; agents may never infer rights from `authuser` or model-studio links. Any hosted paid operation must pass independent approval **in addition** to `tools/cloud_operation_budget_gate.py`'s offline plan review. No external agent installed/connected.

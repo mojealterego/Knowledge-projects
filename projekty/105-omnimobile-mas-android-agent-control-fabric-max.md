@@ -119,3 +119,9 @@ P08, P37, P57, P61, P72, P86, P100.
 Source `AI Launchery Android_ Ranking 2025-2026.PDF` proposes contextual HOME organization and local AI. New P125 owns **selectable launcher HOME UX**; P105 remains responsible only for **authorized UI perception/action and postcondition validation**. Launcher status does not convey Usage Access, Accessibility Service rights, notifications, location or authority to launch apps autonomously.
 
 `LauncherActuationBoundary`: an explicit user tap to launch an installed app via a declared MAIN/LAUNCHER component is allowed; an LLM's implicit prediction of user intention never triggers Accessibility actions, message sending or sensitive app navigation. Future P105 adapter requires separate user-granted platform permissions, scoped operation consent, typed capability token, dry-run, readback and audit. P125 MVP intentionally includes **no** special permissions or network API. Android/OEM implementation behavior unverified until SDK/emulator validation.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Googlebook adaptive Android article (2026-09-22) and Android tools/agents docs recommend window size classes, desktop freeform resizing, pointer/trackpad, keyboard, multi-instance, accessible touch/click targets. Extend AdaptiveUiEvidence {compact,medium,expanded,freeform_resize,split_window,keyboard_navigation,mouse_hover,talkback,rotation,restore_state}. Android agent skills are development aids, **not permissions to control the device**. No emulator or OEM install performed.

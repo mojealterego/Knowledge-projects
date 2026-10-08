@@ -165,3 +165,9 @@ Historical provider prices in the source report are not used as current routing 
 ## Definition of done
 
 The router is complete when model/provider choice is replaceable, execution profile is explicit, context/cost/latency are measurable, verification is mandatory at the configured assurance level, compound fan-out is rate-limited and observable, and no routing decision can weaken authorization or security policy.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Gemma 4 official 2026-04-02 announcement describes E2B/E4B/26B-MoE/31B-Dense variants. Add LocalOrCloudRoutingPolicy inputs: task, modality, source privacy, available local RAM/NPU/runtime, licensing+weight SHA, expected token/latency/cost budget and independent result verification. `gemini-embedding-2` is for retrieval/embedding, not chat completion. No device performance, GGUF packaging, remote Gemini pricing or access has been benchmarked here.

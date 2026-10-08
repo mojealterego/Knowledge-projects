@@ -352,3 +352,9 @@ Project 37 jest warstwą wykonawczą pomiędzy **intent/control plane** a konkre
 ## Knowledge evolution — batch 16 / 2026-10-08
 
 The 372-page GGUF Studio PDF is chat-origin design material describing Python/FastAPI/llama-cpp-python, WebSocket chat, model routing and agent tools. It is not an installable ZIP or benchmark. Extend LocalModelCapabilityTest with GGUF hash/license/revision, quantization, tokenizer, RAM/VRAM envelope, context, tool template, throughput, p95 latency, crash fallback, privacy boundaries and actual hardware receipts. No GGUF model downloaded or run.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Google Gemma 4 source 2026-04-02: E2B, E4B, 26B MoE, 31B Dense; blog states Apache-2.0. Add Gemma4Qualification {exact weight URL/hash, tokenizer/template, license, quantization, GGUF/runtime support, RAM/KV cache/CPU/GPU/NPU, thermal and latency tests, task/safety regression, rollback}. Do not extrapolate usable inference speeds or compatibility with any Android handset from a launch blog. No weights downloaded or model run.

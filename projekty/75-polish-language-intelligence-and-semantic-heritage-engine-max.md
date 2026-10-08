@@ -90,3 +90,9 @@ Extends Projects 15, 19, 22, 24, 32, 42, 44, 48, 54 and 57, and supplies a domai
 Three-page article `Seks – seksualizm – seksualizacja – seksualizować` by S. Dubisz (`Poradnik Językowy`, 2019; DOI `10.33896/PorJ.2019.7.12`) compares dictionary meanings, register shifts and contested rhetorical redefinitions of psychological/educational terminology.
 
 `LexicalSenseEvidence` adds `lemma, sense_id, dictionary_or_source, time, register, field, context, competing_usage, semantic_shift_claim, uncertainty`. Neither an author's interpretation nor a quoted public statement independently reveals a speaker's motives. P75 should support neutral multiple-sense explanations without classifying personal sexuality, political loyalty or intent. Review official current dictionaries and the quoted context before providing normative conclusions.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Public Google Translation/Natural Language docs suggest glossary-driven translation, linguistic analysis and language processing. Add LexicalEvidence {Polish_original,language,source_span,register,morphology,translation_candidate,glossary_version,ambiguity,reviewer}. Retain original Polish even if translated; cross-lingual embeddings may assist search but not establish legal/medical translation validity. Free-tier figures are time-sensitive per model; no unlimited use or API calls implied.

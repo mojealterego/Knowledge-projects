@@ -102,3 +102,9 @@ P31, P32, P54, P59, P60, P72.
 ## Primary source witnesses
 - `Odzyskiwanie Danych Android GitHub.PDF`
 - `Odzyskiwanie danych Motorola G54.PDF`
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+The public `9aylas/Pegasus-samples` repository README explicitly describes Android/iOS spyware samples and links to technical analysis. Treat it as **untrusted high-risk malware source**. Add DefensibleThreatIntelEvidence {repository_url,readme_revision,trust_claims,third_party_analysis,actual_obtained_binary_sha_only_if_acquired,device_scope_and_consent}. Do not download ZIP, execute binaries, claim infection or derive covert surveillance capability. No sample archive retrieved.

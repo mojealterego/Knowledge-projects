@@ -180,3 +180,9 @@ P114 contributes memory/verification patterns, P119 contributes device/runtime r
 ## Implementation gate
 
 The first production-grade milestone is a single read-only incident diagnosis followed by a sandbox remediation with complete evidence lineage and independently verified postconditions. Production mutations should remain disabled until this closed loop passes adversarial tests.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Google Cloud Compute Engine, Cloud Storage and Enterprise Agent Platform source pages become infra qualification inputs: GcpChangeApproval {verified_account_IAM_scope,project_and_region,VM+GPU_quota,storage_lifecycle,egress_cost,monthly_spend_cap,explicit_side_effect_permission,rollback_and_audit_receipts}. `tools/cloud_operation_budget_gate.py` checks metadata against independent approvals without calling Cloud APIs; it is not a real IAM permission broker, billing lock or deployer. No compute VM, bucket, model endpoint or payment created.

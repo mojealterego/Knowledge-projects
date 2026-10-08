@@ -98,3 +98,9 @@ Claims about exact Gemini model behavior, limits and API fields must be revalida
 - Raport koszt/jakość/opóźnienie/błędy z odtwarzalnym identyfikatorem eksperymentu.
 - Symulacja prompt injection, wygaśnięcia cache, utraty dostawcy i niepełnej odpowiedzi batch.
 - Implementacja i realne benchmarki pozostają osobnym etapem; dokument nie stanowi dowodu równoważności „Pro = Ultra”.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Google Gemini Embedding 2 (2026-04-30) adds source-hashed multimodal retrieval contracts: text spans, image metadata, media timecodes, model revision, privacy and citation evidence. The public blog specifies 8192 text tokens, 6 images, 120 seconds video, 180 seconds audio, 6 PDF pages per embedding request. An **embedding model is not a generative reasoning model** and similarity is not factual proof. `tools/multimodal_embedding_intake_gate.py` performs static/offline checks only; provider access, remote-data consent and actual model calls have not been granted or run.

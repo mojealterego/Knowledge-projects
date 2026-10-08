@@ -134,3 +134,9 @@ DefensiveAdversarialEvaluation:
 ```
 
 Source mechanism descriptions are adversarial research, not permission to compromise hosted models or remove safety enforcement. Never save operational harmful suffix payloads in the public portfolio. P108 owns controlled test execution while P60 owns threat taxonomy. Report what genuinely ran; no live security evaluation in this batch.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Pegasus-samples GitHub description and agentic CLIs imply a hostile-repository/tool boundary. Proposal HostileRepoReview: verify publisher/revision, deny executable ZIP ingestion into agent workspaces, ban automatic shell execution/credential exfiltration/remote instructions, require authorization and isolated offline static lab for malware assessment, report only actual observed hashes and defensive indicators. No spyware payload fetched, decompressed or simulated as functionality.
