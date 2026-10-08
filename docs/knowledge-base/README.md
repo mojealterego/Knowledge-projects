@@ -126,3 +126,7 @@ Scanned digital-product pages cover only chapter fragments 8–10, not "7" compl
 - [Non-executing DGM promotion gate](../../tools/dgm_cycle_gate.py) and [offline IBM conflict/state tests](../../tools/test_ibm_game_state_reference.py).
 
 GGUF input is a 372-page discussion/document, not a packaged running application. DGM (1)/(2) have identical normalized text, not independent implementation evidence. IBM cloud claims not verified in a live account.
+
+## 2026-10-08 — batch 17 (external links, NOT yet ingested)
+
+Nine Samsung Quick Share collections were inventoried at the **metadata-only** level: 101 declared files, 96 visible filenames and five still uploading, approximately 489.2 MB in total. **No original document content or SHA-256 has yet been obtained from these links.** Do not treat this source group as analyzed knowledge or create numbered projects from filenames. The [acquisition-status ledger](../QUICKSHARE-INTAKE-2026-10-08-BATCH-17.md) records the limitation. [Offline ZIP structure/hash scanner](../../tools/source_bundle_audit.py) is implemented and has unit tests; semantic ingestion still awaits actual source bytes.
