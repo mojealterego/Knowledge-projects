@@ -1,0 +1,26 @@
+date: 2026-10-08
+batch: automatic-ingestion-11
+trigger: user_upload_without_separate_analyze_command
+repository: mojealterego/Knowledge-projects
+sources:
+  total: 10
+  pdf: 10
+  exact_duplicates_prior_batch: 2
+  two_ai_near_duplicate_variants: true
+  scanned_source_code_pdf: 1
+project_evolution:
+  updated_canonical: [P24, P31, P32, P66, P89]
+  new_projects: [P122]
+  new_project_dir: projekty/122-gas-appliance-safety-evidence-companion
+  architecture_only_existing_updates: true
+  new_project_read_only_python_prototype: true
+  no_gas_device_control: true
+validation:
+  sha256_source_manifest: true
+  project_p122_unittest_cases_passed: 5
+  actual_cloud_deployed: false
+  actual_UE_build_run: false
+  firebase_security_review: false
+  live_appliance_connected: false
+  current_external_provider_details_verified: false
+  full_brand_strategy_book_received: false
