@@ -342,3 +342,20 @@ It is complete when the system can demonstrate, reproducibly:
 **INFERRED:** these components can form a self-evolution architecture only when connected through an experimental controller and strict authority boundaries.
 
 **PROPOSED:** Project 80 is an engineering research program. It does not claim that an autonomous self-improving operating system has already been demonstrated.
+
+---
+
+## 2026-10-08 — batch 12: OmniCore MVP verification ladder
+
+Source: `Tworzenie Systemu MVP Omnicore.pdf` (16 pages). The supplied `Cargo.toml`, Rust `no_std` entry/supervisor examples, Python AI Foundry and GDScript/Android launcher fragments are **proposed code in a report**, not compiled, linked or validated artifacts.
+
+### MVP decomposition / privilege invariants
+1. **Phase A — deterministic kernel stub:** build minimal `x86_64-unknown-none` or supported boot target, with explicit panic path, allocator/interrupt scope and reproducible QEMU boot smoke test.
+2. **Phase B — external supervisor:** isolate any probabilistic AI scheduler in user space or a dedicated host process. No LLM-generated decisions or self-patching in Ring 0; kernel privilege boundary is not an inference target.
+3. **Phase C — driver generator:** AI outputs an untrusted patch, reviewed via typed HAL contracts, static checks, host-side simulation, fuzzing and reversible promotion. Source rules such as "no unsafe outside HAL" do not prove memory safety.
+4. **Phase D — Omnis/MLIR experiment:** toy grammar and dialect pass with differential tests; avoid conflating speculative Hilbert/TND terminology with physical or mathematical proof.
+5. **Phase E — PUI adapter:** optional avatar/3DGS UI with bounded resource budget, graceful fallback and explicit consent; webcam emotion inference is out of scope by default.
+6. **Phase F — signed release:** versioned images, SBOM, change log, checkpoint/rollback and independent postcondition readback.
+
+### Acceptance
+A real compiling kernel build and QEMU log precedes any `IMPLEMENTED` label; staged mutation/rollback tests precede `SELF_HEALING`. No hardware deploy, kernel build, physics verification or platform release occurred in this batch.

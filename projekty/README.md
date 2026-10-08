@@ -264,6 +264,10 @@ Reasoning traces are useful evidence when available but are not a security bound
 
 ## Nowy projekt i ewolucja — batch 11 (2026-10-08)
 
-- [P122 — Gas Appliance Safety Evidence Companion](122-gas-appliance-safety-evidence-companion/README.md): nowa wyodrębniona dziedzina odczytu instrukcji gazowego kotła, ograniczona do dokumentacyjnego lookup i skierowania do wykwalifikowanego serwisu. Pięć lokalnych testów jednostkowych, bez sprzętu, instalacji i zdalnej obsługi.
+- [P123 — Gas Appliance Safety Evidence Companion](123-gas-appliance-safety-evidence-companion/README.md): nowa wyodrębniona dziedzina odczytu instrukcji gazowego kotła, ograniczona do dokumentacyjnego lookup i skierowania do wykwalifikowanego serwisu. Pięć lokalnych testów jednostkowych, bez sprzętu, instalacji i zdalnej obsługi.
 - Zaktualizowane **główne dokumenty**: P24 (AI runtime/prompt compiler), P31 (bezpieczny OmniCore cloud forge), P32 (VANTAGE simulated provenance), P66 (strategia marki) oraz P89 (CCR Unreal Engine 5).
 - [Pełna historia zmian i uzasadnienie numeracji](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-11.md).
+
+## Project evolution — batch 12 (2026-10-08)
+
+Ten new PDFs were correlated with the existing knowledge portfolio; actual canonical extensions were integrated into **P01, P11, P19, P23, P36, P47, P80, P87, P90 and P91**. Source domains are already covered, so **new conceptual projects = 0**. The duplicate P122 allocation inherited from batch 11 was corrected: **CHEMIA stays P122**; gas appliance reference is now [P123](123-gas-appliance-safety-evidence-companion/README.md). The new [project-ID preflight gate](../tools/project_id_gate.py) prevents reusing an occupied number for new genesis proposals. [Detailed reconciliation](../docs/PROJECT-NUMBER-RECONCILIATION-2026-10-08.md) · [source evolution](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-12.md).

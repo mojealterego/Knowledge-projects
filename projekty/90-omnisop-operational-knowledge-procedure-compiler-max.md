@@ -175,3 +175,33 @@ Credentials must never become durable SOP content. A procedure may say **where a
 - process-drift detection;
 - auditable change proposals;
 - reusable agent/tool interface.
+
+---
+
+## 2026-10-08 — batch 12: SOP delegation and report-as-evidence contract
+
+Source: `Tworzenie Raportów i Delegowanie AI.pdf` (14 pages); older SOP sources already owned by P90.
+
+### `SOPDelegationPlan`
+```yaml
+SOPDelegationPlan:
+  objective: null
+  trigger: null
+  scope_allowlist: []
+  exclusions: []
+  required_roles: []
+  steps_and_decision_branches: []
+  required_inputs: []
+  expected_outputs: []
+  tool_capabilities: []
+  side_effect_classes: []
+  approval_gates: []
+  independent_verification: []
+  evidence_artifacts: []
+  rollback: null
+  release_owner: null
+```
+The report's `AS-IS → TO-BE → DRAFT → REVIEW → PUBLISH → DRIFT` trajectory becomes a versioned, permission-checked workflow. A generated report must bind each completed action to **actual tool execution receipts**; a text model's claim that it sent an email, deployed an app or scanned a system is not such a receipt.
+
+### Tests and operations
+Human-in-the-loop gates for external messages/payments/infrastructure changes; idempotency on retries; privilege isolation by step; path through partial failure; secrets redaction in screenshot/recording evidence; versioned SOP rollback; experiment with novice-reader clarity and stale procedure detection. No external workflow execution or business-process automation is claimed from this source alone.

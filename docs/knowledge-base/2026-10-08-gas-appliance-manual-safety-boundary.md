@@ -17,4 +17,4 @@ ApplianceManualReference:
   control_permissions: none
 ```
 
-No boiler control, pressure/gas-valve operations, bypass of safeguards, wiring instructions, internal part replacement or autonomous diagnosis is offered. Installation and service are for qualified personnel. In suspected danger, defer to local emergency services and licensed professionals. New owner: [P122](../../projekty/122-gas-appliance-safety-evidence-companion/README.md).
+No boiler control, pressure/gas-valve operations, bypass of safeguards, wiring instructions, internal part replacement or autonomous diagnosis is offered. Installation and service are for qualified personnel. In suspected danger, defer to local emergency services and licensed professionals. New owner: [P123](../../projekty/123-gas-appliance-safety-evidence-companion/README.md).

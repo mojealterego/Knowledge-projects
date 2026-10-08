@@ -1,0 +1,33 @@
+date: "2026-10-08"
+batch: 12
+trigger: user_upload_auto_ingest
+repository: mojealterego/Knowledge-projects
+sources_total: 10
+sources_pdf: 10
+near_duplicate_persona_variants: 2
+persona_normalized_text_similarity: 0.9696
+source_sha256_recorded: true
+canonical_project_updates: [P01, P11, P19, P23, P36, P47, P80, P87, P90, P91]
+new_conceptual_projects: 0
+integrity_repair:
+  previous_collision_number: P122
+  retains_number: "P122 CHEMIA"
+  reindexed_project: "P123 gas-appliance-safety-evidence-companion"
+  history_rewritten: false
+reasons_no_new_project:
+  - "historical and research source belongs to P19"
+  - "persona source belongs to P91"
+  - "compiler and OS sources belong to P87/P23/P80"
+  - "local-model optimization belongs to P11"
+  - "text manipulation defense belongs to P36"
+  - "SOP delegation belongs to P90"
+  - "Apeiron symbolic system belongs to P01"
+verification:
+  source_sha256_computed: true
+  model_training_run: false
+  MLIR_compiler_built: false
+  QEMU_kernel_booted: false
+  external_historical_claims_independently_verified: false
+  hidden_command_human_effect_proven: false
+  human_subject_tests_performed: false
+  cloud_or_remote_service_deployed: false

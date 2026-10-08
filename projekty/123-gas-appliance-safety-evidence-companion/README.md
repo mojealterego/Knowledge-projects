@@ -1,10 +1,10 @@
-# P122 — Gas Appliance Safety Evidence Companion
+# P123 — Gas Appliance Safety Evidence Companion
 
 **Status:** PROPOSED → ARCHITECTURE → READ-ONLY PROTOTYPE (UNIT-TESTED LOCALLY)
 **Domain:** manufacturer-manual reference and professional escalation for residential gas appliances; no maintenance automation.
 
 ## Why this is a new portfolio project
-The uploaded `vitrix_20_plus_s_instrukcja.pdf` is a 16-page Polish manual with title on cover **Immergas VICTRIX PLUS/S**. The exact owner device model is unverified. P74 covers automotive OBD2 and P121 covers cloud infrastructure; neither owns the safety-critical gas-appliance manual and technician-escalation domain. P122 has separate intake/output, revision, evidence and safety requirements.
+The uploaded `vitrix_20_plus_s_instrukcja.pdf` is a 16-page Polish manual with title on cover **Immergas VICTRIX PLUS/S**. The exact owner device model is unverified. P74 covers automotive OBD2 and P121 covers cloud infrastructure; neither owns the safety-critical gas-appliance manual and technician-escalation domain. P123 has separate intake/output, revision, evidence and safety requirements.
 
 ## Architecture and data boundary
 ```

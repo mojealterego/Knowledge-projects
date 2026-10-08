@@ -153,3 +153,19 @@ Experiment:
 - artifact provenance and hashes;
 - reproducible experiment records;
 - controlled integration path into Project 61/08 without transferring authority.
+
+---
+
+## 2026-10-08 — batch 12: dual-witness persona dataset qualification
+
+Sources: `Unikalna Osobowość Modelu Językowego.pdf` (11 pages) and `(1).pdf` (14 pages), ~96.96% normalized-text similarity. These are closely related editions, **not independent confirmations**.
+
+### Canonical additions
+- `PersonaDatasetCard`: source SHA-256, license, consent, provenance, language, context, annotation protocol, sampling, PII-removal policy and train/validation/held-out split.
+- `PersonaSpec`: desirable observable conversational behaviors separated from adversarial outcomes. Big Five/OCEAN may be a research vocabulary; MBTI type labels and speculative "persona vectors" are hypotheses, not clinically valid classifications of a model or user.
+- `PersonaConsistencySuite`: multilingual tone/style constancy under long contexts; truthfulness, calibration, sycophancy, harmful-instruction refusal, user agency and non-manipulation.
+- `SFTOrSteeringExperiment`: baseline vs lightweight adapter vs prompt-only; pre/post behavior deltas and representation analyses, complete training data lineage, rollback and provider-specific safety regression.
+- Dataset candidates mentioned by the source (Cicero/Diplomacy, Craigslist Bargain, prosocial dialog, symbolic/hermetic corpora) require independent license, abuse/risk and provenance checks before use. Symbolic and fictional material can broaden analogy, **not demonstrate paranormal cognition**.
+
+### Acceptance / epistemic gate
+A significant held-out gain in style-consistency must not be purchased through higher hallucination, privacy leakage, negotiation manipulation or unsafe tool access. A persona never grants authorization. No training or model merge has been run in this ingestion.

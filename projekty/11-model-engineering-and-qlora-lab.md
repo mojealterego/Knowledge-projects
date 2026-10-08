@@ -50,3 +50,19 @@ No fine-tuned model becomes the default runtime model solely because training lo
 ## Integration
 
 The lab feeds the broader Agent Runtime through a `ModelProvider` abstraction. This keeps fine-tuning independent from orchestration and MCP/tool layers.
+
+---
+
+## 2026-10-08 — batch 12: sovereign inference optimization benchmarks
+
+Source: `Ulepszanie modeli AI- zaawansowane techniki.pdf` (13 pages).
+
+### Add to evaluation laboratory
+- `HardwareEnvelope`: VRAM/RAM limits, memory bandwidth, device topology, kernel support, operating temperature/power, storage and privacy requirements.
+- `SpeculativeDecodeBenchmark`: verified draft/target-token acceptance, output distribution/correctness regression, tokens/sec, p50/p95 latency, GPU utilization and energy per accepted token. EAGLE-style acceleration needs a compatible runtime/model; it is **not a universal speed-up guarantee**.
+- `RetrievalGraphBench`: vector-RAG versus GraphRAG using source-grounded entity resolution, temporal metadata, retrieval recall and contradiction/citation checks.
+- `AdaptiveInferencePolicy`: choose bounded reasoning/computation budget based on task risk; test fallback when Entropix-like entropy signals, long contexts or server capacity are unavailable.
+- `QLoRAQualification`: Unsloth/QLoRA adapter quality, calibration, safety/license checks, deployment packaging and rollback. Personal "digital twin" claims must not imply mind copying or lawful training on someone else's communications.
+- `BenchmarkEvidence` freezes model revision, quantization, prompt, batch, decoding settings, hardware, driver, data split and billed/energy costs.
+
+**Release criterion:** no promotion without controlled A/B measurement and adversarial regression. Source GPU figures/prices (3090/4090/5090/H100) are historical estimates, not verified live quotations.

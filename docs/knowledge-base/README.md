@@ -75,6 +75,15 @@ These are source-derived research and architecture notes, not verified current l
 [Synteza OmniCore GCP, CCR UE5, VANTAGE, AI](2026-10-08-corpus-cloud-ccr-vantage-ai-2026-batch11.md) ·
 [Bezpieczna ekstrakcja instrukcji VICTRIX](2026-10-08-gas-appliance-manual-safety-boundary.md) ·
 [Ograniczony fragment strategii marki](2026-10-08-brand-strategy-excerpt-notes.md) ·
-[Decyzje projektowe P24/P31/P32/P66/P89/P122](../PROJECT-EVOLUTION-2026-10-08-BATCH-11.md).
+[Decyzje projektowe P24/P31/P32/P66/P89/P123](../PROJECT-EVOLUTION-2026-10-08-BATCH-11.md).
 
-Dwa identyczne bajtowo raporty monetizacji nie są ponownie promowane do projektów. PDF VANTAGE zawiera zrzuty kodu i skaner symulowany; fragment książki nie reprezentuje całej publikacji. P122 jest domenowo nowym projektem referencyjnym, bez możliwości sterowania gazem.
+Dwa identyczne bajtowo raporty monetizacji nie są ponownie promowane do projektów. PDF VANTAGE zawiera zrzuty kodu i skaner symulowany; fragment książki nie reprezentuje całej publikacji. P123 jest domenowo nowym projektem referencyjnym, bez możliwości sterowania gazem.
+
+## 2026-10-08 — batch 12: persona, history, OmniCore MVP, LLM optimization, hidden commands, SOP and Apeiron
+
+- [Input hashes / owner map / source boundaries](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-12.md)
+- [Interdisciplinary synthesis and evidence caveats](2026-10-08-corpus-persona-omnis-models-history-influence-sop-apeiron.md)
+- [Canonical project evolution and no-duplicate genesis decision](../PROJECT-EVOLUTION-2026-10-08-BATCH-12.md)
+- [P122 CHEMIA versus P123 gas project identity reconciliation](../PROJECT-NUMBER-RECONCILIATION-2026-10-08.md)
+
+Updated P01, P11, P19, P23, P36, P47, P80, P87, P90, P91. No new concept ID allocated to previously owned source domains.

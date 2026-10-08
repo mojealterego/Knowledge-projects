@@ -155,3 +155,34 @@ Measure:
 ## Definition of done
 
 A run is accepted only when an independent reviewer can reconstruct how each material claim arose from the evidence and can identify what remains uncertain.
+
+---
+
+## 2026-10-08 — batch 12: research fan-out and historical evidence stress test
+
+Sources: `Tworzenie zaawansowanego agenta badawczego.pdf` (13 pages), `Upadek Epoki Brązu- Klimat i Cywilizacje.pdf` (9 pages).
+
+### New `DeepResearchRun` contract
+```yaml
+DeepResearchRun:
+  question_id: null
+  scope_and_deadline: null
+  provider_capability_snapshot: null
+  parallel_query_budget: null
+  source_registry_refs: []
+  freshness_policy: null
+  citation_span_coverage: null
+  contradiction_graph: []
+  unsupported_claims: []
+  independent_review_status: pending
+```
+A fast summarization model, model-generated consensus and claimed benchmark scores **cannot certify source quality**. Provider names (Gemini, OpenAI, DeepSeek), prices, availability and SWE-bench/GAIA claims in the 2025–26 source must be rechecked before performance comparisons.
+
+### Historical verification fixture
+The archaeological report combines Voynich parchment radiocarbon dating, material analysis, Late Bronze Age palaeoclimate, archaeoseismology, Ugarit texts, migration and trade disruption.
+- `DateClaim` must distinguish measured **parchment material age** from the **date of text composition**.
+- `ChronologyGraph` expresses calibrated measurement intervals, region, dating uncertainty and source evidence, rather than a single "Year of Collapse."
+- `CausalHypothesis`: drought, seismic events, migration, warfare, maritime disruption, state fragility and trade feedback loops are candidates, **not proven simultaneous causes** from correlation alone.
+- `CounterevidenceProtocol` requires dissenting chronologies, regional heterogeneity, confounds and explicit "insufficient evidence" output.
+
+**Acceptance:** every archaeological/market claim traceable to provenance and measurement type; a cited source cannot be fabricated or treated as definitive because repeated by several models. No independent archaeology verification performed here.

@@ -263,3 +263,20 @@ This project does not define a general-purpose tarot system, an autonomous agent
 ## Architectural relationship
 
 APEIRON may consume shared platform capabilities from the repository's agent/runtime/security projects, but remains independently understandable as a bounded application domain. Shared infrastructure must not erase the application's explicit domain invariants.
+
+---
+
+## 2026-10-08 — batch 12: Apeiron FOG feedback and symbolic-artifact loop
+
+Source: `Tworzenie Nowego Systemu Dywinacji.pdf` (12 pages). It proposes `PrismLayers` transparent-card composition, `Metamodern Arcana`, operators/filters, a five-node Fractal Oracle Grid (FOG) and an iterative three-part decision gate. Existing P01 owns stateful symbolic card interactions; P53/P71 own physical/AR artifact production.
+
+### `ApeironReflectionSession`
+- `input_question`: explicitly framed as a decision/problem, **not a reliable supernatural forecast**;
+- `fog_nodes`: INPUT, PROCESS, REINFORCING, BALANCING, OUTPUT;
+- `layer_draw_events`: reproducible event IDs, physical/card layer identities, optional seeded symbolic RNG and provenance;
+- `reframe_operations`: user-controlled movement of an output modifier back into the input domain;
+- `triple_gate`: evidence/physical plausibility, participant values and practical resources;
+- `reflection_result`: non-authoritative hypotheses, alternatives, next experiment, user choice and optional follow-up review.
+
+### Safeguards & acceptance
+Prohibit deterministic future-event certainty, coercive persuasion, mental health diagnosis, covert dependency loops and unverifiable "quantum entanglement" claims. Prototype should show reversible draws, accessibility equivalent to 3D/UV gimmicks, randomization replay, transparency of AI-generated interpretations, consent, data minimization and opt-out. No divination accuracy or therapeutic outcome is proven.
