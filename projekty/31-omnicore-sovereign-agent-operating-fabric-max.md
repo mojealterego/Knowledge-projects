@@ -473,3 +473,20 @@ Project 31 is complete when:
 ## Position in the portfolio
 
 Project 31 becomes the **sovereign agent operating fabric** above Projects 13, 15, 17, 19, 24, 25, 26, 27, 28, 29 and 30. It is the point at which the repository's separate doctrines—agent OS, compound reasoning, evidence fabric, Skills, MCP, secure execution, adaptive hardware and adversarial evaluation—become one coherent control-plane architecture.
+
+---
+
+## Integracja wiedzy — batch 11 (2026-10-08): governance chmurowych agentów
+
+Źródło: `Uruchomienie Agentów AI w Chmurze.pdf`; szerszy kontekst: [corpus batch 11](../docs/knowledge-base/2026-10-08-corpus-cloud-ccr-vantage-ai-2026-batch11.md). **Status: SPECIFIED / CLOUD NOT DEPLOYED.**
+
+**Nowe komponenty:** `CloudCapabilityProbe` (zgodność nested VM/GPU, model regionów, kontrola rzeczywistych kwot), `AgentBuildSandbox` (L1/L2 QEMU i niezależna izolacja kernel Rust no_std), `ComputeBudgetLease` (limit kosztów, storage, cleanup), `BuildEvidenceGate` (artefakt, log, test, readback), `MCPPolicyBroker` (agent tożsamość ≠ prawo do hosta), `PrivacyGate` (zakaz domyślnej biometrii/wnioskowania o emocjach). Rozdzielić modele lokalne, VPC, RAG i execution auth; nie eksponować API lokalnych modeli publicznie.
+
+```text
+SPEC + PROVIDER CAPABILITY PROBE → SCOPED BUDGET
+ → EPHEMERAL ISOLATED VM → BUILD / TEST
+ → SOURCE + BINARY HASH + LOGS → INDEPENDENT VERIFIER
+ → POSTCONDITION CHECK → HUMAN PROMOTION OR TEARDOWN
+```
+
+**Testy akceptacyjne:** odmowa operacji bez uprawnienia, quota exhaustion, brak GPU/virtualization, timeout kernel panic bez zagrożenia hosta, brak kosztu po cleanup i wymuszony audyt. Przykładowe maszyny N1/T4 ze źródła wymagają bieżącego sprawdzenia w GCP.

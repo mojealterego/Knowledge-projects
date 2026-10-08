@@ -180,3 +180,27 @@ This project strengthens:
 - treating case studies as universal causal evidence;
 - claiming competitive advantage without capability/evidence support;
 - using strategy automation as autonomous authority over people or markets.
+
+---
+
+## Integracja wiedzy — batch 11 (2026-10-08): strategic brand positioning
+
+Źródło: **fragment** książki Jarosława Szczepańskiego `Złota strategia marki` (26 stron pliku: wstęp/spis treści/początek rozdziału oraz skorowidz; NIE cała książka). [Source note](../docs/knowledge-base/2026-10-08-brand-strategy-excerpt-notes.md).
+
+Nowa `BrandPositioningExperiment`:
+```yaml
+BrandPositioningExperiment:
+  guiding_principle: null
+  customer_segment: null
+  market_category: null
+  competing_offers: []
+  cost_vs_differentiation_choice: null
+  differentiated_capability: null
+  proposed_positioning: null
+  unit_economics_hypothesis: null
+  evidence_refs: []
+  measured_customer_response: null
+  outcome: untested
+```
+
+**Zasady:** odróżnij strategię cenowo-marżową, markę i model biznesowy. Formułowanie przewagi lub pozycjonowania to hipoteza wymagająca badania odbiorców i realnych wyników; nie obiecuj zysków na podstawie teorii. P34 i P67 pozostają odpowiedzialne za wykonanie testów i analizę ekonomiki. Żadna treść całej chronionej publikacji nie została skopiowana do repo.

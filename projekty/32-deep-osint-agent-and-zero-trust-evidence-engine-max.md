@@ -342,3 +342,26 @@ Project 32 integruje Projects 06, 12, 15, 19, 25, 26, 27, 29 i 30 oraz nową wie
 
 ### Warunki wejścia do implementacji
 Zidentyfikowany kod źródłowy, zgoda właściciela na zakres zmiany nazwy, raport zależności, plan kompatybilności oraz zestaw testów. Same fragmenty kodu wymienione w PDF nie dowodzą istnienia plików w tym repozytorium. Dotychczasowy zakres defensywnego OSINT i ochrony dowodów nie ulega rozszerzeniu na nieautoryzowane zbieranie danych.
+
+---
+
+## Integracja wiedzy — batch 11 (2026-10-08): VANTAGE POINT provenance and UI security
+
+Źródło: `VANTAGE POINT(1).pdf` (16 stron kodu React/Firebase w postaci obrazów; **nie uruchomiono programu**). Wcześniejsza dokumentacja o VANTAGE istnieje w korpusie Knowledge Base.
+
+**Nowe wymaganie `OSINTObservation`:**
+```yaml
+OSINTObservation:
+  target_type: DOMAIN|IP|USER
+  authorized_scope_ref: null
+  tenant_ref: null
+  data_origin: simulated|observed|verified
+  source_refs: []
+  observed_at: null
+  verification_state: pending
+  display_label: null
+```
+
+Na obrazie strony 10 kod zawiera `simulateScan`: wyniki wytwarzane przez opóźnienie i fikcyjne dane **nigdy nie mogą udawać prawdziwych danych OSINT**. Również losowo rysowane krawędzie Canvas nie są zweryfikowaną siatką powiązań. Wdrożyć etykietę „SIMULATED”, provenance także w eksporcie, reguły Firestore izolujące tenantów, test anonimowego uwierzytelnienia, cleanup `onSnapshot`/resize/`requestAnimationFrame`, etykiety dostępności oraz rozróżnienie UI state od backend truth.
+
+**Testy:** zabroniony odczyt innego tenant, brak fałszywego awansowania mock→verified, brak fałszywego przypisania relacji, UI unmount bez wiszących subskrypcji, wymagana zgoda na aktywne kolektory. Brak automatycznego skanowania rzeczywistych systemów.

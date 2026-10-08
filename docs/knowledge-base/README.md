@@ -68,3 +68,13 @@ The supplied documentation and repository source are treated as the primary evid
 Five existing subjects from Iteration 16 were recognized without duplicating project ownership. New source-derived analyses: [Gemini inference optimization](2026-10-08-gemini-performance-evidence.md), [visual influence defense](2026-10-08-visual-influence-defense.md), [Andre migration assurance](2026-10-08-andre-migration-assurance.md), [public-assembly historical law reference](2026-10-08-assembly-law-reference-poland.md), and [HTML mistaken for audio](2026-10-08-voice-preview-html-validation.md). Full provenance/sha256 manifest: [batch ingestion log](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-10.md); [project evolution](../PROJECT-EVOLUTION-2026-10-08-BATCH-10.md).
 
 These are source-derived research and architecture notes, not verified current law, provider prices, experimental neuroscience, legal deployment readiness, a code migration, or confirmed financial results.
+
+## 2026-10-08 — batch 11: automatyczna ingestia 10 plików
+
+[Manifest źródeł SHA-256](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-11.md) ·
+[Synteza OmniCore GCP, CCR UE5, VANTAGE, AI](2026-10-08-corpus-cloud-ccr-vantage-ai-2026-batch11.md) ·
+[Bezpieczna ekstrakcja instrukcji VICTRIX](2026-10-08-gas-appliance-manual-safety-boundary.md) ·
+[Ograniczony fragment strategii marki](2026-10-08-brand-strategy-excerpt-notes.md) ·
+[Decyzje projektowe P24/P31/P32/P66/P89/P122](../PROJECT-EVOLUTION-2026-10-08-BATCH-11.md).
+
+Dwa identyczne bajtowo raporty monetizacji nie są ponownie promowane do projektów. PDF VANTAGE zawiera zrzuty kodu i skaner symulowany; fragment książki nie reprezentuje całej publikacji. P122 jest domenowo nowym projektem referencyjnym, bez możliwości sterowania gazem.

@@ -81,3 +81,27 @@ This creates a common intermediate representation across different model provide
 ## Definition of done
 
 A prompt is production-ready only when its compiled specification has a valid schema, deterministic tool contract, passing regression suite, security review and reproducible version identifier.
+
+---
+
+## Integracja wiedzy — batch 11 (2026-10-08): prompt/model runtime provenance
+
+Źródła: `Zaawansowane Wykorzystanie Sztucznej Inteligencji.pdf` (12 stron) i `(1).pdf` (14 stron), ≈90,6% podobieństwa tekstowego — dwa warianty jednego zbliżonego opracowania.
+
+```yaml
+ModelRuntimeSpec:
+  provider_model: null
+  model_revision: null
+  prompt_hash: null
+  few_shot_set_id: null
+  sampling:
+    temperature: null
+    top_p: null
+    top_k: null
+  retrieval_refs: []
+  allowed_capabilities: []
+  output_schema_ref: null
+  holdout_eval_id: null
+```
+
+**Nowe przebiegi kompilatora:** walidacja dostępności opcji sampling u dostawcy, kontrolowane CoT/ToT/few-shot/Chain-of-Table warianty, pomiar błędów/kosztu/opóźnień, niezmienna próba walidacyjna, wyraźna granica untrusted context i rights/authorization. LangGraph/AutoGen/CrewAI pozostają adapterami orkiestracji wymagającymi niezależnej polityki narzędzi. Opisywana w PDF abliteration jest zachowana jako zagadnienie odporności/adversarial research, a nie automatyczny wzrost bezpieczeństwa ani pozwolenie na obejście zabezpieczeń. **Status: specyfikacja, bez benchmarków**.
