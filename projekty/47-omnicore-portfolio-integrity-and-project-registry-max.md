@@ -321,3 +321,9 @@ New executable `tools/source_bundle_audit.py` checks ZIP-member integrity and SH
 ## 2026-10-08 — batch 18: public web source evolution
 
 Web-source batch 18: 34 supplied URLs, 33 distinct after duplicate Cloud Translation URL. Public provider docs and Gemini CLI descriptions were readable; private console/API key/payment pages, Zed/Railway board items and unavailable bug-bash site were not. P21/P29/P37/P57/P100/P105/P106/P108/P115/P121/P125 already cover their topics — new numbered projects = 0. Never mark user account settings, API keys, bounty reward state, malware sample binaries or private workspaces as extracted from URL alone. See `docs/WEB-SOURCE-INGESTION-2026-10-08-BATCH-18.md`.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+Batch 19: 19 URLs span GitHub Agent Apps, MCP registries, prompt CI, Codex events, Gemini Drops and competing adult two-player games. `SourceAccessStatus` distinguishes directly read listing, provider documentation alternate, inaccessible registry and conflicting first-party feature descriptions. **P122 CHEMIA already owns consent-aware paired gameplay**; P72/P100/P108 already own agent integrations, P87 SysML2/deterministic generators, P29/P114 research memory. Hence **0 new numbered projects** rather than redundant provider-branded variants. LovePlay homepage single-device versus its blog remote-pairing claims conflict; do not choose one without operational evidence. Full 19-link ledger `docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-19.md`.

@@ -423,3 +423,11 @@ Core invariants:
 `PRIVATE ≠ SHARED`  
 `INTENSITY ≠ GRAPHIC CONTENT`  
 `GAME STATE ≠ REAL-WORLD AUTHORITY`
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+**Competitive sources:** Privé (two separate responses, only mutually positive topics exposed), LovePlay (browser games and intensity/skip controls; conflicting one-device vs two-device descriptions), Modern Love (commercial editorial, not independent clinical data). Existing CHEMIA already owns this product. Privacy-first match phase is an incremental mechanism, not P127.
+
+**Actual code:** `consent_intersection.py` calculates only the intersection of two ephemeral immutable topic sets and subtracts either player's blocked topics; denies mismatched sessions, inactive/revoked partner or missing adult self-attestation. `tools/test_chemia_consent_intersection.py` contains 12 pure-Python tests. **Not implemented:** an age verification service, storage, end-to-end encryption, online pairing, Android UI or real player accounts. `adult_self_attested` is only a declared boolean — no assurance of actual age. Do not infer real-world consent from matching activity; **MATCH ≠ CONSENT, HEAT ≠ CONSENT, SKIP ≠ FAILURE**. No individual answers should be logged, sent to analytics, exposed to partners or inserted in GitHub.

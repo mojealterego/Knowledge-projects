@@ -186,3 +186,9 @@ The first production-grade milestone is a single read-only incident diagnosis fo
 ## 2026-10-08 — batch 18: public web source evolution
 
 Google Cloud Compute Engine, Cloud Storage and Enterprise Agent Platform source pages become infra qualification inputs: GcpChangeApproval {verified_account_IAM_scope,project_and_region,VM+GPU_quota,storage_lifecycle,egress_cost,monthly_spend_cap,explicit_side_effect_permission,rollback_and_audit_receipts}. `tools/cloud_operation_budget_gate.py` checks metadata against independent approvals without calling Cloud APIs; it is not a real IAM permission broker, billing lock or deployer. No compute VM, bucket, model endpoint or payment created.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+LaunchDarkly agent may create/change flags and AI Config; Octopus Deploy Intelligence Agent may launch releases/runbooks, while Packfiles Agent operates in a separate Warp migration environment. These are **effectful external systems**, not merely read-only reporting. Add `ExternalAgentOperation` with exact repo/service instance, independent owner-approved credential scope, target environment, dry run, blast-radius controls, cost and trial prerequisites, immutable tool receipt, health check and rollback. Marketplace "free plugin" does not grant a free underlying platform or Copilot plan. `tools/marketplace_agent_review_gate.py` is a static authorization precheck only; no flags, deployments or migrations were executed.

@@ -1,0 +1,27 @@
+date: "2026-10-09"
+batch: 19
+repository: mojealterego/Knowledge-projects
+input_urls: 19
+rechecked_public_vendor_sources: true
+registry_direct_pages_unavailable:
+  - "https://github.com/mcp/tools.structura/structura"
+  - "https://github.com/mcp/tools.apricot/apricot"
+  - "https://github.com/mcp/md.traveler/mcp"
+direct_marketplace_pages_unavailable:
+  - "https://github.com/marketplace/miro-github-connector"
+  - "https://github.com/marketplace/actions/instructvault"
+publisher_alternate_documents_read: true
+canonical_projects_evolved: [P17, P19, P21, P29, P47, P50, P56, P72, P87, P90, P100, P108, P121, P122]
+new_numbered_projects: 0
+implemented:
+  - tools/marketplace_agent_review_gate.py
+  - tools/test_marketplace_agent_review_gate.py
+  - projekty/122-chemia-consent-aware-intimate-two-player-game/consent_intersection.py
+  - tools/test_chemia_consent_intersection.py
+new_unittest_methods: 25
+installation_performed: false
+authorized_third_party_mcp_connections: false
+payment_performed: false
+intimate_userdata_collected: false
+adult_age_verified: false
+cross_device_session_deployed: false

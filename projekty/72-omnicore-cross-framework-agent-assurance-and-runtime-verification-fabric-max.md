@@ -377,3 +377,9 @@ Implemented proof: `tools/agent_tool_admission_gate.py`, a **non-executing** pro
 ## Knowledge evolution — batch 16 / 2026-10-08
 
 DGM source requests a four-stage lifecycle ModelScout→TechRecon→Strategist→DGM_Core. **Actual code**: tools/dgm_cycle_gate.py checks candidate/base commit digests, integration/ branch, four nonempty phase receipts, externally supplied candidate approval, claimed independent verified CI checks, expiry, rollback witness and disabled external effects. This is a non-executing metadata gate, **not** source attestation, sandbox, independent signature verification or platform branch protection. Direct default-branch mutation shown in DGM example must not be used.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+GitHub Copilot Agent Apps (public preview) can read PRs, create feature flags/config, post comments, run scanners and trigger deployments. **Marketplace listing, publisher badge or advertised free tier is not an owner-approved permission grant**. Added `tools/marketplace_agent_review_gate.py` with 13 tests: dry-run requested listing slug/URL, exact target repo, externally supplied grant id+approved capability+expiry, explicit effectful-action approval, secrets/data-export denial and owned isolated scanning target. The module **does not install an app, invoke GitHub permissions, verify the publisher's true identity or enforce IAM**. Real installation remains separately approved; all side effects must have tool receipts and independent postconditions. SAKH read-only vs Apricot project-delete vs Traveler profile-update are different MCP grants; inspect actual `tools/list` after OAuth rather than assuming read-only across servers.

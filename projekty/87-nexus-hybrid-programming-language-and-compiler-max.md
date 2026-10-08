@@ -163,3 +163,9 @@ Source: `Unifikacja Języków i Kodu Legacy.pdf` (7 pages); earlier knowledge: `
 - `TargetCapabilityRegistry`: CPU baseline first, GPU/FPGA backends only after target toolchains, ABI ownership, accuracy and maintenance feasibility are proven.
 
 **Definition of Done:** a minimal executable grammar/AST/IR subset, a lowering example and differential tests. Source code does not exist merely because the PDF names Omnis/Nexus; the 2026-10-08 batch does not build a compiler.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+Structura (source: `blog.structura.tools`) proposes reviewable domain models and deterministic multi-stack code generation; Apricot public `metadevpro/apricot-mcp` discusses project-level SysML2 artifacts and OAuth. Extend `ModelToCodeEvidence`: input model URI+revision+license, SysML2 or vendor schema profile, `tools/list` discovered *at connected runtime*, read/write scopes, validation report, generated artifact SHA and reproducibility/diff, independent CI. Apricot README explicitly restricts some edit/validation capabilities to its internal assistant; do not claim that arbitrary external MCP clients can edit SysML2 until proven. The unrelated `RavinMaddHatter/Structura` Minecraft tool is not the Structura modeling MCP. No remote MCP connected or codegen run.

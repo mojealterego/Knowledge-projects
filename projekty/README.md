@@ -311,3 +311,11 @@ The [DGM cycle admission gate](../tools/dgm_cycle_gate.py) checks independent ap
 **Real code:** [Gemini Embedding 2 multimodal intake policy](../tools/multimodal_embedding_intake_gate.py) with [20 tests](../tools/test_multimodal_embedding_intake_gate.py); [Google Cloud paid-operation/budget approval checker](../tools/cloud_operation_budget_gate.py) with [19 tests](../tools/test_cloud_operation_budget_gate.py). These **offline** modules do not actually access Gemini, authenticate to Google Cloud, bill, install IDEs or create infrastructure.
 
 [Full 34-URL source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-08-BATCH-18.md) · [Project evolution](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-18.md).
+
+## 2026-10-09 — batch 19: third-party agent security and CHEMIA consent matching
+
+**14 existing canonical projects updated:** P17, P19, P21, P29, P47, P50, P56, P72, P87, P90, P100, P108, P121, **P122 CHEMIA**. **New numbered projects: 0.** Existing scopes already own Github agent orchestration/QA, SysML2 codegen, curated corpus retrieval and two-player adult gameplay.
+
+**Implemented stdlib Python code:** `tools/marketplace_agent_review_gate.py` (13 tests) checks proposed marketplace agent grants without installing agents, and `projekty/122-chemia-consent-aware-intimate-two-player-game/consent_intersection.py` (12 tests) returns ONLY mutually accepted ephemeral topic IDs. This is not real age verification, private multiplayer server or cryptographic enforcement.
+
+[Source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-19.md) · [Technical synthesis](../docs/knowledge-base/2026-10-09-github-agent-apps-mcp-couples-evidence.md) · [Project evolution](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-19.md).

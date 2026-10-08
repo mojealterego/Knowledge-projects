@@ -435,3 +435,9 @@ Source: five-page AURA The Collective design. Existing ownership P50/P71 and [so
 **User agency:** source recommends hidden NLP, urgency and addiction/slot-like reinforcement. Do not implement those as covert coercion or gambling pressure. Only disclosed, voluntary visual/touch mechanics and reversible participation; NFC web/audio requires opt-in, accessibility option and a safe external link.
 
 **Code:** `tools/aura_deck_gate.py` validates a complete manifest without inventing missing cards; 11 local tests on a clearly synthetic fixture, not a manufactured or complete source-derived deck.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+Reference studies Privé, LovePlay and Modern Love demonstrate a market taxonomy: physical/online cards, one-phone turn-taking, claimed two-phone pairing, roleplay/interactive story and challenge-level selection. Treat promotional engagement/benefit/privacy claims as unverified. P50 may reuse neutral rule mechanics for game experiments, with skip/no coercion, safe randomization, no manipulative gamification and independent adults-only gating. Detailed mutual-selection code belongs to **P122 CHEMIA**, not a second adult-game project. No competitor media, game content or accounts were copied.

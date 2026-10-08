@@ -127,3 +127,9 @@ The stack is considered production-ready only when routing, agent execution, MCP
 ## 2026-10-08 — batch 18: public web source evolution
 
 Official Gemini Enterprise Agent Platform, Gemini CLI, Antigravity, Embedding 2, Gemma 4 and cloud media APIs form an **optional provider integration set**. Typed capabilities: PUBLIC_DOC, AUTHENTICATED_METADATA, BUDGET_APPROVED_INFERENCE, APPROVED_MUTATION and PAYMENT. User-provided console `authuser`, model or project URL parameters are not credentials/IAM grants. Implemented offline-only `tools/multimodal_embedding_intake_gate.py` and `tools/cloud_operation_budget_gate.py`: remote input limits/sensitive-content preauthorization and independent scope/action/spend plan approval. These are **not production IAM/security enforcement**, no Google API connection, model downloads, enabled APIs, VM/bucket or charges. Source synthesis: `docs/knowledge-base/2026-10-08-google-gemma-embedding-agent-platform-android-security.md`.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+The official Gemini Drops page is a versioned/changing feature showcase rather than a stable SDK/API specification; keep a dated provider feature matrix with plan/region entitlement status, cross-verified against official model docs. GitHub Copilot Agent Apps are another vendor ecosystem, not automatically Gemini or ChatGPT plugins. No Google or GitHub Marketplace app installed; P21 keeps provider-specific cost/permissions/release validation separate from model-expressed intent.
