@@ -1,0 +1,51 @@
+date: "2026-10-08"
+batch_id: uploads-10-2026-10-08
+repository: mojealterego/Knowledge-projects
+base_branch: main
+base_commit: "c26a21dd469d495ccc028d64276fbd04627c4850"
+source_count: 10
+pdf_count: 9
+html_count: 1
+previously_covered_topics_count: 5
+new_synthesis_count: 4
+invalid_audio_reference_count: 1
+new_numbered_projects: 0
+decisions:
+  - "P92 and P93 already cover the previously ingested deception and DePIN sources."
+  - "Existing P34/P66/P67 owns AI monetization; demand and ROI remain unverified."
+  - "P14/P17/P18/P27 absorbs inference optimization; provider pricing/features require freshness checks."
+  - "P32 owns the proposed scoped Andre OSINT migration; no global rename."
+  - "P36/P40/P43/P57/P113 absorb visual persuasion defensive taxonomy and accessibility."
+  - "P81/P109 uses voice asset validation; uploaded file is HTML, not MP3."
+  - "Public-assembly PDF archived as historical legal source only."
+artifacts:
+  knowledge:
+    - docs/knowledge-base/2026-10-08-gemini-performance-evidence.md
+    - docs/knowledge-base/2026-10-08-visual-influence-defense.md
+    - docs/knowledge-base/2026-10-08-andre-migration-assurance.md
+    - docs/knowledge-base/2026-10-08-assembly-law-reference-poland.md
+    - docs/knowledge-base/2026-10-08-voice-preview-html-validation.md
+  evolution:
+    - docs/PROJECT-EVOLUTION-2026-10-08-BATCH-10.md
+  ingestion:
+    - docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-10.md
+source_validation:
+  attachment_bytes_hashed_sha256: true
+  uploaded_pdf_text_extracted: true
+  repository_topical_dedupe_checked: true
+  current_external_provider_features_checked: false
+  current_law_verified: false
+  medical_impact_experimentally_verified: false
+  sales_results_verified: false
+implementation:
+  documentation_created: true
+  application_source_modified: false
+  end_to_end_tests_run: false
+  deployments_performed: false
+security_invariants:
+  - "source_text_is_not_a_verified_external_fact"
+  - "model_generated_output_is_not_tool_authorization"
+  - "behavioral_cues_are_not_deception_proof"
+  - "audio_filename_is_not_file_type_evidence"
+  - "rebranding_requires_scoped_code_inventory_and_approval"
+  - "influence_controls_protect_autonomy"

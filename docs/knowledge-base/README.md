@@ -61,3 +61,10 @@ The repository is documentation-first. Source-derived knowledge is archived here
 ## Source principle
 
 The supplied documentation and repository source are treated as the primary evidence for this project. Later synthesis should verify exact details against archived source materials rather than guessing from memory. Where this knowledge base summarizes repository or web content, it should not be read as a claim that every file on every listed platform has been exhaustively analyzed.
+
+
+## Ingestion — 2026-10-08, 10 uploaded source files
+
+Five existing subjects from Iteration 16 were recognized without duplicating project ownership. New source-derived analyses: [Gemini inference optimization](2026-10-08-gemini-performance-evidence.md), [visual influence defense](2026-10-08-visual-influence-defense.md), [Andre migration assurance](2026-10-08-andre-migration-assurance.md), [public-assembly historical law reference](2026-10-08-assembly-law-reference-poland.md), and [HTML mistaken for audio](2026-10-08-voice-preview-html-validation.md). Full provenance/sha256 manifest: [batch ingestion log](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-10.md); [project evolution](../PROJECT-EVOLUTION-2026-10-08-BATCH-10.md).
+
+These are source-derived research and architecture notes, not verified current law, provider prices, experimental neuroscience, legal deployment readiness, a code migration, or confirmed financial results.
