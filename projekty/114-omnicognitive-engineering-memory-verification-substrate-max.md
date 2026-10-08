@@ -145,3 +145,9 @@ No production-readiness or unrestricted autonomous self-modification claim is im
 Five ODYN/Nexus feasibility reports describe `bitemporal_store.py`, CoALA/GoT and (later) Semantic Clustering, Memory of Failures and Semantic Caching. Their "implemented" claims were **not independently inspected in ODYN-AI source**, and two versions (2)/(3) have text-identical content despite distinct byte hashes.
 
 `SemanticCacheEntry` must include tenant_id, knowledge_source_sha, model_revision, prompt_revision, authorization context, retrieval as-of/effective time, retention limits, privacy class and validation/expiry state. No cross-tenant cache sharing, stale claims masquerading as fresh or reuse of prior tool rights. Distinguish `observed` versus `inferred` versus `verified` confidence on every memory edge; future dynamic code execution cannot inherit memory search authority. Cache correctness requires invalidation, negative tests and independent source readback.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+Feasibility (5)–(6) proposes epistemic defrag, multi-valued logic, bitemporal graph and Knowledge-projects sync. New EvidenceClaim{claim_id,source_hash,valid_time,recorded_time,supporting_refs,refuting_refs,authorization_scope} preserves states SUPPORTED/REFUTED/BOTH/UNKNOWN, stale-cache invalidation and contradiction provenance. GitHub repo sync must propose non-main PR after P47 identifier preflight; no claim that source-declared nexus_core/knowledge/knowledge_repo_sync.py exists without actual ODYN-AI checkout verification.

@@ -205,3 +205,9 @@ The factory does not optimize compulsive engagement, covert persuasion or decept
 6. Failed builds return structured diagnostics and can be resumed.
 7. Human approval is required before external release.
 8. Adapter/version mismatches are detected rather than silently repaired.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+DGM architecture proposes 33 niche +33 developer apps and GameBuilder SDK. Loops emitting NicheApp_0..32 or scaffolding strings are **not** 66 built applications. Require per-project user problem, spec, source, licensing, build/test, signed binary, install, accessibility, error handling and independent review. New P126 owns IBM server-side game state and AI NPC backend reference; P86 retains game/app production. No game build completed in this ingest.

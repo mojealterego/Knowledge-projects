@@ -346,3 +346,9 @@ Projekt jest gotowy, gdy:
 ## Portfolio position
 
 Project 37 jest warstwą wykonawczą pomiędzy **intent/control plane** a konkretnym modelem lub urządzeniem. Łączy routing Project 17, sovereign stack Project 21, agent operating fabric Project 31 oraz defensive intent/influence security Projects 35–36.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+The 372-page GGUF Studio PDF is chat-origin design material describing Python/FastAPI/llama-cpp-python, WebSocket chat, model routing and agent tools. It is not an installable ZIP or benchmark. Extend LocalModelCapabilityTest with GGUF hash/license/revision, quantization, tokenizer, RAM/VRAM envelope, context, tool template, throughput, p95 latency, crash fallback, privacy boundaries and actual hardware receipts. No GGUF model downloaded or run.

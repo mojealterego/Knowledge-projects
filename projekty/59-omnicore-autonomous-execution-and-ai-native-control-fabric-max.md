@@ -349,3 +349,9 @@ The project is an architectural synthesis of the supplied corpus. Specific perfo
 ## Design objective
 
 `Probabilistic intelligence for planning and adaptation + deterministic authority for execution and safety.`
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+Feasibility report (5) claims recursive Swarm Self-Replication. Bounded execution must enforce max_depth, max_workers, max_jobs, deadline, queue_capacity, total token/cloud cost and backpressure. Model-created workers cannot grant themselves further privileges. The P126 IBM NPC proposal should not hold DB writes/locks during model inference and must have timeout/fallback. No external action or live cloud orchestration was performed.

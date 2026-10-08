@@ -242,3 +242,9 @@ P34, P56, P66, P67, P72, P86, P90, P97.
 - `BAŚŃ O PORNLANDI.pdf`
 - `CCR TOM I Jak przetrwać w dziwnym świecie po przeniesieniu się do alternatywnej osi czasu.pdf`
 - `CCR TOM II Oś Czasu w Alternatywnych światach.pdf`
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+The 26-page IBM Cloud backend document proposes Code Engine/Cloudant/Watsonx and server-owned player state with _rev optimistic concurrency. P99 retains LiveOps/market pricing; P126 owns concrete IBM game-state API and NPC backend. Add TrustedRewardReceipt{player_id,event_id,authorized_intent,old_revision,new_revision,committed_result,source}. Client-side balances and model NPC answers cannot mint credits. Cloudant 409 conflict requires reload/re-evaluate rather than blind write. No live IBM integration verified.

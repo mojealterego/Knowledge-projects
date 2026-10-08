@@ -1,0 +1,34 @@
+date: "2026-10-08"
+batch: 16
+repository: mojealterego/Knowledge-projects
+source_files: 10
+source_type: pdf
+page_count: 556
+file_sha256_unique: 10
+duplicate_text:
+  file_a: "Architektura Autonomicznego Systemu DGM(1).PDF"
+  file_b: "Architektura Autonomicznego Systemu DGM(2).PDF"
+  sha256_bytes_different: true
+  normalized_extracted_text_identical: true
+feasibility_series: [5, 6, 7, 8, 9]
+canonical_projects_updated: [P28, P37, P38, P47, P59, P72, P77, P86, P99, P100, P114, P115]
+new_project:
+  id: P126
+  name: "IBM Cloud Cognitive Game Backend Reference"
+  path: projekty/126-ibm-cloud-cognitive-game-backend-reference/README.md
+  current_state: OFFLINE_PYTHON_REFERENCE_NOT_CLOUD
+code:
+  - tools/dgm_cycle_gate.py
+  - tools/test_dgm_cycle_gate.py
+  - tools/test_ibm_game_state_reference.py
+  - projekty/126-ibm-cloud-cognitive-game-backend-reference/state_reference.py
+tool_tests_expected: 24
+verification:
+  source_hashes_measured: true
+  gguf_app_binary_or_zip_in_input: false
+  current_odyn_ai_runtime_verified: false
+  ibm_cloud_deployed: false
+  cloudant_integration_tested: false
+  dgm_autonomous_mutation_executed: false
+  real_gguf_inference_performed: false
+  authorized_public_ci_required: true

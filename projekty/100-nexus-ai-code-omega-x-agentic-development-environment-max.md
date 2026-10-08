@@ -367,3 +367,9 @@ P24, P27, P28, P37, P40, P54, P57, P59, P61, P65, P72, P80, P87, P90, P91, P97, 
 The 34-page `Analiza Repozytoriów i Projekt Aplikacji.PDF` reviews eight report-claimed app builders (Convex Chef, Wasp MAGE, Open Lovable, Open Design, CodinIT.dev, December, Dyad, Bolt.diy) and proposes an OmniStack AI workbench, enforcer architecture and TDD-first workflow. P100 is the actual product/workbench surface; P33 manages delivery governance; P115 orchestrates tools.
 
 Add `BuilderAdapterEvidence` with upstream URL+revision+license, offline/local/cloud capability, storage/auth model, cost and dependency snapshot, untrusted prompt boundary, sandbox availability, verified build receipt and change risk. `DesignEnforcer` checks real component tokens and accessibility; `ShadowQA` runs **actual** tests with receipts, not a report's fabricated supervisor console. Enforce secret scanning, CSP, backend auth, typed APIs, no unapproved changes to default branch and reviewed publishing. Upstream status and supplied success logs remain unverified until checked from repository/runtime.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+The 372-page GGUF Agent Studio PDF narrates local llama-cpp-python, FastAPI, WebSockets, agent design, task queue, SQLite, prompt cache, optional Qdrant/Docker and frontend. These are **conversation statements, not supplied running app/test receipts**. For P100 require actual source ZIP/git tree, pinned dependency lock, GGUF loading smoke, auth/WebSocket security, SSRF-denied URL tools, workspace path isolation, lifecycle pause/cancel/readback and benchmark receipts. P37 inference and P115 task execution remain separate owners.

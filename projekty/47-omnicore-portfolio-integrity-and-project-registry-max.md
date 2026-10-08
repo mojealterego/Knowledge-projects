@@ -301,3 +301,9 @@ Among five ODYN/Nexus feasibility PDF variants, files `...(2).PDF` and `...(3).P
 The 9 scanned pages in `7 Easy AI Digital Products.pdf` are a partial chapter 8–10 excerpt; source completeness must reflect that. `Analiza Chemiczno-Cyfrowa Zagrożeń` declares an "ASI" persona but that is author text, not validated capability.
 
 P125 `sovereign-contextual-android-launcher` is assigned the previously unoccupied project number for a genuinely new Android HOME screen product; P105 actuation and P119 Android local agents remain separate owners. Verify ID uniqueness against current main before merge. Do not use report assertions as execution receipts. [Batch manifest](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-15.md).
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+Batch 16: 10 PDFs, 556 pages. Five feasibility PDFs (5)–(9) are one evolving MAS/Nexus lineage; DGM (1) and (2) differ in byte SHA256 but have **identical normalized extracted text**. The 372-page GGUF file is a conversation export, not a code bundle. New **P126** has unique owner scope (IBM Cloud server game state), distinct from P86 game app generation/P99 LiveOps/P121 SRE, and its number was free on baseline main. Never count report implementation assertions as CI/test receipts.
