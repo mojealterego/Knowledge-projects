@@ -125,3 +125,9 @@ Extends Projects 15, 19, 27, 48, 54, 58, 60, 61 and 72. Supplies a formal-mathem
 - At least one independent derivation exists for promoted results.
 - Machine-checked proofs are linked to exact source/version identifiers.
 - Refuted and incomplete claims remain preserved rather than silently deleted.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+Feasibility (5) uses SMT/Z3 and DGM logical consistency language. Valid proof requires formalized statement, assumptions, scope, solver version, artifacts and failure counterexamples. A self-evolution equation S[t+1]=Phi(S[t],R(Omega)) does not mathematically guarantee bug-free updates; human value alignment is not fully formalized. Solver UNKNOWN, timeout or an unstated premise is never a proof; no real solver artifacts supplied.

@@ -224,3 +224,9 @@ The five versioned feasibility PDFs suggest Skills, HermesClaw, bitemporal memor
 Proposed `ToolProposalLifecycle`: `model_output → typed candidate → digest/hash → independently approved scope → non-executing admission gate → isolated interpreter/container → time/memory/network limit → test receipt → reviewed promotion/rollback`. Dynamic `importlib.exec_module` and `subprocess.run(["python3", path])` shown in source cannot be promoted merely by writing a temporary file or naming a function sandbox. Physical robot commands require a separate safety-rated policy and human supervisor. Hermes JSON formatting does not guarantee correct tools or 100% behavior.
 
 **Actual implementation:** `tools/agent_tool_admission_gate.py` (non-executing, narrow allowlist) with 14 test cases; does **not** run arbitrary Python or replace a real sandbox. Broker rejects model-declared approval, unrecognized capabilities and mutable/harmful side effects. Provider/cloud integrations are future work, not completed by this markdown addition.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+Feasibility (5)–(9) and 3 DGM reports define ModelScout→TechRecon→Strategist→DGM_Core with Hugging Face/GitLab, speculative 33+33 apps and GameBuilder. Treat S[t+1]=Phi(S[t],R(Omega_recon ∪ Omega_models)) as **notation, not a consistency proof**. DGMRun requires model hash+license, research citations, typed roadmap, candidate integration branch, independent CI receipts, human/tool-owner approval, rollback and readback; disallow auto-main updates or secret fallback tokens. Actual tools/dgm_cycle_gate.py is a NON-EXECUTING admission check with 13 unit tests. External model download/GitLab evolution not executed.

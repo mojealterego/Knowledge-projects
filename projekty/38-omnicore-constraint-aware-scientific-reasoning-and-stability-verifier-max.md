@@ -193,3 +193,9 @@ expert_escalation_precision
 ## Status
 
 **Research architecture / verification platform.** Konkretne kryteria domenowe muszą być wersjonowane względem wiarygodnej literatury i testowane reprodukowalnie. Materiał wejściowy jest inspiracją dla architektury kontroli, nie dowodem kompletności modeli fizycznych lub medycznych.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+Feasibility (5) suggests n-valued logic and energy-aware inference. Preserve evidence statuses SUPPORTED / REFUTED / BOTH / UNKNOWN, each with independent source witnesses and timestamps, rather than silently collapsing contradictory claims. Specify ResourceBudget with actual measured CPU/GPU energy, deadline, p99 latency and deterministic fallback. Bound swarm worker count, recursion depth, tokens and cloud cost. Hypotheses only; no external verification.

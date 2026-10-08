@@ -371,3 +371,9 @@ The five `Analiza wykonalności nowych integracji i funkcji a...` reports propos
 Implemented proof: `tools/agent_tool_admission_gate.py`, a **non-executing** prototype that checks artifact SHA-256, externally supplied approvals by hash, capability allowlist, expiry, short timeout, read-only/no-network sandbox declaration and disabled side effects; unit tests include self-declared approvals, hash mismatch and privileged capability attempts. Passing the gate does **not** create an actual sandbox/cryptographic attestation and cannot replace human signature verification, OS-level process isolation or network egress firewall.
 
 `TrustDecision` output is never promoted to real tool execution without independent sandbox, trusted issuer, telemetry, review and rollback. The token-manipulation source adds client-side state/API as untrusted inputs; an agent cannot grant itself credits or user permission.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+DGM source requests a four-stage lifecycle ModelScout→TechRecon→Strategist→DGM_Core. **Actual code**: tools/dgm_cycle_gate.py checks candidate/base commit digests, integration/ branch, four nonempty phase receipts, externally supplied candidate approval, claimed independent verified CI checks, expiry, rollback witness and disabled external effects. This is a non-executing metadata gate, **not** source attestation, sandbox, independent signature verification or platform branch protection. Direct default-branch mutation shown in DGM example must not be used.

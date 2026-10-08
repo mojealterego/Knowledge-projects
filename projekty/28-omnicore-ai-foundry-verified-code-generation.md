@@ -318,3 +318,9 @@ Project 28 is complete when:
 ## Position in the portfolio
 
 Project 28 becomes the **code-generation integrity layer** for Projects 02, 09, 13, 23, 24 and 26. It operationalizes the portfolio's principle that AI may synthesize complexity, but trust must be earned through contracts, verification, isolation and evidence.
+
+---
+
+## Knowledge evolution — batch 16 / 2026-10-08
+
+Source (5) proposes SMT/Z3 validation for generated patches. Add ProofObligation{source_sha, formula, assumptions, bounds, solver_revision, timeout, result, proof_or_counterexample}. A solver's SAT/UNSAT status covers only stated constraints, not global "bug-free" software or alignment; UNKNOWN/timeout blocks promotion. No solver execution or independent ODYN-AI code verification in this batch.

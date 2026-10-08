@@ -116,3 +116,13 @@ No new numbered project: existing P50/P71, P60/P108, P09/P26/P80, P90/P115, P66 
 - [Non-executing AI-generated tool admission prototype](../../tools/agent_tool_admission_gate.py) — digest, external review map and read-only scope checks, not a real isolation runtime.
 
 Scanned digital-product pages cover only chapter fragments 8–10, not "7" complete offerings. The five ODYN reports are related version snapshots, with (2)/(3) equal after text normalization. Their assertions of previously implemented modules were not independently verified in ODYN-AI.
+
+## 2026-10-08 — batch 16: DGM, GGUF Agent Studio and IBM Cloud
+
+- [10 PDF source hashes, 556 pages, duplicate and verification notes](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-16.md).
+- [Detailed source-derived knowledge / evidence boundaries](2026-10-08-dgm-gguf-ibm-evaluation.md).
+- [Project evolution decisions](../PROJECT-EVOLUTION-2026-10-08-BATCH-16.md).
+- [P126 IBM Cloud Cognitive Game Backend Reference](../../projekty/126-ibm-cloud-cognitive-game-backend-reference/README.md).
+- [Non-executing DGM promotion gate](../../tools/dgm_cycle_gate.py) and [offline IBM conflict/state tests](../../tools/test_ibm_game_state_reference.py).
+
+GGUF input is a 372-page discussion/document, not a packaged running application. DGM (1)/(2) have identical normalized text, not independent implementation evidence. IBM cloud claims not verified in a live account.

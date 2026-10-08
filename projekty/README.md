@@ -295,3 +295,11 @@ The AURA source specifies a 60-card product but enumerates only two 10-card doma
 **Updated canonical owners:** P33 (app builders), P45 (digital products), P47 (source version/deduplication), P56 (monetization/credits), P70 (credit event integrity), P72 (externally reviewed generated-tool admission), P91 (unsafe persona claims), P100 (developer UX), P105 (mobile permissions/actuation boundary), P114 (semantic-cache provenance), P115 (ODYN feasibility/secure tool synthesis), P119 (local runtime vs launcher).
 
 **Executable proof-of-concept:** [AI-tool admission policy](../tools/agent_tool_admission_gate.py), with [unit tests](../tools/test_agent_tool_admission_gate.py), plus [Android manifest/source static tests](../tools/test_sovereign_launcher_policy.py). The admission code does **not run** generated scripts. [Source ledger](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-15.md) · [evolution report](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-15.md).
+
+## Batch 16 — 2026-10-08: GGUF / DGM / IBM Cloud
+
+**Ten PDF inputs (556 pages)** were correlated with existing knowledge and canonical owners: **P28, P37, P38, P47, P59, P72, P77, P86, P99, P100, P114, P115**. A genuinely distinct, narrow project was created: **[P126 — IBM Cloud Cognitive Game Backend Reference](126-ibm-cloud-cognitive-game-backend-reference/README.md)**, with **offline Python state/CAS simulation**, 11 automated tests; no real Cloudant, IBM Code Engine or Watsonx deployment.
+
+The [DGM cycle admission gate](../tools/dgm_cycle_gate.py) checks independent approvals, CI receipts, candidate branch and rollback metadata; its 13 tests do **not** constitute an actual sandbox or automated GitLab mutation. Reported GGUF Agent Studio and DGM features are source assertions until real code/runtime proof exists.
+
+[Source hashes](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-16.md) · [Evolved projects](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-16.md).
