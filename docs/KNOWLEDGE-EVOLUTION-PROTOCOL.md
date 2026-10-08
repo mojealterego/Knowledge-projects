@@ -23,3 +23,9 @@ Każdy nowy dokument jest porównywany ze **wszystkimi właściwymi** dotychczas
 Nie oznaczaj rozbudowy kanonicznych projektów jako wykonanej na podstawie **samego utworzenia osobnych plików rozszerzeń**. Raport końcowy podaje oddzielnie: zapisaną wiedzę, zmodyfikowane istniejące pliki projektów, utworzone nowe projekty, wdrożony kod, uruchomione testy i niezweryfikowane założenia.
 
 W razie braku użytecznego nowego projektu należy jawnie podać decyzję `new_numbered_projects: 0` wraz z mapowaniem do istniejących projektów.
+
+## Automatyczny start po otrzymaniu plików — aktualizacja 2026-10-08
+
+**Zasada domyślna:** Po otrzymaniu kolejnego pliku lub partii plików w aktywnej rozmowie **rozpocznij analizę bez oczekiwania na polecenie „Analizuj”**. Dla wielu uploadów widocznych w tym samym komunikacie uruchom jeden spójny proces ingestii. Dalsze kroki: kontrola typów i hashy, odczyt całych źródeł/obrazów, identyfikacja duplikatów i sprzeczności, porównanie z portfolio, aktualizacja **kanonicznych** plików projektów lub uzasadniony genesis nowego numeru, testy tam gdzie wykonalne, commit/PR/readback i raport ze stanem potwierdzenia.
+
+Nie czekaj na drugie potwierdzenie tylko po to, by rozpocząć research/zmiany w repozytorium w ramach udzielonego upoważnienia. Nie oznacza to zgody na nieodwracalne działania, płatne wdrożenia, nieautoryzowany dostęp lub niebezpieczne sterowanie sprzętem. Automatyczna reakcja zachodzi w aktualnie obsługiwanej rozmowie; **nie jest deklaracją stale działającego monitora uploadów w tle**.
