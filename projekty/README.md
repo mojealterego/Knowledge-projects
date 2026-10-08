@@ -329,3 +329,11 @@ The [DGM cycle admission gate](../tools/dgm_cycle_gate.py) checks independent ap
 **Actual implementations:** [upstream source adoption policy](../tools/hermes_upstream_adoption_gate.py) and [17 offline unittest cases](../tools/test_hermes_upstream_adoption_gate.py); separate [ODYN-AI PR #17](https://github.com/mojealterego/ODYN-AI/pull/17) for a signed official Termux APT release-status **preflight** and documentation correction. Neither module installs tools, connects an Android device or authorizes external payment.
 
 [Corpus manifest](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-20.md) · [80-repo catalog](../docs/UPSTREAM-NOUSRESEARCH-REPOSITORY-CATALOG-2026-10-09.md) · [Evolution report](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-20.md).
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties and WordPress premium
+
+**8 canonical project owners updated:** P33, P45, P47, P56, P59, P72, P100, P121. **New numbered projects: 0.** The read-only Zed Guild board and Railway project board did not expose complete current task lists; the WordPress premium page did not reveal a signed-in site plan.
+
+**Working code created only here:** [no-progress agent tool guard](../tools/agent_tool_loop_guard.py) (12 unit tests), [external opportunity verification gate](../tools/external_opportunity_evidence_gate.py) (18 unit tests). Zed #51333/#65199 verified OPEN and #65205 CLOSED via public GitHub API on 2026-10-09; old solved Railway $150 examples are **not open offers**.
+
+[Three-source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-21.md) · [detailed technical synthesis](../docs/knowledge-base/2026-10-09-zed-railway-wordpress-opportunity-evidence.md) · [evolution report](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-21.md).

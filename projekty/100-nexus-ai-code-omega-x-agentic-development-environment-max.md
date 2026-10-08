@@ -391,3 +391,9 @@ Github Marketplace agent apps: SonarQube code checks, Endor Labs dependency advi
 ## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
 
 **Sources:** Hermes CLI/Architecture/Contributing, MCP, Context Files, Skills, Model Router, plugins and `agent-sh/computer-use-linux`, `AaronWong1999/hermesclaw`, `NousResearch/hermes-paperclip-adapter`, `wterm`, `ink`, `cline`. `HermesDeveloperAdapter` must pin upstream version and licenses, use separate agent working directories, explicit tool permission broker, refusal on unverified package/source, deterministic command plan, independent compilation/test evidence, source diff and rollback. Computer-use-linux requires isolated owned graphical environments and confirmation of sensitive UI actions, not blanket on-phone control. HermesClaw and Paperclip are 3rd-party integration candidates, **not installed core**. No click automation, shell commands or external social messaging performed.
+
+---
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
+
+**Zed Guild technical contribution opportunity and safeguards.** Official Zed Guild program describes 12-week Rust contribution cohorts, Repro Specialist, Bug Basher and Feature Shipper tracks and 5–10 h/week; its displayed July–September 2026 cohort timeline is stale relative to 2026-10-09, so current enrollment is **not verified**. Public GitHub REST on 2026-10-09 shows `zed-industries/zed#51333` OPEN (Gemini CLI sandbox ACP reproducible), `#65199` OPEN (agent `read_file` loop), `#65205` CLOSED; project #74 itself displays shell-only. Adapt `AgentToolLoopGuard` in the *local NeXus tool adapter*, not by modifying Zed. Test conditions: same call without fresh postcondition, total calls/tokens, explicit cancellation, trace readback and restart by trusted host. Never claim a bug is assigned/paid and never write to `zed-industries/zed` without a distinct user instruction.

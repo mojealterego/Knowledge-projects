@@ -343,3 +343,9 @@ Po korekcie użytkownika portfolio ma jeden i tylko jeden repozytoryjny `write_t
 `RepositoryMutationEvidence` powinien zawierać `target_repo, operation, branch_or_ref, requested_source_repo, expected_main_sha, new_commit_sha, pr_number, ci_status, readback`. Nie akceptuj `target_repo != mojealterego/Knowledge-projects`. Dodano `tools/single_repository_scope_gate.py` — deterministyczny preflight przyjmujący tylko repo docelowe, gałęzie robocze, PR do `main`, osobno pozwalający czytać dowolne repo źródłowe. **Checker nie blokuje bezpośrednich wywołań GitHub API — to ograniczenie do udokumentowania.**
 
 [Erratum partii 20](../docs/REPOSITORY-SCOPE-ERRATUM-2026-10-09.md). PR #17 wykonany w ODYN-AI był błędem zakresu i nie upoważnia do kolejnych zmian ani samoczynnego rollbacku.
+
+---
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
+
+**Source reconciliation / batch 21:** These three URLs were already recorded as title/shell or account-restricted sources in batches 18–19, so no new conceptual project is warranted. New evidence now includes official `zed.dev/community/guild` track descriptions and current GitHub REST issue states (Zed #51333/#65199 OPEN and #65205 CLOSED on 2026-10-09), official Railway templates README+Station historical examples, and current WordPress plugin support guide (reviewed 2026-10-05). Keep `BOARD_SHELL`, `ISSUE_STATE_API_VERIFIED`, `OLD_SOLVED_REWARD`, `AUTH_REQUIRED` separate; a bounty board shell or private paid-plugin URL does not confer job, money, account access or installed plugin state. All implementation writes are restricted to Knowledge-projects. [Batch 21](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-21.md).

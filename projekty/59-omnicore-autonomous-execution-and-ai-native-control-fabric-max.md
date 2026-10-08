@@ -361,3 +361,9 @@ Feasibility report (5) claims recursive Swarm Self-Replication. Bounded executio
 ## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
 
 **Sources:** Hermes CLI/gateway, messaging, cron, skills and paid Tool Gateway docs. Proposed `HermesProcessLifecycle`: OS/platform classifier, foreground vs allowed background mode, process supervisor, deadline, durable state, callback auth, rate+budget cap, restart policy, media retrieval and proof of actual tool execution. Android Termux foreground `hermes gateway run` does **not** imply systemd/persistent service; Android may terminate background processes. The official Termux APT docs currently warn broken; fail closed rather than spawn processes via desktop/glibc install scripts. `Nous Tool Gateway` is paid, do not schedule purchases or browser sessions by model authority. No cron/gateway jobs, Linux sandboxes or account credentials started in this batch.
+
+---
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
+
+**No-progress tool-call loop regression as reproducible acceptance target.** Zed issue [#65199](https://github.com/zed-industries/zed/issues/65199) reports an agent read-only loop of 171 identical `read_file` calls, 195 calls and ~10.3M tokens with no edit. Treat figures as issue reporter's evidence, not a locally reproduced benchmark. New `tools/agent_tool_loop_guard.py` is a deterministic non-executing policy: it halts when same tool+argument digest repeats >N times without independently verified progress, or total call/token budgets are exceeded. `trusted_progress_version` must be supplied by the host's real postcondition and cannot be accepted from an LLM message. Needed next: integrate with a real agent executor (inside this repo when built), measure legitimate retries/false positives, add telemetry and a trusted explicit reset. It is **not** installed in Zed or ODYN.

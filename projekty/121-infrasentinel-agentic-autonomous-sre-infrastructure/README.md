@@ -198,3 +198,9 @@ LaunchDarkly agent may create/change flags and AI Config; Octopus Deploy Intelli
 ## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
 
 **Sources:** Nous Portal Tool Gateway (paid subscription + use-based credits), Novita/NVIDIA GPU/AI, Xiaomi MiMo token-plan, Kimi/MiniMax/Z.ai and Hugging Face; Hermes gateway cron/security docs. Require `ProviderCommercialEvidence` with distinct sign-in and API products, documented region, current plan entitlement, project owner approval, maximum prepaid/test spend, timeout and abort threshold, token quotas, irreversible side effects, receipt and cleanup. `build.nvidia.com` and `platform.xiaomimimo.com/token-plan` yielded minimal public shells; no actual per-account quota or discount verified. A web or chat landing page is not valid backend endpoint; paid Tool Gateway cannot be assumed free just because Hermes Agent source is open. P121 may propose serverless/VM/endpoint deployment but **no hosting, billing, API activation or model downloads** occurred in this batch.
+
+---
+
+## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
+
+**Railway deployment safety for bounty template experiments.** The original GitHub Template Bounties project #2 was not enumerable, but `railwayapp/templates` README and Station confirm an official template submission framework. Source-specific `RailwayTemplateProof` requires a **currently open task** before expecting compensation, public and legally reusable service code, Docker/image provenance, health checks, environment/secrets from Railway vault rather than repo, persistent storage, port/domain config, resource+egress+time budget, shutdown/destroy plan, real deployment tests and verified accepted response. Historical NodeBB/GPT OSS examples each describe $150 and solved status, NOT ongoing rewards. No Railway account or cloud instance used; no charges authorized.
