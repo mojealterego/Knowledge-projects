@@ -169,3 +169,9 @@ Source: `Unifikacja Języków i Kodu Legacy.pdf` (7 pages); earlier knowledge: `
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 Structura (source: `blog.structura.tools`) proposes reviewable domain models and deterministic multi-stack code generation; Apricot public `metadevpro/apricot-mcp` discusses project-level SysML2 artifacts and OAuth. Extend `ModelToCodeEvidence`: input model URI+revision+license, SysML2 or vendor schema profile, `tools/list` discovered *at connected runtime*, read/write scopes, validation report, generated artifact SHA and reproducibility/diff, independent CI. Apricot README explicitly restricts some edit/validation capabilities to its internal assistant; do not claim that arbitrary external MCP clients can edit SysML2 until proven. The unrelated `RavinMaddHatter/Structura` Minecraft tool is not the Structura modeling MCP. No remote MCP connected or codegen run.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** `agentskills.io/home`, official Hermes Skills documents, `NousResearch/Hermes-Function-Calling` and `hermes-example-plugins`. Enrich `AgentSkillContract` with standards-based `SKILL.md` + frontmatter, when-to-use, declared tool capability, required environment variables, source location/version, externally granted read/write rights, local syntax validation and quarantine/review before executable scripts. The standard defines an instruction artifact, **not safe execution or tool identity**; actual Hermes Skills Hub may scan bundles and maintain lock/audit, but this repo has not run it. Developer-selected skills are reviewable context—not instructions allowed to override system or publisher policies. Codegen and model-to-tool calling require typed schemas and actual tool receipts; source docs are not proof of installed plugins.

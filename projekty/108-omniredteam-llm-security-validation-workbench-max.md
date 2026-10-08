@@ -146,3 +146,9 @@ Pegasus-samples GitHub description and agentic CLIs imply a hostile-repository/t
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 Compare SonarQube Agent (SAST/quality gate), Endor Labs AgentHQ (dependency/CVE and provenance), Bright Security Agent (DAST of isolated owned local apps), and InstructVault (versioned prompt validation) as **different security-evidence streams**. Proposed `SecurityResult` binds tool/revision, authorized target, verified vendor plan and scope, actual scan/quality receipt, finding evidence, severity context, false-positive disposition and remediation PR/CI readback. Marketplace claims of automatic "security" are vendor descriptions, not proof that this portfolio passed scans. Bright's public listing describes localhost-only scanning and limited free trial; do not send external targets or third-party auth without permission. No vulnerability scan actually run in this batch.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** Hermes security and developer architecture docs; `OpenShell`/OpenShell-Community forks, `agent-governance-toolkit`, `hermes-compression-eval`, `neural-steering`, `llm-abliteration`. Defensive `AgentRuntimeThreatCard`: injected SKILL.md, untrusted MCP response, poisoned memory, hidden provider prompt, open process/shell, third-party plugin, sensitive env passthrough, unsafe sandbox option, failed rollback and expired OAuth. Keep evaluation controlled and authorized; `llm-abliteration` fork is **threat-research provenance**, not an imperative to bypass hosted model controls. Compression evaluator tests evidence retention after summarization; it cannot itself prove universally lossless memory. P108 tests only authorized owned targets and does not import third-party malicious instructions into active agent context.

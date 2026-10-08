@@ -327,3 +327,9 @@ Web-source batch 18: 34 supplied URLs, 33 distinct after duplicate Cloud Transla
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 Batch 19: 19 URLs span GitHub Agent Apps, MCP registries, prompt CI, Codex events, Gemini Drops and competing adult two-player games. `SourceAccessStatus` distinguishes directly read listing, provider documentation alternate, inaccessible registry and conflicting first-party feature descriptions. **P122 CHEMIA already owns consent-aware paired gameplay**; P72/P100/P108 already own agent integrations, P87 SysML2/deterministic generators, P29/P114 research memory. Hence **0 new numbered projects** rather than redundant provider-branded variants. LovePlay homepage single-device versus its blog remote-pairing claims conflict; do not choose one without operational evidence. Full 19-link ledger `docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-19.md`.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Batch 20 source accounting:** 80 unique `NousResearch/*` repository metadata objects verified using GitHub API, without scanning all 80 code trees; `atropos` reports `archived=true`; many repos are forks, not necessarily current parent upstreams. User also included repeated `nomos`, `cline`, Agentskills and Hermes docs links — deduplicate by canonical URL and source content, not by count in prompt. [Full 80-repo inventory](../docs/UPSTREAM-NOUSRESEARCH-REPOSITORY-CATALOG-2026-10-09.md) and [Hermes/ODYN source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-20.md). Cross-check user-owned `ODYN-AI` actual default branch **`codex/termux-five-goals` at `df56169...`** rather than assuming `main`; repo `PLANY-I-POST-PY--W-REPOZYTORIACH` contains workplans, not guaranteed deployed code. New numbered projects **0** because P17/P37/P72/P114/P115/P119 already own integration scope.

@@ -342,3 +342,9 @@ Gemini Embedding 2 maps text/images/audio/video/PDF into shared representation (
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 New source-driven adapters: SAKH research corpus (hybrid dense/sparse with source references), Traveler.md (OAuth-scoped profile/trip memory, **not a booking or inventory search provider**), plus Google Gemini Drops release metadata (time-sensitive vendor features). `EvidenceProviderRecord`: source URL, owner/version, API read/write scope, rights, language, timestamps, citation confidence, tenant/privacy scope, independent corroboration. Never return hotel/restaurant real-time availability from a travel-memory tool; never treat publisher-curated religious/political documents as globally validated normative truth. The three direct registry URLs for Structura, Apricot and Traveler were not themselves retrievable; supporting official/vendor docs were inspected instead.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** `plastic-labs/honcho` public repository, Honcho V3 docs and Hermes memory/providers features. `MemorySourceEvidence` must preserve `memory_provider(local|honcho|other), persona_or_session_scope, source_sha, valid_time, recorded_time, consent_to_remote_sync, tenant, retention_deadline, deletion_receipt, confidence, contradictions`. Honcho's claimed long-term agent/user modeling is a **provider feature**, not authorization to store a person's private correspondence or infer psychology as established fact. A recovered memory should be reviewable and revocable, not silently merged across unrelated users or agent instances. This ingestion did not authorize Honcho, connect any account or migrate prior conversations.

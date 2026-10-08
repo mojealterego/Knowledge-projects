@@ -319,3 +319,13 @@ The [DGM cycle admission gate](../tools/dgm_cycle_gate.py) checks independent ap
 **Implemented stdlib Python code:** `tools/marketplace_agent_review_gate.py` (13 tests) checks proposed marketplace agent grants without installing agents, and `projekty/122-chemia-consent-aware-intimate-two-player-game/consent_intersection.py` (12 tests) returns ONLY mutually accepted ephemeral topic IDs. This is not real age verification, private multiplayer server or cryptographic enforcement.
 
 [Source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-19.md) · [Technical synthesis](../docs/knowledge-base/2026-10-09-github-agent-apps-mcp-couples-evidence.md) · [Project evolution](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-19.md).
+
+## Knowledge evolution — batch 20 / 2026-10-09
+
+**Sources:** ODYN-AI on its actual default branch, PLANY repository, Hermes security/CLI/MCP/Skills/memory/cron/docs, AgentSkills, Honcho V3, Nous provider portal, 8 vendor destinations, uv Windows antivirus reports, Android APK/F-Droid releases and **80 unique verified-metadata NousResearch repos**. Source inventory records `atropos archived=true`; the 80 repositories were **not all audited at code level**.
+
+**Canonical owners updated:** P17, P29, P37, P47, P59, P72, P87, P100, P108, P114, P115, P119, P121. **New numbered projects: 0.**
+
+**Actual implementations:** [upstream source adoption policy](../tools/hermes_upstream_adoption_gate.py) and [17 offline unittest cases](../tools/test_hermes_upstream_adoption_gate.py); separate [ODYN-AI PR #17](https://github.com/mojealterego/ODYN-AI/pull/17) for a signed official Termux APT release-status **preflight** and documentation correction. Neither module installs tools, connects an Android device or authorizes external payment.
+
+[Corpus manifest](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-20.md) · [80-repo catalog](../docs/UPSTREAM-NOUSRESEARCH-REPOSITORY-CATALOG-2026-10-09.md) · [Evolution report](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-20.md).

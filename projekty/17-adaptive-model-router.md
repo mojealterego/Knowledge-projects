@@ -177,3 +177,9 @@ Gemma 4 official 2026-04-02 announcement describes E2B/E4B/26B-MoE/31B-Dense var
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 Gemini Drops is a Google-maintained, localized rolling feature showcase, not a provider capability guarantee. Introduce `VendorReleaseEvidence`: dated source URL, locale, launch status, eligible product/plan, region, last checked, API model identifier, actual entitlement verified and fallback. Model selection may not assume that a feature presented on Gemini Drops is usable in a private API project or free plan. No Gemini account or release entitlement checked in this batch.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** official Hermes Model/Tool Gateway docs; public Nous Portal/Novita/NVIDIA NIM/Xiaomi MiMo/Z.ai/Kimi/MiniMax/Hugging Face pages. Expand `ProviderCapabilityEvidence` with `provider_id, actual_api_endpoint_verified, is_chat_ui_only, model_id, auth_product, openai_compatibility_probe, tools_schema, streaming, context_size, rate_limit, provider_region, cost_observed_at, maximum_test_cost, local_fallback`. Treat portal token plans as account- and date-dependent, never a globally free entitlement. **Tool Gateway of Hermes via Nous Portal requires a paid subscription and additional pay-as-used credits**; the existence of `NousResearch/hermes-agent` as open source does not fund third-party tools. Do not send user's secrets/model keys to source texts or simulate a successful external provider probe. Android local model routing must be tested against actual RAM/thermal/quantized model evidence, never platform marketing.
