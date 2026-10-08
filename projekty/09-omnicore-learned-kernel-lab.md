@@ -51,3 +51,13 @@ Measure latency, throughput, fairness, tail latency, deadline misses, CPU overhe
 ## Research extensions
 
 Explore AI Foundry for driver synthesis, semantic system interfaces, and perception-driven UI only after the deterministic substrate is stable. The broader OmniCore material explicitly describes a transition from static OS abstractions toward adaptive kernel, middleware and interface layers. fileciteturn206file1L22-L32
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: learned scheduler falsification and hardware source constraints
+
+Sources: `Architektura AI Zastępująca Statyczny Kod (1).pdf`, `Architektura Systemu AI OmniCore Omega (1).pdf`, two text-equivalent OmniCore agent-automation reports, 2020 ASUS notebook manual.
+
+New `LearnedSchedulerExperiment`: deterministic reference scheduler, isolated user-space predictor, safety policy broker, enforceable CPU/memory/time budgets, fairness/starvation/jitter/p99/throughput metrics, fallback and QEMU failure recovery. Claims that probabilistic AI replaces all static code, or SASOS + Rust types alone guarantees hardware isolation, remain **unverified research theses**.
+
+`HardwareManualEvidence` separates upload filename `Asus UX581 ...` from actual manufacturer model/serial/BIOS compatibility; the 92-page ASUS 2020 generic notebook manual does not prove ownership or installed storage/firmware. Before BIOS/recovery steps, establish device identity, authorization and data preservation needs. Nothing was executed on physical hardware.

@@ -359,3 +359,24 @@ Source: `Tworzenie Systemu MVP Omnicore.pdf` (16 pages). The supplied `Cargo.tom
 
 ### Acceptance
 A real compiling kernel build and QEMU log precedes any `IMPLEMENTED` label; staged mutation/rollback tests precede `SELF_HEALING`. No hardware deploy, kernel build, physics verification or platform release occurred in this batch.
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: learnt computation hypothesis and capability testing
+
+Sources: `Architektura AI Zastępująca Statyczny Kod (1).pdf`, `Architektura Systemu AI OmniCore Omega (1).pdf`. Both advocate NPS, AI Foundry driver synthesis and generative perception UI, but **provide no runnable proof** of general superiority to deterministic OS layers.
+
+```yaml
+LearnedSubsystemExperiment:
+  component: scheduler|driver_foundry|PUI
+  baseline_revision: null
+  model_revision: null
+  hardware_profile_verified: false
+  sandbox_and_fallback: mandatory
+  metrics: [p50_latency,p99_latency,correctness,fairness,power]
+  policy_review: pending
+  rollback_issued: false
+  evidence_status: SOURCE_HYPOTHESIS
+```
+
+The trusted kernel always retains deterministic limits; learned outputs are proposals in user space with independent authorization. Target drivers require ABI, memory and safety verification. No kernel image, driver, AI supervisor, or 3D scene was built from this batch.

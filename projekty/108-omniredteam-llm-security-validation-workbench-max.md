@@ -114,3 +114,23 @@ P54, P60, P61, P72, P100.
 ## Primary source witnesses
 - `omni_redteam_architecture_blueprint_260603_120915.pdf`
 - `omnicore_am_mas_blueprint_260603_123615.pdf`
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: controlled GCG evaluation run schema
+
+```yaml
+DefensiveAdversarialEvaluation:
+  source_lineage: batch-14-GCG
+  model_revision: null
+  tokenizer_revision: null
+  authorization_ticket: null
+  fixture_class: synthetic_defensive
+  attempt_budget: 0
+  refusal_and_false_positive_metrics: null
+  tool_access_denied_by_external_policy: true
+  independent_evidence_ref: null
+  status: NOT_RUN
+```
+
+Source mechanism descriptions are adversarial research, not permission to compromise hosted models or remove safety enforcement. Never save operational harmful suffix payloads in the public portfolio. P108 owns controlled test execution while P60 owns threat taxonomy. Report what genuinely ran; no live security evaluation in this batch.

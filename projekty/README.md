@@ -279,3 +279,11 @@ Ten new PDFs were correlated with the existing knowledge portfolio; actual canon
 **New project:** [P124 — Adult Safety Support Evidence Navigation Lab](124-adult-safety-support-evidence-navigation-lab/README.md). Architecture/research only: voluntary resource discovery with professional safeguarding, no victim-data collection or live advice until services and law are independently verified.
 
 **Implemented utility:** [OSINT evidence/provenance gate](../tools/osint_provenance_gate.py) and [8 unit tests](../tools/test_osint_provenance_gate.py), data-only and network-free. [Provenance ledger](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-13.md) · [evolution report](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-13.md).
+
+## Batch 14 — 2026-10-08: project evolution and AURA validation gate
+
+**Canonical projects evolved:** P09, P26, P47, P50, P60, P66, P71, P75, P80, P90, P108, P115. **New numbered projects:** 0, because the ten source PDFs extend existing project responsibilities.
+
+The AURA source specifies a 60-card product but enumerates only two 10-card domains and ten anomalies, **leaving 30 card instances unaccounted for**. An operational [manifest validator](../tools/aura_deck_gate.py) and its [11 passing local unit tests](../tools/test_aura_deck_gate.py) enforce traceable completeness and consent/safety controls without inventing a physical deck. A new [GitHub Actions test workflow](../.github/workflows/knowledge-project-python-gates.yml) is added for future commits, distinct from local test evidence.
+
+[Source ledger](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-14.md) · [Project evolution](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-14.md) · [AURA source gap](../docs/knowledge-base/2026-10-08-aura-deck-spec-gap-and-safety.md).

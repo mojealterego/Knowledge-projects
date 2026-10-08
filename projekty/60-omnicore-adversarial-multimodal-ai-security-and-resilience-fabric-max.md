@@ -239,3 +239,13 @@ Scores must preserve uncertainty and disagreement. Correlated tests do not count
 ## Design objective
 
 `Adversarially tested intelligence + zero-trust data/context boundaries + typed capability authority + independent state verification.`
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: GCG defensive robustness provenance
+
+Sources: nine-page `Atak GCG na Modele Językowe.pdf` and `Architektura Systemu AI OmniCore Omega (1).pdf`. Existing GCG knowledge and P60/P108 own this domain. `GCGThreatCard` captures pinned model and tokenizer versions, authorized isolated test scope, threat class, source evidence, observed refusal/tool-policy results, independent reviewer and regression state.
+
+The source claims gradient-generated suffix transfer; **do not assume universal bypass efficacy**. Evaluate model-output behavior separately from whether independent tool-authorization blocks unsafe actions. P60 may design controlled defensive test fixtures, but must not introduce live jailbreaks or payload generation against third-party models.
+
+Acceptance: benign synthetic regression, positive permission-check tests, versioned baseline, bounded attempt budget and independent postcondition. No GCG attack was executed here.

@@ -82,3 +82,11 @@ Extends Projects 15, 19, 22, 24, 32, 42, 44, 48, 54 and 57, and supplies a domai
 - AI answers expose source/evidence boundaries.
 - Evaluation includes historical and modern test sets.
 - The system can be consumed as a reusable agent/tool capability.
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: contemporary lexical debate on sexualization
+
+Three-page article `Seks – seksualizm – seksualizacja – seksualizować` by S. Dubisz (`Poradnik Językowy`, 2019; DOI `10.33896/PorJ.2019.7.12`) compares dictionary meanings, register shifts and contested rhetorical redefinitions of psychological/educational terminology.
+
+`LexicalSenseEvidence` adds `lemma, sense_id, dictionary_or_source, time, register, field, context, competing_usage, semantic_shift_claim, uncertainty`. Neither an author's interpretation nor a quoted public statement independently reveals a speaker's motives. P75 should support neutral multiple-sense explanations without classifying personal sexuality, political loyalty or intent. Review official current dictionaries and the quoted context before providing normative conclusions.

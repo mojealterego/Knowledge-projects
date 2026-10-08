@@ -226,3 +226,24 @@ HybridMarketExperiment:
   outcome: untested
 ```
 Project P34/P67 can use a controlled offline-vs-online channel test with coherent unit economics and actual acquisition data. Don't generalize the paper's example or claim causal superiority of a hybrid strategy without counterfactuals.
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: Kamila Siwak 2015 strategic competency evidence
+
+Seven-page `art_34-39_Siwak.pdf` addresses strategically distinctive intangible assets, competence mobilization and difficulty of economic valuation. Its empirical research consists of **five in-depth enterprise owner interviews in 2014**, not an industry-wide measured 2026 benchmark.
+
+```yaml
+StrategicCompetencyEvidence:
+  competency_claim: null
+  sector_and_market: null
+  asset_type: intangible|material
+  independent_comparator: null
+  evidence_and_provenance_refs: []
+  customer_value_validation: pending
+  development_and_delivery_cost: null
+  rarity_claim_verified: false
+  outcome_profit_claim: unverified
+```
+
+Integrate with prior brand strategy and hybrid-channel experiments; distinguish operational capability from advertising statement. Formal competency scores require independent customer and competitor evidence, fair evaluation and dated economics.

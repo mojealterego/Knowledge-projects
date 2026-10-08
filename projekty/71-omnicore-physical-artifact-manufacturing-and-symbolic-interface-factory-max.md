@@ -148,3 +148,13 @@ HEX values, overflow states and `FF`/critical states are treated as declared sym
 - preserve lineage/version identity on every production batch.
 
 The Tarot study also documents transparent, round and double-sided deck families. Project 71 therefore supports these as physical-profile variants rather than forcing all decks into rectangular opaque-card assumptions.
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: AURA manufacturing-qualification contract
+
+Five-page AURA source specifies 330gsm Black Core, Waterless UV print, reversible thermochromic ink, tactile soft-touch + 3D varnish, cold foil mirrors, scent effects, magnetic book box and NFC.
+
+**Blocking contradiction:** thermochrom activation stated as 29°C in architecture and 26–27°C in supplier section. No verified material tolerance, shelf/heat stability, repeated-cycle tests or batch supplier acceptance. `ThermochromQualification` records actual test range, measured reveal/revert time, temperature tolerance, contrast, chemical/allergen and skin-contact safety, ink adhesion and lot identifiers.
+
+`ProductionGate`: match 60 inventory IDs, rights/print layers, physical QC, NFC consent/URL/audio opt-in, availability for unscented/accessibility alternatives, timestamped quote and tested supply chain. Supplier names in PDF are proposals, not a verified purchase/order. No prototypes, vendor quotes or tests have been conducted.
