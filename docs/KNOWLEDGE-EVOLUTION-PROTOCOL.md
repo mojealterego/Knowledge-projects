@@ -39,3 +39,13 @@ Zmiany nie mogą fałszować dawnych commitów; korekty numeracji zapisuje się 
 ## Zewnętrzne linki do zbiorów plików — kontrola kompletności materiału
 
 Link Quick Share, tytuł dokumentu albo lista plików w przeglądarce **nie oznaczają**, że rzeczywiste bajty zostały pobrane i dokument przeczytany. Przechowuj odrębne stany `LISTED_ONLY`, `BYTES_RECEIVED`, `HASHED`, `CONTENT_READ`, `OWNER_MAPPED`, `VERIFIED`, `COMMITTED`. Jeśli odczyt treści jest niemożliwy, zapisz prawdziwy stan pozyskiwania, lecz **nie twórz nowej wiedzy ani projektów z domniemanej zawartości**. Przy dużych paczkach ZIP do offline'owego skanowania struktury, SHA-256 i duplikatów służy `tools/source_bundle_audit.py`; nie wykonuje kodu i domyślnie nie ujawnia nazw plików. Przed publikacją materiałów dotyczących konkretnych osób lub prywatnej korespondencji obowiązuje ograniczenie danych osobowych i sprawdzenie uprawnień. Pierwszy rejestr: [Quick Share batch 17](QUICKSHARE-INTAKE-2026-10-08-BATCH-17.md).
+
+## Zakres zapisu — JEDNO repozytorium, nadrzędna reguła 2026-10-09
+
+**Wyłącznie `mojealterego/Knowledge-projects` jest repozytorium docelowym wszystkich zmian dokonywanych w wyniku dostarczania materiałów źródłowych.**
+
+Repozytoria `mojealterego/ODYN-AI`, `NousResearch/*`, wszystkie forki i dowolne inne projekty wskazane URL-ami mają status **READ-ONLY SOURCE**. Dokumentacja czy kod zewnętrznych repozytoriów służą do pozyskania wiedzy, propozycji zmian i budowy prototypów **tutaj**, nigdy do tworzenia commitów, PR, merge, release ani modyfikacji ich konfiguracji. Przypadkowe wcześniejsze wykonanie PR poza `Knowledge-projects` **nie** tworzy wyjątku. Nawet cofnięcie takiego PR wymaga osobnego, wyraźnego zlecenia dotyczącego tamtego repozytorium.
+
+Na początku każdej operacji zapisu sprawdź docelowe `repository_full_name`, gałąź i bazę PR. Wykonaj przejrzysty preflight `tools/single_repository_scope_gate.py` lub równoważny test; **jest to nieautorytatywny checker**, nie substytut ochrony GitHub. Nie twórz PR pomiędzy różnymi repozytoriami; scalaj tylko PR w `Knowledge-projects:main`. Każde przyszłe oznaczenie `DONE` wymaga pokazania SHA w **tym** repozytorium.
+
+[Szczegółowe AGENTS.md](../AGENTS.md) · [Zarejestrowane sprostowanie partii 20](REPOSITORY-SCOPE-ERRATUM-2026-10-09.md).
