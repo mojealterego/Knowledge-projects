@@ -330,3 +330,9 @@ Sugra integration is complete when:
 ## Position in the portfolio
 
 Project 29 becomes the **external data and evidence fabric** for the agent ecosystem. It materially upgrades Projects 15, 19, 24, 25, 26 and 27 and gives the portfolio a standardized path from natural-language research intent to typed, provenance-aware, quota-aware data acquisition.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Gemini Embedding 2 maps text/images/audio/video/PDF into shared representation (Google Developers Blog 2026-04-30; official model card). Add CrossModalRetrievalEvidence {source_sha, rights, modality, media_offset, embedding_model_revision, vector_dimensions, task_prefix_version, indexed_at, retrieval_score, original_citation_span, data_sensitivity}. Evaluate Polish Recall@k, adversarial false citations and bitemporal contradictions against frozen text-only RAG before service selection. Passing new offline input policy tests is **not** a real embedding request or proven retrieval improvement.

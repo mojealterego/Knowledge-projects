@@ -373,3 +373,9 @@ Add `BuilderAdapterEvidence` with upstream URL+revision+license, offline/local/c
 ## Knowledge evolution — batch 16 / 2026-10-08
 
 The 372-page GGUF Agent Studio PDF narrates local llama-cpp-python, FastAPI, WebSockets, agent design, task queue, SQLite, prompt cache, optional Qdrant/Docker and frontend. These are **conversation statements, not supplied running app/test receipts**. For P100 require actual source ZIP/git tree, pinned dependency lock, GGUF loading smoke, auth/WebSocket security, SSRF-denied URL tools, workspace path isolation, lifecycle pause/cancel/readback and benchmark receipts. P37 inference and P115 task execution remain separate owners.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Reviewed public `google-gemini/gemini-cli` (Apache-2.0), geminicli.com, Antigravity 2.0 IDE/CLI/SDK and Code Assist product descriptions. Proposed DeveloperAgentAdapter records pinned upstream revision, license, capability allowlist (files/shell/web/MCP), ephemeral workspace, secrets isolation, approval gates, test/build receipt, change diff, cost/rate cap and rollback. Antigravity/Gemini CLI are candidate integrations; **not installed**. Zed Guild GitHub Projects #74 rendered shell-only, so no task statuses inferred.

@@ -303,3 +303,11 @@ The AURA source specifies a 60-card product but enumerates only two 10-card doma
 The [DGM cycle admission gate](../tools/dgm_cycle_gate.py) checks independent approvals, CI receipts, candidate branch and rollback metadata; its 13 tests do **not** constitute an actual sandbox or automated GitLab mutation. Reported GGUF Agent Studio and DGM features are source assertions until real code/runtime proof exists.
 
 [Source hashes](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-16.md) · [Evolved projects](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-16.md).
+
+## 2026-10-08 — batch 18: web source-based evolution
+
+**17 canonical projects updated:** P14, P17, P21, P29, P33, P37, P47, P57, P75, P100, P105, P106, P108, P114, P115, P121, P125. **New numbered projects: 0:** Google/Android/security/development capabilities have established portfolio owners, so avoid duplicate genesis.
+
+**Real code:** [Gemini Embedding 2 multimodal intake policy](../tools/multimodal_embedding_intake_gate.py) with [20 tests](../tools/test_multimodal_embedding_intake_gate.py); [Google Cloud paid-operation/budget approval checker](../tools/cloud_operation_budget_gate.py) with [19 tests](../tools/test_cloud_operation_budget_gate.py). These **offline** modules do not actually access Gemini, authenticate to Google Cloud, bill, install IDEs or create infrastructure.
+
+[Full 34-URL source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-08-BATCH-18.md) · [Project evolution](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-18.md).

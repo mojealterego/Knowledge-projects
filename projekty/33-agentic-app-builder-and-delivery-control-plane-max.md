@@ -266,3 +266,9 @@ Project 33 integruje Projects 07, 13, 16, 20, 24, 25, 26, 28, 31, 35, 36 i 37.
 Source `Analiza Repozytoriów i Projekt Aplikacji.PDF` (34 pages) describes Convex Chef, Wasp MAGE, Open Lovable, Open Design, CodinIT.dev, December, Dyad, Bolt.diy and a proposed OmniStack AI with agent swarms, WebContainers/sandboxing, full-stack schema/DB design, test-first workflows and "Shadow QA".
 
 **P33 ownership:** source-to-app specification → typed UI + API contracts → tests first → generator → independent security and design QA → staged build/sign/publish → verified outcome/rollback. A simulated test log in a PDF does not prove an actual test run, and upstream tool versions/licensing are unverified. Isolation must be real (not a prompt), secrets off clients and external deploy require explicit authorization. `AppBuildEvidence`: source SHA/requirements, test receipt, code diff, dependency/license lock, security scan, artifact SHA, independent reviewer, rollback. Reuse P100 developer UI and P115 orchestrator rather than creating duplicate "OmniStack" project.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Google Cloud 101 gen-AI technical blueprints (2025) are **illustrative architecture patterns**, not 101 ready applications. Add BlueprintQualification with user problem, canonical source and license, required vs optional cloud stack, privacy/consent, vendor quotes and predictable charges, measurable acceptance tests, actual build/deploy receipt and rollback. Gemini CLI/Antigravity optional build adapters require independent tool authorization and CI. Zed/Railway project boards showed shell/title but no inspectable bounty/task records; no paid WordPress plugin purchase or bounty claim.

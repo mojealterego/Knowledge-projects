@@ -273,3 +273,9 @@ Source: `AETHER.pdf` (13-page, image-only HTML/JS screenshot). Previously descri
 - `UIEvidenceCard` distinguishes output rendered in the browser from independently observed device/kernel state.
 
 **Testing:** browser static resource checks, output disclosure, screen-reader+keyboard access, offline demo operation, no external requests by default and graceful WebGL failures. No AETHER web page was deployed here.
+
+---
+
+## 2026-10-08 — batch 18: public web source evolution
+
+Google Cloud Vision AI, Speech-to-Text, Translation, Natural Language and Video Intelligence each have different request schemas, region/language support, costs, confidence and retention. Add MultimodalAdapterRecord {provider,task,modality,source_sha,region,language,consent,media_timestamp_or_text_span,model_revision,returned_evidence,expense_cap}. Cross-modal retrieval via Gemini Embedding 2 may align modalities, but model-generated similarity is not verified truth; retain source offsets and independent citations. No API used or accuracy claimed from product pages.

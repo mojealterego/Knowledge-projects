@@ -1,0 +1,33 @@
+date: "2026-10-08"
+batch: 18
+source_format: public_and_private_web_urls
+urls_supplied: 34
+urls_distinct: 33
+duplicate_source: "https://cloud.google.com/translate?authuser=2"
+public_google_products_reviewed: true
+private_cloud_account_or_payment_content_read: false
+pegasus_binary_archive_downloaded: false
+third_party_project_board_items_accessible: false
+canonical_projects_updated: [P14, P17, P21, P29, P33, P37, P47, P57, P75, P100, P105, P106, P108, P114, P115, P121, P125]
+new_numbered_projects: 0
+code:
+  - path: tools/multimodal_embedding_intake_gate.py
+    tests: tools/test_multimodal_embedding_intake_gate.py
+    model: gemini-embedding-2
+    live_embedding_calls: false
+  - path: tools/cloud_operation_budget_gate.py
+    tests: tools/test_cloud_operation_budget_gate.py
+    live_google_cloud_calls: false
+provider_capability_snapshot:
+  gemini_embedding_2_source: https://developers.googleblog.com/en/building-with-gemini-embedding-2/
+  gemma_4_source: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
+  android_adaptive_source: https://android-developers.googleblog.com/2026/09/adaptive-development-scale-app-googlebook.html
+  cloud_agent_platform_source: https://cloud.google.com/products/gemini-enterprise-agent-platform
+verification:
+  no_paid_services_or_billing_changes: true
+  no_google_credentials_collected: true
+  no_cloud_project_iam_authentication: true
+  no_model_weights_downloaded: true
+  no_live_gemini_inference_run: true
+  no_android_device_or_emulator_test: true
+  new_python_tests_require_ci_readback: true
