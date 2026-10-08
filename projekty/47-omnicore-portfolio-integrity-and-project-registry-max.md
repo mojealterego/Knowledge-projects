@@ -307,3 +307,11 @@ P125 `sovereign-contextual-android-launcher` is assigned the previously unoccupi
 ## Knowledge evolution — batch 16 / 2026-10-08
 
 Batch 16: 10 PDFs, 556 pages. Five feasibility PDFs (5)–(9) are one evolving MAS/Nexus lineage; DGM (1) and (2) differ in byte SHA256 but have **identical normalized extracted text**. The 372-page GGUF file is a conversation export, not a code bundle. New **P126** has unique owner scope (IBM Cloud server game state), distinct from P86 game app generation/P99 LiveOps/P121 SRE, and its number was free on baseline main. Never count report implementation assertions as CI/test receipts.
+
+---
+
+## 2026-10-08 — batch 17: Samsung Quick Share bulk-source acquisition gate
+
+Nine shared collections advertised **101 files (~489.2 MB)**. Rendered manifests exposed 96 filenames, but **no underlying document bytes** were available to inspect/hash in the current tool environment; the ninth collection advertised five files still uploading. This is a **LISTED_ONLY** state, NOT ingestion, duplicate confirmation or project genesis. [Acquisition ledger](../docs/QUICKSHARE-INTAKE-2026-10-08-BATCH-17.md).
+
+New executable `tools/source_bundle_audit.py` checks ZIP-member integrity and SHA-256 offline, without extracting, executing or transmitting contents. It rejects path traversal, symlinks, encrypted members, case-insensitive path collisions, extreme decompression ratios and size overflows; filenames are omitted from the default report. It does not read document semantics. Portfolio lifecycle is now `LISTED_ONLY → BYTES_RECEIVED → HASHED → CONTENT_READ → OWNER_MAPPED → VERIFIED → COMMITTED`. No automatically assigned project IDs or claims of technical improvements based on filename matches. Potentially sensitive named-person OSINT/private correspondence must be redacted or excluded from the public repository.
