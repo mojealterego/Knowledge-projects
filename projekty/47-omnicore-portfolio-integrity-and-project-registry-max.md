@@ -283,3 +283,11 @@ Checked the actual `main` tree before assignment: **P124 was unallocated**. The 
 Maintain `ProjectIdentity{id:P124,owner_slug:adult-safety-support-evidence-navigation-lab,source_batch:13,status:ARCHITECTURE}`. Project ID uniqueness alone does not certify safety or avoid duplicates in substance; link existing projects as non-owning collaborators. Follow the existing `tools/project_id_gate.py` and re-check remote main prior to merge.
 
 P32 OSINT provenance gate is a shared **tooling** enhancement and not a new product; tests checking simulated/observed/verified labels do not constitute real OSINT evidence.
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: byte-vs-text deduplication and source gap audits
+
+Two 11-page `Automatyzacja Tworzenia Oprogramowania z AI` PDFs have **different SHA-256 byte fingerprints** but identical text after normalized extraction (`text_similarity=1.0`), so count them as one document lineage for research independence. Existing AURA P50/P71, GCG P60/P108, OmniCore P09/P26/P80, SOP P90/P115, strategy P66 and language P75 justify **no new numbered projects**.
+
+Add `SourceCompletenessAudit`: AURA 60 declared cards, 30 item instances sufficiently identified (20 domain + 10 anomaly), 30 unresolved; thermochrom 29 vs 26–27°C contradictory. Add `FileNameAuthorityAudit`: UX581 laptop-model filename is not authoritative model/serial hardware evidence. Portfolio promotion requires GitHub readback of **canonical** modifications plus code tests, not only separate extension files.

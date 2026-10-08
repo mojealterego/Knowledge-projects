@@ -423,3 +423,15 @@ Supplier/material specifications are hypotheses until measurements on production
 11. RNG/ruleset versions are replayable and independently auditable.
 12. Stochastic anomalies are investigated with replicated evidence rather than inferred from a single sample.
 13. Physical production claims are backed by batch measurements.
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: AURA completeness and agency
+
+Source: five-page AURA The Collective design. Existing ownership P50/P71 and [source gap](../docs/knowledge-base/2026-10-08-aura-deck-spec-gap-and-safety.md).
+
+**Hard project constraints:** 60 unique IDs; 4 named domains; anomaly quotas Mirror=4, Venom=4, Black Swan=2. Only two domains with values 1–10 plus 10 anomalies are described (30/60 instances). **Other 30 instances and two domain names are not supplied**, so generation of a full product manifest must FAIL rather than hallucinate. Require turn/win rules and replayable RNG before a production deck is declared.
+
+**User agency:** source recommends hidden NLP, urgency and addiction/slot-like reinforcement. Do not implement those as covert coercion or gambling pressure. Only disclosed, voluntary visual/touch mechanics and reversible participation; NFC web/audio requires opt-in, accessibility option and a safe external link.
+
+**Code:** `tools/aura_deck_gate.py` validates a complete manifest without inventing missing cards; 11 local tests on a clearly synthetic fixture, not a manufactured or complete source-derived deck.

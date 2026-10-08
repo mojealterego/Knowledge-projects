@@ -97,3 +97,12 @@ Updated P01, P11, P19, P23, P36, P47, P80, P87, P90, P91. No new concept ID allo
 - [AETHER prototype](aether-nexus-omega-interface-prototype-analysis.md) remains a simulated browser demonstration; no actual kernel/secure-link capability demonstrated.
 
 No copyrighted books or case histories republished. 2014 marketing data, 2016 abuse-survivor survey and 2017 legal descriptions are historical sources, not evidence of current laws or services.
+
+## Batch 14 — 2026-10-08: AURA, GCG, OmniCore, strategy and linguistic evidence
+
+- [Source SHA-256 manifest and exact-text duplicate findings](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-14.md).
+- [AURA 60-card gap assessment, thermochrom contradiction and user-autonomy requirements](2026-10-08-aura-deck-spec-gap-and-safety.md).
+- [Defensive GCG, verifiable OmniCore, SOP, strategic competences, Polish lexical ambiguity and ASUS manual limits](2026-10-08-omnicore-gcg-strategy-language-hardware.md).
+- [Canonical-project evolution report](../PROJECT-EVOLUTION-2026-10-08-BATCH-14.md).
+
+No new numbered project: existing P50/P71, P60/P108, P09/P26/P80, P90/P115, P66 and P75 own the relevant capabilities. Source limitations are not silently promoted to verified behavior.

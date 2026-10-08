@@ -1,0 +1,32 @@
+name: Knowledge project Python gates
+
+on:
+  pull_request:
+    paths:
+      - "tools/**"
+      - "projekty/123-gas-appliance-safety-evidence-companion/**"
+      - ".github/workflows/knowledge-project-python-gates.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - "projekty/123-gas-appliance-safety-evidence-companion/**"
+      - ".github/workflows/knowledge-project-python-gates.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python-unit-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests for repository guardrails
+        run: python -m unittest discover -s tools -p 'test_*.py' -v
+      - name: Run P123 read-only gas-manual reference tests
+        run: python -m unittest discover -s projekty/123-gas-appliance-safety-evidence-companion -p 'test_*.py' -v

@@ -1,0 +1,36 @@
+date: "2026-10-08"
+batch_id: batch-14
+repository: mojealterego/Knowledge-projects
+base_branch: main
+base_commit: "d3d0fafa82f8374211ace48db858dae20cc04c31"
+sources_total: 10
+pdf_count: 10
+pages_total: 170
+byte_distinct_text_identical_pair: true
+text_identical_pair:
+  - "Automatyzacja Tworzenia Oprogramowania z AI_260105_120906.pdf"
+  - "Automatyzacja Tworzenia Oprogramowania z AI.pdf"
+concepts_with_preexisting_owners: [aura, gcg, omnicore, agentic_sop, strategy_core_competences]
+canonical_projects_updated: [P09, P26, P47, P50, P60, P66, P71, P75, P80, P90, P108, P115]
+new_numbered_projects: 0
+implemented_tools:
+  - path: tools/aura_deck_gate.py
+    test_path: tools/test_aura_deck_gate.py
+    local_tests_passed: 11
+    does_not_invent_missing_cards: true
+    production_manufacturing_verified: false
+aura_source_gaps:
+  deck_target: 60
+  fully_accounted_cards: 30
+  missing_card_instances: 30
+  declared_domains: 4
+  documented_domains: 2
+  anomaly_quotas: {mirror: 4, venom: 4, black_swan: 2}
+  thermochrom_temperature_discrepancy_celsius: [29, 26, 27]
+verification:
+  source_sha256_computed: true
+  real_kernel_built: false
+  real_aura_deck_produced: false
+  authorized_gcg_live_evaluation: false
+  device_serial_or_hardware_verified: false
+  git_readback_required: true

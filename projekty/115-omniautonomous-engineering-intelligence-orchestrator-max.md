@@ -206,3 +206,11 @@ Sources: two task-management PDFs and `--AI w Tworzeniu Systemów Operacyjnych--
 - `ExitCriteria`: fail closed on hidden scope changes, tests missing, stale information, unverifiable receipts or external side effect without approval.
 
 **Acceptance:** a fully simulated build scenario, deterministic failure/rollback test and a clean-room reproducibility dossier; no actual GCP/Ring-0 access or Devin/Cursor/Windsurf orchestration was executed.
+
+---
+
+## Knowledge evolution — batch 14 / 2026-10-08: identical-text OmniCore reports and agent build-verification
+
+Two files `Automatyzacja Tworzenia Oprogramowania z AI...` are byte-distinct (different SHA-256) but have identical extracted text after whitespace normalization. They count as **one source lineage** for P115, not proof from two independent authors.
+
+`BuildRoleContract` defines expected output, task graph, agent capabilities, resource/secret scope, independent reviewer and provider version, independent of speculative Cursor/Windsurf/Devin vendor descriptions. `BuildEvidencePacket`: actual commit hash, compiler outputs, QEMU log, tool receipts, failure evidence, rollback and permission gate. Source proposes autonomous Ring-0 changes and vendor-linked agents; P115 does not grant the agent those powers. Textual "system built" is never equivalent to an installed and tested kernel.
