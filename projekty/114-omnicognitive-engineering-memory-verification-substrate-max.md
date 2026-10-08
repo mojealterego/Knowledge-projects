@@ -137,3 +137,11 @@ P54, P61, P72, P77, P80, P94, P100, P108, P111.
 ARCHITECTURE_BASELINE
 
 No production-readiness or unrestricted autonomous self-modification claim is implied.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: feasibility-series bitemporal/semantic-caching evidence
+
+Five ODYN/Nexus feasibility reports describe `bitemporal_store.py`, CoALA/GoT and (later) Semantic Clustering, Memory of Failures and Semantic Caching. Their "implemented" claims were **not independently inspected in ODYN-AI source**, and two versions (2)/(3) have text-identical content despite distinct byte hashes.
+
+`SemanticCacheEntry` must include tenant_id, knowledge_source_sha, model_revision, prompt_revision, authorization context, retrieval as-of/effective time, retention limits, privacy class and validation/expiry state. No cross-tenant cache sharing, stale claims masquerading as fresh or reuse of prior tool rights. Distinguish `observed` versus `inferred` versus `verified` confidence on every memory edge; future dynamic code execution cannot inherit memory search authority. Cache correctness requires invalidation, negative tests and independent source readback.

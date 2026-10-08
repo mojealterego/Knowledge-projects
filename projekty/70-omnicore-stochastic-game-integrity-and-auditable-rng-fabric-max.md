@@ -90,3 +90,11 @@ Allowed objectives:
 
 ## Novel contribution
 Project 70 creates a **Stochastic Integrity Plane** reusable across games, simulations and probabilistic services, so the same RNG/rules/audit discipline can be applied without inheriting the behavioral-manipulation objectives of the source material.
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: virtual-credit ledger data integrity
+
+Source: 24-page defensive reading of `Analiza narzędzi do manipulacji żetonami_260402_174419.pdf`. Client-side localStorage, WebStorage, React state and request/response copies are **untrusted representations**, even if a UI says "balance updated". No instructions, tooling or endpoints for unauthorized third-party credit modification are accepted.
+
+`CreditEvent` should bind account_id, trusted_issuer, event_id, idempotency_key, signed amount/currency, prior committed version, server timestamp, audit hash and fraud-policy verdict. Atomic server-side balance changes, concurrency/race tests, replay/duplicate denial, nonnegative constraints, reconciliation against payment/refund records and external entitlement checks are mandatory. Browser mutations can be used **only as authorized QA fixtures** to ensure they do not change true credits. P72 owns cross-framework action authorization; P56 owns commercialization/reconciliation. A spec does not constitute a payment-safe deployed ledger.

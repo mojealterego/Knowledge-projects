@@ -359,3 +359,11 @@ P24, P27, P28, P37, P40, P54, P57, P59, P61, P65, P72, P80, P87, P90, P91, P97, 
 - `Integracja API z Locally Uncensored.PDF`
 - `Zaawansowane Serwery MCP dla Agentów AI.PDF`
 - `Zaawansowani Agenci AI: Tworzenie Oprogramowania i Procesy Kreatywne.PDF`
+
+---
+
+## Knowledge evolution — batch 15 / 2026-10-08: OmniStack source comparison and verifiable design/build/test log
+
+The 34-page `Analiza Repozytoriów i Projekt Aplikacji.PDF` reviews eight report-claimed app builders (Convex Chef, Wasp MAGE, Open Lovable, Open Design, CodinIT.dev, December, Dyad, Bolt.diy) and proposes an OmniStack AI workbench, enforcer architecture and TDD-first workflow. P100 is the actual product/workbench surface; P33 manages delivery governance; P115 orchestrates tools.
+
+Add `BuilderAdapterEvidence` with upstream URL+revision+license, offline/local/cloud capability, storage/auth model, cost and dependency snapshot, untrusted prompt boundary, sandbox availability, verified build receipt and change risk. `DesignEnforcer` checks real component tokens and accessibility; `ShadowQA` runs **actual** tests with receipts, not a report's fabricated supervisor console. Enforce secret scanning, CSP, backend auth, typed APIs, no unapproved changes to default branch and reviewed publishing. Upstream status and supplied success logs remain unverified until checked from repository/runtime.

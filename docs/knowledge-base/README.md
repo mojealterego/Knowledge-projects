@@ -106,3 +106,13 @@ No copyrighted books or case histories republished. 2014 marketing data, 2016 ab
 - [Canonical-project evolution report](../PROJECT-EVOLUTION-2026-10-08-BATCH-14.md).
 
 No new numbered project: existing P50/P71, P60/P108, P09/P26/P80, P90/P115, P66 and P75 own the relevant capabilities. Source limitations are not silently promoted to verified behavior.
+
+## 2026-10-08 — batch 15: Android launchers, app builders, credit integrity and ODYN evidence
+
+- [Source manifest / 10 PDFs / 146 pages / SHA-256 / near-duplicate feasibility reports](../KNOWLEDGE-INGESTION-2026-10-08-BATCH-15.md).
+- [Source-grounded technical synthesis and safety boundaries](2026-10-08-corpus-mobile-builders-security-odyn.md).
+- [Canonical project update report and new P125](../PROJECT-EVOLUTION-2026-10-08-BATCH-15.md).
+- [P125 Kotlin HOME launcher](../../projekty/125-sovereign-contextual-android-launcher/README.md) — **Android source only**, no compiled/installed APK.
+- [Non-executing AI-generated tool admission prototype](../../tools/agent_tool_admission_gate.py) — digest, external review map and read-only scope checks, not a real isolation runtime.
+
+Scanned digital-product pages cover only chapter fragments 8–10, not "7" complete offerings. The five ODYN reports are related version snapshots, with (2)/(3) equal after text normalization. Their assertions of previously implemented modules were not independently verified in ODYN-AI.

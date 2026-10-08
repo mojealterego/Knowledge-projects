@@ -287,3 +287,11 @@ Ten new PDFs were correlated with the existing knowledge portfolio; actual canon
 The AURA source specifies a 60-card product but enumerates only two 10-card domains and ten anomalies, **leaving 30 card instances unaccounted for**. An operational [manifest validator](../tools/aura_deck_gate.py) and its [11 passing local unit tests](../tools/test_aura_deck_gate.py) enforce traceable completeness and consent/safety controls without inventing a physical deck. A new [GitHub Actions test workflow](../.github/workflows/knowledge-project-python-gates.yml) is added for future commits, distinct from local test evidence.
 
 [Source ledger](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-14.md) · [Project evolution](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-14.md) · [AURA source gap](../docs/knowledge-base/2026-10-08-aura-deck-spec-gap-and-safety.md).
+
+## Knowledge evolution — batch 15 (2026-10-08)
+
+**New distinct product:** [P125 — Sovereign Contextual Android Launcher](125-sovereign-contextual-android-launcher/README.md), with native Kotlin/Gradle HOME launcher source. It uses only Android MAIN/LAUNCHER visibility and user-tap actuation. Not yet built with Android SDK, installed on a phone, or equipped with a local LLM.
+
+**Updated canonical owners:** P33 (app builders), P45 (digital products), P47 (source version/deduplication), P56 (monetization/credits), P70 (credit event integrity), P72 (externally reviewed generated-tool admission), P91 (unsafe persona claims), P100 (developer UX), P105 (mobile permissions/actuation boundary), P114 (semantic-cache provenance), P115 (ODYN feasibility/secure tool synthesis), P119 (local runtime vs launcher).
+
+**Executable proof-of-concept:** [AI-tool admission policy](../tools/agent_tool_admission_gate.py), with [unit tests](../tools/test_agent_tool_admission_gate.py), plus [Android manifest/source static tests](../tools/test_sovereign_launcher_policy.py). The admission code does **not run** generated scripts. [Source ledger](../docs/KNOWLEDGE-INGESTION-2026-10-08-BATCH-15.md) · [evolution report](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-15.md).
