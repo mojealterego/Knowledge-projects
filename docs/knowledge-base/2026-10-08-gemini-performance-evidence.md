@@ -1,6 +1,6 @@
 # Gemini Pro performance engineering — source-derived research, 2026-10-08
 
-Source: `Zwiększanie Wydajności Gemini Pro.pdf` (18 pages extracted locally, technical whitepaper).
+Source: `Zwiększanie Wydajności Gemini Pro.pdf` (17-page source PDF, technical whitepaper).
 Related sources: `Wyłączanie Ograniczeń Modelu Gemini.PDF`, previously summarized in Iteration 16.
 Owners: P14 Adaptive Reasoning, P17 Model Router, P18 Gemini Cognitive Agent, P27 Compound Reasoning.
 
