@@ -1,0 +1,42 @@
+date: "2026-10-09"
+batch: 20
+scope: ODYN-AI_AND_KNOWLEDGE_PROJECTS
+owner_repositories:
+  odyn:
+    repo: mojealterego/ODYN-AI
+    base_branch: codex/termux-five-goals
+    base_commit: df56169a5f472ca4156e8f8a77a75b89baa93733
+    pr: 17
+    installed_on_android: false
+  knowledge:
+    repo: mojealterego/Knowledge-projects
+    base_branch: main
+    base_commit: 0066bf4feee60762d435182dedad4a4fea9ede9e
+unique_nousresearch_repositories_metadata_checked: 80
+full_source_code_audit_of_all_80: false
+notable_metadata:
+  atropos_archived: true
+  latest_pushed_at: "2026-07-04"
+  uv_issues_are_windows_antivirus_reports: [13553, 15011, 10079]
+source_status:
+  upstream_official_hermes_termux: BROKEN_AS_OF_REVIEW
+  native_mobilefork_apk_broken_proven: false
+  nous_tool_gateway_requires_paid_subscription: true
+  honcho_account_accessed: false
+  external_model_accounts_accessed: false
+  cloud_payments: 0
+canonical_projects_updated: [P17, P29, P37, P47, P59, P72, P87, P100, P108, P114, P115, P119, P121]
+new_numbered_projects: 0
+implementation:
+  knowledge_policy: tools/hermes_upstream_adoption_gate.py
+  knowledge_tests: tools/test_hermes_upstream_adoption_gate.py
+  odyn_policy: scripts/odyn_upstream_compat_gate.py
+  odyn_tests: tests/test_odyn_upstream_compat_gate.py
+tests_declared:
+  knowledge_unittest_methods: 17
+  odyn_unittest_methods: 17
+verification:
+  does_not_install_termux: true
+  does_not_download_model_weights: true
+  does_not_run_cloud_api: true
+  requires_actual_ci_and_git_readback: true

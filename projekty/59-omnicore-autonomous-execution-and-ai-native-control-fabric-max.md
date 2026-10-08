@@ -355,3 +355,9 @@ The project is an architectural synthesis of the supplied corpus. Specific perfo
 ## Knowledge evolution — batch 16 / 2026-10-08
 
 Feasibility report (5) claims recursive Swarm Self-Replication. Bounded execution must enforce max_depth, max_workers, max_jobs, deadline, queue_capacity, total token/cloud cost and backpressure. Model-created workers cannot grant themselves further privileges. The P126 IBM NPC proposal should not hold DB writes/locks during model inference and must have timeout/fallback. No external action or live cloud orchestration was performed.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** Hermes CLI/gateway, messaging, cron, skills and paid Tool Gateway docs. Proposed `HermesProcessLifecycle`: OS/platform classifier, foreground vs allowed background mode, process supervisor, deadline, durable state, callback auth, rate+budget cap, restart policy, media retrieval and proof of actual tool execution. Android Termux foreground `hermes gateway run` does **not** imply systemd/persistent service; Android may terminate background processes. The official Termux APT docs currently warn broken; fail closed rather than spawn processes via desktop/glibc install scripts. `Nous Tool Gateway` is paid, do not schedule purchases or browser sessions by model authority. No cron/gateway jobs, Linux sandboxes or account credentials started in this batch.

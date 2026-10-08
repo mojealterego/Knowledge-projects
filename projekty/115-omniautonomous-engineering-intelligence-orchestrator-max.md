@@ -236,3 +236,9 @@ Feasibility (5)–(9) and 3 DGM reports define ModelScout→TechRecon→Strategi
 ## 2026-10-08 — batch 18: public web source evolution
 
 Gemini CLI/Antigravity SDK/CLI and Gemini Enterprise Agent Platform offer candidate agent coding/workflow interfaces. GoogleAgentExecutionPacket binds separately supplied tool scope/IAM, prompt/source provenance, source+commit revisions, isolated runtime, rate/cost cap, actual tool+CI receipts, human approval and rollback; agents may never infer rights from `authuser` or model-studio links. Any hosted paid operation must pass independent approval **in addition** to `tools/cloud_operation_budget_gate.py`'s offline plan review. No external agent installed/connected.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** actual ODYN-AI branch `codex/termux-five-goals@df56169...` and Hermes Agent upstream architecture/CLI/Skills/MCP/cron/security; `hermes-agent-self-evolution` uses DSPy+GEPA optimization. Integrate `SelfEvolutionProposal` → immutable baseline+source revisions → separate workspace → evaluation (task outcomes, regressions, latency, security) → independently approved `integration/` branch and tested CI → reviewer decision → safe PR merge/readback/rollback. Do NOT auto-merge the default branch, promote model-authored credentials or treat generated skills as executable trusted code. `hermes-compression-eval` supplies an independent memory-retention test concept; `agent-governance-toolkit` and OpenShell are optional security patterns, not proven installed isolation. The official Hermes Termux APT currently reports broken; do not simulate a successful on-phone install. New offline adoption gate `tools/hermes_upstream_adoption_gate.py` supplies a minimal reusable review boundary; ODYN-AI PR #17 implements release-specific checks.

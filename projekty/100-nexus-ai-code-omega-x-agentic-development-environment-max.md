@@ -385,3 +385,9 @@ Reviewed public `google-gemini/gemini-cli` (Apache-2.0), geminicli.com, Antigrav
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 Github Marketplace agent apps: SonarQube code checks, Endor Labs dependency advisories, Miro Agent visual diffs, InstructVault Git-native prompt tests, LaunchDarkly flag configs, Octopus deployment diagnosis, Packfiles GitHub migrations and Bright local DAST are **candidate adapters**, not ChatGPT plugins automatically available in this IDE. `DeveloperExtensionRecord` tracks listing URI, publisher, category, read/write permissions, license/plan, OAuth/OIDC, secrets policy, version and independent PR/CI validation. Connect Miro/Structura/Apricot only with user-authorized scopes; external architecture frames cannot trigger unreviewed code writes. `Codex Community Events` on Luma can supply time-limited workshop/hackathon discovery but no enrollment or award was established. No IDE agents or marketplace apps were installed.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** Hermes CLI/Architecture/Contributing, MCP, Context Files, Skills, Model Router, plugins and `agent-sh/computer-use-linux`, `AaronWong1999/hermesclaw`, `NousResearch/hermes-paperclip-adapter`, `wterm`, `ink`, `cline`. `HermesDeveloperAdapter` must pin upstream version and licenses, use separate agent working directories, explicit tool permission broker, refusal on unverified package/source, deterministic command plan, independent compilation/test evidence, source diff and rollback. Computer-use-linux requires isolated owned graphical environments and confirmation of sensitive UI actions, not blanket on-phone control. HermesClaw and Paperclip are 3rd-party integration candidates, **not installed core**. No click automation, shell commands or external social messaging performed.

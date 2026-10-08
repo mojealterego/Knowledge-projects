@@ -358,3 +358,9 @@ The 372-page GGUF Studio PDF is chat-origin design material describing Python/Fa
 ## 2026-10-08 — batch 18: public web source evolution
 
 Google Gemma 4 source 2026-04-02: E2B, E4B, 26B MoE, 31B Dense; blog states Apache-2.0. Add Gemma4Qualification {exact weight URL/hash, tokenizer/template, license, quantization, GGUF/runtime support, RAM/KV cache/CPU/GPU/NPU, thermal and latency tests, task/safety regression, rollback}. Do not extrapolate usable inference speeds or compatibility with any Android handset from a launch blog. No weights downloaded or model run.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** NousResearch `speculators`, `nous-llama.cpp`, `llama.cpp`, `ollama`, `litellm`, `hf-hub`, `Nemotron`, official provider portals and on-phone Hermes documentation. `UpstreamModelBackendEvidence` requires pinned upstream/repo SHA, fork-vs-origin, ABI/Android API, GGUF/quantization/template compatibility, context and max RAM, CPU/GPU/NPU support, p50/p99 decode latency, load/cancel/thermal tests and rollback. Forks of `llama.cpp`/Ollama in the Nous org have old last-push snapshots (2024) and may not work with modern models. `speculators` is a speculative decoding research fork, **not guaranteed speedup**. The official Nous Termux APT currently reports broken installation; native MobileFork APK is separate. No models or weights downloaded, and no device test executed.

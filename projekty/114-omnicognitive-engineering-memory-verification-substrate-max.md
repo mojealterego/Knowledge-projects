@@ -157,3 +157,9 @@ Feasibility (5)–(6) proposes epistemic defrag, multi-valued logic, bitemporal 
 ## 2026-10-08 — batch 18: public web source evolution
 
 Google Gemini Embedding 2 cross-modal RAG requires MemoryIndexProvenance {source_sha,media_type,original_span_or_timecode,model_version,vector_dimensions,indexed_at,valid_at,tenant,consent_scope,retention_and_expiry,contradiction_refs}. Similarity is not independent corroboration. Reindexing on provider/model/embedding dimension changes and deletion on revoked rights must be testable. No real Google vector database or user Notebook content accessed.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** official Hermes Memory, Context Files, Honcho Memory sections and Plastic Labs Honcho V3 documentation. `MemoryBackendEvidence`: `provider, profile, tenant, conversation_id, source_sha, original_quote_span, valid_at, recorded_at, corroborating_evidence, sensitivity, explicit_remote_consent, retention, delete_receipt, confidence, disputes`. Hermes auto-generated persistent skills/memories must not silently retain credentials or cross-contaminate profiles; sending sensitive input to external Honcho is gated by separate consent/data processing terms. Consolidation and compression need a holdout query suite (`hermes-compression-eval` is a research candidate) measuring factual recovery and hallucinated additions, not just smaller token count. No Honcho instance or private profile accessed.

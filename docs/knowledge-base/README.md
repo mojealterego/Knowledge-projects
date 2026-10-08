@@ -148,3 +148,12 @@ No private Google Cloud account, AI Studio API keys, Notebook data, paid WordPre
 - [Marketplace agent owner-approval gate](../../tools/marketplace_agent_review_gate.py), [CHEMIA P122 ephemeral mutual-topic intersection](../../projekty/122-chemia-consent-aware-intimate-two-player-game/consent_intersection.py).
 
 GitHub Agent Apps are not automatically ChatGPT plugins. No MCP server connected, third-party GitHub App installed, payment made, adult-user answers collected or actual remote session started. The LovePlay homepage and publisher blog contain incompatible claims about one-device vs remotely paired gameplay; neither is silently designated truth.
+
+## 2026-10-09 — batch 20: ODYN-AI, Hermes Agent, NousResearch and mobile compatibility
+
+- [ODYN/Hermes provider, security, Termux, uv issue and source-state intake](../WEB-SOURCE-INGESTION-2026-10-09-BATCH-20.md).
+- [All **80** unique NousResearch repository links: metadata-verified catalog, forks and archived Atropos](../UPSTREAM-NOUSRESEARCH-REPOSITORY-CATALOG-2026-10-09.md).
+- [Existing canonical project development, ODYN-AI cross-repository PR #17 and test scope](../PROJECT-EVOLUTION-2026-10-09-BATCH-20.md).
+- [Read-only ecosystem-adoption policy with pinned revisions/independent reviews](../../tools/hermes_upstream_adoption_gate.py).
+
+Critical: the **official upstream Hermes Termux APT guide currently states the package is broken**, while ODYN-AI has a **separate native Android APK**. The three referenced uv GitHub issues are Windows antivirus issues, not proof of a Termux fix. Nous Portal Tool Gateway requires paid subscription/usage. No model provider account or phone was accessed; CI outcome must be read before claiming success.

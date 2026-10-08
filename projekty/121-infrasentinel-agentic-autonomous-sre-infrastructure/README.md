@@ -192,3 +192,9 @@ Google Cloud Compute Engine, Cloud Storage and Enterprise Agent Platform source 
 ## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
 
 LaunchDarkly agent may create/change flags and AI Config; Octopus Deploy Intelligence Agent may launch releases/runbooks, while Packfiles Agent operates in a separate Warp migration environment. These are **effectful external systems**, not merely read-only reporting. Add `ExternalAgentOperation` with exact repo/service instance, independent owner-approved credential scope, target environment, dry run, blast-radius controls, cost and trial prerequisites, immutable tool receipt, health check and rollback. Marketplace "free plugin" does not grant a free underlying platform or Copilot plan. `tools/marketplace_agent_review_gate.py` is a static authorization precheck only; no flags, deployments or migrations were executed.
+
+---
+
+## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
+
+**Sources:** Nous Portal Tool Gateway (paid subscription + use-based credits), Novita/NVIDIA GPU/AI, Xiaomi MiMo token-plan, Kimi/MiniMax/Z.ai and Hugging Face; Hermes gateway cron/security docs. Require `ProviderCommercialEvidence` with distinct sign-in and API products, documented region, current plan entitlement, project owner approval, maximum prepaid/test spend, timeout and abort threshold, token quotas, irreversible side effects, receipt and cleanup. `build.nvidia.com` and `platform.xiaomimimo.com/token-plan` yielded minimal public shells; no actual per-account quota or discount verified. A web or chat landing page is not valid backend endpoint; paid Tool Gateway cannot be assumed free just because Hermes Agent source is open. P121 may propose serverless/VM/endpoint deployment but **no hosting, billing, API activation or model downloads** occurred in this batch.
