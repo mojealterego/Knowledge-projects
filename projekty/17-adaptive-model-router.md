@@ -171,3 +171,9 @@ The router is complete when model/provider choice is replaceable, execution prof
 ## 2026-10-08 — batch 18: public web source evolution
 
 Gemma 4 official 2026-04-02 announcement describes E2B/E4B/26B-MoE/31B-Dense variants. Add LocalOrCloudRoutingPolicy inputs: task, modality, source privacy, available local RAM/NPU/runtime, licensing+weight SHA, expected token/latency/cost budget and independent result verification. `gemini-embedding-2` is for retrieval/embedding, not chat completion. No device performance, GGUF packaging, remote Gemini pricing or access has been benchmarked here.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+Gemini Drops is a Google-maintained, localized rolling feature showcase, not a provider capability guarantee. Introduce `VendorReleaseEvidence`: dated source URL, locale, launch status, eligible product/plan, region, last checked, API model identifier, actual entitlement verified and fallback. Model selection may not assume that a feature presented on Gemini Drops is usable in a private API project or free plan. No Gemini account or release entitlement checked in this batch.

@@ -139,3 +139,12 @@ Nine Samsung Quick Share collections were inventoried at the **metadata-only** l
 - [Offline Gemini Embedding 2 input policy](../../tools/multimodal_embedding_intake_gate.py) and [offline cloud spending/operation policy](../../tools/cloud_operation_budget_gate.py).
 
 No private Google Cloud account, AI Studio API keys, Notebook data, paid WordPress plugin catalog purchases, bounties, malware archive, VM/bucket or device was accessed/modified. CI readback is required before reporting the test gates as successful.
+
+## 2026-10-09 — batch 19: GitHub Agent Apps, MCP modeling/memory and privacy-first game
+
+- [19 public URLs, exact access status, contradictions and owner decision](../WEB-SOURCE-INGESTION-2026-10-09-BATCH-19.md).
+- [Technical comparison: SonarQube, Endor, Bright, Miro, LaunchDarkly, Octopus, Packfiles, InstructVault, SAKH, Structura, Apricot, Traveler and adult-game sources](2026-10-09-github-agent-apps-mcp-couples-evidence.md).
+- [Canonically evolved projects and implemented policy/reference tests](../PROJECT-EVOLUTION-2026-10-09-BATCH-19.md).
+- [Marketplace agent owner-approval gate](../../tools/marketplace_agent_review_gate.py), [CHEMIA P122 ephemeral mutual-topic intersection](../../projekty/122-chemia-consent-aware-intimate-two-player-game/consent_intersection.py).
+
+GitHub Agent Apps are not automatically ChatGPT plugins. No MCP server connected, third-party GitHub App installed, payment made, adult-user answers collected or actual remote session started. The LovePlay homepage and publisher blog contain incompatible claims about one-device vs remotely paired gameplay; neither is silently designated truth.

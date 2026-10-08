@@ -186,3 +186,9 @@ The archaeological report combines Voynich parchment radiocarbon dating, materia
 - `CounterevidenceProtocol` requires dissenting chronologies, regional heterogeneity, confounds and explicit "insufficient evidence" output.
 
 **Acceptance:** every archaeological/market claim traceable to provenance and measurement type; a cited source cannot be fabricated or treated as definitive because repeated by several models. No independent archaeology verification performed here.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+The public SAKH MCP registry entry describes seven read-only tools over an Arabic/Persian publisher-curated corpus of Ayatollah Khamenei writings/rulings, with page/chapter citations and concept graph. `CuratedCorpusEvidence` must include publisher perspective, corpus boundary, document edition, language, quotation span, translator and independent supporting/contradicting witnesses. An attributed corpus ruling is **not independent proof** of legal validity, historical objectivity or the user's personal beliefs. OAuth grants and corpus data were not obtained; no SAKH tool executed.

@@ -336,3 +336,9 @@ Project 29 becomes the **external data and evidence fabric** for the agent ecosy
 ## 2026-10-08 — batch 18: public web source evolution
 
 Gemini Embedding 2 maps text/images/audio/video/PDF into shared representation (Google Developers Blog 2026-04-30; official model card). Add CrossModalRetrievalEvidence {source_sha, rights, modality, media_offset, embedding_model_revision, vector_dimensions, task_prefix_version, indexed_at, retrieval_score, original_citation_span, data_sensitivity}. Evaluate Polish Recall@k, adversarial false citations and bitemporal contradictions against frozen text-only RAG before service selection. Passing new offline input policy tests is **not** a real embedding request or proven retrieval improvement.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+New source-driven adapters: SAKH research corpus (hybrid dense/sparse with source references), Traveler.md (OAuth-scoped profile/trip memory, **not a booking or inventory search provider**), plus Google Gemini Drops release metadata (time-sensitive vendor features). `EvidenceProviderRecord`: source URL, owner/version, API read/write scope, rights, language, timestamps, citation confidence, tenant/privacy scope, independent corroboration. Never return hotel/restaurant real-time availability from a travel-memory tool; never treat publisher-curated religious/political documents as globally validated normative truth. The three direct registry URLs for Structura, Apricot and Traveler were not themselves retrievable; supporting official/vendor docs were inspected instead.

@@ -321,3 +321,9 @@ The supplied commercialization material contains a mixture of market description
 The partial `7 Easy AI Digital Products` screenshot excerpt describes product listings/packaging and newsletter bundles, **not a reproducible revenue guarantee**. Define verified `OfferEconomics`: gross sales, consent/compliance, platform commissions, returns, refunds, marketing CAC, taxes, support cost and paid conversion, all with observation period and ledger provenance. Source storefront price tips are not measured unit economics.
 
 The 24-page `Analiza narzędzi do manipulacji żetonami` demonstrates why local UI/JavaScript credit counts and optimistic updates cannot establish owned token balances. Require server-authoritative and atomically reconciled ledger events, idempotency key, user scope, authentication, replay protections, signed/auditable history and independent accounting. Do not permit third-party balance modification or value minting. P70/P72 own the defensive integrity/security gate; P56 owns policy and financial reconciliation.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+Third-party marketplace listings present overlapping but non-identical cost terms: GitHub Agent Apps may require paid Copilot plans despite app listing Free; Packfiles Agent needs Packfiles Warp; Bright Security describes a time-limited trial; Miro/Octopus/LaunchDarkly rely on separate vendor accounts. Privé describes free intro and one-time paid tiers; LovePlay home/blog/free marketing claims conflict and cannot be merged into a verified pricing table. `ProviderOfferEvidence` records claim URL, date, locale, prerequisite platform, trial duration, third-party plan, billing opt-in and verified cost; never promise universal zero-cost access or create checkout transactions automatically.

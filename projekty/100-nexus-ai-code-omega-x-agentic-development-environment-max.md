@@ -379,3 +379,9 @@ The 372-page GGUF Agent Studio PDF narrates local llama-cpp-python, FastAPI, Web
 ## 2026-10-08 — batch 18: public web source evolution
 
 Reviewed public `google-gemini/gemini-cli` (Apache-2.0), geminicli.com, Antigravity 2.0 IDE/CLI/SDK and Code Assist product descriptions. Proposed DeveloperAgentAdapter records pinned upstream revision, license, capability allowlist (files/shell/web/MCP), ephemeral workspace, secrets isolation, approval gates, test/build receipt, change diff, cost/rate cap and rollback. Antigravity/Gemini CLI are candidate integrations; **not installed**. Zed Guild GitHub Projects #74 rendered shell-only, so no task statuses inferred.
+
+---
+
+## 2026-10-09 — batch 19: agent marketplace, MCP and consent-based games
+
+Github Marketplace agent apps: SonarQube code checks, Endor Labs dependency advisories, Miro Agent visual diffs, InstructVault Git-native prompt tests, LaunchDarkly flag configs, Octopus deployment diagnosis, Packfiles GitHub migrations and Bright local DAST are **candidate adapters**, not ChatGPT plugins automatically available in this IDE. `DeveloperExtensionRecord` tracks listing URI, publisher, category, read/write permissions, license/plan, OAuth/OIDC, secrets policy, version and independent PR/CI validation. Connect Miro/Structura/Apricot only with user-authorized scopes; external architecture frames cannot trigger unreviewed code writes. `Codex Community Events` on Luma can supply time-limited workshop/hackathon discovery but no enrollment or award was established. No IDE agents or marketplace apps were installed.
