@@ -130,3 +130,17 @@ The camera system uses on-demand capture rather than unnecessary continuous rend
 
 ## Iteration 25 evolution
 CCR TOM III and TOM IV are now explicit canon witnesses for P89's authored timeline system. Add continuity anchors for 1679, 1983, 2016, 2025, 2035, 2045, 2135, 2345, 2378, 2387, 2777 and infinity. The 33-year cycle, 16.5-year breath, CCR-Rebuild, Memory Archive and Devil Mind are narrative state concepts. Their light/time/consciousness mechanisms remain fictional game abstractions and must not be presented as real physics.
+
+---
+
+## Integracja wiedzy — batch 11 (2026-10-08): CCR UE5 implementability gates
+
+Źródło: `Unreal Engine 5- Tworzenie Gry Krok po Kroku.pdf`. **Status: SPECIFIED / NOT COMPILED IN UE5.**
+
+1. `UCCR_CameraComponent`: zdjęcia tworzą wersjonowane zdarzenia pamięci/puzzli, widoczne tylko w autorskich warunkach.
+2. `UTimeRiftSubsystem`: PRELOAD → CONFIRM DATA LAYER READY → TRANSITION → SWITCH AXIS → CHECK SAVE/PUZZLE STATE → RESUME / ROLLBACK. Migające przejście „błysk” musi mieć wariant bezmigotaniowy i ustawienie reduced motion.
+3. `UNiagaraMemoryEmitter`: grafika cząsteczek nie stanowi źródła autorytatywnego stanu gry; profil CPU/GPU i limit cząstek.
+4. `CCRVisualProfile`: skalowalne Lumen/Nanite/PostProcess, porównywalny benchmark i fallback.
+5. `SaveCompatibility`: serializacja wątków fabularnych i osi czasu, ze sprawdzaniem wersji podczas migracji silnika.
+
+**Akceptacja:** kompilacja C++ i testy Blueprint na faktycznie przypiętej wersji Unreal; zapisy i wznowienia z częściowo streamowanymi Data Layers, pomiar FPS i pamięci, kontrola deprecjacji API. 33-letnie pętle światła/czasu z PDF to fabuła, nie rzeczywista fizyka.
