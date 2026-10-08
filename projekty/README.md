@@ -261,3 +261,9 @@ Reasoning traces are useful evidence when available but are not a security bound
 56. Competitive advantage is an evaluation result, not an assumption from novelty alone.
 57. Circularity claims require explicit resource-flow or ecosystem-loop evidence.
 58. Strategic adaptation cannot bypass policy, authorization, audit or human-agency controls.
+
+## Nowy projekt i ewolucja — batch 11 (2026-10-08)
+
+- [P122 — Gas Appliance Safety Evidence Companion](122-gas-appliance-safety-evidence-companion/README.md): nowa wyodrębniona dziedzina odczytu instrukcji gazowego kotła, ograniczona do dokumentacyjnego lookup i skierowania do wykwalifikowanego serwisu. Pięć lokalnych testów jednostkowych, bez sprzętu, instalacji i zdalnej obsługi.
+- Zaktualizowane **główne dokumenty**: P24 (AI runtime/prompt compiler), P31 (bezpieczny OmniCore cloud forge), P32 (VANTAGE simulated provenance), P66 (strategia marki) oraz P89 (CCR Unreal Engine 5).
+- [Pełna historia zmian i uzasadnienie numeracji](../docs/PROJECT-EVOLUTION-2026-10-08-BATCH-11.md).
