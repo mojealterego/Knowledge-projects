@@ -143,3 +143,9 @@ A configuration qualifies only when it demonstrates, in a controlled and reprodu
 ## Batch 24 — 2026-10-09 PDF source evolution
 
 The 117-page Komunikacja.pdf surveys IrDA, BLE, NFC, UWB, Wi-Fi Direct, LoRaWAN, Li-Fi/FSO, satellite and software messaging such as Zenoh. Keep radio/optical physical transport distinct from middleware and location services. No identification prefix, wireless packet or OUI alone proves a person's location. Prototype offline tools/communication_link_policy.py describes eight conservative choices for owner-approved device testbeds with mutual consent and no background surveillance, external publication or network scan. Actual radio throughput, range and reliability need device-level measurements; no hardware tests were performed.
+
+---
+
+## 2026-10-09 — batch 25: evidence-qualified new uploads
+
+Repeated Komunikacja.pdf is SHA-256 identical to batch24 and does not establish new protocol performance facts. New private eSIM/PSTN PDF is a provider/telecom topology draft, not licensed or deployed network. Preserve permission and legal domain boundary: own/testbed radio authorization, external SIP trunk contract, emergency routing, subscriber identity beyond IP, eSIM credential secrecy and zero claims to private +48 numbering assignment. The related static test checker is tools/telephony_topology_gate.py; it does not activate Open5GS, Asterisk, public calls, SIMs or transmitters.

@@ -158,3 +158,9 @@ Compare SonarQube Agent (SAST/quality gate), Endor Labs AgentHQ (dependency/CVE 
 ## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
 
 Discovery of **SonarQube, Snyk API/Web, Snyk, Sonatype Dependency Management, Codacy, StackHawk, Black Duck, CrowdStrike Falcon, Zscaler and UniFi Gateway** within GitHub MCP pages 1–7 permits comparison of *advertised* SCA/SAST/DAST/EDR/deployment contexts. These are NOT validated scan outputs or security approvals; several services can actively alter production security controls. New `VendorSecurityToolEvidence` includes official publisher/repo/version/manifest, actual tool permissions, authorization of test target, non-destructive mode, findings/citation to exact commit, false-positive review, token/budget limits and independent CI readback. Public vendor ranking/star counts do not equal an installable trusted binary. `tools/mcp_registry_catalog.py` fails closed on installation and missing independent authorization.
+
+---
+
+## 2026-10-09 — batch 25: uploaded MCP, Unity, eSIM and adversarial agent sources
+
+Three uploaded untrusted Pegasus/offensivemax files include uncontrolled subprocess shell execution, reconnaissance, privacy invasion instructions and mock telemetry; the scripts are not proof of actual exploitation, global network access or reconnaissance results. Developed tools/untrusted_agent_source_review.py, a deterministic non-executing text-only scanner with 13 tests; its outputs are suspicious PATTERNS for human triage, never a certificate of safety. Do NOT run, weaponize, deploy C2, stealth scanners or surveillance tools in this project. Repo remains defensive validation. Source references/hashes: docs/UPLOADED-FILE-INGESTION-2026-10-09-BATCH-25.md.

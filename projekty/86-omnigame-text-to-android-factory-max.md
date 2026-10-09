@@ -217,3 +217,9 @@ DGM architecture proposes 33 niche +33 developer apps and GameBuilder SDK. Loops
 ## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
 
 The GitHub MCP Registry pages 1–7 display **Unity MCP** and **gamedev.pl** as game-development tools. Treat these as **candidate toolchains** only: review source/license, SDK/Unity version, game IP rights, explicit write scope and sandbox, deterministic source build and Android/desktop performance baseline. A catalog card does not supply a running Unity editor, account, editor bridge, generated game or signed APK. Existing P86 retains game creation ownership; no P127 created, external provider activated or user media transferred.
+
+---
+
+## 2026-10-09 — batch 25: uploaded MCP, Unity, eSIM and adversarial agent sources
+
+The uploaded 3-page Unity AI Expert prompt describes a proposed C# Clean Architecture separating MonoBehaviour adapters from deterministic model/decision components: visual/audio sensing, memory bank, Physics.OverlapSphereNonAlloc, FOV layers, FSM/GOAP, steering/boids, performance profiling and repeatable benchmarks. A prompt demanding 100% compilable, zero-allocation code does NOT prove correctness. P86 acceptance requires pinned Unity version, actual C# compile, agent tests in editor, GC allocations measured in Profiler and Android build proof. No Unity Editor was connected or game compiled. See docs/UPLOADED-FILE-INGESTION-2026-10-09-BATCH-25.md.

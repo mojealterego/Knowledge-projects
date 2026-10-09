@@ -365,3 +365,9 @@ Po korekcie użytkownika portfolio ma jeden i tylko jeden repozytoryjny `write_t
 ## Batch 24 — uploaded PDF evidence review, 2026-10-09
 
 Full byte-backed batch24 ingest: 10 PDFs, 262 pages, 12,991,402 bytes, SHA-256 of every exact source recorded at docs/UPLOADED-PDF-INGESTION-2026-10-09-BATCH-24.md. None are byte-identical; three closely related Seeker cognitive drafts have substantial textual overlap and must not be counted as independent confirmations. Existing owner mapping instead of artificial new IDs: Seeker P32/P30, Alibaba/hackathon P39/P34/P56, DGM P59/P115/P33, media P97/P22, communications P95/P119; project evidence P47/P72. All raw PDF material remains outside the public repository, with safe source-derived summaries only. New implementation comprises three offline policy gates and 47 source-free synthetic unit tests, not executable tracking or paid external integrations. Document-claimed capability != verified production result.
+
+---
+
+## 2026-10-09 — batch 25: evidence-qualified new uploads
+
+Batch25 received 10 actual files, 7 PDFs/294 pages plus 3 text/MD, total 12,475,257 bytes, SHA-256 for every original stored at docs/UPLOADED-FILE-INGESTION-2026-10-09-BATCH-25.md. Komunikacja.pdf is EXACT SAME BINARY as batch24; the two 13-page Locally Uncensored reports differ at byte level but have identical normalized text SHA. Therefore treat 8 independent content units, of which offensive Pegasus material is only admissible for defensive inspection. No new numbered project: Unity P86; Android/Drive MCP P119/P72; Tauri agent builder P100; telephony eSIM P59; OSINT P32/P30; defensive review P108. Three stdlib offline modules and 46 tests are code changes, not external installations or accounts.
