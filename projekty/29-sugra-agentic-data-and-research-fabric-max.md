@@ -348,3 +348,9 @@ New source-driven adapters: SAKH research corpus (hybrid dense/sparse with sourc
 ## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
 
 **Sources:** `plastic-labs/honcho` public repository, Honcho V3 docs and Hermes memory/providers features. `MemorySourceEvidence` must preserve `memory_provider(local|honcho|other), persona_or_session_scope, source_sha, valid_time, recorded_time, consent_to_remote_sync, tenant, retention_deadline, deletion_receipt, confidence, contradictions`. Honcho's claimed long-term agent/user modeling is a **provider feature**, not authorization to store a person's private correspondence or infer psychology as established fact. A recovered memory should be reviewable and revocable, not silently merged across unrelated users or agent instances. This ingestion did not authorize Honcho, connect any account or migrate prior conversations.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+GitHub MCP pages 1–7 advertise **Markitdown**, **Semantic Scholar**, **Scholar Sidekick**, **SearXNG**, **SerpApi**, **Firecrawl**, **Apify**, **HasData**, **Hugging Face**, **Chroma**, **Elasticsearch** and **pgEdge**. Distinguish extractors (untrusted raw text and possible prompt injection), indexes (semantic similarity vs proof), original evidence/citations (article/revision/DOI), paid scrape APIs (terms and privacy), and mutable first-party data. Add `McpResearchSource` fields `registry_url,publisher_claim,source_hash,rights,query_limits,citation_provenance,contradiction_tests,user_data_consent,verified_runtime_tools`. Public listing is a *research option*, NOT code scan, connected corpus or proven 200M articles retrieved.

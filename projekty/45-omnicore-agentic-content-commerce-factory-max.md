@@ -191,3 +191,9 @@ Project 45 is complete when it can discover opportunities, formulate evidence-ba
 ## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
 
 **WordPress.com premium marketplace is not a source of already-owned plugins.** User-specific `wordpress.com/plugins/browse/paid/mojealteregopl.wordpress.com` requires account access; no site plugin list/pricing/plan was read. Official 2026-10-05 WordPress.com support currently states plugins are available with paid plans, but older-plan entitlement can differ. Add `WordPressPluginOffer`: customer feature need, built-in/free alternatives, source/version, exact paid plugin slug, site-plan entitlement independently checked, compatibility/security/privacy, total recurring cost, activation rollback and explicit purchase approval. No install, purchase or site modification.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+GitHub MCP cards for **WP Agent WordPress publishing**, **Wix**, **Webflow**, **Vercel**, **Hostinger API** and **Publora** can inform modular content publication. The registry `/mcp` is not evidence that the user's WordPress.com site allows installing these tools or has a paid plugin subscription. New `PublishingActionReceipt` should validate site owner permissions, right to reuse content, preview/live environment, post editor scope, explicit public release consent, rollback and costs. For all actual external writes, the only authorized repository target remains Knowledge-projects; no site deployments, WordPress plugin changes or posts were created in this batch.

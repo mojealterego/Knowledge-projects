@@ -345,3 +345,11 @@ Reused official [Googlebook adaptive Android Sept 22 2026 source](../docs/WEB-SO
 **[P125 launcher](125-sovereign-contextual-android-launcher/README.md)** now has an actual Kotlin responsive `onSizeChanged` reflow (window width, 840dp compact/expanded mode, side information pane), Polish resources, keyboard focus/48dp controls and manifest `resizeableActivity`. **P105/P100/P47** receive targeted source-based architecture and provenance changes. **[13 static tests](../tools/test_googlebook_adaptive_launcher.py)** plus [21 manual device QA scenarios](125-sovereign-contextual-android-launcher/android/ADAPTIVE-QA.md). No APK, emulator check, Compose Navigation 3, Googlebook badge or HandoffActivityData implementation was claimed.
 
 [Project delta](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-22.md) · [source constraints](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-22.md).
+
+## 2026-10-09 — batch 23: machine-readable GitHub MCP Registry discovery
+
+User supplied seven public [GitHub MCP registry pages](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-23.md). On observation they contain **210 unique entries (30/page)** out of **394 advertised globally**, with remaining **184 outside the requested pages not reviewed**. The complete [210-entry source snapshot JSON](../docs/mcp-registry/2026-10-09-github-mcp-pages-1-7.json) has exact metadata and listing URLs.
+
+**13 existing canonical owners extended:** P29, P33, P45, P47, P56, P57, P59, P72, P86, P100, P108, P114, P121. **New numbered projects: 0.** The catalog is a source discovery surface for existing IDE, research, memory, SRE, security, game and content owners, not 210 finished integrations.
+
+**Actual code:** [offline validator, classification and integration-admission policy](../tools/mcp_registry_catalog.py), with [22 Python unit tests](../tools/test_mcp_registry_catalog.py). It *does not* install/connect tools, pay, mutate accounts or verify host-enforced tool permissions. Real MCP `tools/list`/license/authorization checks are required before enabling any provider. [Project evolution](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-23.md).
