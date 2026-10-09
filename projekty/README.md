@@ -337,3 +337,11 @@ The [DGM cycle admission gate](../tools/dgm_cycle_gate.py) checks independent ap
 **Working code created only here:** [no-progress agent tool guard](../tools/agent_tool_loop_guard.py) (12 unit tests), [external opportunity verification gate](../tools/external_opportunity_evidence_gate.py) (18 unit tests). Zed #51333/#65199 verified OPEN and #65205 CLOSED via public GitHub API on 2026-10-09; old solved Railway $150 examples are **not open offers**.
 
 [Three-source ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-21.md) · [detailed technical synthesis](../docs/knowledge-base/2026-10-09-zed-railway-wordpress-opportunity-evidence.md) · [evolution report](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-21.md).
+
+## 2026-10-09 — batch 22: real responsive launcher source instead of repeating a known link
+
+Reused official [Googlebook adaptive Android Sept 22 2026 source](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-22.md) already recorded in batch 18. **New numbered projects: 0.**
+
+**[P125 launcher](125-sovereign-contextual-android-launcher/README.md)** now has an actual Kotlin responsive `onSizeChanged` reflow (window width, 840dp compact/expanded mode, side information pane), Polish resources, keyboard focus/48dp controls and manifest `resizeableActivity`. **P105/P100/P47** receive targeted source-based architecture and provenance changes. **[13 static tests](../tools/test_googlebook_adaptive_launcher.py)** plus [21 manual device QA scenarios](125-sovereign-contextual-android-launcher/android/ADAPTIVE-QA.md). No APK, emulator check, Compose Navigation 3, Googlebook badge or HandoffActivityData implementation was claimed.
+
+[Project delta](../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-22.md) · [source constraints](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-22.md).

@@ -47,3 +47,18 @@ FUTURE OPT-IN LOCAL MODEL (separate capability gate)
 ## 2026-10-08 — batch 18: public web source evolution
 
 Android Developers Googlebook Sept 22 2026 adaptive apps article contributes an explicit **pending** emulator/device acceptance matrix: compact/medium/expanded window width, freeform drag-resize, split-screen, dual instances, keyboard/trackpad navigation, TalkBack and focus order, rotation/process recreation, safe HOME fallback, touch targets and contrast. Use actual window classes rather than assumed physical screen dimensions; no Googlebook Play badge or acceptance is claimed. Existing Kotlin source remains **not built or installed**; these are test requirements, not adaptive Compose code implementation.
+
+---
+
+## 2026-10-09 — batch 22: Googlebook responsive launcher implemented
+
+[Source](https://android-developers.googleblog.com/2026/09/adaptive-development-scale-app-googlebook.html) — official Android Developers article, **2026-09-22**, revisited from batch 18 (same article, mobile `?m=1` URL). The earlier batch only added *planned* adaptive QA. This batch updates actual `android/app/src/main/java/org/mojealterego/sovereignlauncher/MainActivity.kt`, `AndroidManifest.xml` and `strings.xml`:
+
+- The existing Kotlin **classic View** implementation now observes the **available window width via `onSizeChanged`** and density conversion, not fixed physical screen dimensions. At `>=840dp`, it reflows the content into a horizontal scrollable app list + supporting information pane; below that it returns to a single-column list. The 840dp cut-off is an **MVP heuristic**, not a Google Play certification threshold or broad Compose window-class implementation.
+- During a window-width change the same button list/panes are relaid out rather than rebuilding or silently launching apps. App launch remains inside a per-app `setOnClickListener` with explicit component. Selected app label is restored from `savedInstanceState`.
+- Buttons have `48dp` minimum height, keyboard/D-pad focus and explicit Polish accessibility labels. Strings were centralized in `res/values/strings.xml`. Manifest requests `android:resizeableActivity="true"`; **zero Android sensitive permissions**.
+- Static assertions in [Googlebook source contract tests](../../tools/test_googlebook_adaptive_launcher.py) and the prior [launcher safety tests](../../tools/test_sovereign_launcher_policy.py) run in Python CI. [Manual/adaptive device QA matrix](android/ADAPTIVE-QA.md) enumerates 21 scenarios.
+
+**Important:** this is meaningful **actual Kotlin source change**, not an APK build or working Googlebook certification. The source article recommends Compose Navigation 3 `ListDetailSceneStrategy`, `SupportingPaneSceneStrategy`, desktop hover/right-click, multi-instance, drag-and-drop, `HandoffActivityData`, widgets and desktop emulator; these are **source-derived potential next features, not implemented in this Views scaffold**. Android SDK compilation, emulator/manual rendering, keyboard accessibility and real OEM device verification remain outstanding. No system HOME default is changed on any phone by committing this code.
+
+[Evidence ledger](../../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-22.md) · [Project evolution](../../docs/PROJECT-EVOLUTION-2026-10-09-BATCH-22.md).
