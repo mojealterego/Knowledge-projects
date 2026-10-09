@@ -424,3 +424,9 @@ Project 30 becomes the **external evidence and data plane** for the OmniCore por
 ## Batch 24 — case-evidence intake boundary
 
 The 10 uploaded PDFs include overlapping Seeker OSINT drafts, a hardware-awareness report and a large communications glossary. The admissible engineering pattern is provenance-preserving evidence intake and a reviewable case record, not a person-location engine. Extend each case item with authorized scope, recorded source hash, source rights, acquisition timestamp, reliability class, redaction, independent verification and retention constraints. Claims about a device, person or coordinates must be separately corroborated; inferred identifiers cannot be promoted to direct observations. An executable non-network preflight now exists at tools/seeker_evidence_scope_gate.py with tests. It does not conduct searches, traffic interception or contact analysis. Document hashes/pages and OSINT-version similarities are in docs/UPLOADED-PDF-INGESTION-2026-10-09-BATCH-24.md.
+
+---
+
+## 2026-10-09 — batch 25: evidence-qualified new uploads
+
+Missing-person OSINT PDF (15 pages) proposes inferred whereabouts based on MSISDN/phone status. P30 evidence schema must separate publicly verifiable facts, owner-provided logs and unsubstantiated inference, with authorization, timestamp, source hash, alternate explanations, witness confidence and privacy-limited retention. Subscriber activity can reflect a device/account, not a person's location or proof of life. No intrusive HLR/SS7 queries, impersonation or bulk private-account scraping is part of the implementation. Data from the source document remains out of GitHub; only provenance and safe engineering controls are retained.

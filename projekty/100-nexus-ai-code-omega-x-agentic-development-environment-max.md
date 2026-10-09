@@ -409,3 +409,9 @@ Github Marketplace agent apps: SonarQube code checks, Endor Labs dependency advi
 ## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
 
 Source-page candidates for NeXus IDE: **Context7** developer docs, **Serena/Sourcegraph/DeepWiki/Kotlin & Java Library Sources** code context, **Playwright/Chrome DevTools/Cypress/mabl** browser and regression tests, **Figma/Miro/draw.io/Lucid/Anima** approved design provenance, **GitHub/GitLab/DevOps** readback. `McpAdapterCandidate` must bind listing URL, verified official project/release, actual `tools/list`, typed argument schema, read-only default, expiry and intent-specific owner approval, local workspace isolation and independently checked execution receipts. The 210-card [catalog JSON](../docs/mcp-registry/2026-10-09-github-mcp-pages-1-7.json) is **public vendor metadata only**; no MCP bridge installed, model context injection authorized, IDE server added or account linked. `tools/mcp_registry_catalog.py` implements discovery/plan validation, not IDE hosting.
+
+---
+
+## 2026-10-09 — batch 25: uploaded MCP, Unity, eSIM and adversarial agent sources
+
+Uploaded Locally Uncensored Agent Builder 13-page report appears TWICE with byte-distinct PDFs but EXACTLY matching normalized extracted text; count as one source, not independent corroboration. Vendor/source descriptions discuss Tauri v2 + Rust + React, repository dependency map, Architect Mode and reviewed diffs, VRAM/process lifecycle and untrusted MCP tool isolation. Patterns can guide P100 local agent development, but quoted vendor RAM, number of tools and AGPL license must be checked at exact upstream release. We did not import/copyleft third-party code, execute shell tools, install Tauri/Unity, mount Android files or access Google Drive. The 115-page MCP file provides design guidance only; local mobile_vault_reader.py is an independent stdlib proof, not an active MCP installation.

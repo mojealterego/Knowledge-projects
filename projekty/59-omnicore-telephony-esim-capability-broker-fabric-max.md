@@ -428,3 +428,9 @@ Add simulator/replay suites, fault injection, concurrency tests, stale-state tes
 ## 21. Evidence status
 
 This project is a **source-derived engineering synthesis** from the reviewed repositories, not a statement that every external implementation is production-ready. Legacy repositories are treated as architectural lineage. Provider documentation, coverage, compatibility and service behavior must be verified independently before implementation.
+
+---
+
+## 2026-10-09 — batch 25: uploaded MCP, Unity, eSIM and adversarial agent sources
+
+Uploaded 18-page private eSIM project proposes seven internal extensions 7001–7007 over Open5GS / IMS(Asterisk) / licensed SIP trunk / PSTN. The PDF makes deployment-ready claims but uses unsafe SIP identity based only on source IP, host-wide privileged containers and an unpinned latest image. A static plan must require operator spectrum/license and numbering rights, SIP subscriber identity authentication, emergency calling review, encrypted secrets, pinned images, bounded container network and verified UE test equipment. New tools/telephony_topology_gate.py with 17 unit tests checks these conditions offline; it never activates eSIM, IMS, RAN, public phone numbers, SIM profiles or calls.
