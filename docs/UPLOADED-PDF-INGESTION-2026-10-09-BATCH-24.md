@@ -1,0 +1,39 @@
+# Partia 24 — 10 otrzymanych PDF / 262 strony (2026-10-09)
+
+**Jedyny cel zapisów:** `mojealterego/Knowledge-projects`. Wszystkie wymienione PDF **otrzymano w całości jako bajty w aktualnej rozmowie** (nie tylko nazwę lub link). Policzone przy użyciu SHA-256 oryginalnych bajtów oraz `PyMuPDF`; wydobyto tekst ze wszystkich 262 stron, porównano powtórzenia. **Nie publikowano oryginalnych PDF ani prywatnych danych śledczych w GitHubie**.
+
+| Indeks | Dostarczony plik PDF | Stron | SHA-256 oryginalnych bajtów | Kategoria / kanoniczny owner |
+|---:|---|---:|---|---|
+| 0 | Alibaba Cloud AI Catalyst Program Application.PDF | 8 | `073a37f4f090a84eb70dc9e1c548e2de0142360ee24fdf3714bf5e52984f4561` | grant P39/P34/P56 |
+| 1 | Analiza zasad hackathonu General Learning Hacks.PDF | 2 | `267ade4bb32662a7df3831fe477b899ddb208fb93131a41460961d75158a81df` | konkurs P34/P56/P37 |
+| 2 | Architektura Autonomicznego Systemu DGM.PDF | 41 | `ce14627db2de0620016fb7aacb9dd951a04284488fd0c760a4958db6ebbe4624` | DGM P59/P115/P33/P100 |
+| 3 | Budowa Agenta OSINT Seeker Krok po Kroku.PDF | 10 | `d15fe5eb7fd0cfb3656717113874ddefee6cde012beb502cf1ba2d712562c596` | Seeker SPEC OPS P32/P30 |
+| 4 | Budowa Agenta OSINT Seeker Krok po Kroku(1)PDF_261008_212004.pdf | 18 | `92c894eb4a07bcc12501abc086ee9717d82b10faea6b06c3070ff45a6510b389` | Seeker architektura P32/P30 |
+| 5 | Budowa Agenta OSINT Seeker Krok po Kroku(2)PDF_261008_212036.pdf | 19 | `710440cc7873f54f6e4d05774f0d4f67138b25792470799f19f0b9986c797a6f` | Seeker architektura, inna wersja |
+| 6 | Budowa Agenta OSINT Seeker Krok po KrokuPDF_261008_211921.pdf | 17 | `edc2a379d851b1057057230c5ef9528f7e7877fada3fa2af54296d369169e9d1` | Seeker architektura, inna wersja |
+| 7 | Globalna Rozbudowa Agenta Seeker_ Śledzenie Urządz...PDF | 12 | `3072e5f36581f2513fc3c9bc458a5b15be015071391151763ddce5bcfc9503ec` | urządzenia/sygnały P32/P95 |
+| 8 | Integracja API z Locally Uncensored.PDF | 18 | `2a953588b42c3d6d826aa6447a3dcc3cd5032129df6b55d537705495cda4ba28` | lokalny render P97/P22 |
+| 9 | Komunikacja.pdf | 117 | `5fefc06839e3770c40b05da42bd2ff962a7b373a946fd718a0e78957babeedf2` | protokoły P95/P119/P63 |
+
+**Suma:** 10 niezależnych plików binarnych, **262 strony** i **12 991 402 bajty**. W tym zbiorze **nie wystąpiły identyczne SHA-256** ani identyczne skróty po normalizacji całego tekstu. Nie oznacza to 10 niezależnych prac badawczych: warianty Seeker (indeksy 4,5,6) wykazują silne częściowe pokrycie siedmiowyrazowych fragmentów. Orientacyjne współczynniki Jaccarda zestawów siedmioelementowych shingles z tekstu: (4,5) **0,777**, (4,6) **0,860**, (5,6) **0,694**; są **wersjami pokrewnego korpusu**, nie 3 potwierdzeniami tych samych twierdzeń. Plik 3 „Seeker SPEC OPS” jest odrębną instrukcją kodową, nie identyczną kopią raportów.
+
+## Stan techniczny i epistemiczny
+
+- Tekst dokumentów zawiera **materiały z rozmów Gemini, przykładowe fragmenty kodu i hipotezy**, nie jednocześnie zweryfikowane wdrożenia. W szczególności sformułowania „pełna implementacja” i „najpotężniejszy system” nie są dowodami kompilacji, testów ani działania rozpoznania.
+- **Seeker (P32):** opisuje LangGraph Supervisor, normalizację identyfikatorów, graf dowodowy Neo4j, Qdrant, EXIF i sprzęt; również techniki dotyczące dostępu do danych telekomunikacyjnych, kontaktów i śledzenia osób/urządzeń. Bezpieczeństwo: nie przenosić do wykonywalnych narzędzi zdolności śledzenia trzecich osób, HLR/SS7, enumeracji kontaktów, ukrytego skanowania czy wyciągania prywatnych identyfikatorów. Nawet MAC/OUI, IMEI, adres IP i dane infrastrukturalne **nie są samodzielnym dowodem tożsamości ani bieżącej fizycznej lokalizacji osoby/urządzenia**. Wersja dopuszczalna: analityka źródeł na podstawie materiałów dostarczonych przez upoważnionego właściciela, raport defensywny, identyfikacja niepewności i zgoda.
+- **Global Seeker:** segmenty OUI/BLE/Find Hub/TV/telekomunikacja opisują potencjalne skojarzenia identyfikatorów; brak prawa do mapowania osób na podstawie losowych urządzeń, do odczytu usługi Find Hub bez uprawnień ani uniwersalnego wykrywania globalnego. ML-DSA/FIPS 204 jest sygnaturą kryptograficzną, a nie mechanizmem śledzenia urządzeń.
+- **DGM (P59/P115):** opisane role `ModelScout → TechRecon → Strategist → DGM_Core`, 33 niszowe aplikacje + 33 narzędzia programistyczne + Game Builder, Hugging Face, GitLab i mutacje kodu. Liczba „66” oznacza **cel/specyfikację**, a nie automatycznie utworzone, przetestowane produkty. Dopóki host nie zweryfikuje niezależnie zgód, testów, progów regresji, brancha oraz rollbacku, automatyczna samomodyfikacja pozostaje projektem. W repo istnieje już `tools/dgm_cycle_gate.py`; nie mnożyć równoległych narzędzi tego samego celu.
+- **Komunikacja (117 stron):** szeroki słownik IrDA/CIR, BLE, NFC, UWB, Wi-Fi Direct/IEEE 802.11, LoRa/LoRaWAN, Li-Fi/FSO, satelitarnych, IoT, Zenoh i wielu innych standardów. Rozróżnić fizyczne medium/radio, standard połączenia, messaging middleware i usługi lokalizacyjne. Tezy o globalnym zasięgu, cm dokładności, mikrosekundowych gwarancjach czy geolokalizacji identyfikatora nie wynikają z samego nazewnictwa protokołu. `tools/communication_link_policy.py` zawiera 8 konserwatywnych klas do offline planowania własnych urządzeń, nie skaner.
+- **Locally Uncensored + Google Flow:** dokument proponuje Tauri/Rust, ComfyUI/Wan i renderowanie w chmurze, ale też wydobywanie sesyjnych tokenów i wywoływanie nieudokumentowanych endpointów Flow. Tego nie implementować. Oficjalny **Gemini API Veo** jest odrębną dokumentowaną ścieżką wideo, Google Flow użytkową aplikacją z własną autoryzacją i ograniczeniami. `Master Prompt` JSON, własne generatory i opis zleceń asynchronicznych można budować bez wykorzystywania sesji przeglądarki.
+
+## Zweryfikowane oficjalnie w tej partii, zamiast powtarzania deklaracji źródła
+
+1. [Alibaba Cloud AI Catalyst — strona operatora](https://www.alibabacloud.com/en/startup/ai): **up to 120 000 USD kredytów i do 2 mld tokenów**, 4–5 dni roboczych typowego rozpatrywania, wymagany podmiot niezależny, nieznotowany na giełdzie, założony nie dawniej niż 10 lat temu z dostępną stroną. Kredyty **nie obejmują** domen, CDN, Marketplace, prepaid i innych kategorii, mają zmienny termin ważności. Kwoty to **maksymalne możliwe benefity, nie środki przyznane użytkownikowi**. Nie składano wniosku.
+2. [General Learning Hacks — oficjalne zasady Devpost](https://general-learning-hacks.devpost.com/rules): 24 h, 1–4 osoby, tworzenie kodu od zera z jawnie opisanymi dozwolonymi bibliotekami, prezentacja fizyczna w Hongkongu i dwuminutowe demo. Regulamin podaje **20.09.2026, 09:00 HKT**; PDF opisuje konflikt z „10:00 AM” nagłówka. [Strona główna Devpost](https://general-learning-hacks.devpost.com/) już oznacza **hackathon ended** na 09.10.2026. Zatem nie jest obecnie otwartą ofertą aplikowania.
+3. [Google Flow — oficjalna pomoc](https://support.google.com/flow/answer/16353333) oraz [Gemini API Veo 3.1](https://ai.google.dev/gemini-api/docs/veo): dostępne legalne drogi są rozdzielone; do wywołań programowych używać tylko oficjalnie obsługiwanych API i własnych kluczy w bezpiecznym magazynie. Brak kont/kluczy w tej partii.
+
+## Wdrożenie w istniejącym portfolio
+
+Kanoniczne projekty P32/P30, P39/P34/P56, P59/P115/P33, P97/P22, P95/P119/P63, P47/P72 zostały rozwinięte o konkretne kontrakty i granice wdrożeń. **Nowe projekty numerowane = 0**, ponieważ te cele mają już właścicieli. Utworzono trzy **offline** bramki: `tools/seeker_evidence_scope_gate.py`, `tools/program_claim_gate.py`, `tools/communication_link_policy.py` wraz z testami.
+
+Stan API/CI kompilacji należy odczytać z GitHub przed oznaczeniem jako `VERIFIED`. Nic w niniejszym dokumencie nie oznacza użycia HLR/SS7, lokalizowania osób, zapytania Find Hub, skanowania cudzych urządzeń, pozyskiwania kluczy Flow, publikowania aplikacji ani przyznania kredytów.

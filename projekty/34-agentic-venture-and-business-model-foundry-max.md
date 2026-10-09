@@ -391,3 +391,7 @@ OPPORTUNITY HYPOTHESIS
 
 ### Kryteria ukończenia
 Zestaw rzeczywistych eksperymentów z liczbą kontaktów, konwersją, kosztem obsługi, marżą oraz decyzją opartą na danych. Bez wyników terenowych wszystkie wielkości ekonomiczne pozostają hipotezami.
+
+## Batch 24 — verified 2026 grant and event evidence
+
+Alibaba Cloud AI Catalyst's public page lists advertised ceilings of USD 120,000 cloud credits and 2 billion Model Studio tokens. These are not confirmed funds for this portfolio. Document actual company eligibility, AI use-case, website, credit exclusions, independently verified proof of concept and submission evidence before claiming a grant. General Learning Hacks official rules state the deadline was September 20, 2026 at 09:00 Hong Kong time; its Devpost page now says ENDED. The uploaded report mentions a discrepancy with 10:00 on the event header. Mark competition as historical, not actionable. The source PDFs remain private; their SHA/page ledger is in docs/UPLOADED-PDF-INGESTION-2026-10-09-BATCH-24.md. New offline tool: tools/program_claim_gate.py.

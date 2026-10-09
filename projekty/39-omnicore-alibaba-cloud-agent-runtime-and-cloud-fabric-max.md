@@ -420,3 +420,9 @@ p95_task_latency
 ## Status
 
 **Architecture / implementation blueprint.** Alibaba Cloud-specific features are treated as concrete implementation capabilities, while the OmniCore control plane remains provider-neutral. Current service/model names and limits must be revalidated against the live regional documentation before production deployment.
+
+---
+
+## 2026-10-09 — batch 24: PDF source evolution
+
+Official Alibaba AI Catalyst page (checked 2026-10-09) advertises **up to USD 120,000 cloud credits** and **up to 2 billion Model Studio tokens**, technical office hours and about 4–5 business days for review. Applicant eligibility includes AI core technology, an unlisted company established within ten years and an accessible public website. Credits are not unrestricted: operator lists domain, CDN, Marketplace and prepaid exclusions. The uploaded 8-page application PDF is a **draft**, not submission or credit allocation. Record `ProgramClaim` states `advertised_maximum, eligibility_verified, submitted, awarded, redeemed` separately; no real user account accessed. [Offline program claim validator](../tools/program_claim_gate.py). See [10-PDF source ledger](../docs/UPLOADED-PDF-INGESTION-2026-10-09-BATCH-24.md).
