@@ -179,3 +179,12 @@ Critical: the **official upstream Hermes Termux APT guide currently states the p
 - [New Python static contract suite](../../tools/test_googlebook_adaptive_launcher.py) and [evolution report](../PROJECT-EVOLUTION-2026-10-09-BATCH-22.md).
 
 Googlebook blog recommends Compose/Navigation 3, multi-instance and handoff, but **current implementation is a dependency-free Android Views layout**. CI static assertions are not equivalent to an Android SDK build or emulator verification. All writes stayed inside Knowledge-projects.
+
+## 2026-10-09 — batch 23: 7 pages, 210 GitHub MCP Registry cards
+
+- [Seven public source URLs, 210 observed listing cards / 394 declared globally, 184 beyond supplied pages](../WEB-SOURCE-INGESTION-2026-10-09-BATCH-23.md).
+- [Machine-readable 210-card catalog snapshot, exact registry URLs and pages](../mcp-registry/2026-10-09-github-mcp-pages-1-7.json).
+- [Offline catalog validator and installation/authorization-denial gate](../../tools/mcp_registry_catalog.py) and [22 stdlib tests](../../tools/test_mcp_registry_catalog.py).
+- [13 evolved canonical project owners, no new project ID](../PROJECT-EVOLUTION-2026-10-09-BATCH-23.md).
+
+**All 210 cards are descriptions from public GitHub listing, not inspected, installed, permission-authorized, or connected MCP servers.** Two cards have missing titles in extraction, preserved as null without invented names; heuristic categories are not permission claims. No external repository writes, OAuth, network tool calls, financial transaction or plugin installation.

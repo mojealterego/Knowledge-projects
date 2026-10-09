@@ -152,3 +152,9 @@ Compare SonarQube Agent (SAST/quality gate), Endor Labs AgentHQ (dependency/CVE 
 ## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
 
 **Sources:** Hermes security and developer architecture docs; `OpenShell`/OpenShell-Community forks, `agent-governance-toolkit`, `hermes-compression-eval`, `neural-steering`, `llm-abliteration`. Defensive `AgentRuntimeThreatCard`: injected SKILL.md, untrusted MCP response, poisoned memory, hidden provider prompt, open process/shell, third-party plugin, sensitive env passthrough, unsafe sandbox option, failed rollback and expired OAuth. Keep evaluation controlled and authorized; `llm-abliteration` fork is **threat-research provenance**, not an imperative to bypass hosted model controls. Compression evaluator tests evidence retention after summarization; it cannot itself prove universally lossless memory. P108 tests only authorized owned targets and does not import third-party malicious instructions into active agent context.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+Discovery of **SonarQube, Snyk API/Web, Snyk, Sonatype Dependency Management, Codacy, StackHawk, Black Duck, CrowdStrike Falcon, Zscaler and UniFi Gateway** within GitHub MCP pages 1–7 permits comparison of *advertised* SCA/SAST/DAST/EDR/deployment contexts. These are NOT validated scan outputs or security approvals; several services can actively alter production security controls. New `VendorSecurityToolEvidence` includes official publisher/repo/version/manifest, actual tool permissions, authorization of test target, non-destructive mode, findings/citation to exact commit, false-positive review, token/budget limits and independent CI readback. Public vendor ranking/star counts do not equal an installable trusted binary. `tools/mcp_registry_catalog.py` fails closed on installation and missing independent authorization.

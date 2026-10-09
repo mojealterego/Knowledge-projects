@@ -367,3 +367,9 @@ Feasibility report (5) claims recursive Swarm Self-Replication. Bounded executio
 ## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
 
 **No-progress tool-call loop regression as reproducible acceptance target.** Zed issue [#65199](https://github.com/zed-industries/zed/issues/65199) reports an agent read-only loop of 171 identical `read_file` calls, 195 calls and ~10.3M tokens with no edit. Treat figures as issue reporter's evidence, not a locally reproduced benchmark. New `tools/agent_tool_loop_guard.py` is a deterministic non-executing policy: it halts when same tool+argument digest repeats >N times without independently verified progress, or total call/token budgets are exceeded. `trusted_progress_version` must be supplied by the host's real postcondition and cannot be accepted from an LLM message. Needed next: integrate with a real agent executor (inside this repo when built), measure legitimate retries/false positives, add telemetry and a trusted explicit reset. It is **not** installed in Zed or ODYN.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+The GitHub MCP listing includes potentially effectful tool surfaces **Desktop Commander**, **Remote Desktop Commander**, **SentinelX**, **Apple Tools**, **MCP Emails**, **Omnidim**, social posting, SaaS automation and agents provisioning infrastructure. These are public vendor *claims*, not active runtime `tools/list` or granted capabilities. Use deny-by-default `McpToolEffect`: source proof, tool signature, bounded user intent, policy scope, independent authorization, trusted-progress receipt, cost quota, rollback and irreversible-action review. Combine existing `agent_tool_loop_guard.py` no-progress termination with `tools/mcp_registry_catalog.py` metadata eligibility; **neither is a process sandbox or actual enforcement unless integrated with an authorized host**. External GitHub repositories remain read-only in this ingestion.

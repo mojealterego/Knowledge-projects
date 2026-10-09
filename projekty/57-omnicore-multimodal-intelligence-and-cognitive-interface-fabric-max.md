@@ -279,3 +279,9 @@ Source: `AETHER.pdf` (13-page, image-only HTML/JS screenshot). Previously descri
 ## 2026-10-08 — batch 18: public web source evolution
 
 Google Cloud Vision AI, Speech-to-Text, Translation, Natural Language and Video Intelligence each have different request schemas, region/language support, costs, confidence and retention. Add MultimodalAdapterRecord {provider,task,modality,source_sha,region,language,consent,media_timestamp_or_text_span,model_revision,returned_evidence,expense_cap}. Cross-modal retrieval via Gemini Embedding 2 may align modalities, but model-generated similarity is not verified truth; retain source offsets and independent citations. No API used or accuracy claimed from product pages.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+GitHub MCP listing candidates for multimodal processing: **Microsoft Markitdown** (PDF/Office/media conversion), **Imagesorcery** (image processing/OCR), **OpusClip** (video shorts), **Google AI Search MCP** and **Hugging Face** (provider discovery). The registry descriptions do **not** prove supported RAW/NEF, exact file type coverage, AI inference quality or data processing residency. `MultimodalMcpSource`: original media hash and rights, measured format/size/duration, local vs remote transform, provider licensing, data retention, output citations and verified correctness. Any remote upload requires independent explicit consent, privacy review and cost ceilings. No multimedia files were uploaded or converted by these third-party MCP services.

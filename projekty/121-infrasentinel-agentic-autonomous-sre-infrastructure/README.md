@@ -204,3 +204,9 @@ LaunchDarkly agent may create/change flags and AI Config; Octopus Deploy Intelli
 ## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
 
 **Railway deployment safety for bounty template experiments.** The original GitHub Template Bounties project #2 was not enumerable, but `railwayapp/templates` README and Station confirm an official template submission framework. Source-specific `RailwayTemplateProof` requires a **currently open task** before expecting compensation, public and legally reusable service code, Docker/image provenance, health checks, environment/secrets from Railway vault rather than repo, persistent storage, port/domain config, resource+egress+time budget, shutdown/destroy plan, real deployment tests and verified accepted response. Historical NodeBB/GPT OSS examples each describe $150 and solved status, NOT ongoing rewards. No Railway account or cloud instance used; no charges authorized.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+MCP Registry candidates for SRE: **Netdata, Sentry, Dynatrace, Logfire, PagerDuty, Shipbook** for observability; **Terraform, StackQL, Control Plane, Octopus, Vercel, Azure Kubernetes Service, Neon** for infrastructure and releases. They require sharply different privileges: reading an incident is not deploying, provisioning, destroying or funding infrastructure. `SreMcpGrantEvidence` should bind source/official SDK revision, exact account/environment, read-only default, redacted data, independent owner grant, cost/rollback/timeouts, on-call escalation, and verifiable provider state postcondition. Passing registry presence is not proof credentials exist or any services run. No cloud calls, installations, alerts, billing, deployments or monitoring connections executed.

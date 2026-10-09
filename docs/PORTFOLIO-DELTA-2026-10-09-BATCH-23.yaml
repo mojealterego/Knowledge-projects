@@ -1,0 +1,26 @@
+date: "2026-10-09"
+batch: 23
+repository_write_target: mojealterego/Knowledge-projects
+source_type: github_public_mcp_registry_web_pages
+source_pages: [1, 2, 3, 4, 5, 6, 7]
+cards_per_page: 30
+cards_in_scope: 210
+advertised_registry_total_at_observation: 394
+other_cards_not_reviewed: 184
+listing_titles_missing_due_to_extraction: 2
+first_party_server_code_reviewed: false
+actual_mcp_tools_list_checked: false
+user_plugins_installed_or_connected_checked: false
+all_entries_public_vendor_description_only: true
+source_index: docs/mcp-registry/2026-10-09-github-mcp-pages-1-7.json
+canonical_projects_evolved: [P29, P33, P45, P47, P56, P57, P59, P72, P86, P100, P108, P114, P121]
+new_numbered_projects: 0
+code:
+  - tools/mcp_registry_catalog.py
+  - tools/test_mcp_registry_catalog.py
+expected_new_unit_tests: 22
+external_mcp_installs: 0
+external_oauth_authorizations: 0
+external_repo_writes: 0
+cloud_resource_provisioning: false
+paid_services_or_payment: false

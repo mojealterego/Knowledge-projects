@@ -403,3 +403,9 @@ Github Marketplace agent apps: SonarQube code checks, Endor Labs dependency advi
 ## 2026-10-09 — batch 22: Googlebook responsive launcher implemented
 
 **Source:** Android Developers' "Land your apps on Googlebook with adaptive development" (2026-09-22), already categorized in batch 18. Android Studio Canary desktop emulator can test free-form resize, keyboard/trackpad and multi-instance according to the upstream blog; Android CLI adaptive skill offers assistance with Compose migrations. Proposed `AndroidDesktopDevAdapter`: pinned Android SDK + Kotlin/AGP versions, signed/approved skill source, exact build command, emulator AVD API/profile, screen width tests, screenshot artifact hashes, keyboard/semantics checks, CI and rollback. **Implemented in P125:** classic View responsive source + static test suite and manual matrix, not a Compose Navigation 3 or desktop emulator feature. Do not install a new skill, request privileged device access or treat generic blog examples as ready runtime validation.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+Source-page candidates for NeXus IDE: **Context7** developer docs, **Serena/Sourcegraph/DeepWiki/Kotlin & Java Library Sources** code context, **Playwright/Chrome DevTools/Cypress/mabl** browser and regression tests, **Figma/Miro/draw.io/Lucid/Anima** approved design provenance, **GitHub/GitLab/DevOps** readback. `McpAdapterCandidate` must bind listing URL, verified official project/release, actual `tools/list`, typed argument schema, read-only default, expiry and intent-specific owner approval, local workspace isolation and independently checked execution receipts. The 210-card [catalog JSON](../docs/mcp-registry/2026-10-09-github-mcp-pages-1-7.json) is **public vendor metadata only**; no MCP bridge installed, model context injection authorized, IDE server added or account linked. `tools/mcp_registry_catalog.py` implements discovery/plan validation, not IDE hosting.

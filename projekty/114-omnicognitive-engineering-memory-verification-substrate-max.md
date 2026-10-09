@@ -163,3 +163,9 @@ Google Gemini Embedding 2 cross-modal RAG requires MemoryIndexProvenance {source
 ## 2026-10-09 — batch 20: ODYN / Hermes / Nous ecosystem
 
 **Sources:** official Hermes Memory, Context Files, Honcho Memory sections and Plastic Labs Honcho V3 documentation. `MemoryBackendEvidence`: `provider, profile, tenant, conversation_id, source_sha, original_quote_span, valid_at, recorded_at, corroborating_evidence, sensitivity, explicit_remote_consent, retention, delete_receipt, confidence, disputes`. Hermes auto-generated persistent skills/memories must not silently retain credentials or cross-contaminate profiles; sending sensitive input to external Honcho is gated by separate consent/data processing terms. Consolidation and compression need a holdout query suite (`hermes-compression-eval` is a research candidate) measuring factual recovery and hallucinated additions, not just smaller token count. No Honcho instance or private profile accessed.
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+Memory-related candidates among seven GitHub MCP pages: **Basic Memory, PMB AI, ContextStream, Selvedge, memo, XMemo, Claude FAF, .FAF Context** and **Glean**. Their claims to persistent/“local-first” or shared knowledge are not audited privacy or retention guarantees. `McpMemoryRisk` adds explicit account/tenant, local vs hosted, encryption, data lifecycle, user export/delete, source time vs ingestion time, schema/version, cross-session tool permission and source-recovery fidelity. Do not merge private chat, projects or files into unrelated external memory services. No stored user data moved; source inventory is only public metadata.

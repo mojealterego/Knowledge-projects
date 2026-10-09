@@ -278,3 +278,9 @@ Google Cloud 101 gen-AI technical blueprints (2025) are **illustrative architect
 ## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
 
 **Railway Template Bounties — actionable qualification instead of invented task status.** Source `github.com/orgs/railwayapp/projects/2` renders only a board shell. The official `railwayapp/templates` repository confirms a template bounty scheme, and Railway Station provides task-specific examples, but two verified example rewards ($150 each for NodeBB and GPT OSS) are **historical SOLVED tasks**, not current offers. `RailwayTemplateAcceptance`: current open task URL+timestamp, licensing/public source repo, environment/secret boundaries, correct service graph, ordered startup and health checks, persistent volumes, validated domain/network paths, cost cap, independent deploy/test receipt and actual acceptance. No Railway app deploy or new project creation; P33 remains application-delivery owner. [Evidence ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-21.md).
+
+---
+
+## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
+
+Seven-page GitHub MCP scan surfaces **Playwright, Chrome DevTools, Cypress Cloud, mabl, Wopee, Argus Testing** (QA/browser), **Figma, Miro, draw.io, Lucid, Mobbin, Anima** (UX/design references), **Vercel, Webflow, Wix, Lovable, gamedev.pl** (potential app builders). Proposed build adapter contract: platform + exact official publisher and license, baseline app spec, reproducible source, permission envelope, actual CI/build, preview/screenshot evidence, rollback, cost, approval, quality benchmark. Descriptions saying “autonomous testing” or “free” are provider statements; no app was built, installed or published through the catalog. Avoid duplicate app-generator projects; P33 remains canonical owner.
