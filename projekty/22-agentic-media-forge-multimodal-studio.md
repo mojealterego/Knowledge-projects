@@ -69,3 +69,7 @@ No covert modification of provenance, no hidden payloads, no unauthorized public
 ## Definition of done
 
 The system can take a raw multimodal asset, execute a reproducible transformation pipeline, verify measurable properties and export a provenance-linked final artifact.
+
+## Batch 24 — 2026-10-09 PDF source evolution
+
+Locally Uncensored/Google Flow integration draft (18 pages) motivates provider-agnostic ScenePlan JSON → local renderer (optional ComfyUI/Wan) or officially documented hosted model endpoint → async job receipt → provenance and QA. Do not equate a consumer Google Flow project URL with a published API or credentials. Require license verification, consent for personal images, model version, billable cost, reproducible output and source-owner approval. No hidden service endpoints, login sessions or live video renders were used.

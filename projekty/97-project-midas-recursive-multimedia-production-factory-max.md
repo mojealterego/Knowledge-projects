@@ -90,3 +90,7 @@ P24, P27, P56, P61, P72, P80, P90, P91, P100.
 ## Source witnesses
 - `PROJECT MIDAS.pdf` — 92-page automation blueprint.
 - `Integracja API z Locally Uncensored.PDF`
+
+## Batch 24 — 2026-10-09 PDF source evolution
+
+18-page Locally Uncensored / Google Flow PDF describes local Tauri/Rust orchestration, ComfyUI/Wan, structured Master Prompt/ShotPlan and asynchronous cloud rendering. Adopt only documented authorized providers and typed async job status, source media rights, cost cap, continuity checks and render receipts. The document also discusses use of hidden browser-session interfaces: exclude that access pattern, do not extract session material or call undocumented Flow endpoints. Official Gemini API Veo 3.1 documentation provides a separate supported programmable path. No Google Flow account or API accessed, no media generated in this batch.

@@ -139,3 +139,7 @@ A configuration qualifies only when it demonstrates, in a controlled and reprodu
 **UNKNOWN:** real-world geopolitical resilience, legal sovereignty, guaranteed censorship resistance and production economics.
 
 **VERIFIED:** none until implementation and independent testing are completed.
+
+## Batch 24 — 2026-10-09 PDF source evolution
+
+The 117-page Komunikacja.pdf surveys IrDA, BLE, NFC, UWB, Wi-Fi Direct, LoRaWAN, Li-Fi/FSO, satellite and software messaging such as Zenoh. Keep radio/optical physical transport distinct from middleware and location services. No identification prefix, wireless packet or OUI alone proves a person's location. Prototype offline tools/communication_link_policy.py describes eight conservative choices for owner-approved device testbeds with mutual consent and no background surveillance, external publication or network scan. Actual radio throughput, range and reliability need device-level measurements; no hardware tests were performed.
