@@ -125,3 +125,9 @@ Source `AI Launchery Android_ Ranking 2025-2026.PDF` proposes contextual HOME or
 ## 2026-10-08 — batch 18: public web source evolution
 
 Googlebook adaptive Android article (2026-09-22) and Android tools/agents docs recommend window size classes, desktop freeform resizing, pointer/trackpad, keyboard, multi-instance, accessible touch/click targets. Extend AdaptiveUiEvidence {compact,medium,expanded,freeform_resize,split_window,keyboard_navigation,mouse_hover,talkback,rotation,restore_state}. Android agent skills are development aids, **not permissions to control the device**. No emulator or OEM install performed.
+
+---
+
+## 2026-10-09 — batch 22: Googlebook responsive launcher implemented
+
+**Source:** Android Developers' Sept 22 2026 Googlebook adaptive article, already referenced in batch 18. Now P125 has an actual native Views reflow prototype (window's `onSizeChanged`, dp breakpoint >=840 and no new permission requests). P105 must treat `window_bounds, viewport_width_dp, focused_view_id, independent_device_readback, touch/keyboard/trackpad_mode` as **runtime observation** before authorizing any UI action. A changing window invalidates previously calculated click coordinates; re-read UI hierarchy and reauthorize rather than replay stale taps. `AdaptiveUiPostcondition`: width and density, orientation, focused control, observed target bounds after resize, source permission scope and error fallback. HOME/launcher role does not grant Accessibility or silent app actuation. No ADB control, Android emulator automation or desktop hardware test executed.

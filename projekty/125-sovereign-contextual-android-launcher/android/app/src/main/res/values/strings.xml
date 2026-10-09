@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Sovereign Launcher</string>
+    <string name="launcher_title">Sovereign Launcher — układ adaptacyjny</string>
+    <string name="launcher_description">Wybierz aplikację. Zmiana szerokości okna automatycznie dopasowuje układ. Uruchamianie wymaga dotknięcia lub aktywacji klawiszem.</string>
+    <string name="details_title">Informacje</string>
+    <string name="details_hint">Zaznacz aplikację z listy. W wersji demonstracyjnej nie są gromadzone statystyki używania.</string>
+    <string name="no_selection">Nie wybrano aplikacji</string>
+    <string name="selected_app">Ostatnio wybrano: %1$s</string>
+    <string name="open_app_accessibility">Otwórz aplikację: %1$s</string>
+    <string name="app_unavailable">Aplikacja niedostępna</string>
+    <string name="app_not_permitted">Brak uprawnień do uruchomienia</string>
+    <string name="no_launchable_apps">Brak aplikacji możliwych do wyświetlenia.</string>
 </resources>

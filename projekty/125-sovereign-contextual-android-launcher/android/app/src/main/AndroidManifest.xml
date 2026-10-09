@@ -10,7 +10,12 @@
     <application android:label="@string/app_name"
         android:usesCleartextTraffic="false"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
-        <activity android:name=".MainActivity" android:exported="true">
+        <!-- HOME is only eligible for explicit default-home user selection.
+             resizeableActivity requests standard windowing, not multi-instance
+             or Googlebook badge/certification. -->
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:resizeableActivity="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.HOME" />

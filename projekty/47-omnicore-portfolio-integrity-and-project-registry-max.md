@@ -349,3 +349,9 @@ Po korekcie użytkownika portfolio ma jeden i tylko jeden repozytoryjny `write_t
 ## 2026-10-09 — batch 21: Zed Guild, Railway bounties, WordPress premium
 
 **Source reconciliation / batch 21:** These three URLs were already recorded as title/shell or account-restricted sources in batches 18–19, so no new conceptual project is warranted. New evidence now includes official `zed.dev/community/guild` track descriptions and current GitHub REST issue states (Zed #51333/#65199 OPEN and #65205 CLOSED on 2026-10-09), official Railway templates README+Station historical examples, and current WordPress plugin support guide (reviewed 2026-10-05). Keep `BOARD_SHELL`, `ISSUE_STATE_API_VERIFIED`, `OLD_SOLVED_REWARD`, `AUTH_REQUIRED` separate; a bounty board shell or private paid-plugin URL does not confer job, money, account access or installed plugin state. All implementation writes are restricted to Knowledge-projects. [Batch 21](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-21.md).
+
+---
+
+## 2026-10-09 — batch 22: Googlebook responsive launcher implemented
+
+**One already-known source, one new code delta:** user supplied `android-developers.googleblog.com/2026/09/adaptive-development-scale-app-googlebook.html?m=1`, the mobile rendering of the same Sept 22 2026 article already ingested in batch **18**. Normalize by canonical article URL and publication date rather than treating query `?m=1` as a distinct primary document. **Do not create new P127**: P125 already owns Android HOME launcher and P105/P100 own UI actuation/developer tooling. The new evidence is a committed patch to P125 Kotlin/XML and 13 static tests, **not** a separate Android app or independently benchmarked device. Preserve `SOURCE_REUSED → EXISTING_OWNER_EVOLVED → CODE_COMMITTED → CI_STATIC_PASS/FAIL → SDK_BUILD_PENDING`. See [batch22 ledger](../docs/WEB-SOURCE-INGESTION-2026-10-09-BATCH-22.md).

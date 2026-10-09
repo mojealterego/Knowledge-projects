@@ -170,3 +170,12 @@ Critical: the **official upstream Hermes Termux APT guide currently states the p
 - [Offline agent loop policy](../../tools/agent_tool_loop_guard.py) and [offline opportunity evidence qualification](../../tools/external_opportunity_evidence_gate.py).
 
 **Private account/board details not retrieved.** No payment, public Zed/Railway PR, WordPress plugin activation, actual cloud deployment or currently payable task claimed.
+
+## 2026-10-09 — batch 22: Googlebook adaptive source → actually changed P125 Kotlin
+
+- [Source re-use manifest / Android Developers Sept 22 2026; dedupe versus batch 18](../WEB-SOURCE-INGESTION-2026-10-09-BATCH-22.md).
+- [P125 Android launcher: responsive onSizeChanged source, Kotlin string resources and manifest resizability](../../projekty/125-sovereign-contextual-android-launcher/README.md).
+- [Device/manual QA matrix (21 scenarios; NOT YET EXECUTED)](../../projekty/125-sovereign-contextual-android-launcher/android/ADAPTIVE-QA.md).
+- [New Python static contract suite](../../tools/test_googlebook_adaptive_launcher.py) and [evolution report](../PROJECT-EVOLUTION-2026-10-09-BATCH-22.md).
+
+Googlebook blog recommends Compose/Navigation 3, multi-instance and handoff, but **current implementation is a dependency-free Android Views layout**. CI static assertions are not equivalent to an Android SDK build or emulator verification. All writes stayed inside Knowledge-projects.
