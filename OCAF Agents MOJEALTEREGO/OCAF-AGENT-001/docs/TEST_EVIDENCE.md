@@ -58,3 +58,12 @@
 - Numer seryjny i nazwa są spójne w TOML/manifest/centralnym rejestrze, ale to **nie jest autentykacja kryptograficzna**.
 - Rzeczywiste serwery OMAs/OMAt, OSTc, podpisy i produkcyjna obsługa obrazów nadal BRAK.
 - Po końcowych poprawkach testów i dokumentów wymagane będzie nowe CI oraz readback `main`.
+
+## Aktualna weryfikacja: nazwa, serial i odmowa podmiany (2026-10-19)
+
+- **[GitHub Actions run 39324839309 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39324839309)**, commit `3fb99da89cc1d7b7ca50277440b8d6ab29888b5d`, job `118307850394`, środowisko `ubuntu-latest`.
+- **16/16 Rust testów PASS**: 2 domenowe, **4 identyfikacyjne**, 3 integracyjne OCAF, 7 bezpieczeństwa; 0 failed. `cargo fmt --check` PASS, `clippy -D warnings` PASS, JS syntax PASS, `cargo run` CLI smoke PASS.
+- Test `replacing_registered_name_or_serial_is_rejected`: PASS — nazwa lub numer seryjny różne od wersji zarejestrowanej skutkują odmową uruchomienia.
+- Test `serial_name_and_registry_number_are_unique_in_registry`: PASS — obecny rejestr nie zawiera duplikatów agent ID, nazwy, serialu, numeru ewidencyjnego ani katalogowego (case-insensitive).
+- T01: **częściowo** potwierdzono tożsamość, nie artefakt digest. T02: PASS dla tego konkretnego SHA. T03–T15 nadal niezamknięte; OSTc BLOCKED BY SPECIFICATION.
+- **CI nie jest certyfikatem**. Certyfikat `CERT-AM-2026-0001` niewydany, `production_approved=false`, `source_access.enabled=false`.

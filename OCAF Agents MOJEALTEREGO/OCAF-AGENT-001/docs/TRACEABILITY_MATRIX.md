@@ -2,9 +2,9 @@
 
 | ID | Wymóg | Implementacja / dokument | Test / dowód | Wynik |
 |---|---|---|---|---|
-| ID-01 | Unikatowa nazwa niezależna od numeru 001 | `agent.rs`, `agent.toml`, `AGENT_IDENTITY_REGISTRY.json` | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324415084) |
-| ID-02 | Numer seryjny inny niż numer ewidencyjny | `agent.rs`, manifest, JSON registry | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324415084) |
-| ID-03 | Ochrona spójności nazwy/serialu i unikatowości | `security.rs`, JSON registry | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324415084) |
+| ID-01 | Unikatowa nazwa niezależna od numeru 001 | `agent.rs`, `agent.toml`, `AGENT_IDENTITY_REGISTRY.json` | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324839309) |
+| ID-02 | Numer seryjny inny niż numer ewidencyjny | `agent.rs`, manifest, JSON registry | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324839309) |
+| ID-03 | Ochrona spójności nazwy/serialu i unikatowości | `security.rs`, JSON registry | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324839309) |
 | ID-04 | Pełny zestaw technicznych dokumentów agenta | `docs/`, `certification/` | tree inventory | IMPLEMENTED DOCS |
 | PL-01 | Plan fotograficzny bez efektów ubocznych | `src/agent.rs` | `tests/integration.rs` | PREVIOUS PASS |
 | SE-01 | Limit 1024 bajtów i identity lock | `src/security.rs`, `src/agent.rs` | `tests/security.rs`, unit | PREVIOUS PASS |
@@ -19,3 +19,6 @@
 | RL-02 | Specyfikacja handlowa i umowy | `docs/commercial/` | przegląd prawny brak | DRAFT |
 
 **Zasada aktualizacji:** przy każdym PR wykonawczym zmień status w tej tabeli wyłącznie wtedy, gdy dowód i SHA jednoznacznie go potwierdzają. Wiersze z wynikiem `TESTED LOCAL` oznaczają weryfikację lokalnych kontraktów; formalny odbiór na `main` musi nadal nastąpić.
+
+
+**Dowód ostatni:** [run 39324839309](https://github.com/mojealterego/Knowledge-projects/actions/runs/39324839309), 16/16 testów PASS na `3fb99da89cc1d7b7ca50277440b8d6ab29888b5d`. Wymagania ID-01–ID-03 spełnione w granicach **lokalnej ewidencji**. Nie zastępuje to dowodu serwerowego ani kryptograficznego.

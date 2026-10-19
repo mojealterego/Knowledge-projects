@@ -41,3 +41,8 @@ Ograniczenie kodowe: `ACTIVE` zawsze DENIED. **Nie jest wydany żaden certyfikat
 
 ## Pola do późniejszego formalnego wypełnienia
 Miejsce i data wydania: `[BRAK]`; właściciel prawny: `[DO WERYFIKACJI]`; osoba akceptująca: `[BRAK]`; podpis i pieczęć: `[BRAK]`; digest i podpis builda: `[BRAK]`; protokół odbioru: `[BRAK]`.
+
+
+## Dowód spójności metryki technicznej (nie certyfikacji)
+
+[Run 39324839309 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39324839309), 16 testów Rust PASS dla `3fb99da89cc1d7b7ca50277440b8d6ab29888b5d`. Testy obejmują zgodność nazwy i numeru seryjnego oraz negatywną próbę ich podmiany. Nadal **nie nadano podpisu certyfikującego**.

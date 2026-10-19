@@ -1,6 +1,6 @@
 # Rejestr agentów — kandydaci do walidacji
 
-To rejestr kandydatów i odrębnie zarejestrowanych egzemplarzy developerskich, **nie** lista wdrożonych ani certyfikowanych agentów. Przydzielenie autentycznego `agent_id`, numeru seryjnego lub certyfikatu wymaga manifestu, artefaktu, testów i wpisu rejestru.
+To rejestr kandydatów i odrębnie zarejestrowanych egzemplarzy developerskich, **nie** lista wdrożonych ani certyfikowanych agentów. Przydzielenie **wewnętrznego** Agent ID i numeru seryjnego wymaga wpisu w rejestrze i testów ich spójności; wydanie **autentycznego certyfikatu** wymaga osobno zweryfikowanego artefaktu, podpisu, odbioru operatora i dowodów bezpieczeństwa.
 
 | Kandydat | Gdzie zaobserwowano specyfikację | Klasa wstępna | Status |
 |---|---|---|---|
