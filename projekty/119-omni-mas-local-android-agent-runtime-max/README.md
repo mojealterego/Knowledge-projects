@@ -181,3 +181,9 @@ Komunikacja.pdf provides a broad conceptual catalogue of IrDA, BLE, NFC, UWB, Wi
 ## 2026-10-09 — batch 25: uploaded MCP, Unity, eSIM and adversarial agent sources
 
 The 115-page Termux+Google Drive MCP PDF contains iterative proposals for owner-selected local vault, SSH/stdio MCP, directory sandboxing, binary EXIF/TIFF/RAW and Base64. New tools/mobile_vault_reader.py implements actual POSIX read-only directory-fd O_NOFOLLOW traversal, bounded 16 MiB binary reads, 3-byte-aligned Base64 paging and JPEG/PNG/TIFF-family magic bytes, with 16 tests. It is NOT yet an MCP host, installed Android app, Drive OAuth connector or full EXIF/IFD parser. Do not infer .NEF/.DNG/.ARW from filename alone. Drive access requires live provider scopes and per-object authorization; FOLDER_ID filtering alone is not a security boundary. No phone data accessed.
+
+---
+
+## 2026-10-20 — nowy moduł ochronny ARGUS MOBILE / OCAF-AGENT-005
+
+Wydzielono nowy lokalny moduł Rust [ARGUS MOBILE](../../OCAF%20Agents%20MOJEALTEREGO/OCAF-AGENT-005/docs/README.md), ewidencja `005`, serial `AM-MOB-ARG-2026-000005`, kontrakt `ui.proposal_assess`. Analizuje zadeklarowany snapshot i typ zamierzonej akcji, ale **nie odczytuje Android Accessibility tree, nie wykonuje kliknięć, nie potwierdza uprawnień i nie zastępuje urządzeniowego supervisor/readback**. Działania `DELETE`, `SEND`, `GRANT_PERMISSION` są blokowane niezależnie od zadeklarowanej zgody. Nie jest to pełna implementacja P119, nie ma APK/AAB ani testów fizycznego telefonu.

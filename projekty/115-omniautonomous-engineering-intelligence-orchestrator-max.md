@@ -246,3 +246,9 @@ Gemini CLI/Antigravity SDK/CLI and Gemini Enterprise Agent Platform offer candid
 ## Batch 24 — 2026-10-09 uploaded DGM evidence
 
 DGM source 41 pages extends the existing orchestration contract: ModelScout discovers candidate model metadata, TechRecon documents public technical evidence, Strategist maps to canonical project owner, DGM_Core submits reviewed changes on a Knowledge-projects working branch only. Never trust the model's own claim of completion; the host must verify file diff, CI, regression baseline, source rights, reviewer approval and rollback. GitLab and Hugging Face integration require explicit independent access and are not connected by a PDF. Existing dgm_cycle_gate remains the canonical offline candidate gate.
+
+---
+
+## 2026-10-20 — nowy podagent AXIOM FORGE / OCAF-AGENT-004
+
+Wydzielono nowy lokalny moduł Rust [AXIOM FORGE](../OCAF%20Agents%20MOJEALTEREGO/OCAF-AGENT-004/docs/README.md) z ewidencją `004`, numerem seryjnym `AM-ENG-AXF-2026-000004`, kontraktem `graph.review`. Funkcja sprawdza strukturalnie małe grafy zadań, zależności i cykle i **nie uruchamia procesów budowania ani GitHub mutacji**. Jest to podagent wyspecjalizowany, nie implementacja pełnego orchestration loop P115. Nie wdrożono OMAs, OMAt, transportu Zenoh ani OSTc, nie wydano certyfikatu.

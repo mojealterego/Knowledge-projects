@@ -45,3 +45,10 @@ To katalog ewidencyjny dla pojedynczych agentów, systemów agentowych, rojów, 
 - [EVIDENTIA RESEARCH — OCAF-AGENT-003](OCAF-AGENT-003/docs/README.md) — nowy, lokalny moduł oceny konfliktu przesłanek na bazie P15; serial `AM-RES-EVI-2026-000003`; certyfikat niewydany.
 
 Obie nazwy i numery seryjne są odrębne od ewidencji i roli projektu; tylko częściowe implementacje bez produkcyjnych usług i szyfrowania OSTc.
+
+## Agenci 004–005 — 20.10.2026
+
+- [**AXIOM FORGE — OCAF-AGENT-004**](OCAF-AGENT-004/docs/README.md): walidator DAG z P115, porządkuje etapy prac i wykrywa cykle. Serial `AM-ENG-AXF-2026-000004`.
+- [**ARGUS MOBILE — OCAF-AGENT-005**](OCAF-AGENT-005/docs/README.md): analiza propozycji akcji Android z P119 bez wykonywania ich na urządzeniu. Serial `AM-MOB-ARG-2026-000005`.
+
+Dokumentacja, testy, rejestr certyfikacyjny i 3 odrębne projekty umów znajdują się w każdym katalogu; certyfikaty niewydane, produkcja niezatwierdzona. Samo dodanie wpisu nie potwierdza ukończenia źródłowego P115/P119.
