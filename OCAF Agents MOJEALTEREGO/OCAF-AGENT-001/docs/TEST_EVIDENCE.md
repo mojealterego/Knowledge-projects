@@ -42,3 +42,11 @@
 - OSTc: negative tests odmowy źródeł i wymuszenia dezaktywacji sieci PASS; **brak algorytmu i testów kryptograficznych**. Test all-true `ReleaseEvidence` → ACTIVE DENIED PASS.
 - T02: **PASS dla tego SHA**; T01 i T04 fragmentaryczne; T03, T05–T08, T10–T15 nadal **NIEPOTWIERDZONE**; T09 częściowo potwierdzony statycznym API. T11 OSTc **BLOCKED do dostarczenia specyfikacji**.
 - `certificate_issued=false`, `production_approved=false`.
+
+
+## Korekta identyfikacyjna 0.2.1-dev (PR #28)
+
+- Dodano `tests/identity.rs` obejmujący rozdzielenie nazwy `WDA AURELION`, numeru ewidencyjnego `001`, technicznego ID, numeru seryjnego i katalogowego.
+- Dodano fail-closed walidację w `src/security.rs`: zmieniony serial lub nazwa powoduje błąd konfiguracji, a aktywacja i dostęp OSTc pozostają zablokowane.
+- Centralny rejestr JSON musi odrzucać duplikaty ewidencji, nazw i seriali (weryfikacja case-insensitive w testach).
+- **Wyniki testów dla 0.2.1-dev:** odczytaj udokumentowany później rzeczywisty run i SHA. Powyższe wyniki 0.2.0 dotyczą poprzednich wersji, nie można ich automatycznie przepisywać na nowy build.

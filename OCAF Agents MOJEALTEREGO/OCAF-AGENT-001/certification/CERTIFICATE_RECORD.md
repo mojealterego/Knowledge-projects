@@ -1,25 +1,43 @@
-# Rejestr certyfikacyjny — OCAF-AGENT-001
+# Rekord certyfikacyjny — WDA AURELION
 
-**DOKUMENT EWIDENCYJNY — NIE JEST WYDANYM CERTYFIKATEM PRODUKCYJNYM**
+**STATUS: NIEWYDANY PROJEKT DOKUMENTU — NOT CERTIFIED / NOT PRODUCTION APPROVED**
 
-- Numer ewidencyjny: **001**
-- Agent ID: **AM-OCAF-AI-0001**
-- Typ: WDA Photo Agent / plan-only Rust ToolExecutor
-- Repozytorium: `mojealterego/Knowledge-projects`
-- Folder kanoniczny: `OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/`
-- Numer rezerwacji certyfikatu: `CERT-AM-2026-0001`
-- Lokalny dowód bazowy przed migracją: [CI #39199222867](https://github.com/mojealterego/Knowledge-projects/actions/runs/39199222867) (dotyczy wyłącznie wcześniejszej wersji)
-- Numer seryjny i data wydania: **NIE WYDANO**
-- Struktura i lokalne testy po migracji: [CI #39203233792 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792), SHA `9498d7173c378be8d3b4ddf7d4cbd37d35cf5b56`, 12/12 testów. Nie obejmuje rzeczywistych serwerów OMAs/OMAt ani kryptografii OSTc.
-- OMAs / OMAt: zdefiniowane oddzielne serwery logiczne, produkcyjny handshake **NOT VERIFIED**.
-- Zenoh: adresowanie i local OCAF adapter; **sesja sieciowa NOT IMPLEMENTED w tym binarium**.
-- OSTc: dostęp do źródeł docelowo szyfrowany; **SPECIFICATION PENDING / ENCRYPTION NOT IMPLEMENTED / SOURCE ACCESS DENIED**.
-- Artefakt podpisany, SBOM, logi audytu, audyt prawny, testy wielohostowe, operator acceptance: **NIEPOTWIERDZONE**.
-- `production_approved: false`
-- `certificate_issued: false`
+## Metryka egzemplarza (część ewidencyjna)
+| Pole | Treść |
+|---|---|
+| Nazwa unikatowa | **WDA AURELION** |
+| Rodzina produktu | WDA Photo Agent / projekt P116 |
+| Numer ewidencyjny | **001** |
+| Numer seryjny (PRZYDZIELONY) | **AM-WDA-AUR-2026-000001-DE338AC20B42** |
+| Agent ID | **AM-OCAF-AI-0001** |
+| Numer katalogowy (PRZYDZIELONY) | **AM-OCAF-WDA-001** |
+| Numer certyfikatu (REZERWACJA) | **CERT-AM-2026-0001** |
+| Wersja źródeł | **0.2.1-dev**, agent nieukończony |
+| Repozytorium | `mojealterego/Knowledge-projects` |
+| Katalog | `OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/` |
+| Wpis rejestru | `OCAF Agents MOJEALTEREGO/AGENT_IDENTITY_REGISTRY.json` |
+| Data nadania identyfikatorów (ewidencyjna) | 2026-10-19 |
+| Data wydania certyfikatu | **BRAK** |
+| Wystawca, podpis, pieczęć | **BRAK / DO WERYFIKACJI** |
+| Prawdziwa fotografia 35×45 mm i logo | **NIEDOSTARCZONE / NIEGENEROWANE** |
+| Podpisany artifact digest/SBOM | **BRAK** |
+| Operator acceptance | **NIE PRZEPROWADZONO** |
 
-**Nie wydawać, nie uaktywniać ani nie sprzedawać jako certyfikowanego agenta** przed dostarczeniem dokumentacji OSTc, protokołu dowodów i formalnej akceptacji.
+## Rozdzielenie znaczeń
+Seria jest nadana ewidencyjnie — nie jest certyfikatem ani poświadczeniem bezpieczeństwa. Odrębny numer certyfikatu `CERT-AM-2026-0001` pozostaje nieaktywną rezerwacją; nie oznacza wydania. Poprzedni szkic z rezerwacją `AM-OMAS-2026-0001` zachowano w [archiwum](legacy-certificate-draft.md) jako dokument historyczny, **nie obowiązujący seryjny**.
 
-Historyczny projekt dokumentu: [legacy certificate](legacy-certificate-draft.md). Brak faktycznych podpisów, hologramu lub pieczęci.
+## Faktycznie zweryfikowane dotąd
+Poprzednie wydanie strukturalne przeszło [run 39203631208](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203631208), commit `bfe879ec2670006b0126cce81dac1a03b0ba29e7`, 12/12 testów. To dowód **starej wersji 0.2.0-dev**, nie wydania 0.2.1-dev. Bieżący wynik CI należy dopisać po weryfikacji.
 
-**Fail-closed lifecycle:** nie ma ścieżki programowej przejścia do `ACTIVE` w tym wydaniu, niezależnie od zadeklarowanych pól `ReleaseEvidence`. Dane te nie są autorytatywnym potwierdzeniem implementacji OMAs/OMAt/OSTc.
+## Brakujące bramki certyfikacji
+- rzeczywiste podpisanie artefaktu i zweryfikowany digest;
+- pełny port funkcji fotograficznych i testy jakości;
+- OMAs podpis/tożsamość RPC i OMAt autoryzacja;
+- Zenoh TLS, multi-host isolation/recovery;
+- OSTc szyfrowany dostęp do źródeł (specyfikacja nie dostarczona);
+- SBOM, audyt bezpieczeństwa, legal review i podpisany odbiór operatora.
+
+Ograniczenie kodowe: `ACTIVE` zawsze DENIED. **Nie jest wydany żaden certyfikat autentyczności ani odbioru**. Następne czynności zgodnie z [RELEASE_CHECKLIST](../docs/RELEASE_CHECKLIST.md).
+
+## Pola do późniejszego formalnego wypełnienia
+Miejsce i data wydania: `[BRAK]`; właściciel prawny: `[DO WERYFIKACJI]`; osoba akceptująca: `[BRAK]`; podpis i pieczęć: `[BRAK]`; digest i podpis builda: `[BRAK]`; protokół odbioru: `[BRAK]`.

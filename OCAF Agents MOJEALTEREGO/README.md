@@ -29,6 +29,11 @@ To katalog ewidencyjny dla pojedynczych agentów, systemów agentowych, rojów, 
 
 ## Pierwszy agent z numerem ewidencyjnym 001
 
-- [**OCAF-AGENT-001 — WDA Photo Agent**](OCAF-AGENT-001/docs/README.md): kanoniczny pakiet Rust z `src/`, `tests/`, `config/`, `docs/`, `certification/`, archiwum kodu i osobnymi umowami.
+- [**OCAF-AGENT-001 — WDA AURELION**](OCAF-AGENT-001/docs/README.md): kanoniczny pakiet Rust z `src/`, `tests/`, `config/`, `docs/`, `certification/`, archiwum kodu i osobnymi umowami.
 - **OMAs** to serwer agentów, **OMAt** to serwer narzędzi. **Zenoh** pozostaje magistralą transmisyjną. Docelowy **OSTc** zabezpieczy dostęp do źródeł, ale implementacja jest zablokowana do otrzymania dokumentacji i audytu.
 - [Potwierdzone testy struktury i lokalnego OCAF](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792): 12 PASS; brak odbioru produkcyjnego, certyfikat niewydany.
+
+
+## Tożsamość egzemplarza 001
+
+**WDA AURELION** jest nazwą własną; **001** wyłącznie numerem ewidencyjnym, `AM-OCAF-AI-0001` technicznym Agent ID, a `AM-WDA-AUR-2026-000001-DE338AC20B42` przydzielonym numerem seryjnym. Rejestr kanoniczny: [AGENT_IDENTITY_REGISTRY.json](AGENT_IDENTITY_REGISTRY.json). Dokumenty: [indeks agenta](OCAF-AGENT-001/docs/README.md). **Certyfikat nadal NIEWYDANY**. Pozostałe agentowe identyfikatory rezerwować dopiero po kontroli kolizji.

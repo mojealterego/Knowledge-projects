@@ -35,3 +35,13 @@ Nie renumerować ani nie modyfikować kanonicznej [Roadmapy OCAF](https://github
 ### Weryfikacja KA-014 po korekcie
 
 Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792) dla `9498d7173c378be8d3b4ddf7d4cbd37d35cf5b56`: **SUCCESS**, 12 Rust tests PASS, fmt/clippy PASS, Node syntax i CLI smoke PASS. Zapis nie weryfikuje operacyjnej integracji OMAs/OMAt ani OSTc. KA-014 = `IMPLEMENTED_AND_TESTED_LOCAL` (do readback na main), KA-015 = `PARTIAL`, KA-016 = `BLOCKED_BY_OSTC_DOCUMENTATION`.
+
+
+### KA-017–KA-020 — tożsamość i kompletność agenta 001
+
+| Zadanie | Wymóg | Status |
+|---|---|---|
+| KA-017 | Każdy agent otrzymuje unikatową nazwę własną, odrębną od `OCAF-AGENT-NNN`, i bezkolizyjny w rejestrze numer seryjny | IMPLEMENTED FOR 001 / CI TO VERIFY |
+| KA-018 | Centralna ewidencja `AGENT_IDENTITY_REGISTRY.json`, walidacja nazw/seriali/ID, synchronizacja manifest/TOML/certyfikat | IMPLEMENTED FOR 001 / CI TO VERIFY |
+| KA-019 | Szczegółowe dokumenty architektury, API, serwisu, bezpieczeństwa, zależności, testów, wydania, umów i certyfikacji | DOCUMENTED FOR CURRENT DEV SCOPE |
+| KA-020 | Pełny port P116 + serwery OMAs/OMAt, transport Zenoh, OSTc, SBOM, formalny certyfikat, akceptacja operatora | INCOMPLETE / OSTc BLOCKED BY SOURCE MATERIAL |
