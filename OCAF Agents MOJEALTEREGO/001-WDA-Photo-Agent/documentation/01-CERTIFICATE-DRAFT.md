@@ -19,3 +19,6 @@
 Logo AM / Andrzej Mikulski / Mojealterego, fotografia agenta 35×45 mm, hologram, pieczęć i podpis są niedostępne w tej paczce i nie zostały sfabrykowane. Pole podpisu właściciela: **niepodpisane**. Data wydania: **nie wydano**.
 
 Warunki wydania: zweryfikowane artefakty, testy i logi, zgody prawne, odbiór operatora i wpis do rejestru, dopiero potem sygnatura i zatwierdzenie.
+
+
+**Adnotacja techniczna po testach:** OCAF plan-only adapter testowany w [run 39198615847](https://github.com/mojealterego/Knowledge-projects/actions/runs/39198615847) (6/6 PASS), ale certyfikat nadal **NIE WYDANY**, brak podpisanego artefaktu, testów wielohostowych i odbioru operatora.
