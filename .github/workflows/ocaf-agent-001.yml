@@ -1,22 +1,19 @@
-name: Agent 001 WDA OCAF tests
-
+name: Agent 001 Rust and OCAF verification
 on:
   pull_request:
     paths:
-      - "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/**"
       - ".github/workflows/ocaf-agent-001.yml"
   push:
     branches: [main]
     paths:
-      - "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/**"
       - ".github/workflows/ocaf-agent-001.yml"
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
-  rust-and-legacy:
+  agent-001:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
@@ -27,13 +24,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Legacy JavaScript syntax
+      - name: Syntax check preserved JavaScript
         run: |
-          node --check "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/legacy-pwa/server.mjs"
-          node --check "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/legacy-pwa/public/app.js"
-      - name: Rust formatting check
-        run: cargo fmt --manifest-path "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/rust-agent/Cargo.toml" -- --check
-      - name: Rust OCAF integration tests
-        run: cargo test --manifest-path "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/rust-agent/Cargo.toml" --all-features
-      - name: Clippy
-        run: cargo clippy --manifest-path "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/rust-agent/Cargo.toml" --all-targets --all-features -- -D warnings
+          node --check "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/legacy-pwa/server.mjs"
+          node --check "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/legacy-pwa/public/app.js"
+      - name: Formatting
+        run: cargo fmt --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/Cargo.toml" -- --check
+      - name: Rust unit, integration and security tests
+        run: cargo test --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/Cargo.toml" --all-features
+      - name: Strict Clippy
+        run: cargo clippy --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/Cargo.toml" --all-targets --all-features -- -D warnings
+      - name: CLI local smoke
+        run: cargo run --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-001/Cargo.toml" -- "adjust highlights"
