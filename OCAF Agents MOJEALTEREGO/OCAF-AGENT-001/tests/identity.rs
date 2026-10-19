@@ -37,9 +37,15 @@ fn serial_name_and_registry_number_are_unique_in_registry() {
         let name = agent["unique_name"].as_str().unwrap();
         let serial = agent["serial_number"].as_str().unwrap();
         let id = agent["agent_id"].as_str().unwrap();
-        assert!(registry.insert(number.to_uppercase()), "duplicate registry number");
+        assert!(
+            registry.insert(number.to_uppercase()),
+            "duplicate registry number"
+        );
         assert!(names.insert(name.to_uppercase()), "duplicate unique name");
-        assert!(serials.insert(serial.to_uppercase()), "duplicate serial number");
+        assert!(
+            serials.insert(serial.to_uppercase()),
+            "duplicate serial number"
+        );
         assert!(agent_ids.insert(id.to_uppercase()), "duplicate agent ID");
     }
     let assigned = agents

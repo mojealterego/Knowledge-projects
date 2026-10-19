@@ -21,7 +21,10 @@ fn main() -> std::process::ExitCode {
     let goal = args.join(" ");
     match plan(&goal, config.safety.identity_lock_required) {
         Ok(output) => {
-            println!("{AGENT_NAME} | {SERIAL_NUMBER} | {} | {}", output.agent_id, output.status);
+            println!(
+                "{AGENT_NAME} | {SERIAL_NUMBER} | {} | {}",
+                output.agent_id, output.status
+            );
             for item in &output.workflow {
                 println!("- {item}");
             }
