@@ -32,11 +32,13 @@ fn serial_name_and_registry_number_are_unique_in_registry() {
     let mut names = HashSet::new();
     let mut serials = HashSet::new();
     let mut agent_ids = HashSet::new();
+    let mut catalog_numbers = HashSet::new();
     for agent in agents {
         let number = agent["registry_number"].as_str().unwrap();
         let name = agent["unique_name"].as_str().unwrap();
         let serial = agent["serial_number"].as_str().unwrap();
         let id = agent["agent_id"].as_str().unwrap();
+        let catalog = agent["catalog_number"].as_str().unwrap();
         assert!(
             registry.insert(number.to_uppercase()),
             "duplicate registry number"
@@ -47,6 +49,7 @@ fn serial_name_and_registry_number_are_unique_in_registry() {
             "duplicate serial number"
         );
         assert!(agent_ids.insert(id.to_uppercase()), "duplicate agent ID");
+        assert!(catalog_numbers.insert(catalog.to_uppercase()), "duplicate catalog number");
     }
     let assigned = agents
         .iter()
@@ -72,4 +75,15 @@ fn manifest_identifiers_and_states_match_canonical_registry() {
     assert_eq!(doc["source_access"]["enabled"], false);
     assert_eq!(doc["certificate_issued"], false);
     assert_eq!(doc["production_approved"], false);
+}
+
+#[test]
+fn replacing_registered_name_or_serial_is_rejected() {
+    let bad_name = CONFIG.replace("WDA AURELION", "ANOTHER AGENT");
+    let bad_serial = CONFIG.replace(
+        "AM-WDA-AUR-2026-000001-DE338AC20B42",
+        "AM-WDA-AUR-2026-000002-DE338AC20B42",
+    );
+    assert!(load_config(&bad_name).is_err());
+    assert!(load_config(&bad_serial).is_err());
 }

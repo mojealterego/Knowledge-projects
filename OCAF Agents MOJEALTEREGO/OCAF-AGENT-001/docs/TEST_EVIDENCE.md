@@ -50,3 +50,11 @@
 - Dodano fail-closed walidację w `src/security.rs`: zmieniony serial lub nazwa powoduje błąd konfiguracji, a aktywacja i dostęp OSTc pozostają zablokowane.
 - Centralny rejestr JSON musi odrzucać duplikaty ewidencji, nazw i seriali (weryfikacja case-insensitive w testach).
 - **Wyniki testów dla 0.2.1-dev:** odczytaj udokumentowany później rzeczywisty run i SHA. Powyższe wyniki 0.2.0 dotyczą poprzednich wersji, nie można ich automatycznie przepisywać na nowy build.
+
+## Bieżący zweryfikowany build identyfikacyjny (przed ostatnią poprawką testów)
+
+- [GitHub Actions run 39324415084 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39324415084), commit `941a7269907951ce1223cf42df3220489583a6de`, job `118306422437`.
+- **15/15 testów PASS:** 2 domenowe, 3 identyfikacyjne, 3 integracyjne OCAF i 7 bezpieczeństwa. `cargo fmt` PASS, strict `clippy` PASS, `node --check` PASS, CLI smoke PASS.
+- Numer seryjny i nazwa są spójne w TOML/manifest/centralnym rejestrze, ale to **nie jest autentykacja kryptograficzna**.
+- Rzeczywiste serwery OMAs/OMAt, OSTc, podpisy i produkcyjna obsługa obrazów nadal BRAK.
+- Po końcowych poprawkach testów i dokumentów wymagane będzie nowe CI oraz readback `main`.

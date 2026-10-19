@@ -1,10 +1,10 @@
 # Rejestr agentów — kandydaci do walidacji
 
-To rejestr hipotez klasyfikacyjnych, **nie** lista wdrożonych agentów. Przydzielenie autentycznego `agent_id`, numeru seryjnego lub certyfikatu wymaga manifestu, artefaktu, testów i wpisu rejestru.
+To rejestr kandydatów i odrębnie zarejestrowanych egzemplarzy developerskich, **nie** lista wdrożonych ani certyfikowanych agentów. Przydzielenie autentycznego `agent_id`, numeru seryjnego lub certyfikatu wymaga manifestu, artefaktu, testów i wpisu rejestru.
 
 | Kandydat | Gdzie zaobserwowano specyfikację | Klasa wstępna | Status |
 |---|---|---|---|
-| WDA AURELION (rodzina WDA Photo Agent) | [Project 116](../projekty/116-wda-photo-agent-max/README.md) | Agent / aplikacja mobilna (INFERRED) | UNVERIFIED |
+| WDA AURELION (rodzina WDA Photo Agent) | [Project 116](../projekty/116-wda-photo-agent-max/README.md) | Agent Rust z historyczną aplikacją WDA | REGISTERED DEVELOPMENT / INCOMPLETE |
 | Omni MAS Android | [Project 119](../projekty/119-omni-mas-local-android-agent-runtime-max/README.md) | System agentowy (INFERRED) | UNVERIFIED |
 | InfraSentinel | [Project 121](../projekty/121-infrasentinel-agentic-autonomous-sre-infrastructure/README.md) | System operacyjny/SRE agentowy (INFERRED) | UNVERIFIED |
 | Omni Autonomous Engineering | [Project 115](../projekty/115-omniautonomous-engineering-intelligence-orchestrator-max.md) | Orchestrator (INFERRED) | UNVERIFIED |

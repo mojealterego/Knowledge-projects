@@ -2,9 +2,9 @@
 
 | ID | Wymóg | Implementacja / dokument | Test / dowód | Wynik |
 |---|---|---|---|---|
-| ID-01 | Unikatowa nazwa niezależna od numeru 001 | `agent.rs`, `agent.toml`, `AGENT_IDENTITY_REGISTRY.json` | `tests/identity.rs` | REQUIRES CI |
-| ID-02 | Numer seryjny inny niż numer ewidencyjny | `agent.rs`, manifest, JSON registry | `tests/identity.rs` | REQUIRES CI |
-| ID-03 | Ochrona spójności nazwy/serialu i unikatowości | `security.rs`, JSON registry | `tests/identity.rs` | REQUIRES CI |
+| ID-01 | Unikatowa nazwa niezależna od numeru 001 | `agent.rs`, `agent.toml`, `AGENT_IDENTITY_REGISTRY.json` | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324415084) |
+| ID-02 | Numer seryjny inny niż numer ewidencyjny | `agent.rs`, manifest, JSON registry | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324415084) |
+| ID-03 | Ochrona spójności nazwy/serialu i unikatowości | `security.rs`, JSON registry | `tests/identity.rs` | TESTED LOCAL (PR #28, run 39324415084) |
 | ID-04 | Pełny zestaw technicznych dokumentów agenta | `docs/`, `certification/` | tree inventory | IMPLEMENTED DOCS |
 | PL-01 | Plan fotograficzny bez efektów ubocznych | `src/agent.rs` | `tests/integration.rs` | PREVIOUS PASS |
 | SE-01 | Limit 1024 bajtów i identity lock | `src/security.rs`, `src/agent.rs` | `tests/security.rs`, unit | PREVIOUS PASS |
@@ -18,4 +18,4 @@
 | RL-01 | Certyfikat / podpisana proweniencja | `certification/CERTIFICATE_RECORD.md` | odbiór nieprzeprowadzony | NOT ISSUED |
 | RL-02 | Specyfikacja handlowa i umowy | `docs/commercial/` | przegląd prawny brak | DRAFT |
 
-**Zasada aktualizacji:** przy każdym PR wykonawczym zmień status w tej tabeli wyłącznie wtedy, gdy dowód i SHA jednoznacznie go potwierdzają. Bieżące `REQUIRES CI` zostanie zamknięte dopiero po udanym przebiegu i readback `main`.
+**Zasada aktualizacji:** przy każdym PR wykonawczym zmień status w tej tabeli wyłącznie wtedy, gdy dowód i SHA jednoznacznie go potwierdzają. Wiersze z wynikiem `TESTED LOCAL` oznaczają weryfikację lokalnych kontraktów; formalny odbiór na `main` musi nadal nastąpić.
