@@ -13,3 +13,12 @@ To rejestr hipotez klasyfikacyjnych, **nie** lista wdrożonych agentów. Przydzi
 **Walidacja kandydata:** `source_path → właściciel zakresu → binary/entrypoint → manifest → capabilities → test evidence → status`. Nie tworzyć fikcyjnych egzemplarzy ani numerów z briefu. Docelowe pola rejestru: `agent_id, artifact_digest, build_commit, tenant_scope, owner, lifecycle_state, release_version, test_evidence` oraz numery ewidencyjne tylko po formalnym nadaniu.
 
 **Reorganizacja:** 0 przeniesionych agentów w tej partii. Powód: brak zakończonej analizy zależności; przenoszenie źródeł aplikacji mogłoby zerwać importy i testy. Po audycie samodzielne byty przenosić z zachowaniem historii; integralne moduły rejestrować po ścieżce.
+
+
+## Ewidencja pierwszego agenta — 2026-10-19
+
+| Numer | Agent ID | Nazwa i folder | Status | Certyfikat |
+|---|---|---|---|---|
+| **001** | **AM-OCAF-AI-0001** | [WDA Photo Agent](001-WDA-Photo-Agent/README.md) | PARTIAL / DRAFT; production_approved=false | [CERT-AM-2026-0001 — projekt niewydany](001-WDA-Photo-Agent/documentation/01-CERTIFICATE-DRAFT.md) |
+
+Numer **001 jest pierwszym przydzielonym wpisem ewidencyjnym**; projekt certyfikatu nie jest poświadczeniem testów, numer seryjny i katalogowy zarezerwowane roboczo. Brak innych zarejestrowanych egzemplarzy w tym rejestrze.

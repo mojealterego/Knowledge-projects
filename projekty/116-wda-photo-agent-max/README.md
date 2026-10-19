@@ -202,3 +202,10 @@ P116 advances beyond architecture baseline only when:
 - provider capability/version compatibility: **CURRENT-DOCS-DEPENDENT**;
 - visual quality claims: **UNVERIFIED until benchmarked**;
 - autonomous photographic judgment: **PROPOSED capability, not established fact**.
+
+
+---
+
+## Wydzielenie agenta 001 z projektu P116 — 2026-10-19
+
+P116 pozostaje kanonicznym projektem i roadmapą. Kod WDA `source-v2/` został przeniesiony zachowawczo do [`OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/legacy-pwa`](../../OCAF%20Agents%20MOJEALTEREGO/001-WDA-Photo-Agent/legacy-pwa/). Rust + manifest + dokumentacja + projekt certyfikatu: [Agent 001](../../OCAF%20Agents%20MOJEALTEREGO/001-WDA-Photo-Agent/README.md). Integracja usług fotografii z produkcyjnym OCAF Runtime pozostaje **PARTIAL**, nie zweryfikowano E2E.
