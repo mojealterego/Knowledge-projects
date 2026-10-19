@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "agent_id": {
+      "const": "AM-OCAF-AI-0001"
+    },
+    "status": {
+      "const": "plan_only"
+    },
+    "identity_lock": {
+      "const": true
+    },
+    "workflow": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3
+    }
+  },
+  "required": [
+    "agent_id",
+    "status",
+    "identity_lock",
+    "workflow"
+  ]
+}

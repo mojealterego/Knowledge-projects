@@ -16,3 +16,10 @@ Nie renumerować ani nie modyfikować kanonicznej [Roadmapy OCAF](https://github
 | KA-010 | Certyfikacja/specyfikacja handlowa dopiero po dowodach bezpieczeństwa i legal review | KA-006, zależne dowody | NOT APPROVED |
 
 **Definition of Done dla reorganizacji:** 100% zasobów sklasyfikowanych z dowodem, wszystkie migracje śledzalne, brak uszkodzonych importów/linków, PASS istniejącego CI i dodatkowych testów zależności, rejestry z SHA i stanem produkcyjnym uzasadnionym dowodami. Bez tego nie deklarować zamknięcia Etapu 1.
+
+
+## Stan po CI agenta 001 — 2026-10-19
+
+- Pierwszy egzemplarz 001 wydzielony z P116, historia blobów zachowana (8/8).
+- [Rust/OCAF CI PASS — run 39198615847](https://github.com/mojealterego/Knowledge-projects/actions/runs/39198615847), SHA `d8a03875b4ac7b3c7e4b3dd3361306541a440a` — 6 testów PASS + fmt/clippy + Node syntax.
+- **T03–T15 niekompletne.** Brak pełnego portu obrazów i API Adobe do Rust, brak formalnego certyfikatu oraz produkcyjnego OMAs/OSTc. Pozostałe 215 źródeł w `projekty/` sklasyfikowane strukturalnie; audyt semantyczny wszystkich jeszcze otwarty.
