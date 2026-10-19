@@ -2,7 +2,7 @@
   "schema_version": "ocaf-identity-register/1",
   "scope": "mojealterego/Knowledge-projects",
   "policy": "unique_name, serial_number, registry_number, catalog_number and agent_id are each unique across registered instances, case insensitive; no signatures implied",
-  "last_reviewed": "2026-10-19",
+  "last_reviewed": "2026-10-20",
   "agents": [
     {
       "registry_number": "001",
@@ -19,6 +19,42 @@
       "source_project": "P116",
       "serial_assignment": "2026-10-19",
       "serial_derivation": "first 12 uppercase HEX characters of SHA-256 over canonical input described in docs/IDENTITY_AND_SERIAL.md; identifier only",
+      "artifact_digest": null,
+      "build_commit": null
+    },
+    {
+      "registry_number": "002",
+      "unique_name": "VIGILIS SRE",
+      "product_family": "InfraSentinel",
+      "agent_id": "AM-OCAF-AI-0002",
+      "serial_number": "AM-SRE-VIG-2026-000002",
+      "catalog_number": "AM-OCAF-SRE-002",
+      "certificate_number": "CERT-AM-2026-0002",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-002/",
+      "source_project": "P121",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Human-readable unique internal registry serial; not a certificate or cryptographic signature",
+      "artifact_digest": null,
+      "build_commit": null
+    },
+    {
+      "registry_number": "003",
+      "unique_name": "EVIDENTIA RESEARCH",
+      "product_family": "Universal Research Orchestrator",
+      "agent_id": "AM-OCAF-AI-0003",
+      "serial_number": "AM-RES-EVI-2026-000003",
+      "catalog_number": "AM-OCAF-RES-003",
+      "certificate_number": "CERT-AM-2026-0003",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-003/",
+      "source_project": "P15",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Human-readable unique internal registry serial; not a certificate or cryptographic signature",
       "artifact_digest": null,
       "build_commit": null
     }

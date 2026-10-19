@@ -1,0 +1,21 @@
+# Disabled transport and encrypted source access until independent review.
+[identity]
+registry_number = "002"
+agent_id = "AM-OCAF-AI-0002"
+unique_name = "VIGILIS SRE"
+serial_number = "AM-SRE-VIG-2026-000002"
+catalog_number = "AM-OCAF-SRE-002"
+
+[servers]
+agent_server = "OMAs"
+tool_server = "OMAt"
+
+[communication]
+transport = "Zenoh"
+network_enabled = false
+authenticated_tls_required = true
+
+[source_access]
+enabled = false
+encryption = "OSTc"
+specification_status = "PENDING"
