@@ -1,0 +1,3673 @@
+{
+  "schema": "ocaf-repo-tree-snapshot-v1",
+  "repository": "mojealterego/ocaf-runtime",
+  "ref": "main",
+  "commit_sha": "52d4f597e0b481678f90cf2073b721ad2e99e253",
+  "captured_at": "2026-10-19",
+  "complete": true,
+  "entries": [
+    {
+      "path": ".circleci",
+      "type": "tree",
+      "sha": "50d70cbec9d4847f628977d9c2381fec8afea999"
+    },
+    {
+      "path": ".circleci/config.yml",
+      "type": "blob",
+      "sha": "9ac4e77ee169c993237bc5ef27ad3e67e142ba1f",
+      "size": 7449
+    },
+    {
+      "path": ".github",
+      "type": "tree",
+      "sha": "ad10802c7020ffd0304469fbacc6ea9e510aef23"
+    },
+    {
+      "path": ".github/workflows",
+      "type": "tree",
+      "sha": "b67b595d61e58cf637814521f5eb8aaa279c9c3d"
+    },
+    {
+      "path": ".github/workflows/codeql-security.yml",
+      "type": "blob",
+      "sha": "ced5a082329ec4be3c279ad0a1c7ff076f05173b",
+      "size": 1441
+    },
+    {
+      "path": ".github/workflows/ocaf-failure-recovery-simulation.yml",
+      "type": "blob",
+      "sha": "8d1736789566abc811eb3666b5a03661e8676215",
+      "size": 4382
+    },
+    {
+      "path": ".github/workflows/ocaf-multihost-simulation.yml",
+      "type": "blob",
+      "sha": "cf3c47d4fa45818f87623df10308ca88837004b0",
+      "size": 3112
+    },
+    {
+      "path": ".github/workflows/ocaf-stage038-redhat-sandbox.yml",
+      "type": "blob",
+      "sha": "dc7682be3e8481362081e86093b60f5f53284939",
+      "size": 4327
+    },
+    {
+      "path": ".github/workflows/ocaf-stage038-redhat-vm-admission.yml",
+      "type": "blob",
+      "sha": "2d293de05d1fb12fa8b352e5846a5853c6099c4b",
+      "size": 6940
+    },
+    {
+      "path": ".github/workflows/omas-security.yml",
+      "type": "blob",
+      "sha": "c196d0283d961842ba907531bddb63b9fcc12ed1",
+      "size": 3344
+    },
+    {
+      "path": ".github/workflows/omega-ocaf-apex-e2e.yml",
+      "type": "blob",
+      "sha": "a6cbc35c0cc6f3098bc51e9fdc53c7764223bab7",
+      "size": 1075
+    },
+    {
+      "path": ".github/workflows/roadmap-apex-v8-validation.yml",
+      "type": "blob",
+      "sha": "6dbcce0e4d246ecaf3cb99fadbb20221c70d8632",
+      "size": 1497
+    },
+    {
+      "path": ".github/workflows/roadmap-canonical-v10.yml",
+      "type": "blob",
+      "sha": "8b20ee1985a98eb3839dd731b558c8cf31614877",
+      "size": 1578
+    },
+    {
+      "path": ".github/workflows/roadmap-pdf-coverage.yml",
+      "type": "blob",
+      "sha": "d944737cd958a328f4aab2688a9d9dfd8f7103fb",
+      "size": 1014
+    },
+    {
+      "path": ".github/workflows/roadmap-sovereign-v9-validation.yml",
+      "type": "blob",
+      "sha": "b046b794d26fedab6ac60ea7ab4320e96ba3f222",
+      "size": 1589
+    },
+    {
+      "path": ".github/workflows/roadmap-v11-builders.yml",
+      "type": "blob",
+      "sha": "53671fd04587d8f53111dea7ea68e148560696db",
+      "size": 2320
+    },
+    {
+      "path": ".github/workflows/rust.yml",
+      "type": "blob",
+      "sha": "fdbd86f7619ffc5b66bcc91897e18a4c34e9af7d",
+      "size": 4504
+    },
+    {
+      "path": ".github/workflows/stage038-azure-readonly.yml",
+      "type": "blob",
+      "sha": "7112918f5ce06a9e3043c8eb02933db39149276a",
+      "size": 1986
+    },
+    {
+      "path": ".github/workflows/stage038-extended-soak.yml",
+      "type": "blob",
+      "sha": "4eade5e8af1fd0f70a13439bd70cddba79be8854",
+      "size": 3957
+    },
+    {
+      "path": ".github/workflows/stage038-host.yml",
+      "type": "blob",
+      "sha": "60d642169f980b3bbde93bc6e06d0b81d61b3f9e",
+      "size": 5175
+    },
+    {
+      "path": ".github/workflows/stage038-mtls-integration.yml",
+      "type": "blob",
+      "sha": "aab150b6f3b56fd615471d6f85ff5484acd5ccfc",
+      "size": 2814
+    },
+    {
+      "path": ".github/workflows/stage038-multitenant-chaos-ci.yml",
+      "type": "blob",
+      "sha": "c90287a2b65d166f4d582f199c6c6615784bfd9d",
+      "size": 8832
+    },
+    {
+      "path": ".github/workflows/stage038-real-coordinator-ci.yml",
+      "type": "blob",
+      "sha": "f96c2ca84f49556941dc6f25106c7bb252265656",
+      "size": 7014
+    },
+    {
+      "path": ".github/workflows/stage038-signed-wasi-systemd-ci.yml",
+      "type": "blob",
+      "sha": "2acb55178fa1d8cce844a7cb22b184ec7ed363f7",
+      "size": 18522
+    },
+    {
+      "path": ".github/workflows/stage038-twohost.yml",
+      "type": "blob",
+      "sha": "10c2b93df66980bbe830986c2a3e9e4f41e99129",
+      "size": 24587
+    },
+    {
+      "path": ".github/workflows/stage039-aya-ebpf-elf.yml",
+      "type": "blob",
+      "sha": "55d40fb072fa6e1bc2836af90c708cee2549593f",
+      "size": 2644
+    },
+    {
+      "path": ".github/workflows/stage039-circleci-host-config-check.yml",
+      "type": "blob",
+      "sha": "11d91b701727fd355520da44332925dcd1ef115c",
+      "size": 2087
+    },
+    {
+      "path": ".github/workflows/stage039-cold-recovery.yml",
+      "type": "blob",
+      "sha": "30cbd20eb37da817492e2d9d238d7e93dd187e86",
+      "size": 8212
+    },
+    {
+      "path": ".github/workflows/stage039-firecracker-guest-artifact-probe.yml",
+      "type": "blob",
+      "sha": "3520e718405a63bafb25b33a11cd2ea88d828aa2",
+      "size": 3068
+    },
+    {
+      "path": ".github/workflows/stage039-independent-hosts.yml",
+      "type": "blob",
+      "sha": "774965693382be289d8731f78434d50c8de58369",
+      "size": 11520
+    },
+    {
+      "path": ".github/workflows/stage039-live-kvm-aya.yml",
+      "type": "blob",
+      "sha": "e11c46714d89bb83a30dcabfabc9e1407feedbc8",
+      "size": 4239
+    },
+    {
+      "path": ".github/workflows/stage039-microvm-preflight.yml",
+      "type": "blob",
+      "sha": "656ed596816411971d03f63807c2d3f370dfd194",
+      "size": 13089
+    },
+    {
+      "path": ".github/workflows/stage039-privileged-kvm-probe.yml",
+      "type": "blob",
+      "sha": "6573df7ae2af4b80b7ed7cd4bc2c39ff0c1e4124",
+      "size": 5583
+    },
+    {
+      "path": ".github/workflows/stage039-real-firecracker-jailer.yml",
+      "type": "blob",
+      "sha": "7644dbcdec89ee30fceffb904ca4b1325b2f72d7",
+      "size": 27694
+    },
+    {
+      "path": ".github/workflows/stage039-real-mtls-partition.yml",
+      "type": "blob",
+      "sha": "5048f66fc10227b3a7a329dc46eb82d2ee058ef4",
+      "size": 3157
+    },
+    {
+      "path": ".github/workflows/stage040-independent-pg-hosts.yml",
+      "type": "blob",
+      "sha": "ae1d6984b2363b64d72861bf63afabc9ac92a0aa",
+      "size": 5652
+    },
+    {
+      "path": ".github/workflows/stage040-interhost-live-validation.yml",
+      "type": "blob",
+      "sha": "062d777bcfcf9b551c56b6d7e25d694f919feff1",
+      "size": 3312
+    },
+    {
+      "path": ".github/workflows/stage040-real-postgres-ha.yml",
+      "type": "blob",
+      "sha": "51c0da32fc0d599b86c1fd085a16ede47c94212d",
+      "size": 6246
+    },
+    {
+      "path": ".github/workflows/stage040-real-postgres-netns.yml",
+      "type": "blob",
+      "sha": "2bd8070b1a82fafe6c4886703e1485f4f0edfe5f",
+      "size": 4427
+    },
+    {
+      "path": ".github/workflows/stage041-cross-host-restore.yml",
+      "type": "blob",
+      "sha": "c785076614c2e6f1308af5259ec2974bb7723a04",
+      "size": 8965
+    },
+    {
+      "path": ".github/workflows/stage041-physical-pitr-cross-kernel.yml",
+      "type": "blob",
+      "sha": "6003cf0f8cc02f575f999c52fc19a727a32505a2",
+      "size": 9437
+    },
+    {
+      "path": ".github/workflows/stage041-real-backup-restore.yml",
+      "type": "blob",
+      "sha": "0e076c4f0e24aae3c1d297c88d77ebbb2e810368",
+      "size": 3486
+    },
+    {
+      "path": ".github/workflows/stage041-real-pitr.yml",
+      "type": "blob",
+      "sha": "68cb0448557a37f2abf0ceb598424ff2ee64badb",
+      "size": 3632
+    },
+    {
+      "path": ".github/workflows/supply-chain.yml",
+      "type": "blob",
+      "sha": "e4a276cc9b2bedc5c486ecfa5cc121fd781b11f9",
+      "size": 6333
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "sha": "2b858f9fc5a95e6b29a86c9ebff3521e2429f9c3",
+      "size": 290
+    },
+    {
+      "path": "Cargo.lock",
+      "type": "blob",
+      "sha": "e655ebb28d24928470432324e14938e8e364346a",
+      "size": 105949
+    },
+    {
+      "path": "Cargo.toml",
+      "type": "blob",
+      "sha": "a9b55c7430d2e0d43c01661740e7cd877d3597fe",
+      "size": 2205
+    },
+    {
+      "path": "Dockerfile",
+      "type": "blob",
+      "sha": "2e51d5619d91bb08839bd62f4b6a35c2149a7f9b",
+      "size": 842
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "sha": "2037fcc6030fe24ea0a70b1218ac783e545d8c1c",
+      "size": 218660
+    },
+    {
+      "path": "ROADMAP.md",
+      "type": "blob",
+      "sha": "46607ba8f60ea82ec538c5870f145d3f5f571e6f",
+      "size": 272809
+    },
+    {
+      "path": "deny.toml",
+      "type": "blob",
+      "sha": "4b84b3912ed1118a4e4940b745dedfad4e8c59b2",
+      "size": 674
+    },
+    {
+      "path": "deploy",
+      "type": "tree",
+      "sha": "60fabce3e5c6fbcb31c1708150739ebe70dc50b8"
+    },
+    {
+      "path": "deploy/systemd",
+      "type": "tree",
+      "sha": "5fc4d22cde8c688e1ac9122d164cab3771e457ea"
+    },
+    {
+      "path": "deploy/systemd/ocaf-cluster-health.service",
+      "type": "blob",
+      "sha": "766b91e4263572f9c0736b07809467a62e91f18e",
+      "size": 645
+    },
+    {
+      "path": "deploy/systemd/ocaf-cluster-health.timer",
+      "type": "blob",
+      "sha": "5cb21fe4809d65e7dcb126bcce89c06e73583454",
+      "size": 212
+    },
+    {
+      "path": "deploy/systemd/ocaf-coordinator-wasi.service.example",
+      "type": "blob",
+      "sha": "5ede5bf30383a9489941b558a9532948cc4401eb",
+      "size": 1838
+    },
+    {
+      "path": "deploy/systemd/ocaf-coordinator.service",
+      "type": "blob",
+      "sha": "cfd095a7ef95f88f447013f869a286b7b58b63da",
+      "size": 1023
+    },
+    {
+      "path": "docs",
+      "type": "tree",
+      "sha": "142f42a65db092f76950672fab9824a577f81bab"
+    },
+    {
+      "path": "docs/AGENTS_BUILDER_CODE_NOCODE_5_PLATFORMS.md",
+      "type": "blob",
+      "sha": "99fd28abd8c0b2f8630cd467d8e7662c7d379e7c",
+      "size": 9995
+    },
+    {
+      "path": "docs/CHAOS_ENGINEERING.md",
+      "type": "blob",
+      "sha": "8dbe04e2114dfbbbe59a8e9b7132fc3c42a1e77f",
+      "size": 6062
+    },
+    {
+      "path": "docs/CIRCLECI_AZURE_STAGE038.md",
+      "type": "blob",
+      "sha": "37fdddcbe36d8f66dec37293fa9b674742545744",
+      "size": 2403
+    },
+    {
+      "path": "docs/CLOUD_FREE_TRIALS_OCAF_2026.md",
+      "type": "blob",
+      "sha": "b794493b2f0e7962303dd06745685711a1e3cfaf",
+      "size": 7744
+    },
+    {
+      "path": "docs/COORDINATOR.md",
+      "type": "blob",
+      "sha": "647809e58fe236ca94406e81fb8ea1605555e2ff",
+      "size": 7727
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "type": "blob",
+      "sha": "0bf68b464b057805f9f9cb446c338e51a4db127d",
+      "size": 8197
+    },
+    {
+      "path": "docs/DISTRIBUTED_JOBS.md",
+      "type": "blob",
+      "sha": "6d894a28218b635f177e52f2325b6a788a7e9a08",
+      "size": 8007
+    },
+    {
+      "path": "docs/EFFECT_BOUNDARY.md",
+      "type": "blob",
+      "sha": "6d0ead812f04c784290c22224426a12e910913dc",
+      "size": 2710
+    },
+    {
+      "path": "docs/FENCED_EFFECTS.md",
+      "type": "blob",
+      "sha": "37ba1c1b7627b35f737534fffea5ea4e397be204",
+      "size": 2730
+    },
+    {
+      "path": "docs/FENCING_EPOCH.md",
+      "type": "blob",
+      "sha": "4911df1800b775ef15d180e8dfde7fbd3909024b",
+      "size": 3543
+    },
+    {
+      "path": "docs/FINAL_ACCEPTANCE.md",
+      "type": "blob",
+      "sha": "8895e7fee1b4db51d3703b430cc7b65a3636f6f5",
+      "size": 7125
+    },
+    {
+      "path": "docs/HA.md",
+      "type": "blob",
+      "sha": "fdbae43d63341bb7218230a8decaa2dd64534f6f",
+      "size": 5874
+    },
+    {
+      "path": "docs/HA_FAILOVER.md",
+      "type": "blob",
+      "sha": "b42310cf372ff186379114755c5b5edfb145f031",
+      "size": 5355
+    },
+    {
+      "path": "docs/HISTORICAL_IMPLEMENTATION_AUDIT_2026-10-15.md",
+      "type": "blob",
+      "sha": "adf9a63023913386f6a5d739dcfed93d4c3aad21",
+      "size": 23796
+    },
+    {
+      "path": "docs/IBM_CLOUD_STAGE_038.md",
+      "type": "blob",
+      "sha": "4ea7a704d6f5527c6338a2d1e36f42dd2f601139",
+      "size": 11277
+    },
+    {
+      "path": "docs/INDEPENDENT_SINK.md",
+      "type": "blob",
+      "sha": "b02729fc26ca241c3c80b625004f519fa4343914",
+      "size": 4984
+    },
+    {
+      "path": "docs/INVENTORY_LOST_REQUIREMENTS_2026-10-15.md",
+      "type": "blob",
+      "sha": "b6a4a6b944561a4d2fe6c405d1acbd4a09e28821",
+      "size": 6674
+    },
+    {
+      "path": "docs/JOBS.md",
+      "type": "blob",
+      "sha": "982b4d2b9738f056c2d703a9050844be5d96aa20",
+      "size": 5731
+    },
+    {
+      "path": "docs/LEASE_CLOCK.md",
+      "type": "blob",
+      "sha": "e7508d6e8d34229e7d882a53c00c9e81e8b1a814",
+      "size": 1795
+    },
+    {
+      "path": "docs/MASTER_ARCHITECTURE_26_PDFS.md",
+      "type": "blob",
+      "sha": "510c1df1086f3ced7d445c6fe246abb26123d75c",
+      "size": 10787
+    },
+    {
+      "path": "docs/MTLS_LIFECYCLE_034.md",
+      "type": "blob",
+      "sha": "31ac6a64ed365e5cf35f35b2b17f5b5e7f47f954",
+      "size": 5189
+    },
+    {
+      "path": "docs/MTLS_VERIFICATION.md",
+      "type": "blob",
+      "sha": "eb62d6f35bdae63ae0a39805be60959e9cf78fe1",
+      "size": 4472
+    },
+    {
+      "path": "docs/MULTIHOST_ACCEPTANCE_033.md",
+      "type": "blob",
+      "sha": "c9fbc1e4cee22c3ec5308a5fa52ecad448438d35",
+      "size": 5540
+    },
+    {
+      "path": "docs/OBSERVABILITY.md",
+      "type": "blob",
+      "sha": "390221ff77732e0fa5537e5b65a9973db048c953",
+      "size": 6394
+    },
+    {
+      "path": "docs/OPENSHIFT_SANDBOX_STAGE038.md",
+      "type": "blob",
+      "sha": "c67ec908a5265781ce727e6674e550539ed97cef",
+      "size": 2915
+    },
+    {
+      "path": "docs/OPENSHIFT_VM_ADMISSION_038.md",
+      "type": "blob",
+      "sha": "59899b816fbfa6c8c1e2764a9399eb45c4562b8f",
+      "size": 1044
+    },
+    {
+      "path": "docs/ORACLE_CLOUD_AUTOMATION.md",
+      "type": "blob",
+      "sha": "ff1120c0d03752f2e9f8d2bf3a4b9a3074a3a14d",
+      "size": 4620
+    },
+    {
+      "path": "docs/OVHCLOUD_30_DAY_STAGE_038_PLAN.md",
+      "type": "blob",
+      "sha": "592d80b651c6538d495a88a07025490e4ca70180",
+      "size": 7772
+    },
+    {
+      "path": "docs/PEER_CREDENTIAL_ROTATION_035.md",
+      "type": "blob",
+      "sha": "d57eac0820573d10310bf7866e6add8912951639",
+      "size": 4550
+    },
+    {
+      "path": "docs/POSTGRES_CLUSTER.md",
+      "type": "blob",
+      "sha": "36dc93812d10d7af0580bc83e86df15f18ea4987",
+      "size": 8799
+    },
+    {
+      "path": "docs/PRIORITY_038_EXECUTION_CONTRACT.md",
+      "type": "blob",
+      "sha": "4dbd74226d78723238ae1a0c637617a951c42533",
+      "size": 6894
+    },
+    {
+      "path": "docs/PRODUCTION_OPERATIONS.md",
+      "type": "blob",
+      "sha": "739cff70c76febf66ea52621edf61988fe9c6564",
+      "size": 8532
+    },
+    {
+      "path": "docs/RAILWAY_TRIAL_STAGE038.md",
+      "type": "blob",
+      "sha": "543f57a4cd43430196af88a7709a2177c452e5db",
+      "size": 983
+    },
+    {
+      "path": "docs/RELEASE_EVIDENCE_032.md",
+      "type": "blob",
+      "sha": "00138c1c7ccd366c126d69cd362f1de04c5db415",
+      "size": 3661
+    },
+    {
+      "path": "docs/RELEASE_READINESS.md",
+      "type": "blob",
+      "sha": "c47a228b4d8606a34f4ad63dcd02ef572c13c2ef",
+      "size": 3733
+    },
+    {
+      "path": "docs/RESILIENCE.md",
+      "type": "blob",
+      "sha": "ebdc1bafb578cea2db13cfdfd66504384843a008",
+      "size": 3860
+    },
+    {
+      "path": "docs/ROADMAP_33_REPOSITORY_ADAPTATIONS_2026-10-15.md",
+      "type": "blob",
+      "sha": "536f35adc8fad45844ced857a21ae24b82e80afd",
+      "size": 7601
+    },
+    {
+      "path": "docs/ROADMAP_APEX_TIER0_2026-10-15.md",
+      "type": "blob",
+      "sha": "79a803822ec2b9bdfc1e2c5cb791024d20c5e77c",
+      "size": 19846
+    },
+    {
+      "path": "docs/ROADMAP_FULL_ECOSYSTEM_2026.md",
+      "type": "blob",
+      "sha": "a1e54474b4458214ae670d0dc3a62b55e62b7aa7",
+      "size": 260400
+    },
+    {
+      "path": "docs/ROADMAP_SOVEREIGN_WORKSPACE_V9_2026-10-15.md",
+      "type": "blob",
+      "sha": "7dbcc4556e4f0e9a2c361250674ff410f86b5d13",
+      "size": 20866
+    },
+    {
+      "path": "docs/ROADMAP_TWO_PDF_RUST_MODULES_2026-10-15.md",
+      "type": "blob",
+      "sha": "0005d1fd217df9b4a1f4bcdc16921099282d2d0c",
+      "size": 11991
+    },
+    {
+      "path": "docs/RPC_CERT_IDENTITY_036.md",
+      "type": "blob",
+      "sha": "3146824e7709c92c2ec1a38d626b422f749f3af8",
+      "size": 4585
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "type": "blob",
+      "sha": "2695eba5dfc4d79717c3c0e7ff20abf2c96f5f1a",
+      "size": 13492
+    },
+    {
+      "path": "docs/SINK_IDENTITY.md",
+      "type": "blob",
+      "sha": "c4119aad5e66bdb6fe8297207bd0c2008374433e",
+      "size": 4483
+    },
+    {
+      "path": "docs/STAGE038_ACCEPTANCE_BLOCKERS_2026-10-14.md",
+      "type": "blob",
+      "sha": "37569009d31f8f90a469642f0b123526e6cbffd4",
+      "size": 5612
+    },
+    {
+      "path": "docs/STAGE038_ALTERNATE_LINUX_EVIDENCE_2026-10-14.md",
+      "type": "blob",
+      "sha": "a352f61eed1f711a2bcc9dc68434e1649663ebb6",
+      "size": 7085
+    },
+    {
+      "path": "docs/STAGE038_EXTERNAL_ACCEPTANCE_RUNBOOK.md",
+      "type": "blob",
+      "sha": "92a495bad286b694208984e92096466800e2a695",
+      "size": 6864
+    },
+    {
+      "path": "docs/STAGE038_INDEPENDENT_AUDIT_HANDOFF.md",
+      "type": "blob",
+      "sha": "f8e84c769c9b075141107ebe9c04e738abcfa107",
+      "size": 7753
+    },
+    {
+      "path": "docs/STAGE038_KEY_PROVISIONING_2026-10-15.md",
+      "type": "blob",
+      "sha": "2cbd1f59123945088c13f5b550c030bc679ed673",
+      "size": 3608
+    },
+    {
+      "path": "docs/STAGE038_OPERATOR_DIRECTIVE_2026-10-15.md",
+      "type": "blob",
+      "sha": "9505934f0fd6c28fd1a90e3a1fed9d886fa4bcac",
+      "size": 3146
+    },
+    {
+      "path": "docs/STAGE038_PROVISIONAL_SIGNATURE_REGISTRY_2026-10-15.md",
+      "type": "blob",
+      "sha": "6c14ad780c7762d4f1d25b3d3522f34ce729203a",
+      "size": 5960
+    },
+    {
+      "path": "docs/STAGE039_040_BROKER_KERNEL_PG_INDEPENDENCE_2026-10-15.md",
+      "type": "blob",
+      "sha": "843925b620f9c1b6d73029a2262a6ad57f983754",
+      "size": 7699
+    },
+    {
+      "path": "docs/STAGE039_ACTUAL_BOUNDARY_CLOSURE_2026-10-15.md",
+      "type": "blob",
+      "sha": "4089d8309f8f74c851d5ae2ffc605a276c11045c",
+      "size": 7052
+    },
+    {
+      "path": "docs/STAGE039_COMBINED_VM_CGROUP_EGRESS_PROOF_2026-10-15.md",
+      "type": "blob",
+      "sha": "70adc16d83dad2585b049796047f144744e1aa56",
+      "size": 2994
+    },
+    {
+      "path": "docs/STAGE039_FREE_KVM_HOST_2026-10-15.md",
+      "type": "blob",
+      "sha": "809fb1a0a56d64ce9d4a1c786db912d9dae57a40",
+      "size": 3883
+    },
+    {
+      "path": "docs/STAGE039_MICROVM_EBPF.md",
+      "type": "blob",
+      "sha": "8fead74c87e76a631216e673ec141c35811600f9",
+      "size": 23347
+    },
+    {
+      "path": "docs/STAGE039_NETWORK_EBPF_CROSS_HOST_EVIDENCE_2026-10-15.md",
+      "type": "blob",
+      "sha": "c91d87288819fa877bfd1c41950201036f2f245b",
+      "size": 6853
+    },
+    {
+      "path": "docs/STAGE039_REAL_FIRECRACKER_BOOT_PROOF_2026-10-15.md",
+      "type": "blob",
+      "sha": "344729508a053508d25d4bf407320facad6ee99e",
+      "size": 3369
+    },
+    {
+      "path": "docs/STAGE039_REAL_KVM_AYA_PROOF_2026-10-15.md",
+      "type": "blob",
+      "sha": "2409bed37766e21f7f1a194db310c1d8f811c90e",
+      "size": 3633
+    },
+    {
+      "path": "docs/STAGE039_TWO_TENANTS_GUEST_NETWORK_INDEPENDENT_HOSTS_2026-10-15.md",
+      "type": "blob",
+      "sha": "70a95c715b69a7f59ab8f2cfdd9a317c37149d96",
+      "size": 5214
+    },
+    {
+      "path": "docs/STAGE039_VM_RESOURCE_FAULT_PROOF_2026-10-15.md",
+      "type": "blob",
+      "sha": "56083958c702082fdeedee5d99487b0db068fdea",
+      "size": 3810
+    },
+    {
+      "path": "docs/STAGE040_041_REAL_POSTGRES_LABS_2026-10-15.md",
+      "type": "blob",
+      "sha": "6efe97e69a7d6c34b4396ca9c1326b881516f8c0",
+      "size": 6933
+    },
+    {
+      "path": "docs/STAGE040_LIVE_TCP_NETNS_PARTITION_2026-10-15.md",
+      "type": "blob",
+      "sha": "dd3acfc62d54384b934800c8ff0e6ad023c40b7b",
+      "size": 2654
+    },
+    {
+      "path": "docs/STAGE040_LOCAL_WITNESS_LAB_2026-10-17.md",
+      "type": "blob",
+      "sha": "8bc8514739eabd1ed22a9507b43272645bb4b382",
+      "size": 5251
+    },
+    {
+      "path": "docs/STAGE040_REAL_INTERHOST_LIVE_PG_ACCEPTANCE_2026-10-15.md",
+      "type": "blob",
+      "sha": "8e825a6d8964c16e63d514eae28bd8dad7a30e11",
+      "size": 3574
+    },
+    {
+      "path": "docs/STAGE041_CROSS_KERNEL_RESTORE_2026-10-15.md",
+      "type": "blob",
+      "sha": "659f3227b76809947f8c5c0d219f4915383920ee",
+      "size": 5197
+    },
+    {
+      "path": "docs/STAGE041_REAL_WAL_PITR_2026-10-15.md",
+      "type": "blob",
+      "sha": "51189ab624a9d3366698c0cade01d5cba32f5f55",
+      "size": 3112
+    },
+    {
+      "path": "docs/STAGE041_TWO_KERNEL_PHYSICAL_WAL_PITR_2026-10-15.md",
+      "type": "blob",
+      "sha": "36d2bf36522d95f813b85cf1ad5eb2dd03039d7d",
+      "size": 5161
+    },
+    {
+      "path": "docs/STAGE_038_8_9_ACCEPTANCE.md",
+      "type": "blob",
+      "sha": "81df1663e1eb915a7fa9f507bffc16a2f7b8d75c",
+      "size": 11163
+    },
+    {
+      "path": "docs/STAGE_038_OPERATOR_SIGNOFF.md",
+      "type": "blob",
+      "sha": "311f5457643f6d49baeddcadcf6c44c14f2db396",
+      "size": 9554
+    },
+    {
+      "path": "docs/SUPPLY_CHAIN.md",
+      "type": "blob",
+      "sha": "00f0f0d7be88e7fd9955eb02c35c61a22904e76e",
+      "size": 6598
+    },
+    {
+      "path": "docs/SUPPLY_CHAIN_FINDINGS.md",
+      "type": "blob",
+      "sha": "de0fe196d620102f17d673d6e02a4077cc4b8dee",
+      "size": 5510
+    },
+    {
+      "path": "docs/TLS_PEER_IDENTITY_037.md",
+      "type": "blob",
+      "sha": "5c7d9d100911df2a3c639e7f7939348832ce0275",
+      "size": 5773
+    },
+    {
+      "path": "docs/WASI_EXECUTION_038.md",
+      "type": "blob",
+      "sha": "ea07b423ccde84705d25d9eef2c95459035c980a",
+      "size": 12471
+    },
+    {
+      "path": "docs/WORKER_FENCING.md",
+      "type": "blob",
+      "sha": "2d81f0e6cdae9ff08226cc5a3bb5b2fc2bffd327",
+      "size": 1772
+    },
+    {
+      "path": "docs/ZENOH_MIGRATION_030.md",
+      "type": "blob",
+      "sha": "4654af7aebd73aa5b1038f201c30c4460dbc6aac",
+      "size": 6394
+    },
+    {
+      "path": "docs/agents",
+      "type": "tree",
+      "sha": "b90ce9d14f4ed0aa8dcb6e29491fef2bb2c609c1"
+    },
+    {
+      "path": "docs/agents/OCAF_ENGINEERING_LEGION_KNOWLEDGE.md",
+      "type": "blob",
+      "sha": "6cb8e7abd6fe0a903122139996d99c7fa9cc6727",
+      "size": 4301
+    },
+    {
+      "path": "docs/archive",
+      "type": "tree",
+      "sha": "6349abc6c32e0424c1a2862b55fbbaf95127dde7"
+    },
+    {
+      "path": "docs/archive/ROADMAP_FULL_ECOSYSTEM_v9_2026-10-15.md",
+      "type": "blob",
+      "sha": "0734dccc911bbafc90214ce46140ed2b88ef92f0",
+      "size": 75010
+    },
+    {
+      "path": "docs/audits",
+      "type": "tree",
+      "sha": "f613eb76d9e957e02ec0d4bbc3a52a3669041925"
+    },
+    {
+      "path": "docs/audits/OCAF_20_PDF_DOCUMENTATION_AUDIT_2026-10-15.md",
+      "type": "blob",
+      "sha": "de4641732955397d5b2935e6de41fc9ace18828c",
+      "size": 16604
+    },
+    {
+      "path": "docs/audits/OCAF_30_PDF_FINAL_SOURCE_AUDIT_2026-10-16.md",
+      "type": "blob",
+      "sha": "fb0627982be97a3ddbec78f0af3eca798ff07cef",
+      "size": 8498
+    },
+    {
+      "path": "docs/audits/OCAF_40_PDF_ATOMIC_EXTRACTION_GATES_2026-10-16.md",
+      "type": "blob",
+      "sha": "ec3338c8bd414c166fa78df0862b1246a07cc7be",
+      "size": 1642
+    },
+    {
+      "path": "docs/audits/OCAF_40_PDF_PAGE_BY_PAGE_ROADMAP_RECONCILIATION_2026-10-16.md",
+      "type": "blob",
+      "sha": "c43e6b5e58f484c6041c97b91f2f63eecdc71292",
+      "size": 3523
+    },
+    {
+      "path": "docs/audits/OCAF_ADDITIONAL_10_PDFS_2026-10-16.md",
+      "type": "blob",
+      "sha": "936cdb9e26c8c7e4007fd5d2f9fa149588104a31",
+      "size": 8390
+    },
+    {
+      "path": "docs/audits/OCAF_BATCH2_CHAPTER_TO_ROADMAP_MATRIX_2026-10-16.md",
+      "type": "blob",
+      "sha": "a2242f043fc5c77aacf82294017a4bc56c736e4c",
+      "size": 10494
+    },
+    {
+      "path": "docs/audits/OCAF_FRONTIER_AND_AGENT_CORPUS_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "7bf93dc5d72fb914528adadccc23edeff7c143a4",
+      "size": 3383
+    },
+    {
+      "path": "docs/audits/OMAS_PDF_SECURITY_ARCHITECTURE_2026-10-17.md",
+      "type": "blob",
+      "sha": "d9ece55d2ebe18bbafb291d74479c39ec0782ef9",
+      "size": 5988
+    },
+    {
+      "path": "docs/audits/PDF01_09_SOURCE_TO_ROADMAP_RECONCILIATION_2026-10-16.md",
+      "type": "blob",
+      "sha": "8bbe9e7dbbdf31bec63701f180b0a93df1b1dd50",
+      "size": 7011
+    },
+    {
+      "path": "docs/audits/PDF10_ARCHITEKTURA_SYSTEMU_OCAF_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "85859ed943f1dfae23fc600fe9cfd7a89590c3bd",
+      "size": 4174
+    },
+    {
+      "path": "docs/audits/PDF11_RUST_ZENOH_SIX_PHASES_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "ada83c1ea5120346ab6eaf8ca64f15bb0fb080a4",
+      "size": 4219
+    },
+    {
+      "path": "docs/audits/PDF12_RUST_ZENOH_EXTENSIONS_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "600165a492778649198ce89532211414f29e456a",
+      "size": 3669
+    },
+    {
+      "path": "docs/audits/PDF13_ARCHITEKTURA_OCAF_RUST_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "3d665d8e80fb82bc7dadff6222c12d2cac43fbe7",
+      "size": 2546
+    },
+    {
+      "path": "docs/audits/PDF14_ARCHITEKTURA_OCAF_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "c9619c7ae09e5ff7eb45107197a278ac9d17ddd0",
+      "size": 1215
+    },
+    {
+      "path": "docs/audits/PDF15_RUST_ARCHITECTURE_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "9c5430daa87fdb60fd78779ebe32231834286074",
+      "size": 2402
+    },
+    {
+      "path": "docs/audits/PDF16_OCAF_ARCHITECTURE_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "9e55e8f15ff81baea1677b0ae0b8c8607e370a4b",
+      "size": 3431
+    },
+    {
+      "path": "docs/audits/PDF17_OCAF_RUST_ARCHITECTURE_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "dbd1a3ee8861b55e23a9df8fa12955c07df14623",
+      "size": 3789
+    },
+    {
+      "path": "docs/audits/PDF18_OCAF_OMNIDEV_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "bbd9979b7605c4e9b1c4c0b42684e05a5b50eb13",
+      "size": 3837
+    },
+    {
+      "path": "docs/audits/PDF20_OMNIE2E_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "f89209707803a66e1417fc7cd34bd1866d0e4250",
+      "size": 4280
+    },
+    {
+      "path": "docs/audits/PDF21_OMNIFORGE_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "47570786261fbbf17d1d1882b594552e02b62387",
+      "size": 3695
+    },
+    {
+      "path": "docs/audits/PDF22_OMNIWEB_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "843fa8b5a46635019ad32edb63ea1aa47c045d30",
+      "size": 3275
+    },
+    {
+      "path": "docs/audits/PDF23_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "c0c1f3b6938b7f40807ed875de43b6b3324fc66d",
+      "size": 2088
+    },
+    {
+      "path": "docs/audits/PDF24_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "aad83364a42a8c893a606fd5efb7d446819a95fa",
+      "size": 2429
+    },
+    {
+      "path": "docs/audits/PDF25_26_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "d59bef441342aa2a9aebe1bc83c28b71e366315e",
+      "size": 4020
+    },
+    {
+      "path": "docs/audits/PDF40_01_AGI_ASI_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "063153535143657cc69afe6e4545a9bcf87bea46",
+      "size": 4038
+    },
+    {
+      "path": "docs/audits/PDF40_02_ARCHITEKTURA_SYSTEMU_OCAF_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "89b78ad9999b001bb3d0d775bcb2beae101abcfc",
+      "size": 5446
+    },
+    {
+      "path": "docs/audits/PDF40_03_ARCHITEKTURA_SYSTEMU_OCAF_SEMANTIC_REVIEW_2026-10-16.md",
+      "type": "blob",
+      "sha": "a4f63d40efc24caa33d356e8aa5daa0ff4665c3c",
+      "size": 5626
+    },
+    {
+      "path": "docs/evidence",
+      "type": "tree",
+      "sha": "73df083fc0b9d312e3dc72502da1ca9b5fab0234"
+    },
+    {
+      "path": "docs/evidence/stage040",
+      "type": "tree",
+      "sha": "ab54748ea175f0c4def0c64563fd661cbde22f96"
+    },
+    {
+      "path": "docs/evidence/stage040/2026-10-17",
+      "type": "tree",
+      "sha": "1855b782366dae872a9f9694e2db7132a3696110"
+    },
+    {
+      "path": "docs/evidence/stage040/2026-10-17/github-ci-validation.json",
+      "type": "blob",
+      "sha": "553adeed39791fb74a8f962b68a5373fe7f92b11",
+      "size": 2267
+    },
+    {
+      "path": "docs/evidence/stage040/2026-10-17/postgres16-witness-lab.json",
+      "type": "blob",
+      "sha": "4dd83371b6946c3e093d5cce6dc82d0fc60b472f",
+      "size": 4142
+    },
+    {
+      "path": "docs/roadmap",
+      "type": "tree",
+      "sha": "fa06a641620be192c2c46c0e9f8c051cd8c11890"
+    },
+    {
+      "path": "docs/roadmap/PDF_40_SEMANTIC_GAP_LEDGER_2026-10-16.md",
+      "type": "blob",
+      "sha": "74265e5326f27c26774eaf10e1ed522be39a4a22",
+      "size": 4047
+    },
+    {
+      "path": "docs/roadmap/STAGE_CHANGELOG.md",
+      "type": "blob",
+      "sha": "94b079b03dfb33d1a3affd3df0a03b2c55361127",
+      "size": 74231
+    },
+    {
+      "path": "docs/roadmap/agents_builder_products_v11.json",
+      "type": "blob",
+      "sha": "45d4de8c96823020f2c2811d0be0ec379885ba11",
+      "size": 19375
+    },
+    {
+      "path": "docs/roadmap/apex_tier0_extension.json",
+      "type": "blob",
+      "sha": "1bf4e8dedced356202b49247f6ccd3e9ccdc9f44",
+      "size": 32822
+    },
+    {
+      "path": "docs/roadmap/canonical_v10_inventory.json",
+      "type": "blob",
+      "sha": "38df0fc1d2cfb42e5eaf7b529101183f86246e2c",
+      "size": 177920
+    },
+    {
+      "path": "docs/roadmap/canonical_v11_inventory.json",
+      "type": "blob",
+      "sha": "51352e09cfe85a017a5c1fda650946ee422ebeaf",
+      "size": 267351
+    },
+    {
+      "path": "docs/roadmap/missing_capabilities_v11.json",
+      "type": "blob",
+      "sha": "0a543bf222dcf70ff70972c659b980958c3f9c00",
+      "size": 25243
+    },
+    {
+      "path": "docs/roadmap/sovereign_workspace_v9.json",
+      "type": "blob",
+      "sha": "a1f1bab8aa5bd4dd6d00e05ecc3a981a33f6d6bd",
+      "size": 37543
+    },
+    {
+      "path": "examples",
+      "type": "tree",
+      "sha": "954c1139b30ce58bda73088645d73c95e9d4b38d"
+    },
+    {
+      "path": "examples/insecure-local",
+      "type": "tree",
+      "sha": "77b0a94e441480d55e726d179f089712d90bfb09"
+    },
+    {
+      "path": "examples/insecure-local/client.json5",
+      "type": "blob",
+      "sha": "e3bbe3ebd364db8a74e958ad6f4f1d28dbee2e90",
+      "size": 271
+    },
+    {
+      "path": "examples/insecure-local/server.json5",
+      "type": "blob",
+      "sha": "46012dfc3a584091bce74dbd0a4d35d95446137d",
+      "size": 269
+    },
+    {
+      "path": "examples/secure-mtls",
+      "type": "tree",
+      "sha": "942e76329baa4f60e346e6ffe0c1218cf7bdfb11"
+    },
+    {
+      "path": "examples/secure-mtls/agent.json5",
+      "type": "blob",
+      "sha": "8679ea8132c996de5b1ce91cf7a039b2176c1a6e",
+      "size": 580
+    },
+    {
+      "path": "examples/secure-mtls/coordinator.json5",
+      "type": "blob",
+      "sha": "ff2abd426168089a9fbd496d249e4df8216f5251",
+      "size": 649
+    },
+    {
+      "path": "integrations",
+      "type": "tree",
+      "sha": "a95b99af0164bf05eb8185cb44a483a4aecb9bc9"
+    },
+    {
+      "path": "integrations/omega-ocaf-apex",
+      "type": "tree",
+      "sha": "83b89c7bd51a25e2f6f7780d1a79e60d681d2e26"
+    },
+    {
+      "path": "integrations/omega-ocaf-apex/README.md",
+      "type": "blob",
+      "sha": "b8843b49d0cb902495d72614f60a17bfab72d454",
+      "size": 913
+    },
+    {
+      "path": "integrations/omega-ocaf-apex/cloud",
+      "type": "tree",
+      "sha": "341a2d714898710ee54d9b28e90ac9df38859c22"
+    },
+    {
+      "path": "integrations/omega-ocaf-apex/cloud/Dockerfile",
+      "type": "blob",
+      "sha": "a8a66326e7eca2504ac935bbd672d80e4e6917dd",
+      "size": 182
+    },
+    {
+      "path": "integrations/omega-ocaf-apex/cloud/server.py",
+      "type": "blob",
+      "sha": "df3a3512a4846b38b1212af7b9bedb21ca6bf673",
+      "size": 2980
+    },
+    {
+      "path": "integrations/omega-ocaf-apex/openai_probe.py",
+      "type": "blob",
+      "sha": "b3dd1cb884b93629c66f85a9551bf90acc0b42dd",
+      "size": 1064
+    },
+    {
+      "path": "integrations/omega-ocaf-apex/validate.py",
+      "type": "blob",
+      "sha": "210460cbe4651a9bbdbf859629c7d9200ddf10a3",
+      "size": 443
+    },
+    {
+      "path": "migrations",
+      "type": "tree",
+      "sha": "60b7f8b256c282105be871bcf84b977f1797cb8a"
+    },
+    {
+      "path": "migrations/v0.25_cluster_preflight.sql",
+      "type": "blob",
+      "sha": "096aeb2aa9762727fa1be9b8fa945e4417db2e08",
+      "size": 723
+    },
+    {
+      "path": "migrations/v0.26_directory_preflight.sql",
+      "type": "blob",
+      "sha": "9596a71af0cb005602ebb3a16e00c766122e0b9c",
+      "size": 1047
+    },
+    {
+      "path": "ops",
+      "type": "tree",
+      "sha": "33f46b2d5e0db5c9c316acfb39236f2298568b5a"
+    },
+    {
+      "path": "ops/OCAF_CONTINUOUS_DEVELOPMENT_POLICY_2026-10-15.json",
+      "type": "blob",
+      "sha": "03ad659d98b5db0d1cbfe6f310908da4470bb85d",
+      "size": 1133
+    },
+    {
+      "path": "ops/OCAF_RELEASE_OPERATOR_DECISION_2026-10-15.json",
+      "type": "blob",
+      "sha": "3775f55b25fd83ae81b95f489148a460d1013496",
+      "size": 732
+    },
+    {
+      "path": "ops/stage040",
+      "type": "tree",
+      "sha": "de508b6dd516cfc90523c00265cd3c84d6031f8f"
+    },
+    {
+      "path": "ops/stage040/Dockerfile",
+      "type": "blob",
+      "sha": "aac2da1730bd9d8246709b67927372650558e7ff",
+      "size": 466
+    },
+    {
+      "path": "scripts",
+      "type": "tree",
+      "sha": "64546a61d155b8b22be3ad6c13ae87b2f519ed26"
+    },
+    {
+      "path": "scripts/azure_stage038_inventory.py",
+      "type": "blob",
+      "sha": "7cf646aefd0e06c42aa551a31f9699e94490d498",
+      "size": 2329
+    },
+    {
+      "path": "scripts/check_30_pdf_audit_gate.py",
+      "type": "blob",
+      "sha": "c1543973be154fa1310befab0e260d956e1eead4",
+      "size": 2775
+    },
+    {
+      "path": "scripts/check_pdf40_semantic_completion.py",
+      "type": "blob",
+      "sha": "5ed8580d15f14c1ab98c8dac857b5d7e99ac4174",
+      "size": 3189
+    },
+    {
+      "path": "scripts/check_roadmap_pdf_coverage.py",
+      "type": "blob",
+      "sha": "4ce35ef29383058ae4cd1619b5a364cf07e60428",
+      "size": 5192
+    },
+    {
+      "path": "scripts/ci_stage038_signed_wasi_fixtures.py",
+      "type": "blob",
+      "sha": "1434b33424980454a90edb78f01694cd3308da6f",
+      "size": 7666
+    },
+    {
+      "path": "scripts/ha_multihost_acceptance.py",
+      "type": "blob",
+      "sha": "130088b061f1189a0a8d261fc9e3d6b35b74812a",
+      "size": 8038
+    },
+    {
+      "path": "scripts/ibm_cloud_wasi_preflight.py",
+      "type": "blob",
+      "sha": "9a90208221be7eded6231e56a736409c9de5c30d",
+      "size": 5638
+    },
+    {
+      "path": "scripts/migrate_zenoh_tls_yaml.py",
+      "type": "blob",
+      "sha": "64555def8ebeaeb23e588890cd9b3831109be6c1",
+      "size": 5666
+    },
+    {
+      "path": "scripts/mtls_lifecycle.py",
+      "type": "blob",
+      "sha": "bfdad9b850e5ed6f323db63cbdc8fa8c91a751da",
+      "size": 7986
+    },
+    {
+      "path": "scripts/openshift_sandbox_audit.py",
+      "type": "blob",
+      "sha": "784b350ca47d0f55b9e232de1d4795d66d892820",
+      "size": 9045
+    },
+    {
+      "path": "scripts/openshift_vm_manifest.py",
+      "type": "blob",
+      "sha": "0eaccda067612fed195ded8e7750932766a6122c",
+      "size": 2477
+    },
+    {
+      "path": "scripts/oracle_cloud_readonly.py",
+      "type": "blob",
+      "sha": "844fe870245baaf4f5b373539115a693efb52189",
+      "size": 10688
+    },
+    {
+      "path": "scripts/release_readiness.py",
+      "type": "blob",
+      "sha": "e9f9d310445edeb5b0873d6a604b3c2050d2f538",
+      "size": 10893
+    },
+    {
+      "path": "scripts/render_readme_roadmap.py",
+      "type": "blob",
+      "sha": "e1554ce0b68979ef439c0fde91c119c047a77470",
+      "size": 9093
+    },
+    {
+      "path": "scripts/sign_wasi_manifest.py",
+      "type": "blob",
+      "sha": "558402018be6628c6d4d3d9f22ba66f131f8a1ff",
+      "size": 3400
+    },
+    {
+      "path": "scripts/stage038_assert_denial.py",
+      "type": "blob",
+      "sha": "1de62e3db27eae25edbdafcb9054b4070ac68247",
+      "size": 2401
+    },
+    {
+      "path": "scripts/stage038_evidence_aggregate.py",
+      "type": "blob",
+      "sha": "13e0def902b16c87795013fdf05ccd3d48e6fb93",
+      "size": 8193
+    },
+    {
+      "path": "scripts/stage038_host_gate.py",
+      "type": "blob",
+      "sha": "ab9a2f093877050cfde943b3b6968087e640c0e1",
+      "size": 10202
+    },
+    {
+      "path": "scripts/stage038_multitenant_acceptance.py",
+      "type": "blob",
+      "sha": "058e59c88d1b4dff8cffc4d93d62a399713b2997",
+      "size": 16164
+    },
+    {
+      "path": "scripts/stage038_multitenant_fixtures.py",
+      "type": "blob",
+      "sha": "8f0052c4464a9a1692fa5f45a6fa1c67f0b9f979",
+      "size": 3926
+    },
+    {
+      "path": "scripts/stage038_production_gate.py",
+      "type": "blob",
+      "sha": "47414124ae09e2ba7573c1888c0a03be03f80131",
+      "size": 11479
+    },
+    {
+      "path": "scripts/stage038_relay.py",
+      "type": "blob",
+      "sha": "cb104a4778d6c6ce8c3b5631e104be403ea4f5b3",
+      "size": 6833
+    },
+    {
+      "path": "scripts/stage038_relay_requirements.txt",
+      "type": "blob",
+      "sha": "01b1b48c3ac793ffad453ba4cd4452488af728e7",
+      "size": 38
+    },
+    {
+      "path": "scripts/stage038_tunnel_client.py",
+      "type": "blob",
+      "sha": "48fd4d2080e8266292876ba1d2bb8fbc3fe4cfac",
+      "size": 8754
+    },
+    {
+      "path": "scripts/stage039_broker_ipc.py",
+      "type": "blob",
+      "sha": "c5123536977967b8d1cb71a50b8ef80ecb7b294a",
+      "size": 11046
+    },
+    {
+      "path": "scripts/stage039_broker_ledger.py",
+      "type": "blob",
+      "sha": "92630e3d2aa16a0500c658e69e5b1ee90ea6c152",
+      "size": 11415
+    },
+    {
+      "path": "scripts/stage039_broker_vm_binding.py",
+      "type": "blob",
+      "sha": "094323ad9a27874068a4ce1a5496ec162d184d32",
+      "size": 15146
+    },
+    {
+      "path": "scripts/stage039_cold_recovery.py",
+      "type": "blob",
+      "sha": "d84c9fc3206d1c50158712fd806f2aaf2696d14d",
+      "size": 4012
+    },
+    {
+      "path": "scripts/stage039_dual_tenant.py",
+      "type": "blob",
+      "sha": "b70cc16566fadcb8631278a0e1ac5abdad662abb",
+      "size": 10134
+    },
+    {
+      "path": "scripts/stage039_firecracker_spec.py",
+      "type": "blob",
+      "sha": "f4a814e7af621baa9acc927470e4351356ef61d9",
+      "size": 4846
+    },
+    {
+      "path": "scripts/stage039_guest_network.py",
+      "type": "blob",
+      "sha": "d97f795db0f8b6dba7025b7e651399af91b0f156",
+      "size": 15571
+    },
+    {
+      "path": "scripts/stage039_guest_tc.py",
+      "type": "blob",
+      "sha": "95ea7935dddead72d72f8ea727043a50252c2d31",
+      "size": 4455
+    },
+    {
+      "path": "scripts/stage039_guest_wasi.py",
+      "type": "blob",
+      "sha": "9cd8258b19f43141b7ed2cedbe7461853eef8389",
+      "size": 8045
+    },
+    {
+      "path": "scripts/stage039_independent_hosts.py",
+      "type": "blob",
+      "sha": "0de5a32350ebf62a32d503298649ab96e0a46466",
+      "size": 4127
+    },
+    {
+      "path": "scripts/stage039_jailed_guest_network.py",
+      "type": "blob",
+      "sha": "6ab6fef05aac2fac56ea0e437d1b435c0ea26213",
+      "size": 16153
+    },
+    {
+      "path": "scripts/stage039_kvm_ioctl.py",
+      "type": "blob",
+      "sha": "1dfde48cc11f9859a410d44d01db814da3d4e005",
+      "size": 4618
+    },
+    {
+      "path": "scripts/stage039_lifecycle.py",
+      "type": "blob",
+      "sha": "4daa7f0bf67681802b83402997c0110306881dc0",
+      "size": 2607
+    },
+    {
+      "path": "scripts/stage039_live_egress.py",
+      "type": "blob",
+      "sha": "58f59061c4b339448c777cd85e4033dd116498a2",
+      "size": 13104
+    },
+    {
+      "path": "scripts/stage039_live_firecracker.py",
+      "type": "blob",
+      "sha": "4e38d675bafedc8556cb6719a309df7f361aca6a",
+      "size": 25187
+    },
+    {
+      "path": "scripts/stage039_microvm_gate.py",
+      "type": "blob",
+      "sha": "bbcdabb46b5f6e2364e1c34c8cca2c1784a520ca",
+      "size": 9774
+    },
+    {
+      "path": "scripts/stage039_mtls_fencing.py",
+      "type": "blob",
+      "sha": "95d349f8f462b3a60c0f03a285333ead20f6ff41",
+      "size": 11321
+    },
+    {
+      "path": "scripts/stage039_mtls_partition_lab.py",
+      "type": "blob",
+      "sha": "800a31a106b1e7b388828d48fbcd7ed600ffb12f",
+      "size": 12357
+    },
+    {
+      "path": "scripts/stage039_prepare_cold_host.sh",
+      "type": "blob",
+      "sha": "aa32ce1f04a523f2d74c5d7fe70eb86866cee5cd",
+      "size": 2033
+    },
+    {
+      "path": "scripts/stage039_prepare_guest_wasi.sh",
+      "type": "blob",
+      "sha": "371e07423ca5cdd1a17f44f72f8b109eaa5240f9",
+      "size": 4208
+    },
+    {
+      "path": "scripts/stage039_signed_acceptance.py",
+      "type": "blob",
+      "sha": "3b3f9f3687f9ecdc05587b51e918aa4f5d188459",
+      "size": 9543
+    },
+    {
+      "path": "scripts/stage039_vm_crash.py",
+      "type": "blob",
+      "sha": "197057e1c532d7bda88e30ee6f6f77f38a6d8380",
+      "size": 4765
+    },
+    {
+      "path": "scripts/stage039_vm_egress.py",
+      "type": "blob",
+      "sha": "f4cc53fc333595c508a688b2dd56bc91503fb8a4",
+      "size": 8465
+    },
+    {
+      "path": "scripts/stage039_vm_resources.py",
+      "type": "blob",
+      "sha": "aaf8acb94fc92804f0b5b9a5f26b7afd3da4e64b",
+      "size": 8375
+    },
+    {
+      "path": "scripts/stage040_docker_lab.py",
+      "type": "blob",
+      "sha": "a8e7e812d202c64f4406756aaa7bde8d0957e895",
+      "size": 8585
+    },
+    {
+      "path": "scripts/stage040_independent_pg_hosts.py",
+      "type": "blob",
+      "sha": "5f5c4ff86611cd4d5fbd842d923f85f0b06eb58f",
+      "size": 3682
+    },
+    {
+      "path": "scripts/stage040_interhost_live.py",
+      "type": "blob",
+      "sha": "6bd6eb73be36d9f3cba7b9b92a3c930529714536",
+      "size": 17725
+    },
+    {
+      "path": "scripts/stage040_postgres_ha.py",
+      "type": "blob",
+      "sha": "fa4e30c63d11ac8f3bda9386beb9896d232e3816",
+      "size": 24533
+    },
+    {
+      "path": "scripts/stage040_postgres_netns.py",
+      "type": "blob",
+      "sha": "1c0ea4638b4e8b8937733f739769116d66265acf",
+      "size": 19822
+    },
+    {
+      "path": "scripts/stage040_quorum.py",
+      "type": "blob",
+      "sha": "7ea33cc4dd121e10de34ee9228b94401cd428cb6",
+      "size": 12944
+    },
+    {
+      "path": "scripts/stage040_soak.py",
+      "type": "blob",
+      "sha": "fbb2390966d15d0f64aeb2a9bc9342d3ad5db92e",
+      "size": 11991
+    },
+    {
+      "path": "scripts/stage040_wal.py",
+      "type": "blob",
+      "sha": "94137e2d011b737e72b2216e0651466a99a160c8",
+      "size": 4738
+    },
+    {
+      "path": "scripts/stage041_backup_restore.py",
+      "type": "blob",
+      "sha": "5abc4cc567a5c70ebf9d0c01d42cf7f68f7687d9",
+      "size": 9630
+    },
+    {
+      "path": "scripts/stage041_cross_host_restore.py",
+      "type": "blob",
+      "sha": "fefc785b968b17e0772123986acf32e7ba4b40d6",
+      "size": 12505
+    },
+    {
+      "path": "scripts/stage041_pitr.py",
+      "type": "blob",
+      "sha": "0f57cafc907767f8abba7e48b2172f990e39208a",
+      "size": 16024
+    },
+    {
+      "path": "scripts/stage041_pitr_cross_kernel.py",
+      "type": "blob",
+      "sha": "bbb2a3e4b6c656f6cbc9efc663441e940b3b0f1d",
+      "size": 17061
+    },
+    {
+      "path": "scripts/supply_chain.py",
+      "type": "blob",
+      "sha": "ff977ea9fb0c469b24b38965895d4d1062664d9e",
+      "size": 12496
+    },
+    {
+      "path": "scripts/tests",
+      "type": "tree",
+      "sha": "0d2ccd03da57cc8d951ee4bd8c0eb4ac9a66938d"
+    },
+    {
+      "path": "scripts/tests/test_azure_stage038_inventory.py",
+      "type": "blob",
+      "sha": "89b273dc46d6662b89547f4f45d74436c3a80222",
+      "size": 1734
+    },
+    {
+      "path": "scripts/tests/test_ci_action_pinning.py",
+      "type": "blob",
+      "sha": "409e360dae1c157f837690bd87c9f6e7b13ad559",
+      "size": 3091
+    },
+    {
+      "path": "scripts/tests/test_ha_multihost_acceptance.py",
+      "type": "blob",
+      "sha": "bddcf7bce7b0c51bd38b2f450f5ccaa8682d5107",
+      "size": 3697
+    },
+    {
+      "path": "scripts/tests/test_historical_implementation_evidence.py",
+      "type": "blob",
+      "sha": "485033d9dfae4503362d9cb5f336c553d9e4e3ac",
+      "size": 5147
+    },
+    {
+      "path": "scripts/tests/test_ibm_cloud_wasi_preflight.py",
+      "type": "blob",
+      "sha": "607fe3c41074af947156b02b8be59e89200ab8d5",
+      "size": 2195
+    },
+    {
+      "path": "scripts/tests/test_mtls_lifecycle.py",
+      "type": "blob",
+      "sha": "8cd87527bdfe0f24ab0ef9a8149fb5b0ee7f9fbe",
+      "size": 7024
+    },
+    {
+      "path": "scripts/tests/test_openshift_sandbox_audit.py",
+      "type": "blob",
+      "sha": "113bea8f5f33a5071d762b593bb00ed96334cfae",
+      "size": 4676
+    },
+    {
+      "path": "scripts/tests/test_openshift_vm_manifest.py",
+      "type": "blob",
+      "sha": "4ea3b518af16b3dd06dca8b1030172920471f5be",
+      "size": 1757
+    },
+    {
+      "path": "scripts/tests/test_oracle_cloud_readonly.py",
+      "type": "blob",
+      "sha": "e7bd88155c31768ddbe2911b263adff6ca1f76a0",
+      "size": 5981
+    },
+    {
+      "path": "scripts/tests/test_release_bundle.py",
+      "type": "blob",
+      "sha": "f2cdc2b62aaa8de1a2ba879325178b0e58dd7c2d",
+      "size": 4747
+    },
+    {
+      "path": "scripts/tests/test_release_readiness.py",
+      "type": "blob",
+      "sha": "674fa24ac6e5bfaed11fceb00e44af0eda39029e",
+      "size": 8214
+    },
+    {
+      "path": "scripts/tests/test_render_readme_roadmap.py",
+      "type": "blob",
+      "sha": "2d70eaea49c80c280cb381beb1cd6498a7ccd212",
+      "size": 3041
+    },
+    {
+      "path": "scripts/tests/test_sbom_workflow.py",
+      "type": "blob",
+      "sha": "0469dac2c304ea9d2c4405ba9930cecf9d9020db",
+      "size": 1721
+    },
+    {
+      "path": "scripts/tests/test_stage038_assert_denial.py",
+      "type": "blob",
+      "sha": "a0fc95aeb600c17599c907b6b88dc7382ea33812",
+      "size": 1863
+    },
+    {
+      "path": "scripts/tests/test_stage038_evidence_aggregate.py",
+      "type": "blob",
+      "sha": "b6c12ea15edbe54144f1b755053beda439f3e61b",
+      "size": 8088
+    },
+    {
+      "path": "scripts/tests/test_stage038_host_gate.py",
+      "type": "blob",
+      "sha": "a32ae6aafbf05bc466396f0961d6a7e026d8ec4a",
+      "size": 4919
+    },
+    {
+      "path": "scripts/tests/test_stage038_multitenant_fixtures.py",
+      "type": "blob",
+      "sha": "fd14bf1416281c5671a31b62715d50253d7e3797",
+      "size": 3079
+    },
+    {
+      "path": "scripts/tests/test_stage038_production_gate.py",
+      "type": "blob",
+      "sha": "f595112baaf6ae2f18c24f28da67a688dcd7d66a",
+      "size": 7922
+    },
+    {
+      "path": "scripts/tests/test_stage039_broker_ipc.py",
+      "type": "blob",
+      "sha": "c93dede24fdd716e1a2fb545e724a0d2f4d5358d",
+      "size": 8494
+    },
+    {
+      "path": "scripts/tests/test_stage039_broker_ledger.py",
+      "type": "blob",
+      "sha": "b72e43d25c3c16a815084f322e39edf9940c4a73",
+      "size": 10196
+    },
+    {
+      "path": "scripts/tests/test_stage039_broker_vm_binding.py",
+      "type": "blob",
+      "sha": "fc7fafbc68c62222da24548dd399efa6de8f7787",
+      "size": 7150
+    },
+    {
+      "path": "scripts/tests/test_stage039_cold_recovery.py",
+      "type": "blob",
+      "sha": "d78a93de06c3eceaa4d0119f5d8e54826332eaab",
+      "size": 2183
+    },
+    {
+      "path": "scripts/tests/test_stage039_dual_tenant.py",
+      "type": "blob",
+      "sha": "d6cd925b5059df3bbad10e66a26c50438b6f1d81",
+      "size": 2704
+    },
+    {
+      "path": "scripts/tests/test_stage039_firecracker_spec.py",
+      "type": "blob",
+      "sha": "6a28106fcad3b298750a73713038739e168a69d8",
+      "size": 5360
+    },
+    {
+      "path": "scripts/tests/test_stage039_guest_network.py",
+      "type": "blob",
+      "sha": "07605782a27952a2b1680dec8387a3dd76542cec",
+      "size": 2325
+    },
+    {
+      "path": "scripts/tests/test_stage039_guest_tc.py",
+      "type": "blob",
+      "sha": "4094737db85d52867916c1d64ca707a741f082ee",
+      "size": 2113
+    },
+    {
+      "path": "scripts/tests/test_stage039_guest_wasi.py",
+      "type": "blob",
+      "sha": "800936e0e0ec59af785557c53a1dfcf9aa488742",
+      "size": 4911
+    },
+    {
+      "path": "scripts/tests/test_stage039_independent_hosts.py",
+      "type": "blob",
+      "sha": "f6eb58f6d6158be8fd4999d962114b2a767614cb",
+      "size": 2470
+    },
+    {
+      "path": "scripts/tests/test_stage039_jailed_guest_network.py",
+      "type": "blob",
+      "sha": "2905edd53297b0cbefa2e9598939b322effbdf2a",
+      "size": 2886
+    },
+    {
+      "path": "scripts/tests/test_stage039_kvm_ioctl.py",
+      "type": "blob",
+      "sha": "cd0ddf5f90a334d5eefdf5f4f09456fb169b6824",
+      "size": 5566
+    },
+    {
+      "path": "scripts/tests/test_stage039_lifecycle.py",
+      "type": "blob",
+      "sha": "ebb52d29cc850812a645d37c415a3c23a901bfe0",
+      "size": 1580
+    },
+    {
+      "path": "scripts/tests/test_stage039_live_egress.py",
+      "type": "blob",
+      "sha": "dae827676b68224ebde64c04ea2df96d6c2005e7",
+      "size": 7227
+    },
+    {
+      "path": "scripts/tests/test_stage039_live_firecracker.py",
+      "type": "blob",
+      "sha": "fc788add8408f94f70ab9a16a88e38a6786fec73",
+      "size": 9090
+    },
+    {
+      "path": "scripts/tests/test_stage039_microvm_gate.py",
+      "type": "blob",
+      "sha": "d578abf03529d9f7bfebfe5425d294783cd5be1a",
+      "size": 7645
+    },
+    {
+      "path": "scripts/tests/test_stage039_mtls_fencing.py",
+      "type": "blob",
+      "sha": "59374e847e5336942997df0975db28031094df63",
+      "size": 3681
+    },
+    {
+      "path": "scripts/tests/test_stage039_signed_acceptance.py",
+      "type": "blob",
+      "sha": "f4198aa43bb9d87a61aa849d406cb4ff5aa5c579",
+      "size": 4721
+    },
+    {
+      "path": "scripts/tests/test_stage039_vm_crash.py",
+      "type": "blob",
+      "sha": "0e6ced2ebcb003037e92451a5addbd8d10b8f865",
+      "size": 3014
+    },
+    {
+      "path": "scripts/tests/test_stage039_vm_egress.py",
+      "type": "blob",
+      "sha": "77e720a71bf03caa2b8585c856226a1dfcb75272",
+      "size": 3184
+    },
+    {
+      "path": "scripts/tests/test_stage039_vm_resources.py",
+      "type": "blob",
+      "sha": "80ab7f9772763bb1ec88803ab33e306233aec62d",
+      "size": 5417
+    },
+    {
+      "path": "scripts/tests/test_stage040_docker_lab.py",
+      "type": "blob",
+      "sha": "a8fb5399ba03d7f8ffe1c16c5dd7ff5dec81def3",
+      "size": 9188
+    },
+    {
+      "path": "scripts/tests/test_stage040_independent_pg_hosts.py",
+      "type": "blob",
+      "sha": "dc6172bc36eb2250e14e3da43726d84a6f4946d6",
+      "size": 2743
+    },
+    {
+      "path": "scripts/tests/test_stage040_interhost_live.py",
+      "type": "blob",
+      "sha": "2f68c39add2d4aa1c1c2c038433dce5267a745a0",
+      "size": 12759
+    },
+    {
+      "path": "scripts/tests/test_stage040_pgbench_soak.py",
+      "type": "blob",
+      "sha": "ffe8c749fb96d530e8ad6afd7e1649cfacbeb60a",
+      "size": 2612
+    },
+    {
+      "path": "scripts/tests/test_stage040_postgres_ha.py",
+      "type": "blob",
+      "sha": "76308569b605ca6fcc3a6232602a318b637f399c",
+      "size": 3623
+    },
+    {
+      "path": "scripts/tests/test_stage040_postgres_netns.py",
+      "type": "blob",
+      "sha": "f47562aa910f5e3cae0102f69a9135eb24210ea0",
+      "size": 2266
+    },
+    {
+      "path": "scripts/tests/test_stage040_postgres_netns_soak.py",
+      "type": "blob",
+      "sha": "8e94819c2f4d1a9d8bb519d6858f915b99ff9f46",
+      "size": 1768
+    },
+    {
+      "path": "scripts/tests/test_stage040_quorum.py",
+      "type": "blob",
+      "sha": "d3ce78d15527f48a97f78293d0da36c0981e2d02",
+      "size": 12955
+    },
+    {
+      "path": "scripts/tests/test_stage040_soak.py",
+      "type": "blob",
+      "sha": "3bbec0d3adeeee741f814965cb14fe3647a168dd",
+      "size": 9268
+    },
+    {
+      "path": "scripts/tests/test_stage040_wal.py",
+      "type": "blob",
+      "sha": "9c2b5e3fd1d0ed2777fb87408e10ecf10fa268f8",
+      "size": 4137
+    },
+    {
+      "path": "scripts/tests/test_stage041_backup_restore.py",
+      "type": "blob",
+      "sha": "7055f5eaef94203021943324d3aa2a9ac63abc7d",
+      "size": 1723
+    },
+    {
+      "path": "scripts/tests/test_stage041_cross_host_restore.py",
+      "type": "blob",
+      "sha": "92c424aab3a49364a54e8e3529bc90b797c91362",
+      "size": 4590
+    },
+    {
+      "path": "scripts/tests/test_stage041_pitr.py",
+      "type": "blob",
+      "sha": "c95eb02f7ee72a7ac76f00633e58618122f906c1",
+      "size": 2910
+    },
+    {
+      "path": "scripts/tests/test_stage041_pitr_cross_kernel.py",
+      "type": "blob",
+      "sha": "f1d13097c0352aca1fc52b4cc31cf6b920ebaea7",
+      "size": 4849
+    },
+    {
+      "path": "scripts/tests/test_supply_chain.py",
+      "type": "blob",
+      "sha": "8161fc9e7f6de8f8e20bac222fdbc3e08e5cbb88",
+      "size": 11847
+    },
+    {
+      "path": "scripts/tests/test_validate_roadmap_apex.py",
+      "type": "blob",
+      "sha": "1c832bb07a1f2f95ad2dfcdd37ba9ce05ce5192d",
+      "size": 3484
+    },
+    {
+      "path": "scripts/tests/test_validate_roadmap_canonical.py",
+      "type": "blob",
+      "sha": "ddd8c7d41844b208ee0fa5269909955ccfdfe3c0",
+      "size": 3102
+    },
+    {
+      "path": "scripts/tests/test_validate_roadmap_sovereign_v9.py",
+      "type": "blob",
+      "sha": "31ef403062baa5fe0f312ea206b384055ce64bea",
+      "size": 3426
+    },
+    {
+      "path": "scripts/tests/test_validate_roadmap_v11.py",
+      "type": "blob",
+      "sha": "5e7f99525315062964f2a14cd4b6cc83e21e7d37",
+      "size": 5117
+    },
+    {
+      "path": "scripts/tests/test_wasi_host_acceptance.py",
+      "type": "blob",
+      "sha": "7074295d08fb70144dd1f48f8aeba609007b9a70",
+      "size": 3628
+    },
+    {
+      "path": "scripts/tests/test_zenoh_feature_policy.py",
+      "type": "blob",
+      "sha": "0f4e1dc944fcb57bcde1fdd02fbade0b7d25099e",
+      "size": 4035
+    },
+    {
+      "path": "scripts/validate_roadmap_apex.py",
+      "type": "blob",
+      "sha": "9e7dc495554c3bbaf649b3c9458e46dd290187ef",
+      "size": 8152
+    },
+    {
+      "path": "scripts/validate_roadmap_canonical.py",
+      "type": "blob",
+      "sha": "39fadfc940a4a8e860fb31071f8c42e7fdf409a1",
+      "size": 7097
+    },
+    {
+      "path": "scripts/validate_roadmap_sovereign_v9.py",
+      "type": "blob",
+      "sha": "7f0144e0836a5b7059c57b8c4228689eda8ecf17",
+      "size": 7991
+    },
+    {
+      "path": "scripts/validate_roadmap_v11.py",
+      "type": "blob",
+      "sha": "98b26bf495bc9eab01b704a236ee5e24d0d0b2ce",
+      "size": 10070
+    },
+    {
+      "path": "scripts/vendor_token_cell.py",
+      "type": "blob",
+      "sha": "37ed802a43f9b58b5b0899193485c4d04644eb74",
+      "size": 2659
+    },
+    {
+      "path": "scripts/vendor_zenoh_transport.py",
+      "type": "blob",
+      "sha": "dbed8c50758eef429743290f8d6c21eaea29c917",
+      "size": 2788
+    },
+    {
+      "path": "scripts/verify_release_bundle.py",
+      "type": "blob",
+      "sha": "bcb8a56915ecbf78601330f90802adb3c754beeb",
+      "size": 5588
+    },
+    {
+      "path": "scripts/wasi_host_acceptance.py",
+      "type": "blob",
+      "sha": "576c8c1af98878bf3e300142125ef1f595f8d065",
+      "size": 8173
+    },
+    {
+      "path": "scripts/wasmtime_acceptance.sh",
+      "type": "blob",
+      "sha": "d4f9d01c15411e90bb1880409fb22be86b2ad57e",
+      "size": 1769
+    },
+    {
+      "path": "scripts/zenoh_feature_policy.py",
+      "type": "blob",
+      "sha": "b8928adf3e7a515693a15bc05ede9676328ea055",
+      "size": 4472
+    },
+    {
+      "path": "src",
+      "type": "tree",
+      "sha": "8c12b27fb33c380ffb57c769d257fe44b87479ab"
+    },
+    {
+      "path": "src/auth",
+      "type": "tree",
+      "sha": "73b2f194cfdb68d7e7429a08905e732c9e67d61c"
+    },
+    {
+      "path": "src/auth/mod.rs",
+      "type": "blob",
+      "sha": "adcd61ee1315d50c48fb531ffa9d6677a0d71fca",
+      "size": 2349
+    },
+    {
+      "path": "src/bin",
+      "type": "tree",
+      "sha": "4910f2afeaddfa46236652fe019a4af6b7e17654"
+    },
+    {
+      "path": "src/bin/ocaf-cluster-health.rs",
+      "type": "blob",
+      "sha": "ac27bc963bca318aa3ef3f79cc9991dfa53f128a",
+      "size": 4805
+    },
+    {
+      "path": "src/bin/ocaf-coordinator.rs",
+      "type": "blob",
+      "sha": "866f899ba05e11ccc37f948d1b30db2b6762f06e",
+      "size": 23285
+    },
+    {
+      "path": "src/bin/ocaf-effect-sink.rs",
+      "type": "blob",
+      "sha": "288d348eb32759b0c7576a05b290304f469f551c",
+      "size": 5897
+    },
+    {
+      "path": "src/bin/ocaf-ha-probe.rs",
+      "type": "blob",
+      "sha": "2f1123e5a963f944f10bfea3be20f689ef1bd544",
+      "size": 8240
+    },
+    {
+      "path": "src/bin/ocaf-railway-probe.rs",
+      "type": "blob",
+      "sha": "2654c60d48c03be21a072aee3b6b98826d97c1fd",
+      "size": 3558
+    },
+    {
+      "path": "src/bin/ocaf-rpc-node.rs",
+      "type": "blob",
+      "sha": "378a84d74e35c966d5c5fc4ac2f18532c97d978a",
+      "size": 14565
+    },
+    {
+      "path": "src/cluster",
+      "type": "tree",
+      "sha": "eb0160888047e68eabb554f92cfa656d0b8a9ec1"
+    },
+    {
+      "path": "src/cluster/directory.rs",
+      "type": "blob",
+      "sha": "cb2f4d1cd2d02682d33f17c58da4707e7bd187aa",
+      "size": 8529
+    },
+    {
+      "path": "src/cluster/jobs.rs",
+      "type": "blob",
+      "sha": "999c584ce44b388bfc5cd47b22d6bcf9411bcde0",
+      "size": 30706
+    },
+    {
+      "path": "src/cluster/leadership.rs",
+      "type": "blob",
+      "sha": "98b06ec9e58983caffef03e85c81d166f6a9433e",
+      "size": 15106
+    },
+    {
+      "path": "src/cluster/mod.rs",
+      "type": "blob",
+      "sha": "30057fb21be760b4b0bd66bf8a5881a5687c91ea",
+      "size": 237
+    },
+    {
+      "path": "src/cluster/observability.rs",
+      "type": "blob",
+      "sha": "3f06c4c33390853a1b4ce6510edce16a1be66939",
+      "size": 10776
+    },
+    {
+      "path": "src/cluster/replay.rs",
+      "type": "blob",
+      "sha": "a7c99a8e80d63ccab81dd3567e241c7809545f44",
+      "size": 5332
+    },
+    {
+      "path": "src/coordinator",
+      "type": "tree",
+      "sha": "142e12665fa6a9df82b5709c75b75202fd5ad5f7"
+    },
+    {
+      "path": "src/coordinator/leadership.rs",
+      "type": "blob",
+      "sha": "dc70097e7a623b7748dad905c67f905e5b61f327",
+      "size": 3641
+    },
+    {
+      "path": "src/coordinator/mod.rs",
+      "type": "blob",
+      "sha": "47adaee0552dfaf1ece1df583c2446def03f0a7a",
+      "size": 9274
+    },
+    {
+      "path": "src/executor",
+      "type": "tree",
+      "sha": "63ad9f559a31d8f755f1da4ad54f6692301abffd"
+    },
+    {
+      "path": "src/executor/mod.rs",
+      "type": "blob",
+      "sha": "1ef7c8fb97f62072ad334e4501997a3a6944db86",
+      "size": 2236
+    },
+    {
+      "path": "src/executor/wasi.rs",
+      "type": "blob",
+      "sha": "b0e1a509a8292d4fa4a7de70c30d307b834f105a",
+      "size": 31894
+    },
+    {
+      "path": "src/executor/wasi_manifest.rs",
+      "type": "blob",
+      "sha": "7de31d3a159ba7ad90752834a25cb82c1dd3a35e",
+      "size": 5157
+    },
+    {
+      "path": "src/executor/wasi_receipt.rs",
+      "type": "blob",
+      "sha": "e52200d24302dc6271995d526d472d7a64ec7900",
+      "size": 3961
+    },
+    {
+      "path": "src/jobs",
+      "type": "tree",
+      "sha": "51845cc21b00d67920ebb000f8192cfc2ae67176"
+    },
+    {
+      "path": "src/jobs/mod.rs",
+      "type": "blob",
+      "sha": "b8192dc3184336090636601b4db8de8b84b4056e",
+      "size": 22420
+    },
+    {
+      "path": "src/jobs/remote.rs",
+      "type": "blob",
+      "sha": "fb9818f31a4cdca315ff940b28ee7209db9d1205",
+      "size": 9828
+    },
+    {
+      "path": "src/jobs/worker.rs",
+      "type": "blob",
+      "sha": "c1c75d439e425d5945b40d9d638d0d7d8bce998e",
+      "size": 5444
+    },
+    {
+      "path": "src/lib.rs",
+      "type": "blob",
+      "sha": "9c115490061df67039a6534d220dd050e08dc1d3",
+      "size": 291
+    },
+    {
+      "path": "src/main.rs",
+      "type": "blob",
+      "sha": "6b1180f0861c0e349ca34c684a6b0e695878790e",
+      "size": 1302
+    },
+    {
+      "path": "src/metrics",
+      "type": "tree",
+      "sha": "016d8877057bf8377eefb94eedcc019dd375e31f"
+    },
+    {
+      "path": "src/metrics/mod.rs",
+      "type": "blob",
+      "sha": "1d9b86f8fe43d07d2a94e477be2e482367a2d20a",
+      "size": 1290
+    },
+    {
+      "path": "src/metrics/trace_context.rs",
+      "type": "blob",
+      "sha": "1db97e8c91c7c88e54b5b6b3a487d6c60f149daa",
+      "size": 6251
+    },
+    {
+      "path": "src/omas_policy.rs",
+      "type": "blob",
+      "sha": "a1bb25f2624551f9fd94fb16b23e31e68310db04",
+      "size": 4232
+    },
+    {
+      "path": "src/omas_signed.rs",
+      "type": "blob",
+      "sha": "603608636e7280b17580ccfbe49c9a54dd8a05d9",
+      "size": 15377
+    },
+    {
+      "path": "src/ops",
+      "type": "tree",
+      "sha": "0210a8a6257293803fba78808eb104873171068e"
+    },
+    {
+      "path": "src/ops/mod.rs",
+      "type": "blob",
+      "sha": "fe0dc8ad9e392d741e2df56a3fbc8b8cf7e1e5dc",
+      "size": 123
+    },
+    {
+      "path": "src/ops/secrets.rs",
+      "type": "blob",
+      "sha": "ead816a7646d974fa6406f448bc9f6b552db7596",
+      "size": 5119
+    },
+    {
+      "path": "src/ops/wasi_config.rs",
+      "type": "blob",
+      "sha": "83108c09e1ca0fda5cb0eec0fe4d7e904a35e1c2",
+      "size": 8431
+    },
+    {
+      "path": "src/registry",
+      "type": "tree",
+      "sha": "9e23a4d58d7c300887880de91c48b8173979f284"
+    },
+    {
+      "path": "src/registry/mod.rs",
+      "type": "blob",
+      "sha": "e19ef435f8727301312180f77e95353825347c5a",
+      "size": 3893
+    },
+    {
+      "path": "src/rpc",
+      "type": "tree",
+      "sha": "f38dff4482af4f3d78bedf3b0a27cd0954052d9e"
+    },
+    {
+      "path": "src/rpc/cert_identity.rs",
+      "type": "blob",
+      "sha": "0edd41b68b5962244f9de39a732675f1d132cde7",
+      "size": 6282
+    },
+    {
+      "path": "src/rpc/directory_backend.rs",
+      "type": "blob",
+      "sha": "1dd08bc119d959ca6d5aee26abbe1443055041f6",
+      "size": 1221
+    },
+    {
+      "path": "src/rpc/job_backend.rs",
+      "type": "blob",
+      "sha": "faff10033e990a0aa3ec48435391c04d809af718",
+      "size": 4100
+    },
+    {
+      "path": "src/rpc/mod.rs",
+      "type": "blob",
+      "sha": "9e9f98bd1dfc20a0157ba7dd30927805695a5e16",
+      "size": 47771
+    },
+    {
+      "path": "src/rpc/replay.rs",
+      "type": "blob",
+      "sha": "2b710203a1d5e495d56e06c809b93711d60c1fb6",
+      "size": 5961
+    },
+    {
+      "path": "src/runtime",
+      "type": "tree",
+      "sha": "9843710d43f0c0a80b4070e5436ddc20a82a91e5"
+    },
+    {
+      "path": "src/runtime/mod.rs",
+      "type": "blob",
+      "sha": "b1751c6e7887209a13992580578a61d9cc504ed5",
+      "size": 20574
+    },
+    {
+      "path": "src/sink",
+      "type": "tree",
+      "sha": "1c8b99cc5e61c9b7d584b87fdc709d3508191a7e"
+    },
+    {
+      "path": "src/sink/mod.rs",
+      "type": "blob",
+      "sha": "d024fa8b38bdda2d025976b75d9ad797c21795d8",
+      "size": 22833
+    },
+    {
+      "path": "src/transport",
+      "type": "tree",
+      "sha": "4c731c5e7672b4822565bb6196910d03941177f2"
+    },
+    {
+      "path": "src/transport/mod.rs",
+      "type": "blob",
+      "sha": "fd251616121820326ecfa2daa5b79b351d7d472b",
+      "size": 2502
+    },
+    {
+      "path": "src/transport/rpc.rs",
+      "type": "blob",
+      "sha": "4e9e7242409631173ee08dc7cecdca592c8ca467",
+      "size": 9433
+    },
+    {
+      "path": "src/transport/sink.rs",
+      "type": "blob",
+      "sha": "4d2c5be2352ab3596518e3bc96a1a271f20bb07f",
+      "size": 6605
+    },
+    {
+      "path": "src/transport/tls_bound.rs",
+      "type": "blob",
+      "sha": "4e460b8566a764b9bf62ef4a15f9ba28f6900268",
+      "size": 7727
+    },
+    {
+      "path": "src/transport_policy.rs",
+      "type": "blob",
+      "sha": "179a037fec64b16c77f7b85637bcae284e7f8f0a",
+      "size": 8475
+    },
+    {
+      "path": "stage039",
+      "type": "tree",
+      "sha": "119222ca1b3199a8cfc8e9d56ee68a993c6d6fe7"
+    },
+    {
+      "path": "stage039/aya-ebpf-egress",
+      "type": "tree",
+      "sha": "afde016ee63d26f9d945bbbd13f7b09b7a0884c4"
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/.cargo",
+      "type": "tree",
+      "sha": "842ae3c1958e298016ab42b791fc36854591abf0"
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/.cargo/config.toml",
+      "type": "blob",
+      "sha": "aee7c1e943242114611fcdf10cdbb6f1ac7a50d5",
+      "size": 83
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/Cargo.lock",
+      "type": "blob",
+      "sha": "a9204d6f34d666fd7565c65898cad6d337ce4058",
+      "size": 7261
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/Cargo.toml",
+      "type": "blob",
+      "sha": "14821cdfe4a64e35a0a988c320fc422cdde6aab8",
+      "size": 291
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/prebuilt",
+      "type": "tree",
+      "sha": "0d4037031a1145126faeab88f5e445967ae5d013"
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/prebuilt/stage039-deny-egress.elf",
+      "type": "blob",
+      "sha": "279b1ca35687c5e4e1547ea48b25561745571568",
+      "size": 992
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/src",
+      "type": "tree",
+      "sha": "98e51df624b802af4e044f31b6c0dace743cb080"
+    },
+    {
+      "path": "stage039/aya-ebpf-egress/src/main.rs",
+      "type": "blob",
+      "sha": "0303cc9d80afe054fabf891ff03e063166fd8542",
+      "size": 534
+    },
+    {
+      "path": "stage039/aya-guard",
+      "type": "tree",
+      "sha": "5b05ba124f42bbaa7774a604f58e501f6037737b"
+    },
+    {
+      "path": "stage039/aya-guard/Cargo.toml",
+      "type": "blob",
+      "sha": "174514b0c508002b4a4e0ff0921de4b1173fc250",
+      "size": 273
+    },
+    {
+      "path": "stage039/aya-guard/src",
+      "type": "tree",
+      "sha": "0ba90439ec310dbbaab89dbc48ec17acd4acb608"
+    },
+    {
+      "path": "stage039/aya-guard/src/main.rs",
+      "type": "blob",
+      "sha": "811bd2f506d5aed32e3375da9e76bd4d5d5c92ef",
+      "size": 6299
+    },
+    {
+      "path": "stage039/guest-egress",
+      "type": "tree",
+      "sha": "0d0845d70941beac8fd5ef33ebc4446037c4271e"
+    },
+    {
+      "path": "stage039/guest-egress/guest_probe_init.c",
+      "type": "blob",
+      "sha": "e6392aaffb4fef05fcfdc5f9b469fa2a3035eb04",
+      "size": 2818
+    },
+    {
+      "path": "stage039/guest-egress/tc_deny.c",
+      "type": "blob",
+      "sha": "691dfc82e20fae91af430dea0829b90c6ebc36c6",
+      "size": 498
+    },
+    {
+      "path": "stage039/guest-wasi",
+      "type": "tree",
+      "sha": "6803260b6e770006fc4735d364f05872741c6b8a"
+    },
+    {
+      "path": "stage039/guest-wasi/guest_wasi_init.c",
+      "type": "blob",
+      "sha": "d2116d818761c8d3f5afe3e78ea516ede77be375",
+      "size": 4924
+    },
+    {
+      "path": "stage039/guest-wasi/hello.wat",
+      "type": "blob",
+      "sha": "a5d0b07bc4ecc4fe58fa1101b17774ca8ec31b30",
+      "size": 587
+    },
+    {
+      "path": "tests",
+      "type": "tree",
+      "sha": "db4fabf5353c4cd52abd7299a9749f740b7c7260"
+    },
+    {
+      "path": "tests/cluster_health_cli.rs",
+      "type": "blob",
+      "sha": "5d38425a93784f53575cfb5264ab342dc0674311",
+      "size": 4590
+    },
+    {
+      "path": "tests/cluster_observability.rs",
+      "type": "blob",
+      "sha": "8fd4b0ffc84e182ce92ae15dcd37461660a0274b",
+      "size": 6415
+    },
+    {
+      "path": "tests/coordinator.rs",
+      "type": "blob",
+      "sha": "e85d90fcd16d06a96792b164dfbf82ec533cedea",
+      "size": 7452
+    },
+    {
+      "path": "tests/coordinator_leadership.rs",
+      "type": "blob",
+      "sha": "4b6c853319b8efb5ccf4d635725fbc6d57107a18",
+      "size": 6175
+    },
+    {
+      "path": "tests/coordinator_zenoh_e2e.rs",
+      "type": "blob",
+      "sha": "410b66a6cd08df5c6d8107886bf569e902fd8045",
+      "size": 4442
+    },
+    {
+      "path": "tests/distributed_jobs_rpc.rs",
+      "type": "blob",
+      "sha": "6733005e1e45829ded2f39f76ebb33b2a69c9bcd",
+      "size": 12681
+    },
+    {
+      "path": "tests/distributed_jobs_zenoh_e2e.rs",
+      "type": "blob",
+      "sha": "5555b40441dec758f67b83acb1ef1db2124e28c0",
+      "size": 4038
+    },
+    {
+      "path": "tests/durable_jobs.rs",
+      "type": "blob",
+      "sha": "aa207e8bc23dfe1f0b68f0253f16f124478b8db6",
+      "size": 8701
+    },
+    {
+      "path": "tests/final_replay_acceptance.rs",
+      "type": "blob",
+      "sha": "2a8290342c02a227f7d3cb772df36d610b019e09",
+      "size": 2630
+    },
+    {
+      "path": "tests/final_security_acceptance.rs",
+      "type": "blob",
+      "sha": "8b17db03e2517679375dc3d252992e5bf6be6176",
+      "size": 3305
+    },
+    {
+      "path": "tests/fixtures",
+      "type": "tree",
+      "sha": "7f0eb4a21e867e8b9411b6b87af7f1bfb8b785ee"
+    },
+    {
+      "path": "tests/fixtures/wasi_finite_loop.wat",
+      "type": "blob",
+      "sha": "050b0d849b7a93ebbece81eed5649f6719a8d06c",
+      "size": 301
+    },
+    {
+      "path": "tests/fixtures/wasi_infinite_loop.wat",
+      "type": "blob",
+      "sha": "9be671d7533492564330538699f59f6e0b60e969",
+      "size": 83
+    },
+    {
+      "path": "tests/ha_probe_cli.rs",
+      "type": "blob",
+      "sha": "0cde672cb014e679171365e8cb81d3a495ee8f3f",
+      "size": 4491
+    },
+    {
+      "path": "tests/health_cli.rs",
+      "type": "blob",
+      "sha": "ccb1016fa47d5de004ade7a0cf753d5dbaf06d95",
+      "size": 3211
+    },
+    {
+      "path": "tests/independent_sink.rs",
+      "type": "blob",
+      "sha": "4cf77c191f2e641648dcabe8e54f1f9e16436df2",
+      "size": 8208
+    },
+    {
+      "path": "tests/job_worker.rs",
+      "type": "blob",
+      "sha": "d65d340da9f6eeb46810854948120097fc56b3a3",
+      "size": 7473
+    },
+    {
+      "path": "tests/omas_dispatch.rs",
+      "type": "blob",
+      "sha": "38345208c831967ad55922a2ad1bfbc442e734dc",
+      "size": 10987
+    },
+    {
+      "path": "tests/persistent_replay.rs",
+      "type": "blob",
+      "sha": "493b8a8d80cfedcf0b01baa6c8016fe38d565f54",
+      "size": 6082
+    },
+    {
+      "path": "tests/postgres_audit.rs",
+      "type": "blob",
+      "sha": "b9b3fd7f41d25e3de73655e510f0a794beb77aaf",
+      "size": 4787
+    },
+    {
+      "path": "tests/postgres_chaos.rs",
+      "type": "blob",
+      "sha": "785c9216d5ff6c58ab96d9c555e4d6d119487834",
+      "size": 4221
+    },
+    {
+      "path": "tests/postgres_cluster_execute.rs",
+      "type": "blob",
+      "sha": "cb84f368a2b33c533a6c153554671479505e937f",
+      "size": 2589
+    },
+    {
+      "path": "tests/postgres_coordinator_state.rs",
+      "type": "blob",
+      "sha": "231b4da4e1831fb4a1caa2fbaa2cc773458800ba",
+      "size": 7191
+    },
+    {
+      "path": "tests/postgres_fenced_effect.rs",
+      "type": "blob",
+      "sha": "e85227e30d9b623899952273f16dfce64e7703b1",
+      "size": 8553
+    },
+    {
+      "path": "tests/postgres_ha_recovery.rs",
+      "type": "blob",
+      "sha": "4f063b66583fc526a6206e752945d5bcf43edb8b",
+      "size": 7804
+    },
+    {
+      "path": "tests/postgres_jobs.rs",
+      "type": "blob",
+      "sha": "2cd0d16cedad02005e3b9cb846b816421f4b1447",
+      "size": 4772
+    },
+    {
+      "path": "tests/postgres_leadership.rs",
+      "type": "blob",
+      "sha": "5bbf82002409716aad741ddb9a7f65a37997ed2f",
+      "size": 10415
+    },
+    {
+      "path": "tests/postgres_lease_clock.rs",
+      "type": "blob",
+      "sha": "5714f334754700a8620e62bb23e6a7400e50c8ba",
+      "size": 3907
+    },
+    {
+      "path": "tests/postgres_network_chaos.rs",
+      "type": "blob",
+      "sha": "7539805d08a2024d00001abcabb9e50b8f9c89e8",
+      "size": 4450
+    },
+    {
+      "path": "tests/postgres_rpc_e2e.rs",
+      "type": "blob",
+      "sha": "2d078e5eb184346152b25fda5cb191f9e9394208",
+      "size": 5304
+    },
+    {
+      "path": "tests/postgres_worker_fencing.rs",
+      "type": "blob",
+      "sha": "ba749d71a5db545157d2f13dbd1395ded9a78bec",
+      "size": 7701
+    },
+    {
+      "path": "tests/postgres_zenoh_e2e.rs",
+      "type": "blob",
+      "sha": "a7430f34a3c9d140a161301784ff6eb0b014b697",
+      "size": 4966
+    },
+    {
+      "path": "tests/production_health.rs",
+      "type": "blob",
+      "sha": "93e5161456642cf8577b5a4798dcccf7aba54936",
+      "size": 4374
+    },
+    {
+      "path": "tests/rpc_cert_identity.rs",
+      "type": "blob",
+      "sha": "9f997b32d5fd7ac3c6f8d94842ef1809d32ca22a",
+      "size": 9511
+    },
+    {
+      "path": "tests/rpc_key_rotation.rs",
+      "type": "blob",
+      "sha": "0f0ae756563d06167cf8eaea75b6958dc578cbda",
+      "size": 4527
+    },
+    {
+      "path": "tests/rpc_security.rs",
+      "type": "blob",
+      "sha": "8591a5f45fc44509b90490c61eb068198a5ee1bd",
+      "size": 9702
+    },
+    {
+      "path": "tests/runtime_regressions.rs",
+      "type": "blob",
+      "sha": "3df411274c133f33d0d69323dc7fd3586daf3cda",
+      "size": 7508
+    },
+    {
+      "path": "tests/scripts",
+      "type": "tree",
+      "sha": "9d50f71deac0fcd3e4a290534c1c1a3e1aff9c02"
+    },
+    {
+      "path": "tests/scripts/verify_wasmtime_fuel_exhaustion.sh",
+      "type": "blob",
+      "sha": "48316e44aa01b359cef9bf297cd1e30dd65976b1",
+      "size": 2016
+    },
+    {
+      "path": "tests/sink_identity.rs",
+      "type": "blob",
+      "sha": "3af8cafad72eaaddfcdc483c5c9ca214d0ad4fa5",
+      "size": 5936
+    },
+    {
+      "path": "tests/sink_zenoh_e2e.rs",
+      "type": "blob",
+      "sha": "a9870e60c97bf8905d875063877bef55b45ec7fc",
+      "size": 5747
+    },
+    {
+      "path": "tests/support",
+      "type": "tree",
+      "sha": "493489433e634e6256773fa179dcfaade8053849"
+    },
+    {
+      "path": "tests/support/pg_fault_proxy.rs",
+      "type": "blob",
+      "sha": "e2d9704ae879a0a127c7f7c942f8c392a9188a3b",
+      "size": 4904
+    },
+    {
+      "path": "tests/tls_bound_identity.rs",
+      "type": "blob",
+      "sha": "7b6260e7dfbdd76f4032e9389790cb499730e29a",
+      "size": 10883
+    },
+    {
+      "path": "tests/transport_policy.rs",
+      "type": "blob",
+      "sha": "f6067951a44fbaf16be33f6e72f1fccffa66c01b",
+      "size": 8588
+    },
+    {
+      "path": "tests/transport_reconnect.rs",
+      "type": "blob",
+      "sha": "f0f58b24e44c6270847b03cde3187c5ce7043f27",
+      "size": 5429
+    },
+    {
+      "path": "tests/wasi_sandbox.rs",
+      "type": "blob",
+      "sha": "93a1404f714ce2f904b43c2542523fb2bdcf9636",
+      "size": 37256
+    },
+    {
+      "path": "tests/zenoh_chaos_takeover.rs",
+      "type": "blob",
+      "sha": "b7d8156ae42f6d1b51b5d4db3c1264337dc54f06",
+      "size": 6401
+    },
+    {
+      "path": "tests/zenoh_e2e.rs",
+      "type": "blob",
+      "sha": "7d84c84bcc296fba943182b26ceec37b2a450159",
+      "size": 3547
+    },
+    {
+      "path": "tests/zenoh_mtls_e2e.rs",
+      "type": "blob",
+      "sha": "d527c3a27efe1a4d7cd73d50d721d7ba6d4ffc88",
+      "size": 9540
+    },
+    {
+      "path": "tests/zenoh_reconnect_e2e.rs",
+      "type": "blob",
+      "sha": "f763fe401b31e6dac27ffded31ba948f308c0db6",
+      "size": 2648
+    },
+    {
+      "path": "tests/zenoh_secure_format.rs",
+      "type": "blob",
+      "sha": "8537c8154914a1a44d175fb8ebe0ecd67c4d69dd",
+      "size": 767
+    },
+    {
+      "path": "vendor",
+      "type": "tree",
+      "sha": "d83565ca79c7f399c45cdd955f3facdd63aaa428"
+    },
+    {
+      "path": "vendor/token-cell",
+      "type": "tree",
+      "sha": "2b92d8d680d111bc38becac22c7f7ec69bf50932"
+    },
+    {
+      "path": "vendor/token-cell/.cargo-ok",
+      "type": "blob",
+      "sha": "5f8b795830acbab5961c1a28c76a7916c9631493",
+      "size": 7
+    },
+    {
+      "path": "vendor/token-cell/.cargo_vcs_info.json",
+      "type": "blob",
+      "sha": "b896d7db0c16de22e077d0fb57037a03592d1817",
+      "size": 94
+    },
+    {
+      "path": "vendor/token-cell/.gitignore",
+      "type": "blob",
+      "sha": "96ef6c0b944e24fc22f51f18136cd62ffd5b0b8f",
+      "size": 19
+    },
+    {
+      "path": "vendor/token-cell/Cargo.toml",
+      "type": "blob",
+      "sha": "45a3c8f02168b968a951b5d67dd2827f3effc16c",
+      "size": 1443
+    },
+    {
+      "path": "vendor/token-cell/Cargo.toml.orig",
+      "type": "blob",
+      "sha": "cc77298c8eecf3ab8957d2632ab0c0e7bb88aef3",
+      "size": 622
+    },
+    {
+      "path": "vendor/token-cell/README.md",
+      "type": "blob",
+      "sha": "34f479b4a78a7a39b3ae7dc8c776a854e79792d0",
+      "size": 711
+    },
+    {
+      "path": "vendor/token-cell/examples",
+      "type": "tree",
+      "sha": "b22c92a679cf8b46698421f336d9cef425c68b91"
+    },
+    {
+      "path": "vendor/token-cell/examples/example.rs",
+      "type": "blob",
+      "sha": "de2ff49b0919188670b5d0c9dd72ba963eb0407a",
+      "size": 716
+    },
+    {
+      "path": "vendor/token-cell/examples/ghost.rs",
+      "type": "blob",
+      "sha": "fb876e3a57b85e127c422ba4c2c82e7d20b36663",
+      "size": 753
+    },
+    {
+      "path": "vendor/token-cell/examples/infallibility.rs",
+      "type": "blob",
+      "sha": "cea29f1fafb7045f07dad5489262fa8fb4c02a46",
+      "size": 1003
+    },
+    {
+      "path": "vendor/token-cell/src",
+      "type": "tree",
+      "sha": "42d38f7d4afbb94debbee3d6469e1dc32d36af67"
+    },
+    {
+      "path": "vendor/token-cell/src/core.rs",
+      "type": "blob",
+      "sha": "cf04a6e372d04fe961f3c2318db0ed419765c1ae",
+      "size": 9447
+    },
+    {
+      "path": "vendor/token-cell/src/ghost.rs",
+      "type": "blob",
+      "sha": "c3616ba4022ec03d220e18ede81c74055eb057d2",
+      "size": 3559
+    },
+    {
+      "path": "vendor/token-cell/src/lib.rs",
+      "type": "blob",
+      "sha": "3053e9db74f8093cf85a509e3dc77020cfc8cdb7",
+      "size": 1779
+    },
+    {
+      "path": "vendor/token-cell/src/macros.rs",
+      "type": "blob",
+      "sha": "9c2670104ed4899a4f62143d5c7a3d03366cb1cc",
+      "size": 7430
+    },
+    {
+      "path": "vendor/token-cell/src/monads.rs",
+      "type": "blob",
+      "sha": "48b94088cab436add667a4b9327135596fc3aeae",
+      "size": 2977
+    },
+    {
+      "path": "vendor/zenoh-config",
+      "type": "tree",
+      "sha": "966b5725f614473ad9f3c43f37f4e85d31122e10"
+    },
+    {
+      "path": "vendor/zenoh-config/.cargo-ok",
+      "type": "blob",
+      "sha": "5f8b795830acbab5961c1a28c76a7916c9631493",
+      "size": 7
+    },
+    {
+      "path": "vendor/zenoh-config/.cargo_vcs_info.json",
+      "type": "blob",
+      "sha": "4a0af14cbeb7fffecadfc27a7e8c323ddd85d51d",
+      "size": 114
+    },
+    {
+      "path": "vendor/zenoh-config/Cargo.lock",
+      "type": "blob",
+      "sha": "981bd2a1e6947ad8a8950ecb1ea00a9ab211d199",
+      "size": 46142
+    },
+    {
+      "path": "vendor/zenoh-config/Cargo.toml",
+      "type": "blob",
+      "sha": "d879acbf1ea9d6b1d51cf7b4664ed3131bff3a52",
+      "size": 2417
+    },
+    {
+      "path": "vendor/zenoh-config/Cargo.toml.orig",
+      "type": "blob",
+      "sha": "91ff54734f9ccadede0f3bb8250fe516090a7c26",
+      "size": 1638
+    },
+    {
+      "path": "vendor/zenoh-config/README.md",
+      "type": "blob",
+      "sha": "af69046b8158e71d538303e630dc9412a878eeee",
+      "size": 424
+    },
+    {
+      "path": "vendor/zenoh-config/src",
+      "type": "tree",
+      "sha": "5fe302d9d08c84bdecc551ad0c3f3ea3b376d55f"
+    },
+    {
+      "path": "vendor/zenoh-config/src/connection_retry.rs",
+      "type": "blob",
+      "sha": "1d3c38ea75c2e92f3bddafeef047fc205ef35dce",
+      "size": 6023
+    },
+    {
+      "path": "vendor/zenoh-config/src/defaults.rs",
+      "type": "blob",
+      "sha": "08391dc40589695a05ead30757a69839d06b0b7e",
+      "size": 11142
+    },
+    {
+      "path": "vendor/zenoh-config/src/gateway.rs",
+      "type": "blob",
+      "sha": "958da338109b4b0ab3a1ab51ae0839dc2e651797",
+      "size": 2160
+    },
+    {
+      "path": "vendor/zenoh-config/src/include.rs",
+      "type": "blob",
+      "sha": "97fdae9940726e0cf4766926328b2d26bbd2e93d",
+      "size": 5840
+    },
+    {
+      "path": "vendor/zenoh-config/src/lib.rs",
+      "type": "blob",
+      "sha": "ff111147a8d3cf782707395bad4369d79cafe389",
+      "size": 82539
+    },
+    {
+      "path": "vendor/zenoh-config/src/mode_dependent.rs",
+      "type": "blob",
+      "sha": "871d4909d9acb0df32636a676ab951d696d2b79e",
+      "size": 17596
+    },
+    {
+      "path": "vendor/zenoh-config/src/qos.rs",
+      "type": "blob",
+      "sha": "8a2824199ad7a3acbf695c7654b097cc192ce7e9",
+      "size": 7255
+    },
+    {
+      "path": "vendor/zenoh-config/src/wrappers.rs",
+      "type": "blob",
+      "sha": "25c6cfd682391a790f446532b723eeb0bca498cf",
+      "size": 5101
+    },
+    {
+      "path": "vendor/zenoh-link-commons",
+      "type": "tree",
+      "sha": "7caafead283fda6456727933af3bba013f0a2403"
+    },
+    {
+      "path": "vendor/zenoh-link-commons/.cargo-ok",
+      "type": "blob",
+      "sha": "5f8b795830acbab5961c1a28c76a7916c9631493",
+      "size": 7
+    },
+    {
+      "path": "vendor/zenoh-link-commons/.cargo_vcs_info.json",
+      "type": "blob",
+      "sha": "5d5473d36cd1629cfc1fb43f820f716f6be0340c",
+      "size": 115
+    },
+    {
+      "path": "vendor/zenoh-link-commons/Cargo.lock",
+      "type": "blob",
+      "sha": "7cb17122ed983c298250e61552130de67e0f87da",
+      "size": 68411
+    },
+    {
+      "path": "vendor/zenoh-link-commons/Cargo.toml",
+      "type": "blob",
+      "sha": "f8bdeb8e8a06a6d422eed36a85bb5734430d1dce",
+      "size": 3469
+    },
+    {
+      "path": "vendor/zenoh-link-commons/Cargo.toml.orig",
+      "type": "blob",
+      "sha": "9326d2ab240e005d2c24c1f13770d04dd98a800f",
+      "size": 2601
+    },
+    {
+      "path": "vendor/zenoh-link-commons/README.md",
+      "type": "blob",
+      "sha": "af69046b8158e71d538303e630dc9412a878eeee",
+      "size": 424
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src",
+      "type": "tree",
+      "sha": "89d1e37c11a7a92c40e341f04f1e2ebfe2f9434c"
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/dscp.rs",
+      "type": "blob",
+      "sha": "3e26a64062b48f5dd6c19c2ec17f7231b4438f1f",
+      "size": 2745
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/lib.rs",
+      "type": "blob",
+      "sha": "5db421a0b848e2bba6365e5938ce71a78d94664d",
+      "size": 4378
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/listener.rs",
+      "type": "blob",
+      "sha": "96743928f3bd938e1f65f3024d17c812e6c90946",
+      "size": 6141
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/multicast.rs",
+      "type": "blob",
+      "sha": "2b6ab35be72b4a9af81cf7fb5a219b543e9e3c0f",
+      "size": 4171
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/quic",
+      "type": "tree",
+      "sha": "cfde9df9d160f262bbdd09d7a696a112ac958c15"
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/quic/mod.rs",
+      "type": "blob",
+      "sha": "2a177b777e5701bae1c4a169c3b8f0cc89eb174f",
+      "size": 538
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/quic/plaintext.rs",
+      "type": "blob",
+      "sha": "716a2be1df46c19e4b873be0f746821b464294cc",
+      "size": 8532
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/quic/socket.rs",
+      "type": "blob",
+      "sha": "88801450a43b129775655fce10c2b7b881b8d63f",
+      "size": 2864
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/quic/unicast.rs",
+      "type": "blob",
+      "sha": "9d841c6119a0d0659e20fb6b5ece60dd972ab345",
+      "size": 33142
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/quic/utils.rs",
+      "type": "blob",
+      "sha": "088b56492d5ca3f79ab2f7b6a760c14aa6259d8c",
+      "size": 28188
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/tcp.rs",
+      "type": "blob",
+      "sha": "50f2175356778927c101d23611e260f4bcf6bd58",
+      "size": 4376
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/tls.rs",
+      "type": "blob",
+      "sha": "b01abdb0ed102a5e90340d6d241c5b8529bba9dc",
+      "size": 8815
+    },
+    {
+      "path": "vendor/zenoh-link-commons/src/unicast.rs",
+      "type": "blob",
+      "sha": "6b666d452a3be1f1e26f7648acfa7b0e3ea12e39",
+      "size": 5894
+    },
+    {
+      "path": "vendor/zenoh-link-tls",
+      "type": "tree",
+      "sha": "910fff3cfce544768494338516b95ae8dfe9b4ee"
+    },
+    {
+      "path": "vendor/zenoh-link-tls/.cargo-ok",
+      "type": "blob",
+      "sha": "5f8b795830acbab5961c1a28c76a7916c9631493",
+      "size": 7
+    },
+    {
+      "path": "vendor/zenoh-link-tls/.cargo_vcs_info.json",
+      "type": "blob",
+      "sha": "c4e35a6d243ff7b388cc8762be4776203ac0470d",
+      "size": 123
+    },
+    {
+      "path": "vendor/zenoh-link-tls/Cargo.lock",
+      "type": "blob",
+      "sha": "2c2da043ab5683d18e29be4c819b36fdc684e124",
+      "size": 56691
+    },
+    {
+      "path": "vendor/zenoh-link-tls/Cargo.toml",
+      "type": "blob",
+      "sha": "8253f913b79459edec3489c0110d29c9d3ae93ec",
+      "size": 2617
+    },
+    {
+      "path": "vendor/zenoh-link-tls/Cargo.toml.orig",
+      "type": "blob",
+      "sha": "7603822ac90808ba594491ce4de984a9c064217c",
+      "size": 1830
+    },
+    {
+      "path": "vendor/zenoh-link-tls/README.md",
+      "type": "blob",
+      "sha": "af69046b8158e71d538303e630dc9412a878eeee",
+      "size": 424
+    },
+    {
+      "path": "vendor/zenoh-link-tls/src",
+      "type": "tree",
+      "sha": "f17ddbaab2940fdfa2647942d260eb5f05f48305"
+    },
+    {
+      "path": "vendor/zenoh-link-tls/src/lib.rs",
+      "type": "blob",
+      "sha": "114de3b98d8139291aafa94e84097506f9aae3d1",
+      "size": 2821
+    },
+    {
+      "path": "vendor/zenoh-link-tls/src/unicast.rs",
+      "type": "blob",
+      "sha": "1f8a0a30884e8908d04e9245a9adf0a088c8950c",
+      "size": 24341
+    },
+    {
+      "path": "vendor/zenoh-link-tls/src/utils.rs",
+      "type": "blob",
+      "sha": "572e82d5c1a9d7f8c8aff000df62cda0c34f7930",
+      "size": 23293
+    },
+    {
+      "path": "vendor/zenoh-transport",
+      "type": "tree",
+      "sha": "bbd9c7bc94ac2a462923066e7d536583c0ffd2b0"
+    },
+    {
+      "path": "vendor/zenoh-transport/.cargo-ok",
+      "type": "blob",
+      "sha": "5f8b795830acbab5961c1a28c76a7916c9631493",
+      "size": 7
+    },
+    {
+      "path": "vendor/zenoh-transport/.cargo_vcs_info.json",
+      "type": "blob",
+      "sha": "b5b90cd3a4afddd635f8c56818b69978ca926813",
+      "size": 112
+    },
+    {
+      "path": "vendor/zenoh-transport/Cargo.lock",
+      "type": "blob",
+      "sha": "db2178ee7c82370797a1cfb7df26bd8e386e5755",
+      "size": 109058
+    },
+    {
+      "path": "vendor/zenoh-transport/Cargo.toml",
+      "type": "blob",
+      "sha": "81363d2d11d7ae79a041ce4c31b3e9200db794ef",
+      "size": 5667
+    },
+    {
+      "path": "vendor/zenoh-transport/Cargo.toml.orig",
+      "type": "blob",
+      "sha": "02dccbe0bb9d0c960d120238a2e633723778f974",
+      "size": 3494
+    },
+    {
+      "path": "vendor/zenoh-transport/README.md",
+      "type": "blob",
+      "sha": "af69046b8158e71d538303e630dc9412a878eeee",
+      "size": 424
+    },
+    {
+      "path": "vendor/zenoh-transport/src",
+      "type": "tree",
+      "sha": "8b993c60a841cc817fa0e602873ca63cc38b06ba"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common",
+      "type": "tree",
+      "sha": "5bfb7842f702ddce45167f61e32f06931e166082"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/batch.rs",
+      "type": "blob",
+      "sha": "45ab5acfd9eed1e7dd021c4f914734f4d5d93255",
+      "size": 22417
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/defragmentation.rs",
+      "type": "blob",
+      "sha": "481f4b00bd95ec7a11f84239f3e8af038549d47c",
+      "size": 2672
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/mod.rs",
+      "type": "blob",
+      "sha": "c3ed9c2a0ee579858eeef256ca17f2dfe501e411",
+      "size": 633
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/pipeline.rs",
+      "type": "blob",
+      "sha": "1b31670fba51602a67ccd7c7b30204ffd9ffd83e",
+      "size": 53411
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/priority.rs",
+      "type": "blob",
+      "sha": "fb5c520e3d49369aad671ff1ec95414f1c45883b",
+      "size": 3619
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/seq_num.rs",
+      "type": "blob",
+      "sha": "dd91c3e21aa7e56e15e338b30e9bcdf2aa2246cd",
+      "size": 9163
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/shm",
+      "type": "tree",
+      "sha": "32bf106bff2d24be4dea4e0537e9f4674a4cb7d9"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/shm/handoff.rs",
+      "type": "blob",
+      "sha": "c2807ae2a8a819b61b7a33fa29c5352077a5fc44",
+      "size": 3625
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/shm/interop.rs",
+      "type": "blob",
+      "sha": "3f91b4c16fff7853d07037f1044b796ef02dc93d",
+      "size": 19175
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/shm/mod.rs",
+      "type": "blob",
+      "sha": "9422f4ee25b3f6133cff128a34e8f95beaebbad6",
+      "size": 557
+    },
+    {
+      "path": "vendor/zenoh-transport/src/common/shm/shm_context.rs",
+      "type": "blob",
+      "sha": "0a135be55b717449ab2856344187319a12d86423",
+      "size": 3859
+    },
+    {
+      "path": "vendor/zenoh-transport/src/lib.rs",
+      "type": "blob",
+      "sha": "9b60a6989030e2b6d97abfafd8027a361e1fae5d",
+      "size": 4210
+    },
+    {
+      "path": "vendor/zenoh-transport/src/manager.rs",
+      "type": "blob",
+      "sha": "ed289aa4bd67502d01f39b78179358dd3ac07986",
+      "size": 27660
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast",
+      "type": "tree",
+      "sha": "7abc7ef04e71f4dba3f0ee3fe285ed8fad0db2a2"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast/establishment.rs",
+      "type": "blob",
+      "sha": "f3a6927681b23ae13d51cd4b4b6d1e154b9230d9",
+      "size": 3776
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast/link.rs",
+      "type": "blob",
+      "sha": "322ac625027bbec13d10c262857ccd6a53a15027",
+      "size": 20220
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast/manager.rs",
+      "type": "blob",
+      "sha": "451b3ed238ec35cc35a42f417f9c5c4f17483024",
+      "size": 12618
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast/mod.rs",
+      "type": "blob",
+      "sha": "770590038d08742358026f87b7e0bbe4d69fb38f",
+      "size": 5090
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast/rx.rs",
+      "type": "blob",
+      "sha": "cda63b02e467c972cc8ad494fa553a09f0557354",
+      "size": 11554
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast/transport.rs",
+      "type": "blob",
+      "sha": "6038a144851083a6ef8f5d8bc723f950f22e99bc",
+      "size": 16117
+    },
+    {
+      "path": "vendor/zenoh-transport/src/multicast/tx.rs",
+      "type": "blob",
+      "sha": "3bcda67b726809f9cde9ab1155cfa97f5cdafe61",
+      "size": 2393
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast",
+      "type": "tree",
+      "sha": "8e1dcb90aca9787cd94c8b23543e77ab88819606"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/authentication.rs",
+      "type": "blob",
+      "sha": "2e754d581d8d4f3e7039ac2862ed40c0f67778af",
+      "size": 1867
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment",
+      "type": "tree",
+      "sha": "30ddabbf11a7be9d0bd694c2b37e5cfbc8d243c0"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/accept.rs",
+      "type": "blob",
+      "sha": "80b51a2966007774a4edff0cc5603f6dcd569134",
+      "size": 32661
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/cookie.rs",
+      "type": "blob",
+      "sha": "1fcdafe88a162c9390d476307be87522ded690ad",
+      "size": 8597
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext",
+      "type": "tree",
+      "sha": "eaeb9ec1fab827433d47c671b45bdee6bbfad37e"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/auth",
+      "type": "tree",
+      "sha": "cc860e45ed97eac5df0e06862349b08460c63f54"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/auth/mod.rs",
+      "type": "blob",
+      "sha": "8b7125de6d6eee6525ee3fb28050ef2d0f19dfd2",
+      "size": 20862
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/auth/pubkey.rs",
+      "type": "blob",
+      "sha": "d78d433d5ab90673a085fcaa83e280fde72565d9",
+      "size": 18083
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/auth/usrpwd.rs",
+      "type": "blob",
+      "sha": "f68c759cfa5ed7889f7cedea6446bcd5738386ef",
+      "size": 14838
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/compression.rs",
+      "type": "blob",
+      "sha": "64231e1ecc43ef478f783ebacda9c324b002c11f",
+      "size": 5347
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/lowlatency.rs",
+      "type": "blob",
+      "sha": "51a10204fe194b0a0d90ee8619e3471014898f0b",
+      "size": 5260
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/mod.rs",
+      "type": "blob",
+      "sha": "590a1ae08dd16331fbd3d70026b2882917e27b47",
+      "size": 794
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/multilink.rs",
+      "type": "blob",
+      "sha": "51c4170755dacda7cf2378b99541b42f5c257d93",
+      "size": 11049
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/patch.rs",
+      "type": "blob",
+      "sha": "16509df20943a82b9fc03d3292ed5427bdc0dc71",
+      "size": 5271
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/qos.rs",
+      "type": "blob",
+      "sha": "e15cd881d57d0641988252fafb2dde5730f0d2a6",
+      "size": 21962
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/region_name.rs",
+      "type": "blob",
+      "sha": "70e4817b31f25800b298bd6301746efe1951601d",
+      "size": 5672
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/shm",
+      "type": "tree",
+      "sha": "1890e2436035bd09904a7f8be4e4eed16ab075bd"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/shm/auth.rs",
+      "type": "blob",
+      "sha": "e04781b300805d640cf04607401944b0fb9e8bfc",
+      "size": 16617
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/shm/handoff.rs",
+      "type": "blob",
+      "sha": "6237beedde261d45472b0075baf5fec867edffa8",
+      "size": 15887
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/shm/mod.rs",
+      "type": "blob",
+      "sha": "1c35741c023b056d2a11e9267cc53acb2bb978f6",
+      "size": 527
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/ext/shm/segment.rs",
+      "type": "blob",
+      "sha": "ec846c8063e9d705468a3fd75cc647319c0a7349",
+      "size": 9575
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/mod.rs",
+      "type": "blob",
+      "sha": "ca46b40ed1fcb95d10a052bb02c49404f77e0998",
+      "size": 3320
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/establishment/open.rs",
+      "type": "blob",
+      "sha": "dfbdcbd235ca0e411d7939531b57e878a84e6dff",
+      "size": 28457
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/link.rs",
+      "type": "blob",
+      "sha": "e883cc31be13803fdb52105d8569e17ba24e63aa",
+      "size": 13099
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/lowlatency",
+      "type": "tree",
+      "sha": "946efe4a829b82cc8a07a356002f4ea23524b6e7"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/lowlatency/link.rs",
+      "type": "blob",
+      "sha": "7676b4ab5f2ba56ad0b8b86edca78087437287bc",
+      "size": 10574
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/lowlatency/mod.rs",
+      "type": "blob",
+      "sha": "251344beabe41494f6adbfbf2fcb4cad0e860dbf",
+      "size": 510
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/lowlatency/rx.rs",
+      "type": "blob",
+      "sha": "01a432205c09f054943180a9ac7619ba62433344",
+      "size": 4078
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/lowlatency/transport.rs",
+      "type": "blob",
+      "sha": "e4e9a9308b6018aed0f35d92ebe2457d63f72b40",
+      "size": 11916
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/manager.rs",
+      "type": "blob",
+      "sha": "b899bea6ac547a787b1086915f583fc09ecbc113",
+      "size": 34226
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/mod.rs",
+      "type": "blob",
+      "sha": "45e5cf5d860e60308f52f4ba27add2910be110aa",
+      "size": 7171
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/test_helpers.rs",
+      "type": "blob",
+      "sha": "6a84f4eace6651cb9fe84e0f4b2311a504b7fe2d",
+      "size": 6680
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/transport_unicast_inner.rs",
+      "type": "blob",
+      "sha": "a7e04bbc5bc62ae270a7eb624cfd7a79dd61598e",
+      "size": 3961
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/universal",
+      "type": "tree",
+      "sha": "3aa6af074cdeae4f84d8d1cad185bdb1a6452c3d"
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/universal/link.rs",
+      "type": "blob",
+      "sha": "c1c39f99e0afcb7675317a62ded137faf2a8b5d9",
+      "size": 25887
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/universal/mod.rs",
+      "type": "blob",
+      "sha": "7cb4274baa35cbb345b1004ecbd46b40c8072ac3",
+      "size": 518
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/universal/reliability.rs",
+      "type": "blob",
+      "sha": "7aece8d0773afa138efed2b56994440e2644b6d5",
+      "size": 17153
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/universal/rx.rs",
+      "type": "blob",
+      "sha": "7b9d4d760da5bd0180fdef5a187c181075da3647",
+      "size": 10183
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/universal/transport.rs",
+      "type": "blob",
+      "sha": "597ccf8887d24b9c40d75fd7ca4108909aeb40b5",
+      "size": 20666
+    },
+    {
+      "path": "vendor/zenoh-transport/src/unicast/universal/tx.rs",
+      "type": "blob",
+      "sha": "394924462fd9114f2611e7e3a381907c6d4e5c0c",
+      "size": 10081
+    },
+    {
+      "path": "vendor/zenoh-transport/src/uring.rs",
+      "type": "blob",
+      "sha": "ad2f924a8821843f2a20ed0e2e1f97228a1b6329",
+      "size": 1041
+    },
+    {
+      "path": "vendor/zenoh-transport/tests",
+      "type": "tree",
+      "sha": "d04e69ed4132cc2a4a7b97c7d0bc8824b65f93c6"
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/endpoints.rs",
+      "type": "blob",
+      "sha": "6e53a2d3bd1d5d4b366da5a174bc440c3ff35735",
+      "size": 17353
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/multicast_compression.rs",
+      "type": "blob",
+      "sha": "9eaea6768720544629c6fde898641c6d797554ce",
+      "size": 11026
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/multicast_transport.rs",
+      "type": "blob",
+      "sha": "3380fccb1993d140f5b1f659a4fa5f9c8ddefb52",
+      "size": 10868
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/transport_whitelist.rs",
+      "type": "blob",
+      "sha": "30e9201e269b6872038091a9909b7d0552ed5da5",
+      "size": 5516
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_authenticator.rs",
+      "type": "blob",
+      "sha": "460c6e1619b33d9fe09489d094f6a4c5dbc5c7d3",
+      "size": 37613
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_bind.rs",
+      "type": "blob",
+      "sha": "bebeadebc702c9b9af1a3b46acbbe132718a656d",
+      "size": 29768
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_compression.rs",
+      "type": "blob",
+      "sha": "5a2a60a03c20d5f18fb2f9473d46e104a293c37c",
+      "size": 15278
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_concurrent.rs",
+      "type": "blob",
+      "sha": "00042db581daf06860229d7e3102040a0e2c30e1",
+      "size": 13338
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_fragmentation.rs",
+      "type": "blob",
+      "sha": "a9770a5ae45a830e263da8d32476555de01284e0",
+      "size": 8683
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_intermittent.rs",
+      "type": "blob",
+      "sha": "4214e689cf53f7dd1bc5dbfd30522b9411d793b1",
+      "size": 14856
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_multilink.rs",
+      "type": "blob",
+      "sha": "422bdcaedf0644fbefa02e42529ff6bd3fb100e8",
+      "size": 31574
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_openclose.rs",
+      "type": "blob",
+      "sha": "e74b8cc215d42db64e5dbd0abed6eaa78029daf6",
+      "size": 41395
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_priorities.rs",
+      "type": "blob",
+      "sha": "9c9c999e5fdd72cc0b5b4f5df045dc70b0f976e0",
+      "size": 9649
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_shm.rs",
+      "type": "blob",
+      "sha": "48aae692db70f5dcd3f95e6fc9b212a535f63db5",
+      "size": 34948
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_simultaneous.rs",
+      "type": "blob",
+      "sha": "ace2b352d1b20c466db732cbebe86b3f6c08b841",
+      "size": 12700
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_time.rs",
+      "type": "blob",
+      "sha": "121fe4fdebbb4bc7010250baa0624264fa2109a5",
+      "size": 20252
+    },
+    {
+      "path": "vendor/zenoh-transport/tests/unicast_transport.rs",
+      "type": "blob",
+      "sha": "07e0b4a2f21047bc17284d17b196ea97a17e0c5d",
+      "size": 108618
+    }
+  ]
+}
