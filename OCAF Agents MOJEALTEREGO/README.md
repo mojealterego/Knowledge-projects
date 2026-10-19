@@ -37,3 +37,11 @@ To katalog ewidencyjny dla pojedynczych agentów, systemów agentowych, rojów, 
 ## Tożsamość egzemplarza 001
 
 **WDA AURELION** jest nazwą własną; **001** wyłącznie numerem ewidencyjnym, `AM-OCAF-AI-0001` technicznym Agent ID, a `AM-WDA-AUR-2026-000001-DE338AC20B42` przydzielonym numerem seryjnym. Rejestr kanoniczny: [AGENT_IDENTITY_REGISTRY.json](AGENT_IDENTITY_REGISTRY.json). Dokumenty: [indeks agenta](OCAF-AGENT-001/docs/README.md). **Certyfikat nadal NIEWYDANY**. Pozostałe agentowe identyfikatory rezerwować dopiero po kontroli kolizji.
+
+
+## Agenci 002–003 — 20.10.2026
+
+- [VIGILIS SRE — OCAF-AGENT-002](OCAF-AGENT-002/docs/README.md) — nowy, lokalny moduł triage incydentów na bazie P121; serial `AM-SRE-VIG-2026-000002`; certyfikat niewydany.
+- [EVIDENTIA RESEARCH — OCAF-AGENT-003](OCAF-AGENT-003/docs/README.md) — nowy, lokalny moduł oceny konfliktu przesłanek na bazie P15; serial `AM-RES-EVI-2026-000003`; certyfikat niewydany.
+
+Obie nazwy i numery seryjne są odrębne od ewidencji i roli projektu; tylko częściowe implementacje bez produkcyjnych usług i szyfrowania OSTc.

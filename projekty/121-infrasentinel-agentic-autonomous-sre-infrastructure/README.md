@@ -210,3 +210,10 @@ LaunchDarkly agent may create/change flags and AI Config; Octopus Deploy Intelli
 ## 2026-10-09 — batch 23: seven-page GitHub MCP Registry discovery
 
 MCP Registry candidates for SRE: **Netdata, Sentry, Dynatrace, Logfire, PagerDuty, Shipbook** for observability; **Terraform, StackQL, Control Plane, Octopus, Vercel, Azure Kubernetes Service, Neon** for infrastructure and releases. They require sharply different privileges: reading an incident is not deploying, provisioning, destroying or funding infrastructure. `SreMcpGrantEvidence` should bind source/official SDK revision, exact account/environment, read-only default, redacted data, independent owner grant, cost/rollback/timeouts, on-call escalation, and verifiable provider state postcondition. Passing registry presence is not proof credentials exist or any services run. No cloud calls, installations, alerts, billing, deployments or monitoring connections executed.
+
+
+---
+
+## 20.10.2026 — wyodrębnienie wyspecjalizowanego podagenta VIGILIS SRE (002)
+
+Zachowano P121 jako kanoniczny projekt platformy InfraSentinel. Powstał **nowy**, ograniczony agent [OCAF-AGENT-002](../../OCAF%20Agents%20MOJEALTEREGO/OCAF-AGENT-002/docs/README.md), nazwa **VIGILIS SRE**, serial `AM-SRE-VIG-2026-000002`, wyłącznie do offline planowania analizy incydentów. Nie przenoszono nieistniejącego runtime ani nie osiągnięto działań remediacyjnych, modelu Nemotron, Tavily, NeMo, sieciowego OMAs/OMAt, Zenoh ani OSTc. Źródłowy projekt i jego wymagania pozostają otwarte.

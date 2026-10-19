@@ -45,3 +45,22 @@ Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/ac
 | KA-018 | Centralna ewidencja `AGENT_IDENTITY_REGISTRY.json`, walidacja nazw/seriali/ID, synchronizacja manifest/TOML/certyfikat | IMPLEMENTED FOR 001 / CI TO VERIFY |
 | KA-019 | Szczegółowe dokumenty architektury, API, serwisu, bezpieczeństwa, zależności, testów, wydania, umów i certyfikacji | DOCUMENTED FOR CURRENT DEV SCOPE |
 | KA-020 | Pełny port P116 + serwery OMAs/OMAt, transport Zenoh, OSTc, SBOM, formalny certyfikat, akceptacja operatora | INCOMPLETE / OSTc BLOCKED BY SOURCE MATERIAL |
+
+
+## Prace wykonawcze 20.10.2026 — agenci 002 i 003
+
+| ID | Zadanie | Stan |
+|---|---|---|
+| KA-021 | Audyt P121: InfraSentinel jest projektem/systemem, nie gotowym kodem agenta. Wyodrębnij samodzielny read-only SRE triage. | SOURCE VERIFIED; NEW AGENT 002 IN DEVELOPMENT |
+| KA-022 | Audyt P15: Universal Research Orchestrator to specyfikacja systemu; wyodrębnij niezależny offline agent kontroli konfliktu źródeł. | SOURCE VERIFIED; NEW AGENT 003 IN DEVELOPMENT |
+| KA-023 | Unikatowe nazwy, seriale, katalogi, konfiguracje, podpisane zgodnie z rejestrem (bez fikcyjnych certyfikatów). | DRAFT REGISTRY / CI TO VERIFY |
+| KA-024 | Rust `cargo test --all-features`, CLI smoke i lokalny OCAF ToolExecutor dla agentów 002–003 | CI TO VERIFY ON PR #29 |
+| KA-025 | Port pełnych funkcji i rzeczywiste OMAs + OMAt + Zenoh + OSTc | NOT IMPLEMENTED / OSTc SOURCE DOCUMENTATION PENDING |
+| KA-026 | Kontynuować semantyczną klasyfikację pozostałych projektów i rozdzielenie prawdziwych agentów od projektów/systemów | IN PROGRESS — 100% NIEOSIĄGNIĘTE |
+
+**Nie uznawać KA-021/022 za pełną implementację odpowiednich projektów P121 i P15.** Każdy z nich jest większą platformą; nowa domenowa funkcja to fragment wymagający osobnego testowania.
+
+
+### Dowód testów 002–003 — 20.10.2026
+
+[GitHub Actions run 39337503859](https://github.com/mojealterego/Knowledge-projects/actions/runs/39337503859) na commit `22133d7ede2125425cb48ceadf2ffbbe1a3bb1d7`: **SUCCESS na obu jobach**; 002 i 003 uzyskały po 12 PASS, fmt PASS, Clippy PASS i CLI smoke PASS. KA-023 (registry consistency) i KA-024 (lokalne testy Rust/OCAF) **TESTED LOCAL**; KA-025 **INCOMPLETE**, KA-026 **IN PROGRESS**. Nie zastępuje testów OMAs/OMAt/OSTc ani audytu całego repo.

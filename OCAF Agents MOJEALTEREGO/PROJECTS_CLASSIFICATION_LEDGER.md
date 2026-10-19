@@ -242,3 +242,12 @@ Przeanalizowano także główne specyfikacje P02, P07, P13, P14, P18, P19 i P91 
 - **P119**: README deklaruje opis Kotlin z innych materiałów, ale jego plików źródłowych w aktualnym drzewie `projekty/119...` nie znaleziono. Stan impl. w tym repo UNVERIFIED.
 
 **Wniosek:** osobno rejestrować *agentów*, *systemy agentowe*, *produkty*, *narzędzia* i *źródła wiedzy*. Nie przenosić pozostałych czterech aplikacji/narzędzi do folderu agentów bez powodu.
+
+
+## Audyt tematyczny P121/P15 — kontynuacja 20.10.2026
+
+**P121** [InfraSentinel](../projekty/121-infrasentinel-agentic-autonomous-sre-infrastructure/README.md): źródło w repo jest przede wszystkim specyfikacją koncepcyjną systemu SRE, opisuje m.in. risk tiers R0–R4 i `ALERT → AUTHENTICATE → OBSERVE → RESEARCH → PLAN → AUTHORIZE → SANDBOX ACT → VERIFY`. Nie zawiera tu kompletnego wdrożonego runtime P121. Nowy agent [002 VIGILIS SRE](OCAF-AGENT-002/docs/README.md) wykonuje **własną lokalną implementację** bezpiecznej klasyfikacji z obserwacji, bez działań w Kubernetes.
+
+**P15** [Universal Research Orchestrator](../projekty/15-universal-research-orchestrator.md): źródło dokumentuje plan pełnego procesu researchu z ekspertami, falsyfikacją i syntezą; brak źródłowej działającej implementacji tego orkiestratora. Nowy agent [003 EVIDENTIA RESEARCH](OCAF-AGENT-003/docs/README.md) implementuje mały, offline moduł wykrywający sprzeczne stanowiska w dostarczonych danych, bez przeglądania źródeł i bez poświadczania wiarygodności.
+
+Oryginalne projekty **pozostają nienaruszone**, bo nie wydzielono gotowych binariów. Pozostały wcześniejszy inwentarz 215 ścieżek jest historycznym snapshotem sprzed migracji P116 i **nie odzwierciedla aktualnej liczby plików na `main`**. Nie deklarować ukończenia audytu semantycznego całego repo.
