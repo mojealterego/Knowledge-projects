@@ -5,8 +5,8 @@
 | Zakres | Stan |
 |---|---|
 | Własna nazwa i serial niezależne od numeru 004 | REGISTERED DEVELOPMENT |
-| Struktura Rust, TOML/JSON, pełna dokumentacja developerska | IMPLEMENTED; CI required |
-| Funkcja lokalna `graph.review` i testy negatywne | IMPLEMENTED; wynik w TEST_EVIDENCE |
+| Struktura Rust, TOML/JSON, pełna dokumentacja developerska | TESTED LOCAL: run 39340442615, 13/13 PASS |
+| Funkcja lokalna `graph.review` i testy negatywne | TESTED LOCAL: run 39340442615 |
 | Zweryfikowany globalny rejestr nazw i seriali | TESTS; nie podpisany |
 | Produkcyjny serwer OMAs i podpis związany z RPC | NOT IMPLEMENTED |
 | Produkcyjny serwer OMAt i realne granty narzędzi | NOT IMPLEMENTED |

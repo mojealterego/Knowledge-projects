@@ -69,12 +69,17 @@ Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/ac
 
 | ID | Zadanie i kryterium | Stan |
 |---|---|---|
-| KA-027 | Z P115 wydzielić samodzielny walidator grafów: zależności, cykle, brakujące węzły, deterministyczny porządek, brak side effects. | AGENT 004 IN DEVELOPMENT / CI PENDING |
-| KA-028 | Z P119 wydzielić bezpieczny moduł oceny propozycji akcji UI; skutki uboczne zabronione, operator grant nie jest autoryzacją sieciową. | AGENT 005 IN DEVELOPMENT / CI PENDING |
-| KA-029 | Unikatowe nazwy, numery seryjne, katalogowe, manifest, TOML, testy kolizji globalnej. | REGISTERED DEVELOPMENT / CI PENDING |
-| KA-030 | Testy Rust i lokalnego OCAF `graph.review`, `ui.proposal_assess`, odmowy i read-only invariants. | CI PENDING / PR #30 |
+| KA-027 | Z P115 wydzielić samodzielny walidator grafów: zależności, cykle, brakujące węzły, deterministyczny porządek, brak side effects. | AGENT 004 IMPLEMENTED LOCAL / 13 TESTS PASS |
+| KA-028 | Z P119 wydzielić bezpieczny moduł oceny propozycji akcji UI; skutki uboczne zabronione, operator grant nie jest autoryzacją sieciową. | AGENT 005 IMPLEMENTED LOCAL / 13 TESTS PASS |
+| KA-029 | Unikatowe nazwy, numery seryjne, katalogowe, manifest, TOML, testy kolizji globalnej. | REGISTERED DEVELOPMENT / CI PASS |
+| KA-030 | Testy Rust i lokalnego OCAF `graph.review`, `ui.proposal_assess`, odmowy i read-only invariants. | CI PASS / PR #30 / RUN 39340442615 |
 | KA-031 | Dokumentacja specyfikacji, instrukcji, lifecycle, bezpieczeństwa, testów, certyfikatów i 3 odrębnych umów. | DOCUMENTED DEVELOPMENT SCOPE |
 | KA-032 | Kompletny workflow P115 oraz rzeczywisty Android P119, integracja OMAs/OMAt+Zenoh i OSTc. | NOT IMPLEMENTED / OSTc BLOCKED |
 | KA-033 | Kontynuować audyt semantyczny pozostałych projektów, narzędzi i agentów z źródłowym SHA oraz macierzą zależności. | IN PROGRESS / NOT COMPLETE |
 
 **Zasada postępu:** nie naliczać pełnego agenta produkcyjnego za lokalny wycinek. Zawsze zachować jawnie nieukończone funkcje, brak certyfikacji i brak formalnego operator acceptance. Przydzielanie numeru ewidencyjnego nie kończy audytu całego repo.
+
+
+### Faktyczny dowód CI 004–005
+
+[GitHub Actions run 39340442615](https://github.com/mojealterego/Knowledge-projects/actions/runs/39340442615), commit `b1eae89e9f634a743adbccf291bae7782a08901a`: **SUCCESS na obu jobach**, 004 i 005 po **13/13 testów PASS** (łącznie 26), fmt, Clippy i CLI smoke PASS. [Regresja rejestru agentów 002–003](https://github.com/mojealterego/Knowledge-projects/actions/runs/39340442555) na tym samym commit również **SUCCESS**. Dowodzi tylko kodu lokalnego, nie produkcyjnego OMAs/OMAt, Android UI, OSTc lub ukończenia P115/P119.
