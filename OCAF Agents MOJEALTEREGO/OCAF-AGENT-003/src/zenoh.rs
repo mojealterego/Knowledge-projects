@@ -22,8 +22,8 @@ pub fn route(role: ServerRole, tenant: &str, name: &str) -> Result<String, Secur
     }
 }
 
-//! Local adapter for pinned OCAF Runtime ToolExecutor.
-//! "OMAs" and "OMAt" are external logical roles; transport is OFF by default.
+// Local adapter for pinned OCAF Runtime ToolExecutor.
+// OMAs/OMAt are external roles; transport is OFF by default.
 #[cfg(feature = "ocaf-integration")]
 mod ocaf {
     use crate::agent::{assess, ResearchInput};
