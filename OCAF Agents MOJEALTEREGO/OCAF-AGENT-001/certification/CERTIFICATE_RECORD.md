@@ -10,7 +10,7 @@
 - Numer rezerwacji certyfikatu: `CERT-AM-2026-0001`
 - Lokalny dowód bazowy przed migracją: [CI #39199222867](https://github.com/mojealterego/Knowledge-projects/actions/runs/39199222867) (dotyczy wyłącznie wcześniejszej wersji)
 - Numer seryjny i data wydania: **NIE WYDANO**
-- Zmiany struktury: weryfikacja nowego CI po commicie jest wymagana.
+- Struktura i lokalne testy po migracji: [CI #39203233792 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792), SHA `9498d7173c378be8d3b4ddf7d4cbd37d35cf5b56`, 12/12 testów. Nie obejmuje rzeczywistych serwerów OMAs/OMAt ani kryptografii OSTc.
 - OMAs / OMAt: zdefiniowane oddzielne serwery logiczne, produkcyjny handshake **NOT VERIFIED**.
 - Zenoh: adresowanie i local OCAF adapter; **sesja sieciowa NOT IMPLEMENTED w tym binarium**.
 - OSTc: dostęp do źródeł docelowo szyfrowany; **SPECIFICATION PENDING / ENCRYPTION NOT IMPLEMENTED / SOURCE ACCESS DENIED**.

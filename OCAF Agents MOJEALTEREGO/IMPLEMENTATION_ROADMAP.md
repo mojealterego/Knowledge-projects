@@ -30,3 +30,8 @@ Nie renumerować ani nie modyfikować kanonicznej [Roadmapy OCAF](https://github
 - KA-014: wymagana struktura `OCAF-AGENT-NNN/{Cargo.toml,src,tests,config,docs,certification}` — zapis i CI do weryfikacji.
 - KA-015: OMAs jako serwer agentów, OMAt jako serwer narzędzi; moduł Zenoh komunikuje się przez zewnętrzny zaufany gateway, nie zastępuje tych usług. Obecnie kontrakty trasowania i adapter plan-only (lokalne), **brak produkcyjnych sesji OMAs/OMAt**.
 - KA-016: każdy agent ma mieć zaszyfrowany dostęp do źródeł przez OSTc; wykonanie odłożone do dostarczenia pełnej dokumentacji i audytu; obecnie `source_access.enabled=false`, testy fail-closed.
+
+
+### Weryfikacja KA-014 po korekcie
+
+Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792) dla `9498d7173c378be8d3b4ddf7d4cbd37d35cf5b56`: **SUCCESS**, 12 Rust tests PASS, fmt/clippy PASS, Node syntax i CLI smoke PASS. Zapis nie weryfikuje operacyjnej integracji OMAs/OMAt ani OSTc. KA-014 = `IMPLEMENTED_AND_TESTED_LOCAL` (do readback na main), KA-015 = `PARTIAL`, KA-016 = `BLOCKED_BY_OSTC_DOCUMENTATION`.

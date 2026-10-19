@@ -25,3 +25,10 @@ To katalog ewidencyjny dla pojedynczych agentów, systemów agentowych, rojów, 
 - [PROJECT_REGISTRY.md](PROJECT_REGISTRY.md) — wskaźnik istniejącej ewidencji projektów.
 
 **Ważne:** indeksy są referencjami do istniejących kanonicznych plików, nie ich zamiennikami. Nie wydano agenta, licencji, umowy ani certyfikatu.
+
+
+## Pierwszy agent z numerem ewidencyjnym 001
+
+- [**OCAF-AGENT-001 — WDA Photo Agent**](OCAF-AGENT-001/docs/README.md): kanoniczny pakiet Rust z `src/`, `tests/`, `config/`, `docs/`, `certification/`, archiwum kodu i osobnymi umowami.
+- **OMAs** to serwer agentów, **OMAt** to serwer narzędzi. **Zenoh** pozostaje magistralą transmisyjną. Docelowy **OSTc** zabezpieczy dostęp do źródeł, ale implementacja jest zablokowana do otrzymania dokumentacji i audytu.
+- [Potwierdzone testy struktury i lokalnego OCAF](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792): 12 PASS; brak odbioru produkcyjnego, certyfikat niewydany.

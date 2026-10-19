@@ -1,6 +1,6 @@
 # Macierz bramek T01–T15 — Agent 001
 
-2026-10-19. Wyniki nowej gałęzi **NOT RUN, dopóki nie ma konkretnych run ID i logów**.
+2026-10-19. Aktualne dowody są w sekcji końcowej; poniższa tabela historyczna zachowuje stan początkowy przed uruchomieniem CI.
 
 | Test | Obszar | Stan |
 |---|---|---|
@@ -32,3 +32,13 @@
 - Zakres PASS ogranicza się do modułu `photo.plan`, OCAF local executor i negatywnej kontroli unsigned peer, **nie** pełnego OMAs RPC, multi-host, providerów Adobe/OpenAI czy OSTc.
 
 **T02 = PASS na wyżej wymienionym SHA.** T01 manifest i T04 fragment negatywnych testów = PARTIAL; pozostałe bramki jak powyżej. Numer nie jest certyfikatem wydania.
+
+
+## AKTUALIZACJA CI — nowa struktura OCAF-AGENT-001 (19.10.2026)
+
+- Zweryfikowany **SUCCESS**: [GitHub Actions run 39203233792](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792), SHA źródła `9498d7173c378be8d3b4ddf7d4cbd37d35cf5b56`, job `117900460178`.
+- Testy: **12/12 PASS** (2 jednostkowe, 3 integracyjne OCAF, 7 bezpieczeństwa), 0 failed. Rust fmt PASS; strict clippy PASS; historyczny JS syntax PASS; lokalny CLI smoke PASS.
+- OMAs i OMAt: zweryfikowano **jedynie odrębne przestrzenie nazw i lokalną rejestrację ToolExecutor**, nie sieć ani serwery w produkcji.
+- OSTc: negative tests odmowy źródeł i wymuszenia dezaktywacji sieci PASS; **brak algorytmu i testów kryptograficznych**. Test all-true `ReleaseEvidence` → ACTIVE DENIED PASS.
+- T02: **PASS dla tego SHA**; T01 i T04 fragmentaryczne; T03, T05–T08, T10–T15 nadal **NIEPOTWIERDZONE**; T09 częściowo potwierdzony statycznym API. T11 OSTc **BLOCKED do dostarczenia specyfikacji**.
+- `certificate_issued=false`, `production_approved=false`.
