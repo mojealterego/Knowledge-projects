@@ -7,12 +7,12 @@ Drzewo Git bazowe: `b6930a2c63a3c19d32890768f9aec44e4334eee8` · **215 plików**
 001 | `projekty/00-canonical-project-portfolio-2026-09-07.md` | UNREVIEWED | ad8d232db52c0208c348ab8d1e4d89fe4f33da8f
 002 | `projekty/00-master-project-architecture.md` | UNREVIEWED | 68d69a8b2985789445eba7fd4970277f57bf4b7b
 003 | `projekty/01-apeiron-black-system-max.md` | UNREVIEWED | 3926fb0a680d7a3e6dc5bc2f89963020cddd6fd3
-004 | `projekty/02-vericoding-agent-security-lab.md` | UNREVIEWED | f80986e38cf1f85b0da8499afac47b849abf5952
+004 | `projekty/02-vericoding-agent-security-lab.md` | SECURITY_LAB_SPECIFICATION | f80986e38cf1f85b0da8499afac47b849abf5952
 005 | `projekty/03-nexus-cognitive-infrastructure.md` | UNREVIEWED | 7952540a3cdc78ff1a0ce3d630b7bea1b9b09474
 006 | `projekty/04-ai-native-operating-system.md` | UNREVIEWED | 529b0f8084309bb8c6e2924aa7b32ea8a5657b64
 007 | `projekty/05-apeiron-neuroadaptive-interface-safe.md` | UNREVIEWED | 41d6a58af570c6c438aef974c19985542aa4638e
 008 | `projekty/06-cognitive-security-red-team.md` | UNREVIEWED | 537e68c23f53792673be382a440c16c5eed5df5f
-009 | `projekty/07-agentic-creative-studio.md` | UNREVIEWED | dc03de5fbb8086112f16372ba110e0e69b2e1f20
+009 | `projekty/07-agentic-creative-studio.md` | CREATIVE_PLATFORM_SPECIFICATION | dc03de5fbb8086112f16372ba110e0e69b2e1f20
 010 | `projekty/08-paulaOS-agentic-personal-os.md` | UNREVIEWED | 87abdde10f43ffa1cea6b8ae302d6091b6269a2e
 011 | `projekty/09-omnicore-learned-kernel-lab.md` | UNREVIEWED | 7c2df36b3fc63b15097012cd80c5c35eff0fd996
 012 | `projekty/10-sovereign-ai-local-first-stack.md` | UNREVIEWED | f26080ff3b89b4656c965adaee220aa41c22bb5e
@@ -101,14 +101,14 @@ Drzewo Git bazowe: `b6930a2c63a3c19d32890768f9aec44e4334eee8` · **215 plików**
 095 | `projekty/125-sovereign-contextual-android-launcher/android/settings.gradle.kts` | UNREVIEWED | c1b0eb5e4d98bbf16d969b6bee8a12216e068ef1
 096 | `projekty/126-ibm-cloud-cognitive-game-backend-reference/README.md` | UNREVIEWED | 0a44dcc339b9b00abcdf8b6397dc66f7eda0d2e7
 097 | `projekty/126-ibm-cloud-cognitive-game-backend-reference/state_reference.py` | UNREVIEWED | d4d26b8e16c80cdce2d64f4bc1cf75db6495414e
-098 | `projekty/13-agentic-software-factory.md` | UNREVIEWED | 52d80ac1ee5f0e1f0f3ebef2745ad4b78def4f13
+098 | `projekty/13-agentic-software-factory.md` | AGENT_FACTORY_SPECIFICATION | 52d80ac1ee5f0e1f0f3ebef2745ad4b78def4f13
 099 | `projekty/14-gemini-3-adaptive-reasoning-multimodal-agent-2026-10-08-optimization-extension.md` | UNREVIEWED | 64bf99a4a6d17e877746fb3286945b32d59fb047
-100 | `projekty/14-gemini-3-adaptive-reasoning-multimodal-agent.md` | UNREVIEWED | dc59ed1bfd2e320ddb5f12ff7b5d0bdc65fcaa6d
+100 | `projekty/14-gemini-3-adaptive-reasoning-multimodal-agent.md` | SINGLE_AGENT_PROTOTYPE_TARGET | dc59ed1bfd2e320ddb5f12ff7b5d0bdc65fcaa6d
 101 | `projekty/15-universal-research-orchestrator.md` | UNREVIEWED | e5b0676ed18740b69463e045c00a488c285d9ca9
 102 | `projekty/16-prompt-laboratory-and-evaluation-engine.md` | UNREVIEWED | a679fcec8d84817845fab7161269fce5d87f1c06
 103 | `projekty/17-adaptive-model-router.md` | UNREVIEWED | 361b481310206536b0931861506ce3ee8df63130
-104 | `projekty/18-gemini-3-max-cognitive-agent.md` | UNREVIEWED | e5d0d61cbbcd156b89c714767141b187d0341603
-105 | `projekty/19-omniscience-research-orchestrator-max.md` | UNREVIEWED | d577ba71519e4805dc4ff5437209f60aa0136632
+104 | `projekty/18-gemini-3-max-cognitive-agent.md` | SINGLE_AGENT_PROTOTYPE_TARGET | e5d0d61cbbcd156b89c714767141b187d0341603
+105 | `projekty/19-omniscience-research-orchestrator-max.md` | RESEARCH_ORCHESTRATOR_SPECIFICATION | d577ba71519e4805dc4ff5437209f60aa0136632
 106 | `projekty/20-adaptive-prompt-lab.md` | UNREVIEWED | a130c0dad24e65ea16e85e829d3c704b19c95f26
 107 | `projekty/21-google-ai-sovereign-developer-stack.md` | UNREVIEWED | fad96a3283162cffc5658d9039abe94bea8b6d2a
 108 | `projekty/22-agentic-media-forge-multimodal-studio.md` | UNREVIEWED | f8cb07e7e08b6fc84b7accd50c77bbdc3572c27c
@@ -207,7 +207,7 @@ Drzewo Git bazowe: `b6930a2c63a3c19d32890768f9aec44e4334eee8` · **215 plików**
 201 | `projekty/88-druga-polowa-interactive-tpp-experience-max.md` | UNREVIEWED | 41094d0d041566f45d200ae75e314e129072521b
 202 | `projekty/89-ccr-the-closed-lens-interactive-game-max.md` | UNREVIEWED | be4afd2d03942a02b280a49af96aeafd8d753adb
 203 | `projekty/90-omnisop-operational-knowledge-procedure-compiler-max.md` | UNREVIEWED | 632bdaadd70cf4715156302196f504a55d94e02c
-204 | `projekty/91-synthetic-persona-and-cognitive-style-engineering-lab-max.md` | UNREVIEWED | dce35f2c2506091aae061f8bd18fa02f714e9e59
+204 | `projekty/91-synthetic-persona-and-cognitive-style-engineering-lab-max.md` | PERSONA_RESEARCH_LAB | dce35f2c2506091aae061f8bd18fa02f714e9e59
 205 | `projekty/92-multimodal-deception-analysis-and-investigative-interviewing-lab-max.md` | UNREVIEWED | 8f1cde141c20b353e7708ad4eb5a872ddf000afb
 206 | `projekty/93-zerotrust-depin-hardware-attestation-and-physical-work-fabric-max.md` | UNREVIEWED | b85ab4d356f715612547483b87c41b58c2566eae
 207 | `projekty/94-omega-synthetix-adaptive-problem-solving-and-strategic-discovery-fabric-max.md` | UNREVIEWED | 3dfeeb09acb8eca31b7188e2917a9b35f80d0e63
@@ -221,3 +221,10 @@ Drzewo Git bazowe: `b6930a2c63a3c19d32890768f9aec44e4334eee8` · **215 plików**
 215 | `projekty/README.md` | UNREVIEWED | 47e8e1c5bda975bdfe3235838a8514904eac129c
 
 Następny krok: odczyt zawartości wszystkich `UNREVIEWED` i rozdzielenie samodzielnych bytów na podstawie entrypointów, a nie słów w nazwie.
+
+
+## Dodatkowy audyt treści — 2026-10-19
+
+Przeanalizowano także główne specyfikacje P02, P07, P13, P14, P18, P19 i P91 (nazwy i pierwsze części kontraktów wraz ze statusem). P02 to projekt laboratorium bezpieczeństwa, P07 środowisko kreatywne, P13 fabryka software, P14 i P18 to indywidualne **prototypy agentów do zbudowania** (brak w tych artefaktach zweryfikowanego binarium), P19 orkiestrator badawczy, P91 laboratorium person. Rozdzielać je dopiero po audycie pełnej implementacji i zależności; nie nadawać numerów ewidencyjnych propozycjom.
+
+Żadna kolejna jednostka nie otrzymała numeru 002: rejestr produkowanych agentów nie może być kopią numerowanych projektów.
