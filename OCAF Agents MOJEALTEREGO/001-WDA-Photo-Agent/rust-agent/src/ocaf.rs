@@ -51,8 +51,8 @@ impl ToolExecutor for WdaPlanExecutor {
             .and_then(Value::as_bool)
             .ok_or_else(|| ToolError::Validation("identity_lock must be true".into()))?;
 
-        let output =
-            plan(goal, identity_lock).map_err(|error| ToolError::Validation(format!("{error:?}")))?;
+        let output = plan(goal, identity_lock)
+            .map_err(|error| ToolError::Validation(format!("{error:?}")))?;
         Ok(json!({
             "agent_id": output.agent_id,
             "status": output.status,
