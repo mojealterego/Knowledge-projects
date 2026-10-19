@@ -6,7 +6,8 @@ To rejestr kandydatów i odrębnie zarejestrowanych egzemplarzy developerskich, 
 |---|---|---|---|
 | WDA AURELION (rodzina WDA Photo Agent) | [Project 116](../projekty/116-wda-photo-agent-max/README.md) | Agent Rust z historyczną aplikacją WDA | REGISTERED DEVELOPMENT / INCOMPLETE |
 | Omni MAS Android | [Project 119](../projekty/119-omni-mas-local-android-agent-runtime-max/README.md) | System agentowy (INFERRED) | UNVERIFIED |
-| InfraSentinel | [Project 121](../projekty/121-infrasentinel-agentic-autonomous-sre-infrastructure/README.md) | System operacyjny/SRE agentowy (INFERRED) | UNVERIFIED |
+| InfraSentinel (system; moduł VIGILIS SRE 002) | [Project 121](../projekty/121-infrasentinel-agentic-autonomous-sre-infrastructure/README.md) | System operacyjny/SRE agentowy (INFERRED) | UNVERIFIED |
+| Universal Research Orchestrator (moduł EVIDENTIA RESEARCH 003) | [Project 15](../projekty/15-universal-research-orchestrator.md) | Agent badawczy read-only (PARTIAL) | IMPLEMENTED DEVELOPMENT CHILD 003 |
 | Omni Autonomous Engineering | [Project 115](../projekty/115-omniautonomous-engineering-intelligence-orchestrator-max.md) | Orchestrator (INFERRED) | UNVERIFIED |
 | OMAS-OMEGA ENGINEER | Źródło SRC-002/SRC-003, model dokumentacyjny | Przykład handlowo-techniczny | PLANNED / NOT REGISTERED |
 
@@ -32,3 +33,13 @@ Dla agentów w ewidencji obowiązuje `OCAF-AGENT-NNN/` z głównym `Cargo.toml`,
 ## Reguła bezwzględna — unikatowa nazwa i numer seryjny
 
 Każdy agent ma **własną nazwę, własny numer seryjny oraz oddzielny numer ewidencyjny**. `001` jest numerem porządkowym, nie nazwą ani numerem seryjnym. Reguły unikatowości i obecne wpisy znajdują się w [AGENT_IDENTITY_REGISTRY.json](AGENT_IDENTITY_REGISTRY.json), a waliduje je Rust `tests/identity.rs`. Numer seryjny jest nadany ewidencyjnie i nie zależy od ukończenia certyfikacji. Certyfikat wydajemy dopiero po podpisanym protokole i komplecie bramek T01–T15.
+
+
+## Nowi agenci — 20.10.2026
+
+| Numer ewid. | Unikatowa nazwa | Agent ID | Numer seryjny | Numer katalogowy | Źródło | Status |
+|---|---|---|---|---|---|---|
+| **002** | [**VIGILIS SRE**](OCAF-AGENT-002/docs/README.md) | `AM-OCAF-AI-0002` | `AM-SRE-VIG-2026-000002` | `AM-OCAF-SRE-002` | P121 | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0002` NIEWYDANY |
+| **003** | [**EVIDENTIA RESEARCH**](OCAF-AGENT-003/docs/README.md) | `AM-OCAF-AI-0003` | `AM-RES-EVI-2026-000003` | `AM-OCAF-RES-003` | P15 | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0003` NIEWYDANY |
+
+**Uwaga o źródłach:** P121/P15 są specyfikacjami większych systemów, nie zaginionymi binariami. Zaimplementowane nowe podagenty tylko w zakresie read-only, dlatego nie przenosimy ani nie kasujemy plików źródłowych. Rejestr numerów i kolizji: [AGENT_IDENTITY_REGISTRY.json](AGENT_IDENTITY_REGISTRY.json). Wymagane dalsze testy, E2E OMAs/OMAt/OSTc, podpisy i odbiór operatora.

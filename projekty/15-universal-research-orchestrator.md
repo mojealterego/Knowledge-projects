@@ -70,3 +70,10 @@ Require source diversity, contradictory evidence search, citation coverage, arit
 
 ## Acceptance criteria
 The system must never present an unsupported hypothesis as an established fact, must retain provenance through multi-agent transformations, and must be able to resume a partially completed research run.
+
+
+---
+
+## 20.10.2026 — podagent EVIDENTIA RESEARCH (003)
+
+Pełny Universal Research Orchestrator pozostaje specyfikacją, natomiast utworzono [OCAF-AGENT-003](../OCAF%20Agents%20MOJEALTEREGO/OCAF-AGENT-003/docs/README.md) pod nazwą **EVIDENTIA RESEARCH** (serial `AM-RES-EVI-2026-000003`) jako nowy Rust moduł lokalnej kontroli spójności przekazanych przesłanek. Nie wykonuje samodzielnego deep researchu, nie łączy się z serwerami OMAs/OMAt, nie uwierzytelnia źródeł ani nie używa OSTc. Projekt P15 nie został zastąpiony ani uznany za kompletny.
