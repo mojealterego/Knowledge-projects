@@ -5,10 +5,10 @@ To rejestr kandydatów i odrębnie zarejestrowanych egzemplarzy developerskich, 
 | Kandydat | Gdzie zaobserwowano specyfikację | Klasa wstępna | Status |
 |---|---|---|---|
 | WDA AURELION (rodzina WDA Photo Agent) | [Project 116](../projekty/116-wda-photo-agent-max/README.md) | Agent Rust z historyczną aplikacją WDA | REGISTERED DEVELOPMENT / INCOMPLETE |
-| Omni MAS Android | [Project 119](../projekty/119-omni-mas-local-android-agent-runtime-max/README.md) | System agentowy (INFERRED) | UNVERIFIED |
+| Omni MAS Android (projekt, ARGUS MOBILE 005 jako moduł) | [Project 119](../projekty/119-omni-mas-local-android-agent-runtime-max/README.md) | System agentowy (INFERRED) | UNVERIFIED |
 | InfraSentinel (system; moduł VIGILIS SRE 002) | [Project 121](../projekty/121-infrasentinel-agentic-autonomous-sre-infrastructure/README.md) | System operacyjny/SRE agentowy (INFERRED) | UNVERIFIED |
 | Universal Research Orchestrator (moduł EVIDENTIA RESEARCH 003) | [Project 15](../projekty/15-universal-research-orchestrator.md) | Agent badawczy read-only (PARTIAL) | IMPLEMENTED DEVELOPMENT CHILD 003 |
-| Omni Autonomous Engineering | [Project 115](../projekty/115-omniautonomous-engineering-intelligence-orchestrator-max.md) | Orchestrator (INFERRED) | UNVERIFIED |
+| Omni Autonomous Engineering (projekt, AXIOM FORGE 004 jako moduł) | [Project 115](../projekty/115-omniautonomous-engineering-intelligence-orchestrator-max.md) | Orchestrator (INFERRED) | UNVERIFIED |
 | OMAS-OMEGA ENGINEER | Źródło SRC-002/SRC-003, model dokumentacyjny | Przykład handlowo-techniczny | PLANNED / NOT REGISTERED |
 
 **Walidacja kandydata:** `source_path → właściciel zakresu → binary/entrypoint → manifest → capabilities → test evidence → status`. Nie tworzyć fikcyjnych egzemplarzy ani numerów z briefu. Docelowe pola rejestru: `agent_id, artifact_digest, build_commit, tenant_scope, owner, lifecycle_state, release_version, test_evidence` oraz numery ewidencyjne tylko po formalnym nadaniu.
@@ -43,3 +43,12 @@ Każdy agent ma **własną nazwę, własny numer seryjny oraz oddzielny numer ew
 | **003** | [**EVIDENTIA RESEARCH**](OCAF-AGENT-003/docs/README.md) | `AM-OCAF-AI-0003` | `AM-RES-EVI-2026-000003` | `AM-OCAF-RES-003` | P15 | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0003` NIEWYDANY |
 
 **Uwaga o źródłach:** P121/P15 są specyfikacjami większych systemów, nie zaginionymi binariami. Zaimplementowane nowe podagenty tylko w zakresie read-only, dlatego nie przenosimy ani nie kasujemy plików źródłowych. Rejestr numerów i kolizji: [AGENT_IDENTITY_REGISTRY.json](AGENT_IDENTITY_REGISTRY.json). Wymagane dalsze testy, E2E OMAs/OMAt/OSTc, podpisy i odbiór operatora.
+
+## Wpisy ewidencyjne 004–005 — 20.10.2026
+
+| Ewid. | Nazwa własna | Agent ID | Numer seryjny | Katalog | Projekt | Stan |
+|---|---|---|---|---|---|---|
+| **004** | [**AXIOM FORGE**](OCAF-AGENT-004/docs/README.md) | `AM-OCAF-AI-0004` | `AM-ENG-AXF-2026-000004` | `AM-OCAF-ENG-004` | P115 | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0004` NIEWYDANY |
+| **005** | [**ARGUS MOBILE**](OCAF-AGENT-005/docs/README.md) | `AM-OCAF-AI-0005` | `AM-MOB-ARG-2026-000005` | `AM-OCAF-MOB-005` | P119 | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0005` NIEWYDANY |
+
+Oryginalne P115/P119 są większymi systemami/projektami; nowe niezależne agenty realizują tylko **offline moduły kontrolne**, bez autonomicznego wykonywania zmian i bez rzeczywistej obsługi Android. OMAs/OMAt nie są wdrożone, Zenoh nie otwiera sesji, OSTc pozostaje zablokowany do otrzymania dokumentacji. Wszystkie ewidencje `001–005` mają odrębne nazwy i seriale w [kanonicznym rejestrze](AGENT_IDENTITY_REGISTRY.json).
