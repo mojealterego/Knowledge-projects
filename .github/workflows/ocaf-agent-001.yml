@@ -1,0 +1,39 @@
+name: Agent 001 WDA OCAF tests
+
+on:
+  pull_request:
+    paths:
+      - "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/**"
+      - ".github/workflows/ocaf-agent-001.yml"
+  push:
+    branches: [main]
+    paths:
+      - "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/**"
+      - ".github/workflows/ocaf-agent-001.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rust-and-legacy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Legacy JavaScript syntax
+        run: |
+          node --check "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/legacy-pwa/server.mjs"
+          node --check "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/legacy-pwa/public/app.js"
+      - name: Rust formatting check
+        run: cargo fmt --manifest-path "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/rust-agent/Cargo.toml" -- --check
+      - name: Rust OCAF integration tests
+        run: cargo test --manifest-path "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/rust-agent/Cargo.toml" --all-features
+      - name: Clippy
+        run: cargo clippy --manifest-path "OCAF Agents MOJEALTEREGO/001-WDA-Photo-Agent/rust-agent/Cargo.toml" --all-targets --all-features -- -D warnings
