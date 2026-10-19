@@ -1,0 +1,39 @@
+name: OCAF Agents 002-003 Rust validation
+on:
+  pull_request:
+    paths:
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-002/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-003/**"
+      - "OCAF Agents MOJEALTEREGO/AGENT_IDENTITY_REGISTRY.json"
+      - ".github/workflows/ocaf-agents-002-003.yml"
+  push:
+    branches: [main]
+    paths:
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-002/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-003/**"
+      - "OCAF Agents MOJEALTEREGO/AGENT_IDENTITY_REGISTRY.json"
+      - ".github/workflows/ocaf-agents-002-003.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rust-agents:
+    strategy:
+      fail-fast: false
+      matrix:
+        agent: ["002", "003"]
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Formatting
+        run: cargo fmt --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- --check
+      - name: Unit, security and OCAF integration tests
+        run: cargo test --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" --all-features
+      - name: Strict Clippy
+        run: cargo clippy --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" --all-targets --all-features -- -D warnings
+      - name: CLI local smoke
+        run: cargo run --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- "demo"
