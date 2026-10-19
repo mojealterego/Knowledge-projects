@@ -36,4 +36,10 @@ jobs:
       - name: Strict Clippy
         run: cargo clippy --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" --all-targets --all-features -- -D warnings
       - name: CLI local smoke
-        run: cargo run --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- "demo"
+        run: |
+          if [[ "${{ matrix.agent }}" == "002" ]]; then
+            arg="CrashLoopBackOff"
+          else
+            arg="demo"
+          fi
+          cargo run --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- "$arg"

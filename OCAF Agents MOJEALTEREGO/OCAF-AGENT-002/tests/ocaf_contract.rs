@@ -1,6 +1,6 @@
 #![cfg(feature = "ocaf-integration")]
-use vigilis_sre_agent::zenoh::{manifest, AgentTool};
 use ocaf_runtime::runtime::{OcafRuntime, RuntimeError, ToolCallRequest};
+use vigilis_sre_agent::zenoh::{manifest, AgentTool};
 
 #[tokio::test]
 async fn local_ocaf_runtime_executes_the_bounded_read_only_tool() {

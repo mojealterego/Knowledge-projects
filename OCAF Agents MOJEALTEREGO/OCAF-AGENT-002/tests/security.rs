@@ -13,8 +13,14 @@ fn network_and_ostc_source_access_remain_disabled() {
         config.source_access(),
         Err(SecurityError::SourceEncryptionNotImplemented)
     );
-    assert_eq!(load_config(&CONFIG.replace("network_enabled = false", "network_enabled = true")).err(), Some(SecurityError::InvalidConfiguration));
-    assert_eq!(load_config(&CONFIG.replace("enabled = false", "enabled = true")).err(), Some(SecurityError::InvalidConfiguration));
+    assert_eq!(
+        load_config(&CONFIG.replace("network_enabled = false", "network_enabled = true")).err(),
+        Some(SecurityError::InvalidConfiguration)
+    );
+    assert_eq!(
+        load_config(&CONFIG.replace("enabled = false", "enabled = true")).err(),
+        Some(SecurityError::InvalidConfiguration)
+    );
 }
 
 #[test]

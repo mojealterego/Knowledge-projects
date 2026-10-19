@@ -64,7 +64,7 @@ mod ocaf {
     #[async_trait::async_trait]
     impl ToolExecutor for AgentTool {
         async fn execute(&self, args: Value, _ctx: &ExecutionContext) -> Result<Value, ToolError> {
-            if serde_json::to_vec(&args).is_err_or(|encoded| encoded.len() > 8192) {
+            if !serde_json::to_vec(&args).is_ok_and(|encoded| encoded.len() <= 8192) {
                 return Err(ToolError::Validation("input exceeds 8192 serialized bytes".into()));
             }
             let input: Incident = serde_json::from_value(args)
