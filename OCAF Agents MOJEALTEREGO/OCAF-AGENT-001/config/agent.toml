@@ -3,6 +3,9 @@
 [identity]
 agent_id = "AM-OCAF-AI-0001"
 registry_number = "001"
+unique_name = "WDA AURELION"
+serial_number = "AM-WDA-AUR-2026-000001-DE338AC20B42"
+catalog_number = "AM-OCAF-WDA-001"
 
 [servers]
 agent_server = "OMAs"

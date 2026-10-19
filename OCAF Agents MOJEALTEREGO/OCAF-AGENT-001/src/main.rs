@@ -1,5 +1,9 @@
 //! Local-only CLI. Network transport and source decryption are never started.
-use wda_photo_agent::{plan, security::load_config};
+use wda_photo_agent::{
+    agent::{AGENT_NAME, SERIAL_NUMBER},
+    plan,
+    security::load_config,
+};
 
 fn main() -> std::process::ExitCode {
     let config = match load_config(include_str!("../config/agent.toml")) {
@@ -17,7 +21,7 @@ fn main() -> std::process::ExitCode {
     let goal = args.join(" ");
     match plan(&goal, config.safety.identity_lock_required) {
         Ok(output) => {
-            println!("{} | {}", output.agent_id, output.status);
+            println!("{AGENT_NAME} | {SERIAL_NUMBER} | {} | {}", output.agent_id, output.status);
             for item in &output.workflow {
                 println!("- {item}");
             }
