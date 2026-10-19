@@ -9,7 +9,7 @@
 | Warunek | Stan |
 |---|---|
 | Unikatowa nazwa, serial, Agent ID, katalog i folder | REGISTERED DEVELOPMENT |
-| Kod Rust `incident.triage`, testy i config | IMPLEMENTED, CI do potwierdzenia |
+| Kod Rust `incident.triage`, testy i config | TESTED LOCAL: run 39337503859, 12/12 PASS |
 | Specyfikacja, instrukcja, bezpieczeństwo, serwis, migracja, cert record | DOCUMENTED DEVELOPMENT SCOPE |
 | Rzeczywista integracja OMAs agent server i OMAt tool server | NOT IMPLEMENTED |
 | Weryfikowany ruch Zenoh TLS/mTLS i wielohost | NOT IMPLEMENTED |

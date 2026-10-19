@@ -59,3 +59,8 @@ Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/ac
 | KA-026 | Kontynuować semantyczną klasyfikację pozostałych projektów i rozdzielenie prawdziwych agentów od projektów/systemów | IN PROGRESS — 100% NIEOSIĄGNIĘTE |
 
 **Nie uznawać KA-021/022 za pełną implementację odpowiednich projektów P121 i P15.** Każdy z nich jest większą platformą; nowa domenowa funkcja to fragment wymagający osobnego testowania.
+
+
+### Dowód testów 002–003 — 20.10.2026
+
+[GitHub Actions run 39337503859](https://github.com/mojealterego/Knowledge-projects/actions/runs/39337503859) na commit `22133d7ede2125425cb48ceadf2ffbbe1a3bb1d7`: **SUCCESS na obu jobach**; 002 i 003 uzyskały po 12 PASS, fmt PASS, Clippy PASS i CLI smoke PASS. KA-023 (registry consistency) i KA-024 (lokalne testy Rust/OCAF) **TESTED LOCAL**; KA-025 **INCOMPLETE**, KA-026 **IN PROGRESS**. Nie zastępuje testów OMAs/OMAt/OSTc ani audytu całego repo.

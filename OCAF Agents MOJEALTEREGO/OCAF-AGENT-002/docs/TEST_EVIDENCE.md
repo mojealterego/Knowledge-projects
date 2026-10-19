@@ -23,3 +23,12 @@ W chwili utworzenia pakietu nowej implementacji **nie wolno przypisywać wynikó
 | T13–T15 | obserwowalność, odwołanie, odbiór | NOT RUN |
 
 **Dowód:** wymagane konkretne run ID, commit SHA, liczba PASS i logi; sam opis nie stanowi dowodu.
+
+## ZWERYFIKOWANY CI — 20.10.2026
+
+- **[GitHub Actions #39337503859 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39337503859)**, commit `22133d7ede2125425cb48ceadf2ffbbe1a3bb1d7`, job `118350558475`.
+- **12/12 testów Rust PASS, 0 failed**: 2 domenowe, 3 tożsamości/rejestru, 1 podstawowy test integracyjny, 2 kontraktów OCAF, 4 testy bezpieczeństwa.
+- Rustfmt PASS, strict Clippy PASS, lokalny smoke CLI PASS.
+- T01: lokalna spójność nazwy/serialu/manifestu i globalnego rejestru PASS, **nie** podpisany build/digest.
+- T02: Rust PASS dla wskazanego SHA. T03–T15 pozostają NIEZAMKNIĘTE, z wyjątkiem lokalnych testów odmowy i trasowania, bez rzeczywistych hostów. OSTc T11 = BLOCKED BY SPEC.
+- Certyfikat **nie został wydany**, podpisany artefakt nie istnieje, produkcja niezatwierdzona.
