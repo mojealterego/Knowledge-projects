@@ -24,7 +24,7 @@ pub enum ActionError {
     UnknownAction,
 }
 
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub struct ActionAssessment {
     pub agent_id: &'static str,
     pub status: &'static str,

@@ -3,8 +3,8 @@
 registry_number = "005"
 agent_id = "AM-OCAF-AI-0005"
 unique_name = "ARGUS MOBILE"
-serial_number = "AM-SRE-VIG-2026-000005"
-catalog_number = "AM-OCAF-SRE-005"
+serial_number = "AM-MOB-ARG-2026-000005"
+catalog_number = "AM-OCAF-MOB-005"
 
 [servers]
 agent_server = "OMAs"
