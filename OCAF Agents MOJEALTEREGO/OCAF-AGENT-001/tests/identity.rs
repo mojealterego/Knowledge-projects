@@ -49,7 +49,10 @@ fn serial_name_and_registry_number_are_unique_in_registry() {
             "duplicate serial number"
         );
         assert!(agent_ids.insert(id.to_uppercase()), "duplicate agent ID");
-        assert!(catalog_numbers.insert(catalog.to_uppercase()), "duplicate catalog number");
+        assert!(
+            catalog_numbers.insert(catalog.to_uppercase()),
+            "duplicate catalog number"
+        );
     }
     let assigned = agents
         .iter()
