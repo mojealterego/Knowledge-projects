@@ -75,3 +75,23 @@ fn activation_fails_without_all_external_and_ostc_gates() {
         Err(LifecycleError::InvalidTransition)
     );
 }
+
+#[test]
+fn even_forged_all_true_evidence_cannot_activate_unimplemented_services() {
+    let mut lc = Lifecycle::new();
+    lc.transition(AgentState::Validated, None).unwrap();
+    lc.transition(AgentState::Tested, None).unwrap();
+    lc.transition(AgentState::Staged, None).unwrap();
+    let forged = ReleaseEvidence {
+        tests_passed: true,
+        omas_authenticated: true,
+        omat_authorized: true,
+        ostc_source_access_verified: true,
+        operator_approved: true,
+    };
+    assert_eq!(
+        lc.transition(AgentState::Active, Some(forged)),
+        Err(LifecycleError::ReleaseGateNotSatisfied)
+    );
+    assert_eq!(lc.state(), AgentState::Staged);
+}

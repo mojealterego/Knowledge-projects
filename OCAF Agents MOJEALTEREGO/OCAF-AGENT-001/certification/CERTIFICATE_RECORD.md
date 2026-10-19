@@ -21,3 +21,5 @@
 **Nie wydawać, nie uaktywniać ani nie sprzedawać jako certyfikowanego agenta** przed dostarczeniem dokumentacji OSTc, protokołu dowodów i formalnej akceptacji.
 
 Historyczny projekt dokumentu: [legacy certificate](legacy-certificate-draft.md). Brak faktycznych podpisów, hologramu lub pieczęci.
+
+**Fail-closed lifecycle:** nie ma ścieżki programowej przejścia do `ACTIVE` w tym wydaniu, niezależnie od zadeklarowanych pól `ReleaseEvidence`. Dane te nie są autorytatywnym potwierdzeniem implementacji OMAs/OMAt/OSTc.

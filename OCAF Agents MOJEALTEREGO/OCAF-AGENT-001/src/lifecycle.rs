@@ -20,16 +20,6 @@ pub struct ReleaseEvidence {
     pub operator_approved: bool,
 }
 
-impl ReleaseEvidence {
-    fn fully_approved(self) -> bool {
-        self.tests_passed
-            && self.omas_authenticated
-            && self.omat_authorized
-            && self.ostc_source_access_verified
-            && self.operator_approved
-    }
-}
-
 #[derive(Debug, PartialEq, Eq)]
 pub enum LifecycleError {
     InvalidTransition,
@@ -61,7 +51,7 @@ impl Lifecycle {
     pub fn transition(
         &mut self,
         next: AgentState,
-        evidence: Option<ReleaseEvidence>,
+        _evidence: Option<ReleaseEvidence>,
     ) -> Result<(), LifecycleError> {
         use AgentState::{Active, Draft, Paused, Retired, Staged, Tested, Validated};
         let legal = matches!(
@@ -80,7 +70,10 @@ impl Lifecycle {
         if !legal {
             return Err(LifecycleError::InvalidTransition);
         }
-        if next == Active && !evidence.is_some_and(ReleaseEvidence::fully_approved) {
+        // Fail closed until real signed OMAs/OMAt receipts and independently
+        // verified OSTc capabilities are implemented. Caller-controlled
+        // booleans must never authorize an ACTIVE transition.
+        if next == Active {
             return Err(LifecycleError::ReleaseGateNotSatisfied);
         }
         self.state = next;

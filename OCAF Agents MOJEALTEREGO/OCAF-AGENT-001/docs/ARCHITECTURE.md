@@ -26,3 +26,5 @@ W tym wydaniu `src/zenoh.rs` implementuje deterministyczne adresowanie logiczne 
 `src/lifecycle.rs` egzekwuje stany DRAFT→VALIDATED→TESTED→STAGED→ACTIVE/PAUSED/RETIRED. Produkcyjna aktywacja wymaga pozytywnych bramek: CI, uwierzytelnienia OMAs, OMAt authz, dostępu OSTc i formalnej akceptacji operatora. Wymagane są niezależne dowody poza deklaracją samego modelu.
 
 **Klient fotograficzny legacy** w `legacy-pwa/` zachowany jako nieutwardzone źródło do migracji; nie jest częścią CLI Rust. Schematy: `schemas/`; kontrakt wejścia `goal` i `identity_lock=true`; wyjście `plan_only`.
+
+**Aktualna blokada wydania:** `Lifecycle::transition(Active)` jest zawsze odrzucane, nawet gdy klient poda same `true` w strukturze `ReleaseEvidence`. Prawdziwe poświadczenia muszą być weryfikowane przez niezależnego operatora OMAs/OMAt i ukończoną warstwę OSTc, zanim kod będzie mógł obsługiwać aktywację.
