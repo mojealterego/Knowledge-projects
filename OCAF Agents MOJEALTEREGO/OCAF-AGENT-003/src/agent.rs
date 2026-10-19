@@ -57,9 +57,10 @@ pub fn assess(input: &ResearchInput) -> Result<Assessment, ResearchError> {
     for e in &input.evidence {
         if e.source_id.is_empty()
             || e.source_id.len() > 64
-            || !e.source_id.bytes().all(|b| {
-                b.is_ascii_alphanumeric() || b == b'_' || b == b'-'
-            })
+            || !e
+                .source_id
+                .bytes()
+                .all(|b| b.is_ascii_alphanumeric() || b == b'_' || b == b'-')
             || e.excerpt.trim().is_empty()
             || e.excerpt.len() > 256
             || e.excerpt.chars().any(char::is_control)
@@ -86,7 +87,8 @@ pub fn assess(input: &ResearchInput) -> Result<Assessment, ResearchError> {
                 "Contradictory stances require independent adjudication"
             } else {
                 "No independent verification has been performed"
-            }.into(),
+            }
+            .into(),
             "Do not publish the claim as established fact".into(),
         ],
     })
@@ -100,8 +102,16 @@ mod tests {
         ResearchInput {
             claim: "A factual hypothesis".into(),
             evidence: vec![
-                Evidence { source_id: "source1".into(), stance: "supports".into(), excerpt: "reported support".into() },
-                Evidence { source_id: "source2".into(), stance: "contradicts".into(), excerpt: "reported disagreement".into() },
+                Evidence {
+                    source_id: "source1".into(),
+                    stance: "supports".into(),
+                    excerpt: "reported support".into(),
+                },
+                Evidence {
+                    source_id: "source2".into(),
+                    stance: "contradicts".into(),
+                    excerpt: "reported disagreement".into(),
+                },
             ],
         }
     }

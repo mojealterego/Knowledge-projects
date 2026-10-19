@@ -51,8 +51,7 @@ pub struct SourceAccessConfig {
 }
 
 pub fn load_config(raw: &str) -> Result<AgentConfig, SecurityError> {
-    let conf: AgentConfig =
-        toml::from_str(raw).map_err(|_| SecurityError::InvalidConfiguration)?;
+    let conf: AgentConfig = toml::from_str(raw).map_err(|_| SecurityError::InvalidConfiguration)?;
     if conf.identity.registry_number != crate::agent::REGISTRY_NUMBER
         || conf.identity.agent_id != crate::agent::AGENT_ID
         || conf.identity.unique_name != crate::agent::AGENT_NAME

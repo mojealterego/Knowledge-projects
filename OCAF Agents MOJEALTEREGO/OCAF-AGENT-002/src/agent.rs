@@ -40,15 +40,13 @@ pub struct Triage {
 fn valid_token(value: &str) -> bool {
     !value.is_empty()
         && value.len() <= 64
-        && value.bytes().all(|b| {
-            b.is_ascii_alphanumeric() || b == b'_' || b == b'-'
-        })
+        && value
+            .bytes()
+            .all(|b| b.is_ascii_alphanumeric() || b == b'_' || b == b'-')
 }
 
 fn valid_observation(value: &str) -> bool {
-    !value.trim().is_empty()
-        && value.len() <= 256
-        && !value.chars().any(char::is_control)
+    !value.trim().is_empty() && value.len() <= 256 && !value.chars().any(char::is_control)
 }
 
 pub fn triage(input: &Incident) -> Result<Triage, TriageError> {
@@ -64,10 +62,14 @@ pub fn triage(input: &Incident) -> Result<Triage, TriageError> {
         return Err(TriageError::InvalidRiskTier);
     }
     let investigation = match input.signal.as_str() {
-        "CrashLoopBackOff" => "Inspect the existing pod status, prior container logs and declared probes",
+        "CrashLoopBackOff" => {
+            "Inspect the existing pod status, prior container logs and declared probes"
+        }
         "NodeNotReady" => "Review existing node conditions, event timeline and capacity signals",
         "PodPending" => "Review existing scheduling events, requests, limits and quota metadata",
-        "ServiceUnavailable" => "Review existing service endpoints, target health and incident timing",
+        "ServiceUnavailable" => {
+            "Review existing service endpoints, target health and incident timing"
+        }
         _ => return Err(TriageError::UnsupportedSignal),
     };
     let mut recommendations = vec![
@@ -76,9 +78,11 @@ pub fn triage(input: &Incident) -> Result<Triage, TriageError> {
         "Acquire independent read-only evidence with an authorized operator".to_owned(),
     ];
     if matches!(input.risk_tier.as_str(), "R2" | "R3" | "R4") {
-        recommendations.push("Escalate to the responsible operator before any remediation".to_owned());
+        recommendations
+            .push("Escalate to the responsible operator before any remediation".to_owned());
     }
-    recommendations.push("Require independent postcondition verification before closure".to_owned());
+    recommendations
+        .push("Require independent postcondition verification before closure".to_owned());
     Ok(Triage {
         agent_id: AGENT_ID,
         status: "read_only",
@@ -110,7 +114,10 @@ mod tests {
         let result = triage(&incident()).unwrap();
         assert!(!result.allow_mutation);
         assert!(!result.verified);
-        assert!(result.recommendations.iter().any(|x| x.contains("Escalate")));
+        assert!(result
+            .recommendations
+            .iter()
+            .any(|x| x.contains("Escalate")));
     }
 
     #[test]

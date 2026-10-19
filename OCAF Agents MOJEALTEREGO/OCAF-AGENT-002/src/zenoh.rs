@@ -36,7 +36,8 @@ mod ocaf {
     pub fn manifest() -> ToolManifest {
         ToolManifest {
             name: "incident.triage".to_owned(),
-            description: "Read-only, unverified offline assessment (no external side effects)".into(),
+            description: "Read-only, unverified offline assessment (no external side effects)"
+                .into(),
             input_schema: json!({
 "type":"object","additionalProperties":false,
 "properties":{
@@ -65,12 +66,15 @@ mod ocaf {
     impl ToolExecutor for AgentTool {
         async fn execute(&self, args: Value, _ctx: &ExecutionContext) -> Result<Value, ToolError> {
             if !serde_json::to_vec(&args).is_ok_and(|encoded| encoded.len() <= 8192) {
-                return Err(ToolError::Validation("input exceeds 8192 serialized bytes".into()));
+                return Err(ToolError::Validation(
+                    "input exceeds 8192 serialized bytes".into(),
+                ));
             }
             let input: Incident = serde_json::from_value(args)
                 .map_err(|_| ToolError::Validation("invalid structured input".into()))?;
             let result = triage(&input).map_err(|e| ToolError::Validation(format!("{e:?}")))?;
-            serde_json::to_value(result).map_err(|_| ToolError::Validation("encoding failed".into()))
+            serde_json::to_value(result)
+                .map_err(|_| ToolError::Validation("encoding failed".into()))
         }
     }
 }
