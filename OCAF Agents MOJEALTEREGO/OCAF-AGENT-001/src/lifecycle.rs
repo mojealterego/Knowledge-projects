@@ -72,7 +72,10 @@ impl Lifecycle {
                 | (Staged, Active)
                 | (Active, Paused)
                 | (Paused, Active)
-                | (Draft | Validated | Tested | Staged | Paused | Active, Retired)
+                | (
+                    Draft | Validated | Tested | Staged | Paused | Active,
+                    Retired
+                )
         );
         if !legal {
             return Err(LifecycleError::InvalidTransition);

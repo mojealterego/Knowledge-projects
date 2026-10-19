@@ -1,7 +1,5 @@
 use wda_photo_agent::agent::{plan, PlanError};
-use wda_photo_agent::lifecycle::{
-    AgentState, Lifecycle, LifecycleError, ReleaseEvidence,
-};
+use wda_photo_agent::lifecycle::{AgentState, Lifecycle, LifecycleError, ReleaseEvidence};
 use wda_photo_agent::security::{load_config, SecurityError};
 use wda_photo_agent::zenoh::{route, ServerRole};
 

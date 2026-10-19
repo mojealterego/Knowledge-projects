@@ -117,7 +117,9 @@ pub fn safe_namespace_part(value: &str) -> Result<(), SecurityError> {
 pub fn safe_tool_name(value: &str) -> Result<(), SecurityError> {
     if value.is_empty()
         || value.len() > 128
-        || value.split('.').any(|part| safe_namespace_part(part).is_err())
+        || value
+            .split('.')
+            .any(|part| safe_namespace_part(part).is_err())
     {
         return Err(SecurityError::InvalidRoute);
     }

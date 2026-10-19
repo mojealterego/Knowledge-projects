@@ -14,11 +14,7 @@ pub enum ServerRole {
 }
 
 /// Produces a bounded transport resource key; not an authorization decision.
-pub fn route(
-    role: ServerRole,
-    tenant: &str,
-    resource_name: &str,
-) -> Result<String, SecurityError> {
+pub fn route(role: ServerRole, tenant: &str, resource_name: &str) -> Result<String, SecurityError> {
     safe_namespace_part(tenant)?;
     let key = match role {
         ServerRole::OmasAgents => {

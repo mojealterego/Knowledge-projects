@@ -19,7 +19,9 @@ async fn read_only_plan_registers_in_ocaf_runtime() {
         .unwrap();
     assert_eq!(reply.output["agent_id"], "AM-OCAF-AI-0001");
     assert_eq!(reply.output["status"], "plan_only");
-    assert!(reply.output["workflow"].as_array().is_some_and(|v| v.len() >= 3));
+    assert!(reply.output["workflow"]
+        .as_array()
+        .is_some_and(|v| v.len() >= 3));
 }
 
 #[tokio::test]
