@@ -84,13 +84,13 @@ Drzewo Git bazowe: `b6930a2c63a3c19d32890768f9aec44e4334eee8` · **215 plików**
 078 | `projekty/120-aegisfleet-autonomous-logistics-crisis-coordination-calle-mcp/README.md` | UNREVIEWED | 18c4c7eb6c301ad76402f47c3274e1783bc9f2d0
 079 | `projekty/121-infrasentinel-agentic-autonomous-sre-infrastructure/README.md` | SRE_SYSTEM | 6314e044910a993c819b02732bf06f82c567e0a2
 080 | `projekty/121-infrasentinel-agentic-autonomous-sre-infrastructure/iteration-65-zenoh-evolutionary-build-plane.md` | UNREVIEWED | 9ff43dab8360ce09d3cafb264df5632773c56914
-081 | `projekty/122-chemia-consent-aware-intimate-two-player-game/README.md` | UNREVIEWED | 6c98731a2517512893e910ce0fa2f0a574283882
+081 | `projekty/122-chemia-consent-aware-intimate-two-player-game/README.md` | GAME_WITH_PYTHON_REFERENCE | 6c98731a2517512893e910ce0fa2f0a574283882
 082 | `projekty/122-chemia-consent-aware-intimate-two-player-game/consent_intersection.py` | UNREVIEWED | 96174df6ff9d6c29258cc268b3243c82c7b0ec07
-083 | `projekty/123-gas-appliance-safety-evidence-companion/README.md` | UNREVIEWED | 4dc0188e3b5eb9217e982391ab5b5932437d4c22
+083 | `projekty/123-gas-appliance-safety-evidence-companion/README.md` | READ_ONLY_SAFETY_REFERENCE | 4dc0188e3b5eb9217e982391ab5b5932437d4c22
 084 | `projekty/123-gas-appliance-safety-evidence-companion/test_triage.py` | UNREVIEWED | 97f9dbfb2df50899fee6dde7d21560aaf591bb2a
 085 | `projekty/123-gas-appliance-safety-evidence-companion/triage.py` | UNREVIEWED | cdbb8e68cf76c1c0f88c28ff570b503f326e310d
 086 | `projekty/124-adult-safety-support-evidence-navigation-lab/README.md` | UNREVIEWED | 9de829dcc142604ef40986de95c95206dea19251
-087 | `projekty/125-sovereign-contextual-android-launcher/README.md` | UNREVIEWED | 520f2dbfcbaaf9ff0b7326324b1d07f15e623bd5
+087 | `projekty/125-sovereign-contextual-android-launcher/README.md` | ANDROID_LAUNCHER_APP | 520f2dbfcbaaf9ff0b7326324b1d07f15e623bd5
 088 | `projekty/125-sovereign-contextual-android-launcher/android/ADAPTIVE-QA.md` | UNREVIEWED | ffe0199129e3d0183007f2f4b0c4b9452e67d875
 089 | `projekty/125-sovereign-contextual-android-launcher/android/app/build.gradle.kts` | UNREVIEWED | 9756c011315c110bed823b6980840576f77a07fd
 090 | `projekty/125-sovereign-contextual-android-launcher/android/app/src/main/AndroidManifest.xml` | UNREVIEWED | 7d4c419f25f3bd4b88b5e55911dbc6fabe70a78f
@@ -99,7 +99,7 @@ Drzewo Git bazowe: `b6930a2c63a3c19d32890768f9aec44e4334eee8` · **215 plików**
 093 | `projekty/125-sovereign-contextual-android-launcher/android/build.gradle.kts` | UNREVIEWED | 57769a0d4bf9ff02a5128b6dabfc70f43c10f8df
 094 | `projekty/125-sovereign-contextual-android-launcher/android/gradle.properties` | UNREVIEWED | b9d52559a72a55867b519f7e53e06bed9003a964
 095 | `projekty/125-sovereign-contextual-android-launcher/android/settings.gradle.kts` | UNREVIEWED | c1b0eb5e4d98bbf16d969b6bee8a12216e068ef1
-096 | `projekty/126-ibm-cloud-cognitive-game-backend-reference/README.md` | UNREVIEWED | 0a44dcc339b9b00abcdf8b6397dc66f7eda0d2e7
+096 | `projekty/126-ibm-cloud-cognitive-game-backend-reference/README.md` | BACKEND_REFERENCE | 0a44dcc339b9b00abcdf8b6397dc66f7eda0d2e7
 097 | `projekty/126-ibm-cloud-cognitive-game-backend-reference/state_reference.py` | UNREVIEWED | d4d26b8e16c80cdce2d64f4bc1cf75db6495414e
 098 | `projekty/13-agentic-software-factory.md` | AGENT_FACTORY_SPECIFICATION | 52d80ac1ee5f0e1f0f3ebef2745ad4b78def4f13
 099 | `projekty/14-gemini-3-adaptive-reasoning-multimodal-agent-2026-10-08-optimization-extension.md` | UNREVIEWED | 64bf99a4a6d17e877746fb3286945b32d59fb047
@@ -228,3 +228,17 @@ Następny krok: odczyt zawartości wszystkich `UNREVIEWED` i rozdzielenie samodz
 Przeanalizowano także główne specyfikacje P02, P07, P13, P14, P18, P19 i P91 (nazwy i pierwsze części kontraktów wraz ze statusem). P02 to projekt laboratorium bezpieczeństwa, P07 środowisko kreatywne, P13 fabryka software, P14 i P18 to indywidualne **prototypy agentów do zbudowania** (brak w tych artefaktach zweryfikowanego binarium), P19 orkiestrator badawczy, P91 laboratorium person. Rozdzielać je dopiero po audycie pełnej implementacji i zależności; nie nadawać numerów ewidencyjnych propozycjom.
 
 Żadna kolejna jednostka nie otrzymała numeru 002: rejestr produkowanych agentów nie może być kopią numerowanych projektów.
+
+
+## Kontrola plików źródłowych innych niż Markdown — drzewo Git `main` przed relokacją
+
+**OBSERVED:** `projekty/` zawierało tylko **11 plików** z rozszerzeniami kodu / budowania (`.py, .rs, .ts, .tsx, .js, .mjs, .kt, .kts, .java, .go, .cs, .sh, .html`) w **5 podkatalogach**: P116 (3), P122 (1), P123 (2), P125 (4), P126 (1). Ponadto repo ma katalog `tools/` z wieloma osobnymi skryptami, lecz nie są automatycznie niezależnymi agentami. Brak binariów nie dowodzi braku kodu wewnątrz Markdown i nie zastępuje audytu.
+
+- **P122**: gra dla dwóch osób; `consent_intersection.py` to komponent zasad gry, nie agent.
+- **P123**: referencyjne narzędzie safety w Python, `triage.py` i `test_triage.py`; nie agent zdolny do sterowania piecem.
+- **P125**: aplikacja HOME Android Kotlin, cztery pliki Gradle/Kotlin; nie pojedynczy agent; brak dowodu APK.
+- **P126**: backendowy emulator stanu gry Python, nie autonomiczny agent i nie IBM Cloud deployment.
+- **P116**: jedyny z pięciu podprojektów z odrębnym, nazwanym runtime agenta webowego; kod WDA wyodrębniony do ewidencji 001.
+- **P119**: README deklaruje opis Kotlin z innych materiałów, ale jego plików źródłowych w aktualnym drzewie `projekty/119...` nie znaleziono. Stan impl. w tym repo UNVERIFIED.
+
+**Wniosek:** osobno rejestrować *agentów*, *systemy agentowe*, *produkty*, *narzędzia* i *źródła wiedzy*. Nie przenosić pozostałych czterech aplikacji/narzędzi do folderu agentów bez powodu.
