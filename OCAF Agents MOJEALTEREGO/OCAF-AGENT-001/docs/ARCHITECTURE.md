@@ -1,30 +1,45 @@
-# Architektura — WDA Agent 001 (Rust / OCAF / OMAs / OMAt / Zenoh / OSTc)
+# Architektura techniczna WDA AURELION
 
+## Identyfikacja instancji
+Agent `WDA AURELION` (ewidencja 001) ma numer seryjny `AM-WDA-AUR-2026-000001-DE338AC20B42`, techniczne ID `AM-OCAF-AI-0001` i pochodzi z projektu P116. Nazwa nie jest numerem folderu.
+
+## Architektura logiczna (docelowo, nie wdrożono całości)
 ```text
-OPERATOR
-   │
-   ▼
-OCAF Runtime (policy engine + verifiable execution)
-   ├── OMAs — SERVER AGENTÓW
-   │     └── identity / agent lifecycle / registered agents
-   │
-   ├── Zenoh — transport wiadomości (external, off by default)
-   │
-   └── OMAt — SERVER NARZĘDZI
-         └── photo.plan (Rust ToolExecutor, read-only)
-                     │
-                     ▼
-                PhotoPlan result
-
-ŹRÓDŁA AGENTA → OSTc gate [PENDING SPEC / DENY]
+Operator
+   |
+   v
+OCAF Runtime — policy / executor / release gates
+   |                  |
+   |                  +--> OMAs = SERVER AGENTÓW
+   |                            identity / registry / lifecycle (external, not deployed)
+   |
+   +--> OMAt = SERVER NARZĘDZI (external, not deployed)
+   |          |
+   |          +--> capability: photo.plan (ToolManifest + ToolExecutor)
+   |                       |
+   |                       +--> Rust Agent::plan() -> plan_only
+   |
+   +--> Zenoh = transport (route contract only; no network session)
+   |
+   +--> OSTc SOURCE-ACCESS GATE [SPEC PENDING; DENY]
+              |
+              +--> encrypted agent source [NOT IMPLEMENTED]
 ```
 
-W tym wydaniu `src/zenoh.rs` implementuje deterministyczne adresowanie logiczne OMAs i OMAt oraz adapter `OcafRuntime::register(ToolManifest, ToolExecutor)`. **Nie otwiera sesji sieciowej** i nie jest serwerem OMAs ani OMAt. Transport produkcyjny wymaga oddzielnego, zweryfikowanego gateway z TLS, autoryzacją i podpisem OMAs związanym z tożsamością RPC. `tenant` i nazwy tras są walidowane, jednak trasa nie poświadcza tożsamości.
+**W obecnym kodzie OCAF runtime jest lokalnym adapterem ToolExecutor**, nie produkcyjnym serwerem agentowym. `src/zenoh.rs` definiuje `omas/v1/{tenant}/agents/{agent_name}` oraz `omat/v1/{tenant}/tools/{tool_name}`; waliduje segmenty i nie otwiera połączeń, nie dowodzi tożsamości. OMAs i OMAt to odrębne **role serwerowe**, a nie dwie nazwy jednej instancji. Zenoh zapewnia wyłącznie transport.
 
-`src/security.rs` waliduje statyczną konfigurację i odrzuca próby włączenia źródeł/Zenoh przez samą zmianę TOML. Docelowy mechanizm OSTc musi uzyskać dostarczony projekt protokołu, test vectors, bezpieczną implementację, model zagrożeń oraz niezależny audyt. Nie zastępujemy go innym algorytmem.
+### Ścieżka wywołania lokalnego
+1. `src/main.rs` czyta wbudowane `config/agent.toml` i sprawdza stałą tożsamość: nazwę, numer seryjny, ID, katalog i numer ewidencyjny.
+2. `security::validate_goal` odrzuca pusty tekst, znaki sterujące i >1024 bajtów UTF-8.
+3. `agent::plan(goal, true)` generuje deterministyczny, odwracalny plan bez I/O.
+4. Adapter `zenoh::manifest` udostępnia OCAF lokalnie `photo.plan`, walidując schemat.
+5. `lifecycle::transition(Active)` zawsze odrzuca aktywację do wdrożenia rzeczywistych bramek autoryzacyjnych.
 
-`src/lifecycle.rs` egzekwuje stany DRAFT→VALIDATED→TESTED→STAGED→ACTIVE/PAUSED/RETIRED. Produkcyjna aktywacja wymaga pozytywnych bramek: CI, uwierzytelnienia OMAs, OMAt authz, dostępu OSTc i formalnej akceptacji operatora. Wymagane są niezależne dowody poza deklaracją samego modelu.
+### Wymagania niewdrożone
+Uwierzytelnienie certyfikatów operatorów OMAs/OMAt, podpis powiązany z RPC, anty-replay, oddzielne tenanty, mTLS, testy awarii i wielohostowe, koperty narzędzi, spójne logi oraz niezależny protokół szyfrowania OSTc. Brak uprawnień do otwierania/odszyfrowywania źródeł przez agenta.
 
-**Klient fotograficzny legacy** w `legacy-pwa/` zachowany jako nieutwardzone źródło do migracji; nie jest częścią CLI Rust. Schematy: `schemas/`; kontrakt wejścia `goal` i `identity_lock=true`; wyjście `plan_only`.
+### Struktura Rust
+`src/agent.rs` domena i tożsamość; `src/security.rs` walidacja i blokady; `src/zenoh.rs` kontrakty tras oraz adapter OCAF; `src/lifecycle.rs` stany; `src/main.rs` lokalny CLI; `src/lib.rs` API biblioteczne. Schematy `schemas/` zachowują bieżący kontrakt `photo.plan`.
 
-**Aktualna blokada wydania:** `Lifecycle::transition(Active)` jest zawsze odrzucane, nawet gdy klient poda same `true` w strukturze `ReleaseEvidence`. Prawdziwe poświadczenia muszą być weryfikowane przez niezależnego operatora OMAs/OMAt i ukończoną warstwę OSTc, zanim kod będzie mógł obsługiwać aktywację.
+### Zależności i port
+`legacy-pwa/` zachowuje nieutwardzony klient i serwer Node. Nie należy uruchamiać publicznie ani przekazywać sekretów. Pełny port do Rust i integracja Firefly/OpenAI/real image processing wymagają osobnej implementacji i weryfikacji jakości.
