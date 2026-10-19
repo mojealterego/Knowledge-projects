@@ -19,6 +19,11 @@ To rejestr hipotez klasyfikacyjnych, **nie** lista wdrożonych agentów. Przydzi
 
 | Numer | Agent ID | Nazwa i folder | Status | Certyfikat |
 |---|---|---|---|---|
-| **001** | **AM-OCAF-AI-0001** | [WDA Photo Agent](001-WDA-Photo-Agent/README.md) | PARTIAL / DRAFT; production_approved=false | [CERT-AM-2026-0001 — projekt niewydany](001-WDA-Photo-Agent/documentation/01-CERTIFICATE-DRAFT.md) |
+| **001** | **AM-OCAF-AI-0001** | [WDA Photo Agent](OCAF-AGENT-001/docs/README.md) | PARTIAL / DRAFT; production_approved=false | [CERT-AM-2026-0001 — projekt niewydany](OCAF-AGENT-001/certification/CERTIFICATE_RECORD.md) |
 
 Numer **001 jest pierwszym przydzielonym wpisem ewidencyjnym**; projekt certyfikatu nie jest poświadczeniem testów, numer seryjny i katalogowy zarezerwowane roboczo. Brak innych zarejestrowanych egzemplarzy w tym rejestrze.
+
+
+## Standard folderu agentowego — 2026-10-19
+
+Dla agentów w ewidencji obowiązuje `OCAF-AGENT-NNN/` z głównym `Cargo.toml`, rozdzielonymi `src/`, `tests/`, `config/`, `docs/` i `certification/`. OMAs = serwer agentów, OMAt = serwer narzędzi, Zenoh = transport; OSTc dla zaszyfrowanego dostępu do plików źródłowych po późniejszym dostarczeniu specyfikacji. Agent 001 korzysta z nowego folderu. Numery ewidencyjne nie są numerami projektów.

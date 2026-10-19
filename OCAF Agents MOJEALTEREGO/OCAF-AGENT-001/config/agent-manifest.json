@@ -1,0 +1,37 @@
+{
+  "schema_version": "ocaf-agent-draft/1",
+  "agent_id": "AM-OCAF-AI-0001",
+  "registry_number": "001",
+  "canonical_folder": "OCAF-AGENT-001",
+  "display_name": "WDA Photo Agent",
+  "source_project": "P116",
+  "vendor": "MOJEALTEREGO",
+  "version": "0.2.0-dev",
+  "artifact_digest": null,
+  "build_commit": null,
+  "runtime_target": "native-rust",
+  "entrypoint": "wda_photo_agent",
+  "services": {
+    "OMAs": "agent server; external; not deployed",
+    "OMAt": "tool server; external; not deployed"
+  },
+  "transport": {
+    "name": "Zenoh",
+    "enabled": false,
+    "authentication": "external signed OMAs RPC and TLS required"
+  },
+  "capabilities": [
+    "photo.plan"
+  ],
+  "side_effect_class": "READ_ONLY",
+  "source_access": {
+    "encrypted_access_required": true,
+    "cipher": "OSTc",
+    "enabled": false,
+    "implementation": "PENDING_SPECIFICATION"
+  },
+  "identity_lock": true,
+  "lifecycle_state": "DRAFT",
+  "production_approved": false,
+  "certificate_issued": false
+}
