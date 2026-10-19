@@ -2,7 +2,14 @@
 
 use crate::security;
 
+/// Stable technical agent identifier; never treat as certificate or serial.
 pub const AGENT_ID: &str = "AM-OCAF-AI-0001";
+/// Registered own name, distinct from product family and registry number.
+pub const AGENT_NAME: &str = "WDA AURELION";
+pub const REGISTRY_NUMBER: &str = "001";
+/// Unique repository-issued administrative serial; not a signature.
+pub const SERIAL_NUMBER: &str = "AM-WDA-AUR-2026-000001-DE338AC20B42";
+pub const CATALOG_NUMBER: &str = "AM-OCAF-WDA-001";
 pub const MAX_GOAL_BYTES: usize = 1024;
 
 #[derive(Debug, PartialEq, Eq)]

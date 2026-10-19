@@ -1,13 +1,16 @@
-# Changelog
+# Historia zmian — WDA AURELION
+
+## 0.2.1-dev (2026-10-19)
+- Nadano własną nazwę agenta: **WDA AURELION**, zachowując WDA Photo Agent jako rodzinę P116.
+- Nadano numer seryjny: `AM-WDA-AUR-2026-000001-DE338AC20B42`, odrębny od numeru ewidencyjnego 001, Agent ID i numeru certyfikatu.
+- Utworzono centralny JSON rejestr z walidacją unikalności i testy Rust `tests/identity.rs`.
+- Powiązano manifest, konfigurację, kod i dokumentację z niezmiennymi polami tożsamości.
+- Rozbudowano architekturę, instrukcję, specyfikację, zagrożenia, serwis, zależności, kryteria odbioru oraz dokumenty handlowe i rejestr certyfikacyjny.
+- Agent nadal **INCOMPLETE_DEVELOPMENT**; nie zaimplementowano pełnej obróbki obrazów, OMAs/OMAt E2E ani OSTc.
 
 ## 0.2.0-dev (2026-10-19)
-- Nowy kanoniczny `OCAF-AGENT-001/`; 27 starych blob SHA zachowanych, manifest zaktualizowany do nowej architektury; historyczny JS zachowany 8/8.
-- Główny crate Rust i moduły `agent.rs`, `zenoh.rs`, `security.rs`, `lifecycle.rs`; testy w `tests/integration.rs` i `tests/security.rs`.
-- OMAs = osobny serwer agentów, OMAt = osobny serwer narzędzi; adresowanie Zenoh jako kontrakt lokalny; sieciowe integracje nadal nieuruchomione.
-- OSTc dla zaszyfrowanego dostępu źródeł **PENDING**; dostęp zablokowany.
-- `ACTIVE` niedostępny nawet przy sfałszowanych booleanach poświadczeń.
-- [CI SUCCESS, 12/12 testów](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203233792).
+- Sformalizowano katalog `OCAF-AGENT-001/`, Rust crate i rozdzielenie OMAs/OMAt.
+- Dodano 12 testów Rust (poprzedni [CI SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39203631208)).
 
 ## 0.1.0-dev (2026-10-19)
-- Nadano numer ewidencyjny 001, wyodrębniono WDA z P116; Rust plan-only i adapter OCAF.
-- Produkcyjne podpisanie i formalny odbiór nadal niewykonane.
+- Pierwszy wpis 001, historyczne 8 plików WDA przeniesione z P116, zachowane hash blobów.

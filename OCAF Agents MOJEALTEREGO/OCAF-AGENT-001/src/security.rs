@@ -25,6 +25,9 @@ pub struct AgentConfig {
 pub struct IdentityConfig {
     pub agent_id: String,
     pub registry_number: String,
+    pub unique_name: String,
+    pub serial_number: String,
+    pub catalog_number: String,
 }
 
 #[derive(Debug, Deserialize)]
@@ -84,7 +87,10 @@ impl AgentConfig {
 
     pub fn validate(&self) -> Result<(), SecurityError> {
         if self.identity.agent_id != crate::agent::AGENT_ID
-            || self.identity.registry_number != "001"
+            || self.identity.registry_number != crate::agent::REGISTRY_NUMBER
+            || self.identity.unique_name != crate::agent::AGENT_NAME
+            || self.identity.serial_number != crate::agent::SERIAL_NUMBER
+            || self.identity.catalog_number != crate::agent::CATALOG_NUMBER
             || self.servers.agent_server != "OMAs"
             || self.servers.tool_server != "OMAt"
             || self.communication.transport != "Zenoh"
