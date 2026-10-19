@@ -1,8 +1,8 @@
-use std::collections::HashSet;
 use argus_mobile_agent::agent::{
     AGENT_ID, AGENT_NAME, CATALOG_NUMBER, REGISTRY_NUMBER, SERIAL_NUMBER,
 };
 use argus_mobile_agent::security::load_config;
+use std::collections::HashSet;
 
 const CONFIG: &str = include_str!("../config/agent.toml");
 const MANIFEST: &str = include_str!("../config/agent-manifest.json");

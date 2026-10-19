@@ -53,8 +53,7 @@ mod ocaf {
             }
             let input: PlanInput = serde_json::from_value(args)
                 .map_err(|_| ToolError::Validation("invalid request schema".into()))?;
-            let result = review(&input)
-                .map_err(|e| ToolError::Validation(format!("{e:?}")))?;
+            let result = review(&input).map_err(|e| ToolError::Validation(format!("{e:?}")))?;
             serde_json::to_value(result)
                 .map_err(|_| ToolError::Validation("encoding failure".into()))
         }

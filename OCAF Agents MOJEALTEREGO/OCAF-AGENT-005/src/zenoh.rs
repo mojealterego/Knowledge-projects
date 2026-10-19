@@ -35,7 +35,8 @@ mod ocaf {
     pub fn manifest() -> ToolManifest {
         ToolManifest {
             name: "ui.proposal_assess".to_owned(),
-            description: "Offline Android UI action policy proposal review derived from P119".into(),
+            description: "Offline Android UI action policy proposal review derived from P119"
+                .into(),
             input_schema: json!({"type":"object","additionalProperties":false,"properties":{"session_id":{"type":"string","minLength":1,"maxLength":64},"snapshot_id":{"type":"string","minLength":1,"maxLength":64},"node_id":{"type":"string","minLength":1,"maxLength":64},"action":{"enum":["CLICK","SCROLL","BACK","HOME","TYPE","DELETE","SEND","GRANT_PERMISSION"]},"operator_grant":{"type":"boolean"},"expected_postcondition":{"type":"string","minLength":1,"maxLength":256}},"required":["session_id","snapshot_id","node_id","action","operator_grant","expected_postcondition"]}),
             output_schema: json!({"type":"object","additionalProperties":false,"properties":{"agent_id":{"const":"AM-OCAF-AI-0005"},"status":{"enum":["blocked","requires_grant","operator_review"]},"execution_authorized":{"const":false},"readback_required":{"const":true},"verified":{"const":false},"reasons":{"type":"array","minItems":3,"items":{"type":"string"}}},"required":["agent_id","status","execution_authorized","readback_required","verified","reasons"]}),
             cost_sats: 0,
@@ -53,8 +54,7 @@ mod ocaf {
             }
             let input: ActionProposal = serde_json::from_value(args)
                 .map_err(|_| ToolError::Validation("invalid request schema".into()))?;
-            let result = assess(&input)
-                .map_err(|e| ToolError::Validation(format!("{e:?}")))?;
+            let result = assess(&input).map_err(|e| ToolError::Validation(format!("{e:?}")))?;
             serde_json::to_value(result)
                 .map_err(|_| ToolError::Validation("encoding failure".into()))
         }
