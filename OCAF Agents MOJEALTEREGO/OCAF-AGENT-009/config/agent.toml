@@ -1,0 +1,21 @@
+# Disabled transport and encrypted source access until independent review.
+[identity]
+registry_number = "009"
+agent_id = "AM-OCAF-AI-0007"
+unique_name = "CLOUD FISCALIS"
+serial_number = "AM-CLD-FIS-2026-000009"
+catalog_number = "AM-OCAF-CLD-009"
+
+[servers]
+agent_server = "OMAs"
+tool_server = "OMAt"
+
+[communication]
+transport = "Zenoh"
+network_enabled = false
+authenticated_tls_required = true
+
+[source_access]
+enabled = false
+encryption = "OSTc"
+specification_status = "PENDING"

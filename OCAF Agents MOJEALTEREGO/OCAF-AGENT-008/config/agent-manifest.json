@@ -1,0 +1,35 @@
+{
+  "schema_version": "ocaf-agent-draft/1",
+  "registry_number": "008",
+  "unique_name": "DGM SENTINEL",
+  "display_name": "DGM SENTINEL",
+  "serial_number": "AM-DGM-SNT-2026-000008",
+  "agent_id": "AM-OCAF-AI-0008",
+  "catalog_number": "AM-OCAF-DGM-008",
+  "certificate_number": "CERT-AM-2026-0008",
+  "family": "Source-backed offline DGM four-phase promotion evidence gate",
+  "source_project": "tools/dgm_cycle_gate.py",
+  "artifact_digest": null,
+  "release_commit": null,
+  "capabilities": [
+    "dgm.assess_promotion"
+  ],
+  "transport": {
+    "name": "Zenoh",
+    "network_enabled": false
+  },
+  "servers": {
+    "OMAs": "external agent server NOT DEPLOYED",
+    "OMAt": "external tool server NOT DEPLOYED"
+  },
+  "source_access": {
+    "encryption": "OSTc",
+    "specification_status": "PENDING",
+    "enabled": false
+  },
+  "lifecycle": "DRAFT",
+  "certificate_issued": false,
+  "production_approved": false,
+  "status": "INCOMPLETE_DEVELOPMENT",
+  "implementation_scope": "Offline analysis only: no branch merging, CI attestation, cloud API, payment, or network execution"
+}
