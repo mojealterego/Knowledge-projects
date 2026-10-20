@@ -83,3 +83,17 @@ Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/ac
 ### Faktyczny dowód CI 004–005
 
 [GitHub Actions run 39340442615](https://github.com/mojealterego/Knowledge-projects/actions/runs/39340442615), commit `b1eae89e9f634a743adbccf291bae7782a08901a`: **SUCCESS na obu jobach**, 004 i 005 po **13/13 testów PASS** (łącznie 26), fmt, Clippy i CLI smoke PASS. [Regresja rejestru agentów 002–003](https://github.com/mojealterego/Knowledge-projects/actions/runs/39340442555) na tym samym commit również **SUCCESS**. Dowodzi tylko kodu lokalnego, nie produkcyjnego OMAs/OMAt, Android UI, OSTc lub ukończenia P115/P119.
+
+## KA-034–KA-040 — rzeczywisty port Python → Rust (20.10.2026)
+
+| ID | Zadanie | Stan |
+|---|---|---|
+| KA-034 | Zaewidencjonować pierwowzory `tools/agent_tool_admission_gate.py` i `tools/agent_tool_loop_guard.py` wraz z ich testami i kontraktami | SOURCE READ / REVIEWED |
+| KA-035 | Agent 006 CUSTOS ADMISSION: SHA-256, niezależna zgoda spoza modelu, allowlista, expiry, brak side effects | IMPLEMENTED LOCAL / CI TO VERIFY |
+| KA-036 | Agent 007 VIGIA LOOP: limity budżetu, repeated calls bez postępu, trwały halt, host-owned progress | IMPLEMENTED LOCAL / CI TO VERIFY |
+| KA-037 | Dwa odrębne foldery Rust, nazwy, seriale, ID, cert records, 3 umowy każdy | DOCUMENTED DEVELOPMENT SCOPE |
+| KA-038 | Przetestować Rust 006/007 i pierwotne Python unittest, wersja + SHA + CI | CI IN PROGRESS |
+| KA-039 | Rzeczywiste serwery OMAs agentowy i OMAt narzędziowy, Zenoh PKI + OSTc, independent audit i operator acceptance | NOT IMPLEMENTED / OSTc SPEC PENDING |
+| KA-040 | Kontynuacja audytu pozostałych skryptów tools/, port kolejnych użytecznych polityk do Rust | IN PROGRESS |
+
+**Istotna korekta klasyfikacji:** ani `accepted=true` agenta 006, ani `allowed=true` agenta 007 nie stanowi niezależnej autoryzacji wykonania narzędzia. Wymagają właściwych grantów hosta/OMAt oraz prawdziwego sprawdzania postcondition. Nie przerabiać demonstracji na działający system przez zmianę flagi.

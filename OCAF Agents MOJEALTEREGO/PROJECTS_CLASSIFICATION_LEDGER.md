@@ -259,3 +259,12 @@ Oryginalne projekty **pozostają nienaruszone**, bo nie wydzielono gotowych bina
 **P119** [OmniMAS Local Android](../projekty/119-omni-mas-local-android-agent-runtime-max/README.md) wymienia Planner/Grounding/Executor/Supervisor i opisuje źródłową implementację Kotlin w zewnętrznych materiałach, lecz jego katalog na `main` zawiera jedynie dwa pliki Markdown; w tym repo nie zweryfikowano pełnej bazy kodu Android ani działającego APK. [Agent 005 ARGUS MOBILE](OCAF-AGENT-005/docs/README.md) jest **nowym modułem offline** do analizy propozycji akcji bez Android AccessibilityService; nie wolno mylić go z agentem wykonującym działania na telefonie.
 
 Dla obu projektów podano pełne ścieżki pochodzenia, utrzymano je bez przeniesienia, dodano oddzielne numery seryjne i jawne statusy `INCOMPLETE_DEVELOPMENT`. Historyczna inwentaryzacja 215 ścieżek pozostaje snapshotem przed wcześniejszą migracją P116, nie aktualnym licznikiem `main`. Pełny audyt plik po pliku pozostał otwarty.
+
+## Kontynuacja audytu `tools/` — 20.10.2026
+
+Sprawdzono szczegółowo źródła i testy:
+- [`agent_tool_admission_gate.py`](../tools/agent_tool_admission_gate.py) i [`test_agent_tool_admission_gate.py`](../tools/test_agent_tool_admission_gate.py) — realna lokalna polityka `admit_tool`, niezależny approvals map, SHA-256, cztery dozwolone capabilities, brak subprocess i importlib. Kod rzeczywiście istnieje w repo, nie jest wyłącznie projektem Markdown.
+- [`agent_tool_loop_guard.py`](../tools/agent_tool_loop_guard.py) i [`test_agent_tool_loop_guard.py`](../tools/test_agent_tool_loop_guard.py) — realny stanowy guard liczników, monotonic version, blokada repeated calls, nie uruchamia narzędzi.
+- [`dgm_cycle_gate.py`](../tools/dgm_cycle_gate.py) i [`test_dgm_cycle_gate.py`](../tools/test_dgm_cycle_gate.py) — oceniono źródło promowania kandydatów DGM, pozostawiono jako kolejnego kandydata, nie przypisano numeru agenta bez wykonania implementacji.
+
+Porty Rust jako osobne pakiety: [006 CUSTOS ADMISSION](OCAF-AGENT-006/docs/README.md), [007 VIGIA LOOP](OCAF-AGENT-007/docs/README.md). Dokumenty `PYTHON_PARITY.md` zawierają rozbieżności semantyczne wynikające z twardszej walidacji i modelu zaufania Rust. Oryginały Python **niezastąpione ani nieusunięte**. Pełny audyt 44 ścieżek `tools/` i 892 blobów `main` nie jest zakończony.

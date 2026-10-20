@@ -52,3 +52,10 @@ Obie nazwy i numery seryjne są odrębne od ewidencji i roli projektu; tylko cz�
 - [**ARGUS MOBILE — OCAF-AGENT-005**](OCAF-AGENT-005/docs/README.md): analiza propozycji akcji Android z P119 bez wykonywania ich na urządzeniu. Serial `AM-MOB-ARG-2026-000005`.
 
 Dokumentacja, testy, rejestr certyfikacyjny i 3 odrębne projekty umów znajdują się w każdym katalogu; certyfikaty niewydane, produkcja niezatwierdzona. Samo dodanie wpisu nie potwierdza ukończenia źródłowego P115/P119.
+
+## Rust porty faktycznych narzędzi — agenci 006 i 007
+
+- [**CUSTOS ADMISSION — OCAF-AGENT-006**](OCAF-AGENT-006/docs/README.md): bezpieczny port `tools/agent_tool_admission_gate.py` (SHA-256 artefaktu, niezależna akceptacja zakresu, timeout i ważność); serial `AM-SEC-CUS-2026-000006`.
+- [**VIGIA LOOP — OCAF-AGENT-007**](OCAF-AGENT-007/docs/README.md): port `tools/agent_tool_loop_guard.py` z trwałą w obrębie procesu blokadą zapętleń i niezależnie dostarczanym postępem; serial `AM-OPS-VIG-2026-000007`.
+
+**Status:** oba pakiety lokalne Rust; pełne specyfikacje, instrukcje, testy, rejestry certyfikatów i projekty umów znajdują się w folderach. Wpis serialu nie jest podpisem; certyfikacja i produkcyjna integracja OMAs/OMAt/Zenoh/OSTc pozostają niewykonane.

@@ -52,3 +52,12 @@ Każdy agent ma **własną nazwę, własny numer seryjny oraz oddzielny numer ew
 | **005** | [**ARGUS MOBILE**](OCAF-AGENT-005/docs/README.md) | `AM-OCAF-AI-0005` | `AM-MOB-ARG-2026-000005` | `AM-OCAF-MOB-005` | P119 | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0005` NIEWYDANY |
 
 Oryginalne P115/P119 są większymi systemami/projektami; nowe niezależne agenty realizują tylko **offline moduły kontrolne**, bez autonomicznego wykonywania zmian i bez rzeczywistej obsługi Android. OMAs/OMAt nie są wdrożone, Zenoh nie otwiera sesji, OSTc pozostaje zablokowany do otrzymania dokumentacji. Wszystkie ewidencje `001–005` mają odrębne nazwy i seriale w [kanonicznym rejestrze](AGENT_IDENTITY_REGISTRY.json).
+
+## Zarejestrowane porty rzeczywistych narzędzi Python — 20.10.2026
+
+| Nr ewid. | Nazwa własna | Agent ID | Serial | Katalog | Kod źródłowy | Status |
+|---|---|---|---|---|---|---|
+| **006** | [CUSTOS ADMISSION](OCAF-AGENT-006/docs/README.md) | `AM-OCAF-AI-0006` | `AM-SEC-CUS-2026-000006` | `AM-OCAF-SEC-006` | [agent_tool_admission_gate.py](../tools/agent_tool_admission_gate.py) | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0006` NIEWYDANY |
+| **007** | [VIGIA LOOP](OCAF-AGENT-007/docs/README.md) | `AM-OCAF-AI-0007` | `AM-OPS-VIG-2026-000007` | `AM-OCAF-OPS-007` | [agent_tool_loop_guard.py](../tools/agent_tool_loop_guard.py) | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0007` NIEWYDANY |
+
+**Klasyfikacja:** to rzeczywiście istniejące nieuruchamiające polityki bezpieczeństwa Python z testami; nowe agenty implementują odpowiednie zabezpieczenia lokalnie w Rust. Nie są uruchomionymi serwerami OMAs/OMAt, nie uruchamiają Zenoh, nie implementują OSTc ani sandboxa, nie mają certyfikatów. `AGENT_IDENTITY_REGISTRY.json` jest kanonicznym źródłem numerów 001–007.

@@ -30,3 +30,12 @@ W `mojealterego/Knowledge-projects/tools/` znajduje się 44 plików, w tym 20 ź
 Zgłoszone źródło obejmowało co najmniej 333 numerowane pozycje innej rozmowy Gemini, w tym 330 Dark-Matter. Nie zostało tutaj dostarczone, nie ma więc podstaw do przypisywania numerów, gotowości ani kierunku migracji Python/JSON/Rust. Nie deklarować katalogu ponad 400 działających narzędzi. Zenoh rozważać po określeniu uzasadnienia rozproszonego transportu.
 
 **Dla każdej pozycji po dostarczeniu:** oryginalna nazwa/numer, hash źródła, typ kodu, owner, capabilities, side-effect class, sandbox, timeout, retry policy, Rust port/testy równoważności, integracja OMAs, status.
+
+## Zweryfikowane implementacje źródłowe Python → nowe pakiety Rust
+
+| Źródło | Nowy wpis | Zakres faktycznie przeniesiony | Testy |
+|---|---|---|---|
+| [`agent_tool_admission_gate.py`](../tools/agent_tool_admission_gate.py) | [006 CUSTOS ADMISSION](OCAF-AGENT-006/docs/README.md) `tool.admit` | SHA-256, allowlista, host-owned approvals, timeout, expiry, non-executing | Python + Rust + local OCAF CI |
+| [`agent_tool_loop_guard.py`](../tools/agent_tool_loop_guard.py) | [007 VIGIA LOOP](OCAF-AGENT-007/docs/README.md) `tool.loop_gate` | max calls/tokens, no-progress repeats, sticky halt, host-only progress | Python + Rust + local OCAF CI |
+
+**Uwaga:** To nie oznacza migracji wszystkich narzędzi OMAt. OMAt jest odrębnym serwerem narzędzi i nie istnieje tutaj wdrożona usługa sieciowa; adapter OCAF jest lokalny. Dodatkowe testy Python potwierdzają oryginalne reguły, nie zastępują formalnej równoważności Python/Rust.
