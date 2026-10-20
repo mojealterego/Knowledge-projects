@@ -9,11 +9,28 @@ pub const SERIAL_NUMBER: &str = "AM-GIT-LIM-2026-000011";
 pub const CATALOG_NUMBER: &str = "AM-OCAF-GIT-011";
 pub const TARGET_REPO: &str = "mojealterego/Knowledge-projects";
 
-const READ_OPERATIONS: [&str; 8] = ["get_repo","fetch","fetch_file","get_file",
-    "list_repos","search_repositories","compare_commits","get_commit_status"];
-const WRITE_OPERATIONS: [&str; 10] = ["create_branch","create_blob","create_tree",
-    "create_commit","update_ref","create_file","update_file","delete_file",
-    "create_pull_request","merge_pull_request"];
+const READ_OPERATIONS: [&str; 8] = [
+    "get_repo",
+    "fetch",
+    "fetch_file",
+    "get_file",
+    "list_repos",
+    "search_repositories",
+    "compare_commits",
+    "get_commit_status",
+];
+const WRITE_OPERATIONS: [&str; 10] = [
+    "create_branch",
+    "create_blob",
+    "create_tree",
+    "create_commit",
+    "update_ref",
+    "create_file",
+    "update_file",
+    "delete_file",
+    "create_pull_request",
+    "merge_pull_request",
+];
 
 #[derive(Debug, Clone, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -35,16 +52,24 @@ pub struct ScopeVerdict {
 fn working_branch(name: Option<&str>) -> bool {
     name.is_some_and(|n| {
         n.len() <= 160
-        && ["knowledge/","policy/","feature/","fix/"].iter().any(|prefix| n.starts_with(prefix))
-        && !n.contains("..") && !n.contains('\\') && !n.ends_with('/')
-        && !n.chars().any(char::is_whitespace)
+            && ["knowledge/", "policy/", "feature/", "fix/"]
+                .iter()
+                .any(|prefix| n.starts_with(prefix))
+            && !n.contains("..")
+            && !n.contains('\\')
+            && !n.ends_with('/')
+            && !n.chars().any(char::is_whitespace)
     })
 }
 pub fn review_github_operation(req: &GitOperation) -> ScopeVerdict {
-    let mut reasons=Vec::new();
+    let mut reasons = Vec::new();
     if READ_OPERATIONS.contains(&req.operation.as_str()) {
         return ScopeVerdict {
-            agent_id:AGENT_ID,permitted:true,reasons,execution_authorized:false,api_called:false,
+            agent_id: AGENT_ID,
+            permitted: true,
+            reasons,
+            execution_authorized: false,
+            api_called: false,
         };
     }
     if !WRITE_OPERATIONS.contains(&req.operation.as_str()) {
@@ -53,7 +78,10 @@ pub fn review_github_operation(req: &GitOperation) -> ScopeVerdict {
         if req.repository_full_name != TARGET_REPO {
             reasons.push("external_repository_write_forbidden".to_owned());
         }
-        if matches!(req.operation.as_str(),"create_pull_request"|"merge_pull_request") {
+        if matches!(
+            req.operation.as_str(),
+            "create_pull_request" | "merge_pull_request"
+        ) {
             if req.pull_base.as_deref() != Some("main") {
                 reasons.push("unexpected_pr_base".to_owned());
             }
@@ -65,8 +93,11 @@ pub fn review_github_operation(req: &GitOperation) -> ScopeVerdict {
         }
     }
     ScopeVerdict {
-        agent_id:AGENT_ID,permitted:reasons.is_empty(),reasons,
-        execution_authorized:false,api_called:false,
+        agent_id: AGENT_ID,
+        permitted: reasons.is_empty(),
+        reasons,
+        execution_authorized: false,
+        api_called: false,
     }
 }
 
@@ -75,23 +106,26 @@ mod tests {
     use super::*;
     fn req(op: &str) -> GitOperation {
         GitOperation {
-            repository_full_name:TARGET_REPO.into(),operation:op.into(),
-            target_branch:Some("policy/demo".into()),pull_base:None,pull_head:None
+            repository_full_name: TARGET_REPO.into(),
+            operation: op.into(),
+            target_branch: Some("policy/demo".into()),
+            pull_base: None,
+            pull_head: None,
         }
     }
     #[test]
     fn legitimate_branch_write_passes_preflight_only() {
-        let d=review_github_operation(&req("create_commit"));
+        let d = review_github_operation(&req("create_commit"));
         assert!(d.permitted);
         assert!(!d.execution_authorized);
         assert!(!d.api_called);
     }
     #[test]
     fn malformed_branch_and_unknown_action_denied() {
-        let mut q=req("create_commit");
-        q.target_branch=Some("policy/../main".into());
+        let mut q = req("create_commit");
+        q.target_branch = Some("policy/../main".into());
         assert!(!review_github_operation(&q).permitted);
-        let q=req("change_default_branch");
+        let q = req("change_default_branch");
         assert!(!review_github_operation(&q).permitted);
     }
 }
