@@ -42,8 +42,7 @@ mod ocaf {
             }
             let input:GitOperation=serde_json::from_value(args).map_err(|_|
                 ToolError::Validation("invalid structured request".into()))?;
-            let result=review_github_operation(input_REF)
-                .map_err(|e|ToolError::Validation(format!("{e:?}")))?;
+            let result=review_github_operation(&input);
             serde_json::to_value(result).map_err(|_|
                 ToolError::Validation("encoding failed".into()))
         }
