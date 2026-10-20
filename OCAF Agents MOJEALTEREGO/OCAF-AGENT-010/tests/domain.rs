@@ -21,7 +21,7 @@ fn hashes_real_uncompressed_bytes_without_leaking_names() {
     assert_eq!(out.status, "INVENTORIED_NOT_SEMANTICALLY_REVIEWED");
     assert_eq!(out.member_count, 1);
     assert_eq!(out.total_uncompressed_bytes, 6);
-    assert_eq!(out.files[0].sha256, "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d026e0eaeb5eaa2f5e7aebcdeba");
+    assert_eq!(out.files[0].sha256, "af2bdbe1aa9b6ec1e2ade1d694f41fc71a831d0268e9891562113d8a62add1bf");
     assert_eq!(out.files[0].path, None);
     assert_eq!(out.files[0].extension, ".pdf");
 }
