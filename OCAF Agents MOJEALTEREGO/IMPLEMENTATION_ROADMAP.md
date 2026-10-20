@@ -128,13 +128,18 @@ GitHub [run 39419346496](https://github.com/mojealterego/Knowledge-projects/acti
 | ID | Zadanie | Status |
 |---|---|---|
 | KA-049 | Zidentyfikować rzeczywiste implementacje Python `source_bundle_audit.py`, `osint_provenance_gate.py` i ich testy | SOURCE VERIFIED |
-| KA-050 | Implementacja agenta 010 ZIP WARDEN: ZIP streaming in memory, hash SHA-256, zip-slip, symlinki, ratio, duplikaty | IMPLEMENTED LOCAL / CI REQUIRED |
-| KA-051 | Prywatność: bez ekstrakcji, bez wyświetlania nazw w adapterze OMAt, jawnie niepełna analiza semantyczna | IMPLEMENTED LOCAL / CI REQUIRED |
-| KA-052 | Agent 011 PROVENANT EVIDENCE: rozróżnienie simulated/observed/verified i host-owned verifier registry | IMPLEMENTED LOCAL / CI REQUIRED |
-| KA-053 | Fail-closed statusy HTTP — nie są dowodami istnienia konta czy relacji z osobą | IMPLEMENTED LOCAL / CI REQUIRED |
-| KA-054 | Oddzielne pakiety Rust, unikatowe nazwy i numery seryjne, centralny rejestr bez kolizji | REGISTERED DEVELOPMENT / CI REQUIRED |
+| KA-050 | Implementacja agenta 010 ZIP WARDEN: ZIP streaming in memory, hash SHA-256, zip-slip, symlinki, ratio, duplikaty | IMPLEMENTED LOCAL / TESTED run 39422580144 |
+| KA-051 | Prywatność: bez ekstrakcji, bez wyświetlania nazw w adapterze OMAt, jawnie niepełna analiza semantyczna | IMPLEMENTED LOCAL / TESTED run 39422580144 |
+| KA-052 | Agent 011 PROVENANT EVIDENCE: rozróżnienie simulated/observed/verified i host-owned verifier registry | IMPLEMENTED LOCAL / TESTED run 39422580144 |
+| KA-053 | Fail-closed statusy HTTP — nie są dowodami istnienia konta czy relacji z osobą | IMPLEMENTED LOCAL / TESTED run 39422580144 |
+| KA-054 | Oddzielne pakiety Rust, unikatowe nazwy i numery seryjne, centralny rejestr bez kolizji | REGISTERED / CI PASS |
 | KA-055 | Pełne dossier techniczne, parytet z Python, serwis, cert record, 3 projekty umów na agenta | DOCUMENTED DEVELOPMENT SCOPE |
-| KA-056 | Zaliczyć jednostkowe/integracyjne Rust, oryginalne Python, fmt/Clippy, GitHub CI i regresję pozostałych agentów | IN PROGRESS / PR #34 |
+| KA-056 | Zaliczyć jednostkowe/integracyjne Rust, oryginalne Python, fmt/Clippy, GitHub CI i regresję pozostałych agentów | 35 Rust + 19 Python PASS / PR #34 / run 39422580144 |
 | KA-057 | Real signed OMAs, OMAt, Zenoh TLS/mTLS, OSTc, independent audit i operator acceptance | NOT IMPLEMENTED / BLOCKED BY OSTc SPEC |
 
 **Zasada:** ukończenie małego zabezpieczonego portu Rust nie jest ukończeniem całego projektu, ani certyfikacją. Brak autoryzacji do rzeczywistego OSINT, ekstrakcji wrażliwych danych lub uruchamiania niezweryfikowanego kodu. Pozostały inwentarz `tools/` jest nadal do audytu.
+
+
+### Raport dowodowy KA-049–KA-057
+
+[GitHub Actions 39422580144](https://github.com/mojealterego/Knowledge-projects/actions/runs/39422580144) na źródłowym SHA `24b269a82e208c7eaeccdcdf380f5e61e88dd25b`: agent 010 **18 Rust + 11 Python PASS**, agent 011 **17 Rust + 8 Python PASS**, razem **54/54** testy pozytywne; fmt, strict Clippy i CLI PASS. Regresja 002–009 również PASS na tym samym SHA. KA-050–056 TESTED LOCAL, KA-057 NOT IMPLEMENTED. Przed roszczeniem gotowości produkcyjnej wymagane rzeczywiste OMAs, OMAt, OSTc, TLS/Zenoh, podpisany release i niezależny odbiór.

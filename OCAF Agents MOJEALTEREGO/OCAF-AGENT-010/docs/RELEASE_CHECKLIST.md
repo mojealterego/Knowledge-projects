@@ -4,10 +4,10 @@
 
 | Warunek | Stan |
 |---|---|
-| Kod Rust, samodzielny folder i testy | IMPLEMENTED / CI REQUIRED |
-| Rejestr nazwy, serialu, katalog i manifest | REGISTERED / CI REQUIRED |
+| Kod Rust, samodzielny folder i testy | TESTED LOCAL — run 39422580144 |
+| Rejestr nazwy, serialu, katalog i manifest | REGISTERED, REGISTRY TESTED |
 | Specyfikacja, dokumentacja serwisowa, instrukcja, migracja | DRAFT COMPLETE |
-| Źródłowe Python unittest i porównanie | CI REQUIRED |
+| Źródłowe Python unittest i porównanie | CI PASS run 39422580144 |
 | Real signed OMAs RPC z tożsamością | NOT IMPLEMENTED |
 | Real OMAt server i capabilities | NOT IMPLEMENTED |
 | Zenoh z TLS/mTLS i multi-host | NOT IMPLEMENTED |
