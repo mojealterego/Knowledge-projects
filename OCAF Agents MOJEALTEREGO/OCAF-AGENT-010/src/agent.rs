@@ -96,10 +96,11 @@ pub fn audit_bytes(input: &[u8], include_names: bool) -> Result<AuditReport, Aud
         let mut member = archive
             .by_index(idx)
             .map_err(|_| AuditError::EncryptedOrUnsupportedMember)?;
-        let path = normalize_path(member.name())?;
+        // Match the Python reference: directory records are not inventoried.
         if member.is_dir() {
             continue;
         }
+        let path = normalize_path(member.name())?;
         count += 1;
         if count > MAX_MEMBERS {
             return Err(AuditError::TooManyMembers);
