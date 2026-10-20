@@ -91,8 +91,12 @@ fn directory_records_are_skipped_but_regular_entries_are_inventoried() {
     let mut out = Cursor::new(Vec::new());
     {
         let mut writer = ZipWriter::new(&mut out);
-        writer.add_directory("data/", FileOptions::default()).unwrap();
-        writer.start_file("data/a.txt", FileOptions::default()).unwrap();
+        writer
+            .add_directory("data/", FileOptions::default())
+            .unwrap();
+        writer
+            .start_file("data/a.txt", FileOptions::default())
+            .unwrap();
         writer.write_all(b"ok").unwrap();
         writer.finish().unwrap();
     }
