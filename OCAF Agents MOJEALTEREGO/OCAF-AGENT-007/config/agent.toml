@@ -1,0 +1,21 @@
+# Disabled transport and encrypted source access until independent review.
+[identity]
+registry_number = "007"
+agent_id = "AM-OCAF-AI-0007"
+unique_name = "VIGIA LOOP"
+serial_number = "AM-ENG-AXF-2026-000007"
+catalog_number = "AM-OCAF-ENG-007"
+
+[servers]
+agent_server = "OMAs"
+tool_server = "OMAt"
+
+[communication]
+transport = "Zenoh"
+network_enabled = false
+authenticated_tls_required = true
+
+[source_access]
+enabled = false
+encryption = "OSTc"
+specification_status = "PENDING"
