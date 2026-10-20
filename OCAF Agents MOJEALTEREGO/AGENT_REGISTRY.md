@@ -70,3 +70,12 @@ Oryginalne P115/P119 są większymi systemami/projektami; nowe niezależne agent
 | **009** | [**CLOUD FISCALIS**](OCAF-AGENT-009/docs/README.md) | `AM-OCAF-AI-0009` | `AM-CLD-FIS-2026-000009` | `AM-OCAF-CLD-009` | [Cloud budget gate Python](../tools/cloud_operation_budget_gate.py) | INCOMPLETE_DEVELOPMENT; `CERT-AM-2026-0009` NIEWYDANY |
 
 To porty rzeczywistych źródeł Python z niezmienionymi oryginałami i testami. Testy nie stanowią podpisu poświadczenia. **Żaden z agentów 001–009 nie ma wydanego certyfikatu ani produkcyjnej akceptacji**. Kanoniczne numery w `AGENT_IDENTITY_REGISTRY.json`.
+
+## Nowe porty źródłowe — ewidencja 010–011 (20.10.2026)
+
+| Numer | Unikatowa nazwa | Agent ID | Numer seryjny | Katalog | Źródło | Certyfikat |
+|---|---|---|---|---|---|---|
+| **010** | [VERITAS TRACE](OCAF-AGENT-010/docs/README.md) | `AM-OCAF-AI-0010` | `AM-OSN-VRT-2026-000010` | `AM-OCAF-OSN-010` | [OSINT provenance Python](../tools/osint_provenance_gate.py) | `CERT-AM-2026-0010` — NIEWYDANY |
+| **011** | [LIMES GIT](OCAF-AGENT-011/docs/README.md) | `AM-OCAF-AI-0011` | `AM-GIT-LIM-2026-000011` | `AM-OCAF-GIT-011` | [Repo scope Python](../tools/single_repository_scope_gate.py) | `CERT-AM-2026-0011` — NIEWYDANY |
+
+Dwa nowe pakiety Rust realizują tylko lokalną walidację metryk pochodzenia i zakresu operacji. **Nie** pobierają danych OSINT ani nie wykonują żadnych zmian GitHub. Numer seryjny to ewidencja administracyjna, nie podpis kryptograficzny; `production_approved=false`. Dotychczasowa ewidencja obejmuje 001–011.

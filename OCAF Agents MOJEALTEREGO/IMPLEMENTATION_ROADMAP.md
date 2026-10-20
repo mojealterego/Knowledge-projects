@@ -122,3 +122,17 @@ Nowe agenty 008–009 są wąskimi modułami offline, nie autonomicznymi adminis
 ### Rzeczywiste dowody testów KA-041–047
 
 GitHub [run 39419346496](https://github.com/mojealterego/Knowledge-projects/actions/runs/39419346496), source SHA `e6c7c1257da64bf12aebfaa094e2b9512f611815`: 008 — **16 Rust + 13 Python PASS**; 009 — **16 Rust + 19 Python PASS**, fmt, Clippy i CLI PASS. Łącznie **64 wykonane testy (32 Rust, 32 Python)**. Regresje pozostałych agentów 002–007 również SUCCESS na tym SHA. Nie dowodzi to funkcji produkcyjnej ani niezależnej autentykacji w OMAs/OMAt/OSTc. Ostatnią rewizję dokumentacji trzeba osobno zweryfikować na `main` po scaleniu.
+
+## KA-049–KA-055 — ewidencja pracy nad 010–011 (20.10.2026)
+
+| ID | Zakres | Status |
+|---|---|---|
+| KA-049 | Analiza prawdziwego źródła `tools/osint_provenance_gate.py` i jego unittest | SOURCE REVIEWED |
+| KA-050 | Rust 010 VERITAS TRACE: simulated/observed/verified, metadane, hash i brak samoweryfikacji | IMPLEMENTED LOCAL / CI PENDING |
+| KA-051 | Analiza prawdziwego źródła `tools/single_repository_scope_gate.py` i unittest | SOURCE REVIEWED |
+| KA-052 | Rust 011 LIMES GIT: operacje read vs write, tylko docelowe repo, PR base main, brak direct main writes | IMPLEMENTED LOCAL / CI PENDING |
+| KA-053 | Unikatowa ewidencja i seriale 010–011, pełne dossier i rejestry certyfikacyjne | DOCUMENTED DEV |
+| KA-054 | Rust fmt, all-features, clippy, source Python regressions, prawdziwe SHA i job logs | CI PENDING / PR #33 |
+| KA-055 | Przegląd bezpieczeństwa, real OMAs/OMAt, podpisy Zenoh, OSTc i multi-host acceptance | NOT IMPLEMENTED / OSTc BLOCKED |
+
+Nie oznaczać portów 010–011 jako pełnych, produkcyjnych agentów OSINT ani rzeczywistego enforcement GitHub. Ocena polityki ma charakter lokalny i nie zastępuje host-owned authorization.

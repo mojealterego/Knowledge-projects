@@ -48,3 +48,12 @@ Zgłoszone źródło obejmowało co najmniej 333 numerowane pozycje innej rozmow
 | [Cloud operation budget gate](../tools/cloud_operation_budget_gate.py) | [009 CLOUD FISCALIS](OCAF-AGENT-009/docs/README.md) `cloud.review_budget` | ocena zadeklarowanego kosztu i host-owned CloudApproval | Google Cloud API, płatności, create/delete resources |
 
 To nie jest produkcyjne wdrożenie sieciowe OMAt. Tokeny i zgody są w testach dostarczane przez host; model nie może wystawić sobie certyfikatu ani operacyjnego pozwolenia. `execution_authorized=false`.
+
+## Dwa kolejne narzędzia lokalne OCAF — 010, 011
+
+| Źródło | Agent i narzędzie | Funkcja lokalna | Czego nie robi |
+|---|---|---|---|
+| [OSINT provenance gate](../tools/osint_provenance_gate.py) | [010 VERITAS TRACE](OCAF-AGENT-010/docs/README.md), `osint.provenance_record` | rozdziela metrykę symulacji, obserwacji i dokumentacji weryfikacji | nie prowadzi OSINT, nie potwierdza źródeł, nie profiluje osób |
+| [Single repository scope gate](../tools/single_repository_scope_gate.py) | [011 LIMES GIT](OCAF-AGENT-011/docs/README.md), `github.scope_review` | kontroluje operację i zakres branch/repo przed zamiarem działania | nie wykonuje git push, PR, merge, API calls, nie przejmuje tokenów |
+
+**Uwaga:** `OMAt` jako serwer narzędzi i `OMAs` jako serwer agentów pozostają tylko rolami docelowymi, nie wdrożonymi usługami. Wartości logicznych bramek nie są niezależnym zatwierdzeniem operatora.
