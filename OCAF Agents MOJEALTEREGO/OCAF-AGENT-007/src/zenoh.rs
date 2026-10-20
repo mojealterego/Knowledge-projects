@@ -34,12 +34,17 @@ mod ocaf {
     }
     impl AgentTool {
         pub fn new(limits: Limits) -> Result<Self, GuardError> {
-            Ok(Self { guard: Mutex::new(Guard::new(limits)?) })
+            Ok(Self {
+                guard: Mutex::new(Guard::new(limits)?),
+            })
         }
 
         /// Only call after an independent, trusted executor postcondition readback.
         pub fn advance_verified_progress(&self, version: u64) -> Result<(), GuardError> {
-            let mut state = self.guard.lock().map_err(|_| GuardError::InvalidProgressVersion)?;
+            let mut state = self
+                .guard
+                .lock()
+                .map_err(|_| GuardError::InvalidProgressVersion)?;
             state.advance_verified_progress(version)
         }
     }
@@ -86,7 +91,9 @@ mod ocaf {
             }
             let request: Observation = serde_json::from_value(args)
                 .map_err(|_| ToolError::Validation("invalid loop observation".into()))?;
-            let mut guard = self.guard.lock()
+            let mut guard = self
+                .guard
+                .lock()
                 .map_err(|_| ToolError::Validation("guard lock is poisoned".into()))?;
             serde_json::to_value(guard.observe(request))
                 .map_err(|_| ToolError::Validation("encoding failed".into()))

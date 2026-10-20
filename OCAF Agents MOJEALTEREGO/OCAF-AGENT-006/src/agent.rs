@@ -99,7 +99,11 @@ pub fn admit(
     AdmissionDecision {
         agent_id: AGENT_ID,
         accepted: reasons.is_empty(),
-        status: if reasons.is_empty() { "admissible" } else { "rejected" },
+        status: if reasons.is_empty() {
+            "admissible"
+        } else {
+            "rejected"
+        },
         reasons,
         artifact_sha256: digest,
         execution_authorized: false,
@@ -123,10 +127,7 @@ mod tests {
             expires_at: "2026-10-22T00:00:00Z".into(),
             external_side_effects: false,
         };
-        let approvals = BTreeMap::from([(
-            digest,
-            BTreeSet::from(["parse_document".to_owned()]),
-        )]);
+        let approvals = BTreeMap::from([(digest, BTreeSet::from(["parse_document".to_owned()]))]);
         (m, bytes, approvals)
     }
 
@@ -134,7 +135,10 @@ mod tests {
     fn parity_approved_but_never_executable() {
         let (m, bytes, approvals) = manifest_and_approvals();
         let result = admit(
-            &m, &bytes, &approvals, Utc.with_ymd_and_hms(2026,10,20,12,0,0).unwrap(),
+            &m,
+            &bytes,
+            &approvals,
+            Utc.with_ymd_and_hms(2026, 10, 20, 12, 0, 0).unwrap(),
         );
         assert!(result.accepted);
         assert!(!result.execution_authorized);
@@ -143,10 +147,14 @@ mod tests {
     #[test]
     fn no_scope_or_expired_is_denied() {
         let (mut m, bytes, approvals) = manifest_and_approvals();
-        let now = Utc.with_ymd_and_hms(2026,10,20,12,0,0).unwrap();
-        assert!(admit(&m, &bytes, &BTreeMap::new(), now).reasons.contains(&"no_independent_approval".into()));
+        let now = Utc.with_ymd_and_hms(2026, 10, 20, 12, 0, 0).unwrap();
+        assert!(admit(&m, &bytes, &BTreeMap::new(), now)
+            .reasons
+            .contains(&"no_independent_approval".into()));
         m.expires_at = "2026-10-01T00:00:00Z".into();
-        assert!(admit(&m, &bytes, &approvals, now).reasons.contains(&"approval_expired".into()));
+        assert!(admit(&m, &bytes, &approvals, now)
+            .reasons
+            .contains(&"approval_expired".into()));
     }
 
     #[test]
@@ -154,7 +162,7 @@ mod tests {
         let (mut m, bytes, approvals) = manifest_and_approvals();
         m.capabilities.push("parse_document".into());
         m.external_side_effects = true;
-        let now = Utc.with_ymd_and_hms(2026,10,20,12,0,0).unwrap();
+        let now = Utc.with_ymd_and_hms(2026, 10, 20, 12, 0, 0).unwrap();
         let d = admit(&m, &bytes, &approvals, now);
         assert!(d.reasons.contains(&"duplicate_capability".into()));
         assert!(d.reasons.contains(&"side_effects_not_disabled".into()));

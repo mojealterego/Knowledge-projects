@@ -49,14 +49,19 @@ mod ocaf {
             trusted_approvals: BTreeMap<String, BTreeSet<String>>,
             now: DateTime<Utc>,
         ) -> Self {
-            Self { approvals: trusted_approvals, now }
+            Self {
+                approvals: trusted_approvals,
+                now,
+            }
         }
     }
 
     pub fn manifest() -> OcafToolManifest {
         OcafToolManifest {
             name: "tool.admit".into(),
-            description: "Non-executing gate; approvals must originate from an independent trusted host".into(),
+            description:
+                "Non-executing gate; approvals must originate from an independent trusted host"
+                    .into(),
             input_schema: json!({
                 "type":"object",
                 "additionalProperties": false,
@@ -104,8 +109,9 @@ mod ocaf {
             if !serde_json::to_vec(&args).is_ok_and(|bytes| bytes.len() <= 2_100_000) {
                 return Err(ToolError::Validation("too much input data".into()));
             }
-            let input: Input = serde_json::from_value(args)
-                .map_err(|_| ToolError::Validation("invalid manifest or untrusted fields".into()))?;
+            let input: Input = serde_json::from_value(args).map_err(|_| {
+                ToolError::Validation("invalid manifest or untrusted fields".into())
+            })?;
             let bytes = hex::decode(&input.artifact_hex)
                 .map_err(|_| ToolError::Validation("artifact_hex is not valid hex".into()))?;
             let result = admit(&input.manifest, &bytes, &self.approvals, self.now);

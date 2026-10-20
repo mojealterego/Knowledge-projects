@@ -53,15 +53,18 @@ pub struct Guard {
 
 impl Guard {
     pub fn new(limits: Limits) -> Result<Self, GuardError> {
-        if limits.max_calls == 0
-            || limits.max_tokens == 0
-            || limits.max_identical_no_progress == 0
+        if limits.max_calls == 0 || limits.max_tokens == 0 || limits.max_identical_no_progress == 0
         {
             return Err(GuardError::InvalidLimits);
         }
         Ok(Self {
-            limits, calls: 0, tokens: 0, repeat: 0,
-            last_call: None, observed_version: 0, trusted_progress_version: 0,
+            limits,
+            calls: 0,
+            tokens: 0,
+            repeat: 0,
+            last_call: None,
+            observed_version: 0,
+            trusted_progress_version: 0,
             halted: false,
         })
     }
@@ -78,9 +81,13 @@ impl Guard {
 
     fn outcome(&self, allowed: bool, reason: &'static str) -> LoopDecision {
         LoopDecision {
-            agent_id: AGENT_ID, allowed, reason,
-            total_calls: self.calls, total_tokens: self.tokens,
-            identical_no_progress: self.repeat, execution_authorized: false,
+            agent_id: AGENT_ID,
+            allowed,
+            reason,
+            total_calls: self.calls,
+            total_tokens: self.tokens,
+            identical_no_progress: self.repeat,
+            execution_authorized: false,
         }
     }
 
@@ -100,7 +107,10 @@ impl Guard {
             return self.halt("invalid_tool");
         }
         if observation.args_sha256.len() != 64
-            || !observation.args_sha256.bytes().all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
+            || !observation
+                .args_sha256
+                .bytes()
+                .all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
         {
             return self.halt("invalid_argument_digest");
         }
@@ -150,7 +160,12 @@ mod tests {
 
     #[test]
     fn hard_call_limit_and_halt_are_sticky() {
-        let mut g = Guard::new(Limits{max_calls:1,max_tokens:10,max_identical_no_progress:5}).unwrap();
+        let mut g = Guard::new(Limits {
+            max_calls: 1,
+            max_tokens: 10,
+            max_identical_no_progress: 5,
+        })
+        .unwrap();
         assert!(g.observe(good()).allowed);
         assert_eq!(g.observe(good()).reason, "call_budget_exhausted");
         assert_eq!(g.observe(good()).reason, "previously_halted");
@@ -158,7 +173,12 @@ mod tests {
 
     #[test]
     fn invalid_digest_halts() {
-        let mut g = Guard::new(Limits{max_calls:10,max_tokens:10,max_identical_no_progress:3}).unwrap();
+        let mut g = Guard::new(Limits {
+            max_calls: 10,
+            max_tokens: 10,
+            max_identical_no_progress: 3,
+        })
+        .unwrap();
         let mut item = good();
         item.args_sha256 = "../path".into();
         assert_eq!(g.observe(item).reason, "invalid_argument_digest");
@@ -166,8 +186,16 @@ mod tests {
 
     #[test]
     fn reported_progress_cannot_be_reverted() {
-        let mut g = Guard::new(Limits{max_calls:10,max_tokens:10,max_identical_no_progress:3}).unwrap();
+        let mut g = Guard::new(Limits {
+            max_calls: 10,
+            max_tokens: 10,
+            max_identical_no_progress: 3,
+        })
+        .unwrap();
         g.advance_verified_progress(5).unwrap();
-        assert_eq!(g.advance_verified_progress(4), Err(GuardError::InvalidProgressVersion));
+        assert_eq!(
+            g.advance_verified_progress(4),
+            Err(GuardError::InvalidProgressVersion)
+        );
     }
 }
