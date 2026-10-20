@@ -9,7 +9,7 @@ pub const SERIAL_NUMBER: &str = "AM-PRV-EVD-2026-000011";
 pub const CATALOG_NUMBER: &str = "AM-OCAF-PRV-011";
 
 #[derive(Debug, Copy, Clone, Serialize, Deserialize, PartialEq, Eq)]
-#[serde(rename_all="lowercase")]
+#[serde(rename_all = "lowercase")]
 pub enum Origin {
     Simulated,
     Observed,
@@ -50,11 +50,12 @@ pub enum EvidenceError {
     InvalidHttpStatus,
 }
 fn nonblank(x: Option<&String>) -> bool {
-    x.is_some_and(|v| !v.trim().is_empty() && v.len() <= 256
-        && !v.chars().any(char::is_control))
+    x.is_some_and(|v| !v.trim().is_empty() && v.len() <= 256 && !v.chars().any(char::is_control))
 }
 fn valid_digest(v: &str) -> bool {
-    v.len() == 64 && v.bytes().all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
+    v.len() == 64
+        && v.bytes()
+            .all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
 }
 pub fn make_record(
     input: &EvidenceInput,
@@ -63,12 +64,18 @@ pub fn make_record(
     if input.claim.trim().is_empty() || input.claim.len() > 4096 {
         return Err(EvidenceError::EmptyClaim);
     }
-    if input.source_sha256.as_ref().is_some_and(|v| !valid_digest(v)) {
+    if input
+        .source_sha256
+        .as_ref()
+        .is_some_and(|v| !valid_digest(v))
+    {
         return Err(EvidenceError::InvalidDigest);
     }
     if input.origin != Origin::Simulated
-        && !(nonblank(input.scope_id.as_ref()) && nonblank(input.source_ref.as_ref())
-            && nonblank(input.observed_at.as_ref()) && input.source_sha256.is_some())
+        && !(nonblank(input.scope_id.as_ref())
+            && nonblank(input.source_ref.as_ref())
+            && nonblank(input.observed_at.as_ref())
+            && input.source_sha256.is_some())
     {
         return Err(EvidenceError::MissingProvenance);
     }
@@ -76,7 +83,11 @@ pub fn make_record(
         if !nonblank(input.verifier_ref.as_ref()) {
             return Err(EvidenceError::MissingVerifier);
         }
-        if !input.verifier_ref.as_ref().is_some_and(|r| trusted_verifier_refs.contains(r)) {
+        if !input
+            .verifier_ref
+            .as_ref()
+            .is_some_and(|r| trusted_verifier_refs.contains(r))
+        {
             return Err(EvidenceError::UntrustedVerifier);
         }
     }
@@ -111,11 +122,15 @@ mod tests {
     #[test]
     fn simulated_cannot_upgrade_to_verified_without_host() {
         let p = EvidenceInput {
-            claim: "synthetic graph".into(), origin: Origin::Verified, scope_id:None,
-            source_ref:None, observed_at:None, verifier_ref:Some("fake".into()),
-            source_sha256:None,
+            claim: "synthetic graph".into(),
+            origin: Origin::Verified,
+            scope_id: None,
+            source_ref: None,
+            observed_at: None,
+            verifier_ref: Some("fake".into()),
+            source_sha256: None,
         };
-        assert!(make_record(&p,&BTreeSet::new()).is_err());
+        assert!(make_record(&p, &BTreeSet::new()).is_err());
     }
     #[test]
     fn invalid_hash_not_evidence() {

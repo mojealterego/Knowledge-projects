@@ -40,7 +40,7 @@ pub struct FileRow {
     pub size_bytes: u64,
     pub extension: String,
     pub path_fingerprint: String,
-    #[serde(skip_serializing_if="Option::is_none")]
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub path: Option<String>,
 }
 
@@ -63,7 +63,11 @@ fn normalize_path(name: &str) -> Result<String, AuditError> {
         return Err(AuditError::EmptyOrNulPath);
     }
     let normalized = name.replace('\\', "/");
-    if normalized.starts_with('/') || normalized.split('/').any(|part| part == ".." || part.is_empty()) {
+    if normalized.starts_with('/')
+        || normalized
+            .split('/')
+            .any(|part| part == ".." || part.is_empty())
+    {
         return Err(AuditError::ArchivePathTraversal);
     }
     let first = normalized.split('/').next().unwrap_or("");
@@ -89,7 +93,9 @@ pub fn audit_bytes(input: &[u8], include_names: bool) -> Result<AuditReport, Aud
     let mut files = Vec::new();
     let mut content_counts = BTreeMap::<String, u64>::new();
     for idx in 0..archive.len() {
-        let mut member = archive.by_index(idx).map_err(|_| AuditError::EncryptedOrUnsupportedMember)?;
+        let mut member = archive
+            .by_index(idx)
+            .map_err(|_| AuditError::EncryptedOrUnsupportedMember)?;
         let path = normalize_path(member.name())?;
         if member.is_dir() {
             continue;
@@ -106,7 +112,10 @@ pub fn audit_bytes(input: &[u8], include_names: bool) -> Result<AuditReport, Aud
         if !seen.insert(path.to_ascii_lowercase()) {
             return Err(AuditError::DuplicatePathCaseInsensitive);
         }
-        if member.unix_mode().is_some_and(|mode| mode & 0o170000 == 0o120000) {
+        if member
+            .unix_mode()
+            .is_some_and(|mode| mode & 0o170000 == 0o120000)
+        {
             return Err(AuditError::SymlinkMemberForbidden);
         }
         let size = member.size();
@@ -121,7 +130,9 @@ pub fn audit_bytes(input: &[u8], include_names: bool) -> Result<AuditReport, Aud
         let mut received = 0u64;
         let mut chunk = [0u8; 8192];
         loop {
-            let n = member.read(&mut chunk).map_err(|_| AuditError::CorruptZip)?;
+            let n = member
+                .read(&mut chunk)
+                .map_err(|_| AuditError::CorruptZip)?;
             if n == 0 {
                 break;
             }
@@ -137,9 +148,15 @@ pub fn audit_bytes(input: &[u8], include_names: bool) -> Result<AuditReport, Aud
         total += received;
         let member_hash = format!("{:x}", hasher.finalize());
         *content_counts.entry(member_hash.clone()).or_default() += 1;
-        let extension = path.rsplit('/').next().and_then(|file| {
-            file.rfind('.').filter(|pos| *pos > 0).map(|at| file[at..].to_ascii_lowercase())
-        }).unwrap_or_default();
+        let extension = path
+            .rsplit('/')
+            .next()
+            .and_then(|file| {
+                file.rfind('.')
+                    .filter(|pos| *pos > 0)
+                    .map(|at| file[at..].to_ascii_lowercase())
+            })
+            .unwrap_or_default();
         let fingerprint = digest(path.as_bytes());
         files.push(FileRow {
             sha256: member_hash,
@@ -169,12 +186,21 @@ mod tests {
     use super::*;
     #[test]
     fn path_traversal_windows_drive_and_absolute_rejected() {
-        for bad in ["../../secret", "C:\\Windows\\file", "/etc/passwd", "x//y", ""] {
+        for bad in [
+            "../../secret",
+            "C:\\Windows\\file",
+            "/etc/passwd",
+            "x//y",
+            "",
+        ] {
             assert!(normalize_path(bad).is_err());
         }
     }
     #[test]
     fn no_network_no_execution_ever() {
-        assert_eq!(audit_bytes(b"not zip", false).err(), Some(AuditError::CorruptZip));
+        assert_eq!(
+            audit_bytes(b"not zip", false).err(),
+            Some(AuditError::CorruptZip)
+        );
     }
 }

@@ -34,7 +34,12 @@ fn malicious_tenant_key_is_rejected_and_services_are_separate() {
     assert!(route(ServerRole::OmasAgents, "tenant/../other", "agent_011").is_err());
     assert!(route(ServerRole::OmatTools, "tenant", "x..y").is_err());
     let agents = route(ServerRole::OmasAgents, "tenant", "agent_011").unwrap();
-    let tools = route(ServerRole::OmatTools, "tenant", "evidence.review_provenance").unwrap();
+    let tools = route(
+        ServerRole::OmatTools,
+        "tenant",
+        "evidence.review_provenance",
+    )
+    .unwrap();
     assert!(agents.starts_with("omas/"));
     assert!(tools.starts_with("omat/"));
 }

@@ -11,7 +11,12 @@ fn main() {
         z.write_all(b"offline fixture").unwrap();
         z.finish().unwrap();
     }
-    let r=audit_bytes(&out.into_inner(), false).unwrap();
-    println!("{} | {} | members={} | semantic_review={}",
-        c.identity.unique_name, c.identity.serial_number, r.member_count, r.semantic_review_performed);
+    let r = audit_bytes(&out.into_inner(), false).unwrap();
+    println!(
+        "{} | {} | members={} | semantic_review={}",
+        c.identity.unique_name,
+        c.identity.serial_number,
+        r.member_count,
+        r.semantic_review_performed
+    );
 }
