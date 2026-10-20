@@ -102,3 +102,18 @@ Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/ac
 ### Weryfikacja wykonania KA-034–040
 
 [GitHub Actions 39370400084](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400084) na SHA `942f518a4f59ab70bedeabf2c9e4990067582e4a`: **SUCCESS** w obu jobach; 006 (16 Rust + 14 Python PASS), 007 (16 Rust + 12 Python PASS), fmt, strict Clippy i CLI PASS. Równoległe regresje 002–003 [39370400019](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400019) i 004–005 [39370400026](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400026) — SUCCESS. **KA-035/036/038 TESTED LOCAL**; KA-039 BLOCKED, KA-040 nadal nieukończone. CI to nie test produkcyjnej infrastruktury OMAs/OMAt/OSTc.
+
+## Etap KA-041–KA-048 — kolejna para rzeczywistych portów Rust (20.10.2026)
+
+| ID | Zadanie | Status |
+|---|---|---|
+| KA-041 | Audyt i port rzeczywistego `tools/dgm_cycle_gate.py`, test źródłowy 4 faz DGM i warunków promocji | IMPLEMENTED 008 / CI VERIFICATION |
+| KA-042 | Agent 008 z niezależnymi, host-only zatwierdzeniami CI, faz, source provenance i rollback; izolowana gałąź i expiry UTC | IMPLEMENTED LOCAL / CI VERIFICATION |
+| KA-043 | Audyt i port rzeczywistego `tools/cloud_operation_budget_gate.py`, test kosztu decimal string i IAM/project scope | IMPLEMENTED 009 / CI VERIFICATION |
+| KA-044 | Agent 009 host-owned CloudApproval, zakres produktu/akcji i budżetu, brak wykonywania kosztownych side effects | IMPLEMENTED LOCAL / CI VERIFICATION |
+| KA-045 | Unikatowe nazwy/seriale 008–009, oddzielne numery agent ID, katalog i certyfikat, bez kolizji w globalnym rejestrze | REGISTRY ENTERED / TESTING |
+| KA-046 | Pełne dossier techniczne, instrukcja, bezpieczeństwo, migracja Python, cert record i 3 odrębne projekty umów | DOCUMENTED DEVELOPMENT SCOPE |
+| KA-047 | Testy Rust + original Python, CI run IDs, fmt/clippy i regresje wcześniejszych agentów | IN PROGRESS / PR #32 |
+| KA-048 | Kompletne integracje serwerów OMAs/OMAt, TLS Zenoh, OSTc, multi-host i formalny odbiór | NOT IMPLEMENTED / OSTc BLOCKED |
+
+Nowe agenty 008–009 są wąskimi modułami offline, nie autonomicznymi administratorami chmury ani wykonawcami DGM. Dopisanie wpisów do ewidencji nie zamyka audytu wszystkich projektów, wszystkich narzędzi ani prac nad produkcyjnymi agentami.

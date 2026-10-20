@@ -59,3 +59,10 @@ Dokumentacja, testy, rejestr certyfikacyjny i 3 odrębne projekty umów znajduj�
 - [**VIGIA LOOP — OCAF-AGENT-007**](OCAF-AGENT-007/docs/README.md): port `tools/agent_tool_loop_guard.py` z trwałą w obrębie procesu blokadą zapętleń i niezależnie dostarczanym postępem; serial `AM-OPS-VIG-2026-000007`.
 
 **Status:** oba pakiety lokalne Rust; pełne specyfikacje, instrukcje, testy, rejestry certyfikatów i projekty umów znajdują się w folderach. Wpis serialu nie jest podpisem; certyfikacja i produkcyjna integracja OMAs/OMAt/Zenoh/OSTc pozostają niewykonane.
+
+## Porty źródeł Python — agenci 008 i 009
+
+- [**OCAF-AGENT-008 — DGM SENTINEL**](OCAF-AGENT-008/docs/README.md) — czterofazowa kontrola propozycji promocji z niezależną zgodą, CI, rollback i provenance; źródło `tools/dgm_cycle_gate.py`. Numer seryjny `AM-DGM-SNT-2026-000008`.
+- [**OCAF-AGENT-009 — CLOUD FISCALIS**](OCAF-AGENT-009/docs/README.md) — walidacja planów kosztów i uprawnień Google Cloud bez połączeń do chmury; źródło `tools/cloud_operation_budget_gate.py`. Numer seryjny `AM-CLD-FIS-2026-000009`.
+
+Obydwa agenty działają jako **lokalne bramki decyzji**: wynik `admitted` lub `allowed` nie oznacza pozwolenia na git merge, uruchomienie instancji, odpłatne API czy wykonanie modelu. Wykonawca, OMAs/OMAt, Zenoh sieciowy i OSTc pozostają poza tym zakresem. Każdy folder zawiera dokumentację, testy i certyfikat oznaczony jako NIEWYDANY.
