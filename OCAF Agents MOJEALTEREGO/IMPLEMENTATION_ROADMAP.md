@@ -89,11 +89,16 @@ Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/ac
 | ID | Zadanie | Stan |
 |---|---|---|
 | KA-034 | Zaewidencjonować pierwowzory `tools/agent_tool_admission_gate.py` i `tools/agent_tool_loop_guard.py` wraz z ich testami i kontraktami | SOURCE READ / REVIEWED |
-| KA-035 | Agent 006 CUSTOS ADMISSION: SHA-256, niezależna zgoda spoza modelu, allowlista, expiry, brak side effects | IMPLEMENTED LOCAL / CI TO VERIFY |
-| KA-036 | Agent 007 VIGIA LOOP: limity budżetu, repeated calls bez postępu, trwały halt, host-owned progress | IMPLEMENTED LOCAL / CI TO VERIFY |
+| KA-035 | Agent 006 CUSTOS ADMISSION: SHA-256, niezależna zgoda spoza modelu, allowlista, expiry, brak side effects | IMPLEMENTED LOCAL / CI VERIFIED 39370400084 |
+| KA-036 | Agent 007 VIGIA LOOP: limity budżetu, repeated calls bez postępu, trwały halt, host-owned progress | IMPLEMENTED LOCAL / CI VERIFIED 39370400084 |
 | KA-037 | Dwa odrębne foldery Rust, nazwy, seriale, ID, cert records, 3 umowy każdy | DOCUMENTED DEVELOPMENT SCOPE |
-| KA-038 | Przetestować Rust 006/007 i pierwotne Python unittest, wersja + SHA + CI | CI IN PROGRESS |
+| KA-038 | Przetestować Rust 006/007 i pierwotne Python unittest, wersja + SHA + CI | RUST 32/32 PASS + PYTHON 26/26 PASS (run 39370400084) |
 | KA-039 | Rzeczywiste serwery OMAs agentowy i OMAt narzędziowy, Zenoh PKI + OSTc, independent audit i operator acceptance | NOT IMPLEMENTED / OSTc SPEC PENDING |
 | KA-040 | Kontynuacja audytu pozostałych skryptów tools/, port kolejnych użytecznych polityk do Rust | IN PROGRESS |
 
 **Istotna korekta klasyfikacji:** ani `accepted=true` agenta 006, ani `allowed=true` agenta 007 nie stanowi niezależnej autoryzacji wykonania narzędzia. Wymagają właściwych grantów hosta/OMAt oraz prawdziwego sprawdzania postcondition. Nie przerabiać demonstracji na działający system przez zmianę flagi.
+
+
+### Weryfikacja wykonania KA-034–040
+
+[GitHub Actions 39370400084](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400084) na SHA `942f518a4f59ab70bedeabf2c9e4990067582e4a`: **SUCCESS** w obu jobach; 006 (16 Rust + 14 Python PASS), 007 (16 Rust + 12 Python PASS), fmt, strict Clippy i CLI PASS. Równoległe regresje 002–003 [39370400019](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400019) i 004–005 [39370400026](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400026) — SUCCESS. **KA-035/036/038 TESTED LOCAL**; KA-039 BLOCKED, KA-040 nadal nieukończone. CI to nie test produkcyjnej infrastruktury OMAs/OMAt/OSTc.

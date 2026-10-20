@@ -19,3 +19,12 @@
 | T13–T15 | obserwowalność, revocation, operator acceptance | NOT RUN |
 
 **Potwierdzenie końcowe**: zapisać rzeczywisty run ID i job z SUCCESS, commit, łączną liczbę testów, nie przypisywać starych dowodów do nowego SHA. `production_approved=false`.
+
+## Potwierdzony CI — 2026-10-20
+
+- [GitHub Actions run 39370400084 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400084), commit `942f518a4f59ab70bedeabf2c9e4990067582e4a`, job `118456738897`.
+- **Rust 16/16 PASS, 0 failed**; fmt PASS; `clippy -D warnings` PASS; CLI smoke PASS.
+- **Python source unittest 12/12 PASS** w oddzielnym kroku. Oryginalny Python nie został zmieniony i nie jest to formalny różnicowy test równoważności programu.
+- [Regresje OCAF Agents 002–003](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400019) i [004–005](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400026) na tym samym SHA także SUCCESS.
+- Spójność nazwy/serialu i globalna kontrola duplikatów są testowane lokalnie. OMAs/OMAt/Zenoh TLS, OSTc, real multi-host, independent signed approval **NOT IMPLEMENTED / NOT VERIFIED**.
+- Certyfikat `CERT-AM-2026-0007` **NIEWYDANY**, `production_approved=false`. Nie wolno promować `Active` na podstawie samego CI.

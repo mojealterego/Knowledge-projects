@@ -4,9 +4,9 @@
 
 | Warunek | Status |
 |---|---|
-| Unikatowa nazwa, serial, rejestr, Cargo/TOML/manifest | IMPLEMENTED DEV / CI |
+| Unikatowa nazwa, serial, rejestr, Cargo/TOML/manifest | IMPLEMENTED DEV / CI PASS 39370400084 |
 | Przeniesienie z realnego pliku Python | IMPLEMENTED BOUNDED RUST PORT |
-| Testy negatywne, fail-closed, local OCAF ToolExecutor | CI REQUIRED |
+| Testy negatywne, fail-closed, local OCAF ToolExecutor | RUST 16/16 PASS + PYTHON 14/14 PASS |
 | Dokumentacja techniczna, instrukcja, certyfikacja i 3 umowy | DOCUMENTED DEV |
 | Rzeczywiste OMAs RPC signed identity | NOT IMPLEMENTED |
 | Rzeczywiste OMAt scoped tool capabilities | NOT IMPLEMENTED |
