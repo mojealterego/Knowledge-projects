@@ -1,5 +1,5 @@
 #![cfg(feature = "ocaf-integration")]
-use cloud_fiscalis_agent::agent::{CloudApproval, CloudPlan};
+use cloud_fiscalis_agent::agent::CloudApproval;
 use cloud_fiscalis_agent::zenoh::{manifest, AgentTool};
 use ocaf_runtime::runtime::{OcafRuntime, RuntimeError, ToolCallRequest};
 use rust_decimal::Decimal;
