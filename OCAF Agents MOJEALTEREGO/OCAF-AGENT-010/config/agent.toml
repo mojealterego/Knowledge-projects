@@ -1,0 +1,21 @@
+# Disabled transport and encrypted source access until independent review.
+[identity]
+registry_number = "010"
+agent_id = "AM-OCAF-AI-0010"
+unique_name = "ZIP WARDEN"
+serial_number = "AM-ARC-ZWD-2026-000010"
+catalog_number = "AM-OCAF-ARC-010"
+
+[servers]
+agent_server = "OMAs"
+tool_server = "OMAt"
+
+[communication]
+transport = "Zenoh"
+network_enabled = false
+authenticated_tls_required = true
+
+[source_access]
+enabled = false
+encryption = "OSTc"
+specification_status = "PENDING"

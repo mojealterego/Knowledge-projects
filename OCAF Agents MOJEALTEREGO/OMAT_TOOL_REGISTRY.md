@@ -48,3 +48,12 @@ Zgłoszone źródło obejmowało co najmniej 333 numerowane pozycje innej rozmow
 | [Cloud operation budget gate](../tools/cloud_operation_budget_gate.py) | [009 CLOUD FISCALIS](OCAF-AGENT-009/docs/README.md) `cloud.review_budget` | ocena zadeklarowanego kosztu i host-owned CloudApproval | Google Cloud API, płatności, create/delete resources |
 
 To nie jest produkcyjne wdrożenie sieciowe OMAt. Tokeny i zgody są w testach dostarczane przez host; model nie może wystawić sobie certyfikatu ani operacyjnego pozwolenia. `execution_authorized=false`.
+
+## Dwa kolejne porty z rzeczywistych modułów Python
+
+| Narzędzie Python | Agent Rust | Lokalny zakres | Zastrzeżenie |
+|---|---|---|---|
+| [`source_bundle_audit.py`](../tools/source_bundle_audit.py) | [010 ZIP WARDEN](OCAF-AGENT-010/docs/README.md) `archive.audit_zip` | SHA-256 i inwentarz ZIP, kontrola ścieżek i rozmiaru | brak ekstrakcji, nazw, wnioskowania semantycznego i produkcyjnej sieci |
+| [`osint_provenance_gate.py`](../tools/osint_provenance_gate.py) | [011 PROVENANT EVIDENCE](OCAF-AGENT-011/docs/README.md) `evidence.review_provenance` | etykiety pochodzenia, trace i host-owned verifier refs | nie jest wyszukiwarką OSINT ani automatycznym potwierdzeniem prawdy |
+
+Lokalny OCAF ToolExecutor to nie osobny działający serwer OMAt; OMAs również pozostaje niewdrożony, Zenoh tylko logiczny, OSTc źródła DENY. 

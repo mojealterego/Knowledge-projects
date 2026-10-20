@@ -122,3 +122,19 @@ Nowe agenty 008–009 są wąskimi modułami offline, nie autonomicznymi adminis
 ### Rzeczywiste dowody testów KA-041–047
 
 GitHub [run 39419346496](https://github.com/mojealterego/Knowledge-projects/actions/runs/39419346496), source SHA `e6c7c1257da64bf12aebfaa094e2b9512f611815`: 008 — **16 Rust + 13 Python PASS**; 009 — **16 Rust + 19 Python PASS**, fmt, Clippy i CLI PASS. Łącznie **64 wykonane testy (32 Rust, 32 Python)**. Regresje pozostałych agentów 002–007 również SUCCESS na tym SHA. Nie dowodzi to funkcji produkcyjnej ani niezależnej autentykacji w OMAs/OMAt/OSTc. Ostatnią rewizję dokumentacji trzeba osobno zweryfikować na `main` po scaleniu.
+
+## KA-049–KA-057: prywatność archiwów i provenance dowodów (2026-10-20)
+
+| ID | Zadanie | Status |
+|---|---|---|
+| KA-049 | Zidentyfikować rzeczywiste implementacje Python `source_bundle_audit.py`, `osint_provenance_gate.py` i ich testy | SOURCE VERIFIED |
+| KA-050 | Implementacja agenta 010 ZIP WARDEN: ZIP streaming in memory, hash SHA-256, zip-slip, symlinki, ratio, duplikaty | IMPLEMENTED LOCAL / CI REQUIRED |
+| KA-051 | Prywatność: bez ekstrakcji, bez wyświetlania nazw w adapterze OMAt, jawnie niepełna analiza semantyczna | IMPLEMENTED LOCAL / CI REQUIRED |
+| KA-052 | Agent 011 PROVENANT EVIDENCE: rozróżnienie simulated/observed/verified i host-owned verifier registry | IMPLEMENTED LOCAL / CI REQUIRED |
+| KA-053 | Fail-closed statusy HTTP — nie są dowodami istnienia konta czy relacji z osobą | IMPLEMENTED LOCAL / CI REQUIRED |
+| KA-054 | Oddzielne pakiety Rust, unikatowe nazwy i numery seryjne, centralny rejestr bez kolizji | REGISTERED DEVELOPMENT / CI REQUIRED |
+| KA-055 | Pełne dossier techniczne, parytet z Python, serwis, cert record, 3 projekty umów na agenta | DOCUMENTED DEVELOPMENT SCOPE |
+| KA-056 | Zaliczyć jednostkowe/integracyjne Rust, oryginalne Python, fmt/Clippy, GitHub CI i regresję pozostałych agentów | IN PROGRESS / PR #34 |
+| KA-057 | Real signed OMAs, OMAt, Zenoh TLS/mTLS, OSTc, independent audit i operator acceptance | NOT IMPLEMENTED / BLOCKED BY OSTc SPEC |
+
+**Zasada:** ukończenie małego zabezpieczonego portu Rust nie jest ukończeniem całego projektu, ani certyfikacją. Brak autoryzacji do rzeczywistego OSINT, ekstrakcji wrażliwych danych lub uruchamiania niezweryfikowanego kodu. Pozostały inwentarz `tools/` jest nadal do audytu.

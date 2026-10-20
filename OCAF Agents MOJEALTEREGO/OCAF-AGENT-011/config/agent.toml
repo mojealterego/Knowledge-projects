@@ -1,0 +1,21 @@
+# Disabled transport and encrypted source access until independent review.
+[identity]
+registry_number = "011"
+agent_id = "AM-OCAF-AI-0011"
+unique_name = "PROVENANT EVIDENCE"
+serial_number = "AM-PRV-EVD-2026-000011"
+catalog_number = "AM-OCAF-PRV-011"
+
+[servers]
+agent_server = "OMAs"
+tool_server = "OMAt"
+
+[communication]
+transport = "Zenoh"
+network_enabled = false
+authenticated_tls_required = true
+
+[source_access]
+enabled = false
+encryption = "OSTc"
+specification_status = "PENDING"

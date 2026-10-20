@@ -165,6 +165,42 @@
       "serial_derivation": "Unique internal serial, not a cryptographic artifact attestation",
       "artifact_digest": null,
       "build_commit": null
+    },
+    {
+      "registry_number": "010",
+      "unique_name": "ZIP WARDEN",
+      "product_family": "Local privacy-preserving ZIP inventory and safety audit, no extraction",
+      "agent_id": "AM-OCAF-AI-0010",
+      "serial_number": "AM-ARC-ZWD-2026-000010",
+      "catalog_number": "AM-OCAF-ARC-010",
+      "certificate_number": "CERT-AM-2026-00010",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-010/",
+      "source_project": "tools/source_bundle_audit.py",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Unique internal administrative identifier; not cryptographic signature",
+      "artifact_digest": null,
+      "build_commit": null
+    },
+    {
+      "registry_number": "011",
+      "unique_name": "PROVENANT EVIDENCE",
+      "product_family": "Offline provenance labels with trusted-verifier boundary and no OSINT network search",
+      "agent_id": "AM-OCAF-AI-0011",
+      "serial_number": "AM-PRV-EVD-2026-000011",
+      "catalog_number": "AM-OCAF-PRV-011",
+      "certificate_number": "CERT-AM-2026-00011",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-011/",
+      "source_project": "tools/osint_provenance_gate.py",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Unique internal administrative identifier; not cryptographic signature",
+      "artifact_digest": null,
+      "build_commit": null
     }
   ]
 }
