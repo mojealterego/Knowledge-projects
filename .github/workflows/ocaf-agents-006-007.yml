@@ -1,0 +1,46 @@
+name: OCAF Agents 006-007 Rust validation
+on:
+  pull_request:
+    paths:
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-006/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-007/**"
+      - "OCAF Agents MOJEALTEREGO/AGENT_IDENTITY_REGISTRY.json"
+      - ".github/workflows/ocaf-agents-006-007.yml"
+  push:
+    branches: [main]
+    paths:
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-006/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-007/**"
+      - "OCAF Agents MOJEALTEREGO/AGENT_IDENTITY_REGISTRY.json"
+      - ".github/workflows/ocaf-agents-006-007.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rust-gates:
+    strategy:
+      fail-fast: false
+      matrix:
+        agent: ["006","007"]
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Format
+        run: cargo fmt --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- --check
+      - name: Tests
+        run: cargo test --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" --all-features
+      - name: Clippy
+        run: cargo clippy --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" --all-targets --all-features -- -D warnings
+      - name: Python source regression
+        run: |
+          if [[ "${{ matrix.agent }}" == "006" ]]; then
+            python3 -m unittest discover -s tools -p 'test_agent_tool_admission_gate.py' -v
+          else
+            python3 -m unittest discover -s tools -p 'test_agent_tool_loop_guard.py' -v
+          fi
+      - name: CLI
+        run: cargo run --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- demo

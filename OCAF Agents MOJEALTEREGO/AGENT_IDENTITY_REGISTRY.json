@@ -93,6 +93,42 @@
       "serial_derivation": "Unique internal administrative serial; not a cryptographic signature",
       "artifact_digest": null,
       "build_commit": null
+    },
+    {
+      "registry_number": "006",
+      "unique_name": "CUSTOS ADMISSION",
+      "product_family": "Independent Tool Admission Gate",
+      "agent_id": "AM-OCAF-AI-0006",
+      "serial_number": "AM-SEC-CUS-2026-000006",
+      "catalog_number": "AM-OCAF-SEC-006",
+      "certificate_number": "CERT-AM-2026-0006",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-006/",
+      "source_project": "tools/agent_tool_admission_gate.py",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Unique administrative number in project registry; no cryptographic authority",
+      "artifact_digest": null,
+      "build_commit": null
+    },
+    {
+      "registry_number": "007",
+      "unique_name": "VIGIA LOOP",
+      "product_family": "Agent Tool Loop Guard",
+      "agent_id": "AM-OCAF-AI-0007",
+      "serial_number": "AM-OPS-VIG-2026-000007",
+      "catalog_number": "AM-OCAF-OPS-007",
+      "certificate_number": "CERT-AM-2026-0007",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-007/",
+      "source_project": "tools/agent_tool_loop_guard.py",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Unique administrative number in project registry; no cryptographic authority",
+      "artifact_digest": null,
+      "build_commit": null
     }
   ]
 }

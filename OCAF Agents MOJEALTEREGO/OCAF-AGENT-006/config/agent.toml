@@ -1,0 +1,21 @@
+# Disabled transport and encrypted source access until independent review.
+[identity]
+registry_number = "006"
+agent_id = "AM-OCAF-AI-0006"
+unique_name = "CUSTOS ADMISSION"
+serial_number = "AM-SEC-CUS-2026-000006"
+catalog_number = "AM-OCAF-SEC-006"
+
+[servers]
+agent_server = "OMAs"
+tool_server = "OMAt"
+
+[communication]
+transport = "Zenoh"
+network_enabled = false
+authenticated_tls_required = true
+
+[source_access]
+enabled = false
+encryption = "OSTc"
+specification_status = "PENDING"
