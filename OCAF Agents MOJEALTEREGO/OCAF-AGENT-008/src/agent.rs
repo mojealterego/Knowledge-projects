@@ -44,15 +44,22 @@ pub struct PromotionDecision {
 }
 
 fn git_sha(v: &str) -> bool {
-    v.len() == 40 && v.bytes().all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
+    v.len() == 40
+        && v.bytes()
+            .all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
 }
 fn isolated_branch(v: &str) -> bool {
-    let Some(tail) = v.strip_prefix("integration/") else { return false; };
-    !tail.is_empty() && tail.len() <= 128
+    let Some(tail) = v.strip_prefix("integration/") else {
+        return false;
+    };
+    !tail.is_empty()
+        && tail.len() <= 128
         && !tail.contains("..")
-        && !tail.starts_with('/') && !tail.ends_with('/')
-        && tail.bytes().all(|b| b.is_ascii_alphanumeric()
-            || b == b'-' || b == b'_' || b == b'/' || b == b'.')
+        && !tail.starts_with('/')
+        && !tail.ends_with('/')
+        && tail
+            .bytes()
+            .all(|b| b.is_ascii_alphanumeric() || b == b'-' || b == b'_' || b == b'/' || b == b'.')
 }
 
 pub fn assess_promotion(
@@ -72,22 +79,31 @@ pub fn assess_promotion(
     }
     let exact_phases = proposal.phase_receipts.len() == EXPECTED_PHASES.len()
         && EXPECTED_PHASES.iter().all(|phase| {
-            proposal.phase_receipts.get(*phase)
+            proposal
+                .phase_receipts
+                .get(*phase)
                 .is_some_and(|receipt| !receipt.trim().is_empty() && receipt.len() <= 256)
         });
     let approved_receipts = trust.approved_phase_receipts.get(&proposal.candidate_sha);
-    let valid_receipts = exact_phases && approved_receipts.is_some_and(|trusted| {
-        proposal.phase_receipts.values().all(|receipt| trusted.contains(receipt))
-    });
+    let valid_receipts = exact_phases
+        && approved_receipts.is_some_and(|trusted| {
+            proposal
+                .phase_receipts
+                .values()
+                .all(|receipt| trusted.contains(receipt))
+        });
     if !valid_receipts {
         reasons.push("missing_four_phase_receipts".to_owned());
     }
     if !trust.approved_candidates.contains(&proposal.candidate_sha) {
         reasons.push("not_independently_approved".to_owned());
     }
-    if proposal.required_checks.is_empty() || proposal.required_checks.len() > 32
-        || !proposal.required_checks.iter().all(|c| !c.trim().is_empty()
-            && c.len() <= 128 && !c.chars().any(char::is_control))
+    if proposal.required_checks.is_empty()
+        || proposal.required_checks.len() > 32
+        || !proposal
+            .required_checks
+            .iter()
+            .all(|c| !c.trim().is_empty() && c.len() <= 128 && !c.chars().any(char::is_control))
     {
         reasons.push("invalid_required_checks".to_owned());
     } else {
@@ -109,12 +125,16 @@ pub fn assess_promotion(
         reasons.push("external_side_effects_forbidden".to_owned());
     }
     if !proposal.rollback_ref_verified
-        || !trust.verified_rollback_candidates.contains(&proposal.candidate_sha)
+        || !trust
+            .verified_rollback_candidates
+            .contains(&proposal.candidate_sha)
     {
         reasons.push("missing_rollback_evidence".to_owned());
     }
     if !proposal.source_provenance_verified
-        || !trust.verified_source_candidates.contains(&proposal.candidate_sha)
+        || !trust
+            .verified_source_candidates
+            .contains(&proposal.candidate_sha)
     {
         reasons.push("missing_source_provenance".to_owned());
     }
@@ -145,8 +165,11 @@ mod tests {
             rollback_ref_verified: false,
             source_provenance_verified: false,
         };
-        let out = assess_promotion(&p, &PromotionTrust::default(),
-            Utc.with_ymd_and_hms(2026, 10, 20, 12, 0, 0).unwrap());
+        let out = assess_promotion(
+            &p,
+            &PromotionTrust::default(),
+            Utc.with_ymd_and_hms(2026, 10, 20, 12, 0, 0).unwrap(),
+        );
         assert!(!out.admitted);
         assert!(!out.execution_authorized);
         assert!(out.reasons.contains(&"invalid_candidate_sha".into()));
@@ -154,8 +177,13 @@ mod tests {
     }
     #[test]
     fn malformed_integration_branch_denied() {
-        for v in ["main", "integration/", "integration/../../main",
-                  "integration/folder with spaces", "integration/something\\other"] {
+        for v in [
+            "main",
+            "integration/",
+            "integration/../../main",
+            "integration/folder with spaces",
+            "integration/something\\other",
+        ] {
             assert!(!isolated_branch(v));
         }
     }

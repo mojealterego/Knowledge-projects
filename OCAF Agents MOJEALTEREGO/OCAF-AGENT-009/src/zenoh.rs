@@ -65,10 +65,10 @@ mod ocaf {
                 },
                 "required":["agent_id","allowed","reasons","execution_authorized","charge_incurred"]
             }),
-            cost_sats:0,
-            permissions:vec![],
-            timeout_ms:5000,
-            enabled:true,
+            cost_sats: 0,
+            permissions: vec![],
+            timeout_ms: 5000,
+            enabled: true,
         }
     }
     #[async_trait::async_trait]

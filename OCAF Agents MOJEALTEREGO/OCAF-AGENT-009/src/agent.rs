@@ -11,13 +11,33 @@ pub const AGENT_ID: &str = "AM-OCAF-AI-0009";
 pub const SERIAL_NUMBER: &str = "AM-CLD-FIS-2026-000009";
 pub const CATALOG_NUMBER: &str = "AM-OCAF-CLD-009";
 
-const ALLOWED_PRODUCTS: [&str; 8] = ["agent_platform", "compute_engine", "cloud_storage",
-    "vision_ai", "speech_to_text", "translation", "natural_language", "video_intelligence"];
-const ALLOWED_ACTIONS: [&str; 8] = ["describe_public_documentation", "read_metadata",
-    "estimate_cost", "create_resource", "enable_api", "invoke_model",
-    "delete_resource", "make_payment"];
-const WRITE_ACTIONS: [&str; 5] = ["create_resource","enable_api","invoke_model",
-    "delete_resource","make_payment"];
+const ALLOWED_PRODUCTS: [&str; 8] = [
+    "agent_platform",
+    "compute_engine",
+    "cloud_storage",
+    "vision_ai",
+    "speech_to_text",
+    "translation",
+    "natural_language",
+    "video_intelligence",
+];
+const ALLOWED_ACTIONS: [&str; 8] = [
+    "describe_public_documentation",
+    "read_metadata",
+    "estimate_cost",
+    "create_resource",
+    "enable_api",
+    "invoke_model",
+    "delete_resource",
+    "make_payment",
+];
+const WRITE_ACTIONS: [&str; 5] = [
+    "create_resource",
+    "enable_api",
+    "invoke_model",
+    "delete_resource",
+    "make_payment",
+];
 
 #[derive(Debug, Clone, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -53,9 +73,12 @@ pub struct CloudVerdict {
 
 fn valid_request_id(s: &str) -> bool {
     (3..=81).contains(&s.len())
-        && s.bytes().next().is_some_and(|b| b.is_ascii_lowercase() || b.is_ascii_digit())
-        && s.bytes().all(|b| b.is_ascii_lowercase() || b.is_ascii_digit()
-            || b == b'.' || b == b'_' || b == b'-')
+        && s.bytes()
+            .next()
+            .is_some_and(|b| b.is_ascii_lowercase() || b.is_ascii_digit())
+        && s.bytes().all(|b| {
+            b.is_ascii_lowercase() || b.is_ascii_digit() || b == b'.' || b == b'_' || b == b'-'
+        })
 }
 fn cost(input: &str) -> Option<Decimal> {
     let value = Decimal::from_str(input).ok()?;
@@ -96,8 +119,11 @@ pub fn review_cloud_plan(
             push_unique(&mut reasons, "public_docs_require_public_data");
         }
         return CloudVerdict {
-            agent_id: AGENT_ID, allowed: reasons.is_empty(), reasons,
-            execution_authorized: false, charge_incurred: false,
+            agent_id: AGENT_ID,
+            allowed: reasons.is_empty(),
+            reasons,
+            execution_authorized: false,
+            charge_incurred: false,
         };
     }
     let id = plan.request_id.as_deref().unwrap_or("");
@@ -133,8 +159,11 @@ pub fn review_cloud_plan(
         push_unique(&mut reasons, "secrets_in_prompt_forbidden");
     }
     CloudVerdict {
-        agent_id: AGENT_ID, allowed: reasons.is_empty(), reasons,
-        execution_authorized: false, charge_incurred: false,
+        agent_id: AGENT_ID,
+        allowed: reasons.is_empty(),
+        reasons,
+        execution_authorized: false,
+        charge_incurred: false,
     }
 }
 
@@ -153,14 +182,16 @@ mod tests {
     #[test]
     fn unauthorized_payment_never_executed() {
         let proposal = CloudPlan {
-            action: "make_payment".into(), product: "compute_engine".into(),
+            action: "make_payment".into(),
+            product: "compute_engine".into(),
             request_id: Some("ticket-001".into()),
             project_scope: Some("some-project".into()),
-            maximum_cost_usd:"50".into(),data_classification:None,
-            credentials_in_prompt:Some(false),
-            explicit_external_side_effect_approval:Some(true),
+            maximum_cost_usd: "50".into(),
+            data_classification: None,
+            credentials_in_prompt: Some(false),
+            explicit_external_side_effect_approval: Some(true),
         };
-        let decision = review_cloud_plan(&proposal,&BTreeMap::new());
+        let decision = review_cloud_plan(&proposal, &BTreeMap::new());
         assert!(!decision.allowed);
         assert!(!decision.execution_authorized);
         assert!(!decision.charge_incurred);

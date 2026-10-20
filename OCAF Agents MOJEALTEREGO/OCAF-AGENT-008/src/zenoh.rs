@@ -39,7 +39,9 @@ mod ocaf {
     pub fn manifest() -> ToolManifest {
         ToolManifest {
             name: "dgm.assess_promotion".into(),
-            description: "Offline DGM promotion policy gate. External approval injected by trusted host".into(),
+            description:
+                "Offline DGM promotion policy gate. External approval injected by trusted host"
+                    .into(),
             input_schema: json!({
                 "type": "object", "additionalProperties": false,
                 "properties": {

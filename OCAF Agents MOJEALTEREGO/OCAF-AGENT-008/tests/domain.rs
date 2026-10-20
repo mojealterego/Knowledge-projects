@@ -21,11 +21,14 @@ fn good() -> (PromotionProposal, PromotionTrust) {
     };
     let trust = PromotionTrust {
         verified_ci_by_candidate: BTreeMap::from([(
-            candidate.clone(), BTreeSet::from(["tests".into(), "security".into()])
+            candidate.clone(),
+            BTreeSet::from(["tests".into(), "security".into()]),
         )]),
         approved_candidates: BTreeSet::from([candidate.clone()]),
-        approved_phase_receipts: BTreeMap::from([(candidate.clone(),
-            proposal.phase_receipts.values().cloned().collect())]),
+        approved_phase_receipts: BTreeMap::from([(
+            candidate.clone(),
+            proposal.phase_receipts.values().cloned().collect(),
+        )]),
         verified_rollback_candidates: BTreeSet::from([candidate.clone()]),
         verified_source_candidates: BTreeSet::from([candidate]),
     };
@@ -50,15 +53,23 @@ fn agent_claims_of_rollback_source_and_phase_are_not_self_authorizing() {
     trust.approved_phase_receipts.clear();
     let verdict = assess_promotion(&p, &trust, now());
     assert!(!verdict.admitted);
-    assert!(verdict.reasons.contains(&"missing_rollback_evidence".to_owned()));
-    assert!(verdict.reasons.contains(&"missing_source_provenance".to_owned()));
-    assert!(verdict.reasons.contains(&"missing_four_phase_receipts".to_owned()));
+    assert!(verdict
+        .reasons
+        .contains(&"missing_rollback_evidence".to_owned()));
+    assert!(verdict
+        .reasons
+        .contains(&"missing_source_provenance".to_owned()));
+    assert!(verdict
+        .reasons
+        .contains(&"missing_four_phase_receipts".to_owned()));
 }
 #[test]
 fn default_branch_cannot_be_promoted_or_merged() {
     let (mut p, trust) = good();
     p.branch = "main".into();
-    assert!(assess_promotion(&p, &trust, now()).reasons.contains(&"not_an_isolated_integration_branch".to_owned()));
+    assert!(assess_promotion(&p, &trust, now())
+        .reasons
+        .contains(&"not_an_isolated_integration_branch".to_owned()));
 }
 #[test]
 fn untrusted_check_and_approval_fail_closed() {
@@ -66,6 +77,10 @@ fn untrusted_check_and_approval_fail_closed() {
     trust.verified_ci_by_candidate.clear();
     trust.approved_candidates.clear();
     let verdict = assess_promotion(&p, &trust, now());
-    assert!(verdict.reasons.contains(&"missing_verified_ci_check".to_owned()));
-    assert!(verdict.reasons.contains(&"not_independently_approved".to_owned()));
+    assert!(verdict
+        .reasons
+        .contains(&"missing_verified_ci_check".to_owned()));
+    assert!(verdict
+        .reasons
+        .contains(&"not_independently_approved".to_owned()));
 }
