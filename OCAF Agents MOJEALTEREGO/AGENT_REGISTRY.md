@@ -79,3 +79,12 @@ To porty rzeczywistych źródeł Python z niezmienionymi oryginałami i testami.
 | **011** | [LIMES GIT](OCAF-AGENT-011/docs/README.md) | `AM-OCAF-AI-0011` | `AM-GIT-LIM-2026-000011` | `AM-OCAF-GIT-011` | [Repo scope Python](../tools/single_repository_scope_gate.py) | `CERT-AM-2026-0011` — NIEWYDANY |
 
 Dwa nowe pakiety Rust realizują tylko lokalną walidację metryk pochodzenia i zakresu operacji. **Nie** pobierają danych OSINT ani nie wykonują żadnych zmian GitHub. Numer seryjny to ewidencja administracyjna, nie podpis kryptograficzny; `production_approved=false`. Dotychczasowa ewidencja obejmuje 001–011.
+
+## Ewidencja 012–013 — 20.10.2026
+
+| Ewidencja | Nazwa własna | Agent ID | Numer seryjny | Numer katalogowy | Źródło | Certyfikat |
+|---|---|---|---|---|---|---|
+| **012** | [FIDES GRANTIS](OCAF-AGENT-012/docs/README.md) | `AM-OCAF-AI-0012` | `AM-GRT-FID-2026-000012` | `AM-OCAF-GRT-012` | [program_claim_gate.py](../tools/program_claim_gate.py) | `CERT-AM-2026-0012`, NIEWYDANY |
+| **013** | [NEXUS CONSENT](OCAF-AGENT-013/docs/README.md) | `AM-OCAF-AI-0013` | `AM-COM-NEX-2026-000013` | `AM-OCAF-COM-013` | [communication_link_policy.py](../tools/communication_link_policy.py) | `CERT-AM-2026-0013`, NIEWYDANY |
+
+Rejestr kanoniczny `AGENT_IDENTITY_REGISTRY.json` obejmuje teraz 001–013. Wszystkie certyfikaty pozostają niewydane, żaden agent nie jest produkcyjnie zatwierdzony. Lokalne moduły Rust nie są autonomicznymi systemami operującymi w serwisach zewnętrznych.

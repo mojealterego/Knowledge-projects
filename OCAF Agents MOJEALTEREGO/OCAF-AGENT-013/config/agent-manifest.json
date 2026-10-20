@@ -1,0 +1,35 @@
+{
+  "schema_version": "ocaf-agent-draft/1",
+  "registry_number": "013",
+  "unique_name": "NEXUS CONSENT",
+  "display_name": "NEXUS CONSENT",
+  "serial_number": "AM-COM-NEX-2026-000013",
+  "agent_id": "AM-OCAF-AI-0013",
+  "catalog_number": "AM-OCAF-COM-013",
+  "certificate_number": "CERT-AM-2026-0013",
+  "family": "Offline communication protocol consent and scope planning gate",
+  "source_project": "tools/communication_link_policy.py",
+  "artifact_digest": null,
+  "release_commit": null,
+  "capabilities": [
+    "communication.review_link"
+  ],
+  "transport": {
+    "name": "Zenoh",
+    "network_enabled": false
+  },
+  "servers": {
+    "OMAs": "external agent server NOT DEPLOYED",
+    "OMAt": "external tool server NOT DEPLOYED"
+  },
+  "source_access": {
+    "encryption": "OSTc",
+    "specification_status": "PENDING",
+    "enabled": false
+  },
+  "lifecycle": "DRAFT",
+  "certificate_issued": false,
+  "production_approved": false,
+  "status": "INCOMPLETE_DEVELOPMENT",
+  "implementation_scope": "Offline communication protocol consent and scope planning gate; no external execution, no signed independent attestations"
+}

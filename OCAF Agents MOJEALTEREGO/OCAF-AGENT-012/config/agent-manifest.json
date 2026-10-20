@@ -1,0 +1,35 @@
+{
+  "schema_version": "ocaf-agent-draft/1",
+  "registry_number": "012",
+  "unique_name": "FIDES GRANTIS",
+  "display_name": "FIDES GRANTIS",
+  "serial_number": "AM-GRT-FID-2026-000012",
+  "agent_id": "AM-OCAF-AI-0012",
+  "catalog_number": "AM-OCAF-GRT-012",
+  "certificate_number": "CERT-AM-2026-0012",
+  "family": "Offline research and grant program claim review with fail-closed historical status",
+  "source_project": "tools/program_claim_gate.py",
+  "artifact_digest": null,
+  "release_commit": null,
+  "capabilities": [
+    "program.claim_review"
+  ],
+  "transport": {
+    "name": "Zenoh",
+    "network_enabled": false
+  },
+  "servers": {
+    "OMAs": "external agent server NOT DEPLOYED",
+    "OMAt": "external tool server NOT DEPLOYED"
+  },
+  "source_access": {
+    "encryption": "OSTc",
+    "specification_status": "PENDING",
+    "enabled": false
+  },
+  "lifecycle": "DRAFT",
+  "certificate_issued": false,
+  "production_approved": false,
+  "status": "INCOMPLETE_DEVELOPMENT",
+  "implementation_scope": "Offline research and grant program claim review with fail-closed historical status; no external execution, no signed independent attestations"
+}
