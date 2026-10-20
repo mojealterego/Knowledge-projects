@@ -1,0 +1,35 @@
+{
+  "schema_version": "ocaf-agent-draft/1",
+  "registry_number": "012",
+  "unique_name": "ZIP WARDEN",
+  "display_name": "ZIP WARDEN",
+  "serial_number": "AM-ARC-ZWD-2026-000012",
+  "agent_id": "AM-OCAF-AI-0012",
+  "catalog_number": "AM-OCAF-ARC-012",
+  "certificate_number": "CERT-AM-2026-00012",
+  "family": "Local privacy-preserving ZIP inventory and safety audit, no extraction",
+  "source_project": "tools/source_bundle_audit.py",
+  "artifact_digest": null,
+  "release_commit": null,
+  "capabilities": [
+    "archive.audit_zip"
+  ],
+  "transport": {
+    "name": "Zenoh",
+    "network_enabled": false
+  },
+  "servers": {
+    "OMAs": "external agent server NOT DEPLOYED",
+    "OMAt": "external tool server NOT DEPLOYED"
+  },
+  "source_access": {
+    "encryption": "OSTc",
+    "specification_status": "PENDING",
+    "enabled": false
+  },
+  "lifecycle": "DRAFT",
+  "certificate_issued": false,
+  "production_approved": false,
+  "status": "INCOMPLETE_DEVELOPMENT",
+  "implementation_scope": "Offline read-only validation only. Host-bound evidence is not independent truth. No runtime network or OS command."
+}
