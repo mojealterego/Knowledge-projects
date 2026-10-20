@@ -66,3 +66,10 @@ Dokumentacja, testy, rejestr certyfikacyjny i 3 odrębne projekty umów znajduj�
 - [**OCAF-AGENT-009 — CLOUD FISCALIS**](OCAF-AGENT-009/docs/README.md) — walidacja planów kosztów i uprawnień Google Cloud bez połączeń do chmury; źródło `tools/cloud_operation_budget_gate.py`. Numer seryjny `AM-CLD-FIS-2026-000009`.
 
 Obydwa agenty działają jako **lokalne bramki decyzji**: wynik `admitted` lub `allowed` nie oznacza pozwolenia na git merge, uruchomienie instancji, odpłatne API czy wykonanie modelu. Wykonawca, OMAs/OMAt, Zenoh sieciowy i OSTc pozostają poza tym zakresem. Każdy folder zawiera dokumentację, testy i certyfikat oznaczony jako NIEWYDANY.
+
+## Agenci 010 i 011 — port kodu Python do Rust
+
+- [ZIP WARDEN — OCAF-AGENT-010](OCAF-AGENT-010/docs/README.md): lokalna kontrola archiwów ZIP bez ekstrakcji i bez ujawniania nazw, SHA-256, rozmiary, wykrywanie duplikatów i niebezpiecznych ścieżek; serial `AM-ARC-ZWD-2026-000010`.
+- [PROVENANT EVIDENCE — OCAF-AGENT-011](OCAF-AGENT-011/docs/README.md): jawny status `simulated`, `observed`, `verified`, wymaganie identyfikatora niezależnego weryfikatora z listy zaufanego hosta; serial `AM-PRV-EVD-2026-000011`.
+
+Oba moduły posiadają odrębne dokumenty, testy i drafty certyfikatów oraz umów. W obecnej wersji nie są sieciowymi serwerami OMAs ani OMAt, nie potwierdzają samodzielnie faktów i nie mają dostępu do źródeł OSTc.

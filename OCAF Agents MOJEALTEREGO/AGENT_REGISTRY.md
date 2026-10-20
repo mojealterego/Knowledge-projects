@@ -70,3 +70,12 @@ Oryginalne P115/P119 są większymi systemami/projektami; nowe niezależne agent
 | **009** | [**CLOUD FISCALIS**](OCAF-AGENT-009/docs/README.md) | `AM-OCAF-AI-0009` | `AM-CLD-FIS-2026-000009` | `AM-OCAF-CLD-009` | [Cloud budget gate Python](../tools/cloud_operation_budget_gate.py) | INCOMPLETE_DEVELOPMENT; `CERT-AM-2026-0009` NIEWYDANY |
 
 To porty rzeczywistych źródeł Python z niezmienionymi oryginałami i testami. Testy nie stanowią podpisu poświadczenia. **Żaden z agentów 001–009 nie ma wydanego certyfikatu ani produkcyjnej akceptacji**. Kanoniczne numery w `AGENT_IDENTITY_REGISTRY.json`.
+
+## Agenci 010–011: porty źródeł Python (2026-10-20)
+
+| Ewidencja | Unikatowa nazwa | Agent ID | Numer seryjny | Katalog | Pierwowzór | Stan |
+|---|---|---|---|---|---|---|
+| **010** | [ZIP WARDEN](OCAF-AGENT-010/docs/README.md) | `AM-OCAF-AI-0010` | `AM-ARC-ZWD-2026-000010` | `AM-OCAF-ARC-010` | [source_bundle_audit.py](../tools/source_bundle_audit.py) | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-000010` NIEWYDANY |
+| **011** | [PROVENANT EVIDENCE](OCAF-AGENT-011/docs/README.md) | `AM-OCAF-AI-0011` | `AM-PRV-EVD-2026-000011` | `AM-OCAF-PRV-011` | [osint_provenance_gate.py](../tools/osint_provenance_gate.py) | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-000011` NIEWYDANY |
+
+Numery 001–011 zapisane w `AGENT_IDENTITY_REGISTRY.json` jako niezależne identyfikatory administracyjne. Z testów Rust i oryginalnych Python nie wynika certyfikacja ani działająca produkcyjna infrastruktura OMAs/OMAt/OSTc.

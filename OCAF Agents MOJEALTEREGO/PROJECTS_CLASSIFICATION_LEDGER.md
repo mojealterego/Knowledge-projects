@@ -275,3 +275,11 @@ Porty Rust jako osobne pakiety: [006 CUSTOS ADMISSION](OCAF-AGENT-006/docs/READM
 - [`cloud_operation_budget_gate.py`](../tools/cloud_operation_budget_gate.py), [`test_cloud_operation_budget_gate.py`](../tools/test_cloud_operation_budget_gate.py): realny Python weryfikuje listy produktów, akcji, koszt Decimal, zgodę zarządcy, limit i zakaz sekretów. Nowy [009 CLOUD FISCALIS](OCAF-AGENT-009/docs/README.md) portuje logikę z użyciem `rust_decimal`. Dodaje sprawdzanie sekretów w ścieżce publicznych dokumentów, gdzie oryginalny Python kończył wykonanie przed tą kontrolą.
 
 Powyższe to praca na realnych plikach kodowych, bez ich usuwania. W `PYTHON_PARITY.md` opisano celowe rozbieżności. Pełny audyt całego katalogu `tools/` pozostaje NIEUKOŃCZONY.
+
+## Źródłowe audyty: ZIP i provenance — 2026-10-20
+
+**`tools/source_bundle_audit.py` oraz `tools/test_source_bundle_audit.py`** to rzeczywisty kod i 11 testów Python: archiwum ZIP jako plik lokalny, weryfikacja skompresowanych i zdekompresowanych bajtów, hashe, traversal, symlinki, powtórzone nazwy, zip bomb, opt-in nazwy. Nowy [010 ZIP WARDEN](OCAF-AGENT-010/docs/README.md) implementuje zbliżoną kontrolę w Rust na bajtach bez fizycznej ekstrakcji. Celowe wzmocnienia i różnice limitów/ASCII są jawnie w `PYTHON_PARITY.md`.
+
+**`tools/osint_provenance_gate.py` oraz `tools/test_osint_provenance_gate.py`** to rzeczywisty kod i osiem testów Python: `simulated/observed/verified`, trace i hash, referencja weryfikatora, statusy HTTP inconclusive. Nowy [011 PROVENANT EVIDENCE](OCAF-AGENT-011/docs/README.md) poza oryginalnymi regułami wymaga host-owned listy weryfikatorów. Zapis verified nadal wymaga przeglądu rzeczywistych dowodów.
+
+Oryginały Python nie zostały nadpisane, usunięte ani automatycznie wykonane na infrastrukturze. Całe repo, wszystkie narzędzia i wszystkie agenty nie zostały jeszcze audytowane semantycznie.
