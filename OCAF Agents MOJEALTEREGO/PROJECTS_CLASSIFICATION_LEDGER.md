@@ -282,3 +282,10 @@ Powyższe to praca na realnych plikach kodowych, bez ich usuwania. W `PYTHON_PAR
 - [`single_repository_scope_gate.py`](../tools/single_repository_scope_gate.py) i [`test_single_repository_scope_gate.py`](../tools/test_single_repository_scope_gate.py): deterministyczny preflight bez GitHub tokenów; odczyty repo zewnętrznych, zapisy tylko w Knowledge-projects przez working branch, PR wyłącznie do main i z właściwej gałęzi. Nowa ograniczona implementacja Rust: [011 LIMES GIT](OCAF-AGENT-011/docs/README.md) z jawnym `execution_authorized=false`.
 
 Oryginalne Python nie zostały nadpisane, ich testy są zachowane. Pełny audyt wszystkich narzędzi i projektów **nie został ukończony**; lokalne testy nie świadczą o niezależnym egzekwowaniu uprawnień.
+
+## Audyt narzędzi Python — programy finansowania i komunikacja (20.10.2026)
+
+- [`program_claim_gate.py`](../tools/program_claim_gate.py) + [unittest](../tools/test_program_claim_gate.py): deterministyczne sprawdzanie deklaracji Alibaba AI Catalyst, General Learning Hacks, tylko research/draft, bez kont zewnętrznych i wykonywania submit. Port [012 FIDES GRANTIS](OCAF-AGENT-012/docs/README.md) przyjmuje czas UTC wstrzyknięty przez zaufany host, nigdy z treści modelu; **nie potwierdza prawdziwych środków finansowych**.
+- [`communication_link_policy.py`](../tools/communication_link_policy.py) + [unittest](../tools/test_communication_link_policy.py): osiem jakościowych opisów protokołów, zgody, uprawnione cele i ograniczenia. Port [013 NEXUS CONSENT](OCAF-AGENT-013/docs/README.md) nie steruje radiem, nie geolokalizuje i nie prowadzi skanowania.
+
+To analiza rzeczywistych plików, nie całego portfolio. Nie usunięto oryginalnego kodu Python; pełny audyt pozostaje NIEUKOŃCZONY.

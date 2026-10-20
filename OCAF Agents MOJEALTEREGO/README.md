@@ -74,3 +74,10 @@ Obydwa agenty działają jako **lokalne bramki decyzji**: wynik `admitted` lub `
 [**LIMES GIT — 011**](OCAF-AGENT-011/docs/README.md) — lokalny preflight operacji GitHub. Odczyt innych repo dopuszczony, ale zapisy ograniczone do `mojealterego/Knowledge-projects`, gałęzie robocze i PR do main. Oryginał [Python single-repository scope](../tools/single_repository_scope_gate.py) zachowany.
 
 Oba mają własne foldery, unikatowe seriale, manifest, testy, pełną dokumentację i niewydane rekordy certyfikacyjne. Produkcyjne OMAs, OMAt, Zenoh TLS i OSTc nie są implementowane.
+
+## Kolejne agenty Rust 012–013 — źródła z testami Python
+
+- [**FIDES GRANTIS — OCAF-AGENT-012**](OCAF-AGENT-012/docs/README.md): sprawdza lokalnie statusy programów, zakres roszczeń finansowania i brak uprawnienia do zewnętrznego submit; odróżnia deklarowany pułap grantów od prawdziwej decyzji o przyznaniu.
+- [**NEXUS CONSENT — OCAF-AGENT-013**](OCAF-AGENT-013/docs/README.md): planistyczna macierz IrDA, Bluetooth LE, NFC, UWB, Wi-Fi Direct, LoRaWAN, Li-Fi, Zenoh, z zasadami zgody obu stron i odmową śledzenia lub skanowania.
+
+Oba mają odrębne unikatowe seriale, pełne foldery, testy, manifest i dokumentację. Produkcyjne OMAs/OMAt/Zenoh i OSTc pozostają niezaimplementowane; żaden z modułów nie wykonuje operacji poza procesem.

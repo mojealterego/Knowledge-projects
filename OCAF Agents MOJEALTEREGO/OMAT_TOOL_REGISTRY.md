@@ -57,3 +57,12 @@ To nie jest produkcyjne wdrożenie sieciowe OMAt. Tokeny i zgody są w testach d
 | [Single repository scope gate](../tools/single_repository_scope_gate.py) | [011 LIMES GIT](OCAF-AGENT-011/docs/README.md), `github.scope_review` | kontroluje operację i zakres branch/repo przed zamiarem działania | nie wykonuje git push, PR, merge, API calls, nie przejmuje tokenów |
 
 **Uwaga:** `OMAt` jako serwer narzędzi i `OMAs` jako serwer agentów pozostają tylko rolami docelowymi, nie wdrożonymi usługami. Wartości logicznych bramek nie są niezależnym zatwierdzeniem operatora.
+
+## OMAt candidates — dwa lokalne Rust ToolExecutor, nie serwery sieciowe
+
+| Źródło Python | Agent | Local tool | Efekty zewnętrzne |
+|---|---|---|---|
+| [Program claim gate](../tools/program_claim_gate.py) | [012 FIDES GRANTIS](OCAF-AGENT-012/docs/README.md) | `program.claim_review` | zawsze zabronione; nie składa wniosków |
+| [Communication link policy](../tools/communication_link_policy.py) | [013 NEXUS CONSENT](OCAF-AGENT-013/docs/README.md) | `communication.review_link` | zawsze zabronione; nie używa radia, sieci ani GPS |
+
+Nie deklarować działań produkcyjnych OMAt/OMAs bez rzeczywistych podpisów, grantów, TLS i testów niezależnych hostów.
