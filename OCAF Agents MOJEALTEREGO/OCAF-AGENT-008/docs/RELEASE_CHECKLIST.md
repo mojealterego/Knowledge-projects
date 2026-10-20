@@ -5,8 +5,8 @@
 | Warunek | Stan |
 |---|---|
 | Kod Rust, nazwa, serial, katalog, folder | IMPLEMENTED DEVELOPMENT |
-| Zakres logiki i negatywne testy lokalne | CI TO VERIFY |
-| Rejestr unikatowości wszystkich agentów | UPDATED / CI TO VERIFY |
+| Zakres logiki i negatywne testy lokalne | TESTED LOCAL — RUN 39419346496 |
+| Rejestr unikatowości wszystkich agentów | REGISTRY CHECK PASS |
 | Osobne materiały architektury, instrukcji, serwisu i bezpieczeństwa | DOCUMENTED |
 | Oryginalne źródła Python i referencyjne unittests | PRESERVED / CI TO VERIFY |
 | Rzeczywiste OMAs i OMAt, podpisany RPC, tenant ACL | NOT IMPLEMENTED |
