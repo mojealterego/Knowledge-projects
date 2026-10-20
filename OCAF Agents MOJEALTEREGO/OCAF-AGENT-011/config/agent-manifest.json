@@ -1,0 +1,35 @@
+{
+  "schema_version": "ocaf-agent-draft/1",
+  "registry_number": "011",
+  "unique_name": "LIMES GIT",
+  "display_name": "LIMES GIT",
+  "serial_number": "AM-GIT-LIM-2026-000011",
+  "agent_id": "AM-OCAF-AI-0011",
+  "catalog_number": "AM-OCAF-GIT-011",
+  "certificate_number": "CERT-AM-2026-0011",
+  "family": "Single-repository GitHub preflight; prohibits cross-repo writes and direct main writes",
+  "source_project": "tools/single_repository_scope_gate.py",
+  "artifact_digest": null,
+  "release_commit": null,
+  "capabilities": [
+    "github.scope_review"
+  ],
+  "transport": {
+    "name": "Zenoh",
+    "network_enabled": false
+  },
+  "servers": {
+    "OMAs": "external agent server NOT DEPLOYED",
+    "OMAt": "external tool server NOT DEPLOYED"
+  },
+  "source_access": {
+    "encryption": "OSTc",
+    "specification_status": "PENDING",
+    "enabled": false
+  },
+  "lifecycle": "DRAFT",
+  "certificate_issued": false,
+  "production_approved": false,
+  "status": "INCOMPLETE_DEVELOPMENT",
+  "implementation_scope": "Single-repository GitHub preflight; prohibits cross-repo writes and direct main writes; no network, no actual external source verification or GitHub writes; preflight only"
+}

@@ -66,3 +66,11 @@ Dokumentacja, testy, rejestr certyfikacyjny i 3 odrębne projekty umów znajduj�
 - [**OCAF-AGENT-009 — CLOUD FISCALIS**](OCAF-AGENT-009/docs/README.md) — walidacja planów kosztów i uprawnień Google Cloud bez połączeń do chmury; źródło `tools/cloud_operation_budget_gate.py`. Numer seryjny `AM-CLD-FIS-2026-000009`.
 
 Obydwa agenty działają jako **lokalne bramki decyzji**: wynik `admitted` lub `allowed` nie oznacza pozwolenia na git merge, uruchomienie instancji, odpłatne API czy wykonanie modelu. Wykonawca, OMAs/OMAt, Zenoh sieciowy i OSTc pozostają poza tym zakresem. Każdy folder zawiera dokumentację, testy i certyfikat oznaczony jako NIEWYDANY.
+
+## Porty w Rust — agenci 010 i 011
+
+[**VERITAS TRACE — 010**](OCAF-AGENT-010/docs/README.md) — lokalne oznaczanie symulowanych, obserwowanych i deklarowanych jako zweryfikowane danych OSINT. Wymagane metadane źródeł; HTTP 200 nie stanowi dowodu istnienia konta. Oryginał [Python OSINT provenance](../tools/osint_provenance_gate.py) zachowany.
+
+[**LIMES GIT — 011**](OCAF-AGENT-011/docs/README.md) — lokalny preflight operacji GitHub. Odczyt innych repo dopuszczony, ale zapisy ograniczone do `mojealterego/Knowledge-projects`, gałęzie robocze i PR do main. Oryginał [Python single-repository scope](../tools/single_repository_scope_gate.py) zachowany.
+
+Oba mają własne foldery, unikatowe seriale, manifest, testy, pełną dokumentację i niewydane rekordy certyfikacyjne. Produkcyjne OMAs, OMAt, Zenoh TLS i OSTc nie są implementowane.

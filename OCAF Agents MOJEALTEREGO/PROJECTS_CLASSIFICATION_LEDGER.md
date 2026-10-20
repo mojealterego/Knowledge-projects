@@ -275,3 +275,10 @@ Porty Rust jako osobne pakiety: [006 CUSTOS ADMISSION](OCAF-AGENT-006/docs/READM
 - [`cloud_operation_budget_gate.py`](../tools/cloud_operation_budget_gate.py), [`test_cloud_operation_budget_gate.py`](../tools/test_cloud_operation_budget_gate.py): realny Python weryfikuje listy produktów, akcji, koszt Decimal, zgodę zarządcy, limit i zakaz sekretów. Nowy [009 CLOUD FISCALIS](OCAF-AGENT-009/docs/README.md) portuje logikę z użyciem `rust_decimal`. Dodaje sprawdzanie sekretów w ścieżce publicznych dokumentów, gdzie oryginalny Python kończył wykonanie przed tą kontrolą.
 
 Powyższe to praca na realnych plikach kodowych, bez ich usuwania. W `PYTHON_PARITY.md` opisano celowe rozbieżności. Pełny audyt całego katalogu `tools/` pozostaje NIEUKOŃCZONY.
+
+## Audyt wykonawczy — Python OSINT i Git scope (20.10.2026)
+
+- [`osint_provenance_gate.py`](../tools/osint_provenance_gate.py) i [`test_osint_provenance_gate.py`](../tools/test_osint_provenance_gate.py): źródło implementuje pure-data EvidenceRecord, trzy stany pochodzenia i oznaczenia, wymóg metadanych dla observed oraz verified, odmowę wyciągania wniosków z HTTP response. Nowa ograniczona implementacja Rust: [010 VERITAS TRACE](OCAF-AGENT-010/docs/README.md). W portcie dodatkowo stale raportowane `independently_verified=false`, ponieważ źródło nie poświadcza tożsamości weryfikatora.
+- [`single_repository_scope_gate.py`](../tools/single_repository_scope_gate.py) i [`test_single_repository_scope_gate.py`](../tools/test_single_repository_scope_gate.py): deterministyczny preflight bez GitHub tokenów; odczyty repo zewnętrznych, zapisy tylko w Knowledge-projects przez working branch, PR wyłącznie do main i z właściwej gałęzi. Nowa ograniczona implementacja Rust: [011 LIMES GIT](OCAF-AGENT-011/docs/README.md) z jawnym `execution_authorized=false`.
+
+Oryginalne Python nie zostały nadpisane, ich testy są zachowane. Pełny audyt wszystkich narzędzi i projektów **nie został ukończony**; lokalne testy nie świadczą o niezależnym egzekwowaniu uprawnień.
