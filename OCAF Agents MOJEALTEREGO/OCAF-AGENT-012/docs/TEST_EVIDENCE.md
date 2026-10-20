@@ -19,3 +19,13 @@ Workflow: `.github/workflows/ocaf-agents-012-013.yml`, Rust fmt, `cargo test --a
 | T13/T14/T15 observability, revocation, operator acceptance | NOT RUN |
 
 Dopisać faktyczny run ID/commit dopiero po zakończeniu i odczycie GitHub Actions. Certyfikat `CERT-AM-2026-0012` niewydany.
+
+## Wykonany test CI na kodzie Rust — 20.10.2026
+
+- [GitHub Actions run **39468676335 — SUCCESS**](https://github.com/mojealterego/Knowledge-projects/actions/runs/39468676335).
+- Zweryfikowany SHA kodu: `7dd5bbe3de4c0cff05cbcc50c4e324c166efcbf1`; job `118786678622`.
+- Agent 012: **16 testów Rust PASS, 0 failed** i **17 oryginalnych testów Python PASS**.
+- `cargo fmt --check`, `cargo clippy -- -D warnings`, `cargo run -- demo` również **PASS**.
+- Jest to dowód lokalnego portu; testy realnego OMAs/OMAt/Zenoh TLS, OSTc i wielohostowej infrastruktury **NOT RUN**.
+- `certificate_issued=false`; `production_approved=false`; formalny odbiór nie nastąpił.
+

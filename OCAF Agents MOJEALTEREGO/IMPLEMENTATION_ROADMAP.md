@@ -147,12 +147,16 @@ Nie oznaczać portów 010–011 jako pełnych, produkcyjnych agentów OSINT ani 
 | ID | Zakres | Stan |
 |---|---|---|
 | KA-056 | Przejrzeć istniejące `tools/program_claim_gate.py` i jego rzeczywiste testy | SOURCE REVIEWED |
-| KA-057 | Agent 012 FIDES GRANTIS: program statuses, roszczenia grantowe, zakres kredytów/tokenów, zakaz submit i credentiali | IMPLEMENTED LOCAL / CI PENDING |
+| KA-057 | Agent 012 FIDES GRANTIS: program statuses, roszczenia grantowe, zakres kredytów/tokenów, zakaz submit i credentiali | IMPLEMENTED LOCAL / PASS RUN 39468676335 |
 | KA-058 | Przejrzeć `tools/communication_link_policy.py` i jego rzeczywiste testy | SOURCE REVIEWED |
-| KA-059 | Agent 013 NEXUS CONSENT: opis protokołów, zgoda stron i zakaz pasywnego śledzenia, skanowania oraz fikcyjnego GPS | IMPLEMENTED LOCAL / CI PENDING |
+| KA-059 | Agent 013 NEXUS CONSENT: opis protokołów, zgoda stron i zakaz pasywnego śledzenia, skanowania oraz fikcyjnego GPS | IMPLEMENTED LOCAL / PASS RUN 39468676335 |
 | KA-060 | Nadanie nazw, numerów ewidencyjnych, seriali 012 i 013, katalogów, manifestów i niewydanych certyfikatów | REGISTERED DEVELOPMENT |
-| KA-061 | Rust unit/integration/security + OCAF local ToolExecutor oraz oryginalne testy Python | CI PENDING / PR #35 |
+| KA-061 | Rust unit/integration/security + OCAF local ToolExecutor oraz oryginalne testy Python | RUST 32/32 PASS + PYTHON 31/31 PASS / RUN 39468676335 / PR #35 |
 | KA-062 | Pełne dossier techniczne, instrukcja, serwis, test evidence, migracja, cert records i umowy (sprzedaż, dzierżawa, najem) | DOCUMENTED DEV |
 | KA-063 | Real OMAs/OMAt, signed Zenoh, OSTc i niezależna certyfikacja i operator acceptance | NOT IMPLEMENTED / OSTc BLOCKED |
 
 Wynik `permitted=true` ani `accepted=true` nie oznacza automatycznego finansowania ani pozwolenia na dostęp do sprzętu. Oryginalne źródła Python zachowano bez modyfikacji. Pełny audyt wszystkich projektów i realne wdrożenie agentów pozostają otwarte.
+
+### Rejestr dowodów KA-057, KA-059 i KA-061
+
+Na SHA `7dd5bbe3de4c0cff05cbcc50c4e324c166efcbf1` wykonano [GitHub Actions 39468676335](https://github.com/mojealterego/Knowledge-projects/actions/runs/39468676335): FIDES GRANTIS 16 Rust i 17 Python PASS, NEXUS CONSENT 16 Rust i 14 Python PASS, cargo fmt, strict clippy i CLI PASS. Sumarycznie **63 testy PASS**. Niezależna weryfikacja `main` po scaleniu pozostaje osobnym krokiem. KA-063 nadal NOT IMPLEMENTED.

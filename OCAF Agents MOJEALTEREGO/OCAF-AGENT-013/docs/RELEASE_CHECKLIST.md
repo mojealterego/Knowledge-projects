@@ -5,8 +5,8 @@
 | Bramka | Status |
 |---|---|
 | Własny kod Rust, identyfikacja, manifest i osobny folder | IMPLEMENTED DEV |
-| Testy domenowe, OCAF, bezpieczeństwa i ewidencji | CI REQUIRED |
-| Oryginalne Python regression tests | CI REQUIRED |
+| Testy domenowe, OCAF, bezpieczeństwa i ewidencji | LOCAL CI PASS — RUN 39468676335 |
+| Oryginalne Python regression tests | LOCAL CI PASS — RUN 39468676335 |
 | Specyfikacja, dokumentacja, projekty 3 umów | DOCUMENTED DEVELOPMENT SCOPE |
 | Produkcyjne OMAs signed RPC i OMAt scoped capability leases | NOT IMPLEMENTED |
 | Prawdziwy Zenoh TLS/mTLS, tenant/multi-host acceptance | NOT IMPLEMENTED |
