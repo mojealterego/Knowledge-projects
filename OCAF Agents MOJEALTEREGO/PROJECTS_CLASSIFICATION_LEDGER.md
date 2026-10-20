@@ -268,3 +268,10 @@ Sprawdzono szczegółowo źródła i testy:
 - [`dgm_cycle_gate.py`](../tools/dgm_cycle_gate.py) i [`test_dgm_cycle_gate.py`](../tools/test_dgm_cycle_gate.py) — oceniono źródło promowania kandydatów DGM, pozostawiono jako kolejnego kandydata, nie przypisano numeru agenta bez wykonania implementacji.
 
 Porty Rust jako osobne pakiety: [006 CUSTOS ADMISSION](OCAF-AGENT-006/docs/README.md), [007 VIGIA LOOP](OCAF-AGENT-007/docs/README.md). Dokumenty `PYTHON_PARITY.md` zawierają rozbieżności semantyczne wynikające z twardszej walidacji i modelu zaufania Rust. Oryginały Python **niezastąpione ani nieusunięte**. Pełny audyt 44 ścieżek `tools/` i 892 blobów `main` nie jest zakończony.
+
+## Rzeczywiste źródła narzędzi — DGM i Cloud Budget (20.10.2026)
+
+- [`dgm_cycle_gate.py`](../tools/dgm_cycle_gate.py), [`test_dgm_cycle_gate.py`](../tools/test_dgm_cycle_gate.py): Python implementuje `assess_promotion` z czterema fazami ModelScout/TechRecon/Strategist/DGM_Core; sprawdza SHA, izolowaną gałąź, CI z niezależnego rejestru, expire, brak side effects, rollback i provenance. Nowy [008 DGM SENTINEL](OCAF-AGENT-008/docs/README.md) portuje mechanizm do Rust, wzmacniając granicę zaufania przez zewnętrzne potwierdzenia receiptów faz, provenance i rollbacku.
+- [`cloud_operation_budget_gate.py`](../tools/cloud_operation_budget_gate.py), [`test_cloud_operation_budget_gate.py`](../tools/test_cloud_operation_budget_gate.py): realny Python weryfikuje listy produktów, akcji, koszt Decimal, zgodę zarządcy, limit i zakaz sekretów. Nowy [009 CLOUD FISCALIS](OCAF-AGENT-009/docs/README.md) portuje logikę z użyciem `rust_decimal`. Dodaje sprawdzanie sekretów w ścieżce publicznych dokumentów, gdzie oryginalny Python kończył wykonanie przed tą kontrolą.
+
+Powyższe to praca na realnych plikach kodowych, bez ich usuwania. W `PYTHON_PARITY.md` opisano celowe rozbieżności. Pełny audyt całego katalogu `tools/` pozostaje NIEUKOŃCZONY.

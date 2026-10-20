@@ -129,6 +129,42 @@
       "serial_derivation": "Unique administrative number in project registry; no cryptographic authority",
       "artifact_digest": null,
       "build_commit": null
+    },
+    {
+      "registry_number": "008",
+      "unique_name": "DGM SENTINEL",
+      "product_family": "DGM Four-Stage Promotion Gate",
+      "agent_id": "AM-OCAF-AI-0008",
+      "serial_number": "AM-DGM-SNT-2026-000008",
+      "catalog_number": "AM-OCAF-DGM-008",
+      "certificate_number": "CERT-AM-2026-0008",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-008/",
+      "source_project": "tools/dgm_cycle_gate.py",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Unique internal serial, not a cryptographic artifact attestation",
+      "artifact_digest": null,
+      "build_commit": null
+    },
+    {
+      "registry_number": "009",
+      "unique_name": "CLOUD FISCALIS",
+      "product_family": "Cloud Operation Budget Gate",
+      "agent_id": "AM-OCAF-AI-0009",
+      "serial_number": "AM-CLD-FIS-2026-000009",
+      "catalog_number": "AM-OCAF-CLD-009",
+      "certificate_number": "CERT-AM-2026-0009",
+      "certificate_issued": false,
+      "production_approved": false,
+      "status": "INCOMPLETE_DEVELOPMENT",
+      "path": "OCAF Agents MOJEALTEREGO/OCAF-AGENT-009/",
+      "source_project": "tools/cloud_operation_budget_gate.py",
+      "serial_assignment": "2026-10-20",
+      "serial_derivation": "Unique internal serial, not a cryptographic artifact attestation",
+      "artifact_digest": null,
+      "build_commit": null
     }
   ]
 }

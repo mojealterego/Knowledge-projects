@@ -102,3 +102,23 @@ Uruchomienie [39203233792](https://github.com/mojealterego/Knowledge-projects/ac
 ### Weryfikacja wykonania KA-034–040
 
 [GitHub Actions 39370400084](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400084) na SHA `942f518a4f59ab70bedeabf2c9e4990067582e4a`: **SUCCESS** w obu jobach; 006 (16 Rust + 14 Python PASS), 007 (16 Rust + 12 Python PASS), fmt, strict Clippy i CLI PASS. Równoległe regresje 002–003 [39370400019](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400019) i 004–005 [39370400026](https://github.com/mojealterego/Knowledge-projects/actions/runs/39370400026) — SUCCESS. **KA-035/036/038 TESTED LOCAL**; KA-039 BLOCKED, KA-040 nadal nieukończone. CI to nie test produkcyjnej infrastruktury OMAs/OMAt/OSTc.
+
+## Etap KA-041–KA-048 — kolejna para rzeczywistych portów Rust (20.10.2026)
+
+| ID | Zadanie | Status |
+|---|---|---|
+| KA-041 | Audyt i port rzeczywistego `tools/dgm_cycle_gate.py`, test źródłowy 4 faz DGM i warunków promocji | IMPLEMENTED 008 / CI VERIFICATION |
+| KA-042 | Agent 008 z niezależnymi, host-only zatwierdzeniami CI, faz, source provenance i rollback; izolowana gałąź i expiry UTC | TESTED LOCAL / RUN 39419346496 |
+| KA-043 | Audyt i port rzeczywistego `tools/cloud_operation_budget_gate.py`, test kosztu decimal string i IAM/project scope | IMPLEMENTED 009 / CI VERIFICATION |
+| KA-044 | Agent 009 host-owned CloudApproval, zakres produktu/akcji i budżetu, brak wykonywania kosztownych side effects | TESTED LOCAL / RUN 39419346496 |
+| KA-045 | Unikatowe nazwy/seriale 008–009, oddzielne numery agent ID, katalog i certyfikat, bez kolizji w globalnym rejestrze | REGISTRY CHECK PASS |
+| KA-046 | Pełne dossier techniczne, instrukcja, bezpieczeństwo, migracja Python, cert record i 3 odrębne projekty umów | DOCUMENTED DEVELOPMENT SCOPE |
+| KA-047 | Testy Rust + original Python, CI run IDs, fmt/clippy i regresje wcześniejszych agentów | RUST 32/32 PASS + PYTHON 32/32 PASS / PR #32 |
+| KA-048 | Kompletne integracje serwerów OMAs/OMAt, TLS Zenoh, OSTc, multi-host i formalny odbiór | NOT IMPLEMENTED / OSTc BLOCKED |
+
+Nowe agenty 008–009 są wąskimi modułami offline, nie autonomicznymi administratorami chmury ani wykonawcami DGM. Dopisanie wpisów do ewidencji nie zamyka audytu wszystkich projektów, wszystkich narzędzi ani prac nad produkcyjnymi agentami.
+
+
+### Rzeczywiste dowody testów KA-041–047
+
+GitHub [run 39419346496](https://github.com/mojealterego/Knowledge-projects/actions/runs/39419346496), source SHA `e6c7c1257da64bf12aebfaa094e2b9512f611815`: 008 — **16 Rust + 13 Python PASS**; 009 — **16 Rust + 19 Python PASS**, fmt, Clippy i CLI PASS. Łącznie **64 wykonane testy (32 Rust, 32 Python)**. Regresje pozostałych agentów 002–007 również SUCCESS na tym SHA. Nie dowodzi to funkcji produkcyjnej ani niezależnej autentykacji w OMAs/OMAt/OSTc. Ostatnią rewizję dokumentacji trzeba osobno zweryfikować na `main` po scaleniu.

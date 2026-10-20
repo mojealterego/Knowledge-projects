@@ -39,3 +39,12 @@ Zgłoszone źródło obejmowało co najmniej 333 numerowane pozycje innej rozmow
 | [`agent_tool_loop_guard.py`](../tools/agent_tool_loop_guard.py) | [007 VIGIA LOOP](OCAF-AGENT-007/docs/README.md) `tool.loop_gate` | max calls/tokens, no-progress repeats, sticky halt, host-only progress | Python + Rust + local OCAF CI |
 
 **Uwaga:** To nie oznacza migracji wszystkich narzędzi OMAt. OMAt jest odrębnym serwerem narzędzi i nie istnieje tutaj wdrożona usługa sieciowa; adapter OCAF jest lokalny. Dodatkowe testy Python potwierdzają oryginalne reguły, nie zastępują formalnej równoważności Python/Rust.
+
+## Lokalne porty — DGM gate i Cloud Budget Gate
+
+| Źródło | Wydzielony agent | Działanie dozwolone lokalnie | Zabronione |
+|---|---|---|---|
+| [DGM cycle gate](../tools/dgm_cycle_gate.py) | [008 DGM SENTINEL](OCAF-AGENT-008/docs/README.md) `dgm.assess_promotion` | analiza propozycji z host-owned receipts, CI, rollback i provenance | git merge, promowanie release, uruchamianie CI, samopodpis |
+| [Cloud operation budget gate](../tools/cloud_operation_budget_gate.py) | [009 CLOUD FISCALIS](OCAF-AGENT-009/docs/README.md) `cloud.review_budget` | ocena zadeklarowanego kosztu i host-owned CloudApproval | Google Cloud API, płatności, create/delete resources |
+
+To nie jest produkcyjne wdrożenie sieciowe OMAt. Tokeny i zgody są w testach dostarczane przez host; model nie może wystawić sobie certyfikatu ani operacyjnego pozwolenia. `execution_authorized=false`.

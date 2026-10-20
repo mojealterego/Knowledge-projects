@@ -1,0 +1,46 @@
+name: OCAF Agents 008-009 Rust and Python verification
+on:
+  pull_request:
+    paths:
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-008/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-009/**"
+      - "OCAF Agents MOJEALTEREGO/AGENT_IDENTITY_REGISTRY.json"
+      - ".github/workflows/ocaf-agents-008-009.yml"
+  push:
+    branches: [main]
+    paths:
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-008/**"
+      - "OCAF Agents MOJEALTEREGO/OCAF-AGENT-009/**"
+      - "OCAF Agents MOJEALTEREGO/AGENT_IDENTITY_REGISTRY.json"
+      - ".github/workflows/ocaf-agents-008-009.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  agent:
+    strategy:
+      fail-fast: false
+      matrix:
+        agent: ["008", "009"]
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Formatting
+        run: cargo fmt --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- --check
+      - name: Rust tests
+        run: cargo test --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" --all-features
+      - name: Strict clippy
+        run: cargo clippy --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" --all-targets --all-features -- -D warnings
+      - name: Original Python tests
+        run: |
+          if [[ "${{ matrix.agent }}" == "008" ]]; then
+            python3 -m unittest discover -s tools -p 'test_dgm_cycle_gate.py' -v
+          else
+            python3 -m unittest discover -s tools -p 'test_cloud_operation_budget_gate.py' -v
+          fi
+      - name: CLI demo
+        run: cargo run --manifest-path "OCAF Agents MOJEALTEREGO/OCAF-AGENT-${{ matrix.agent }}/Cargo.toml" -- demo

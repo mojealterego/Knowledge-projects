@@ -61,3 +61,12 @@ Oryginalne P115/P119 są większymi systemami/projektami; nowe niezależne agent
 | **007** | [VIGIA LOOP](OCAF-AGENT-007/docs/README.md) | `AM-OCAF-AI-0007` | `AM-OPS-VIG-2026-000007` | `AM-OCAF-OPS-007` | [agent_tool_loop_guard.py](../tools/agent_tool_loop_guard.py) | INCOMPLETE_DEVELOPMENT; certyfikat `CERT-AM-2026-0007` NIEWYDANY |
 
 **Klasyfikacja:** to rzeczywiście istniejące nieuruchamiające polityki bezpieczeństwa Python z testami; nowe agenty implementują odpowiednie zabezpieczenia lokalnie w Rust. Nie są uruchomionymi serwerami OMAs/OMAt, nie uruchamiają Zenoh, nie implementują OSTc ani sandboxa, nie mają certyfikatów. `AGENT_IDENTITY_REGISTRY.json` jest kanonicznym źródłem numerów 001–007.
+
+## Nowi agenci 008–009 — 20.10.2026
+
+| Nr | Unikatowa nazwa i dokumentacja | Agent ID | Numer seryjny | Numer katalogowy | Źródło | Status |
+|---|---|---|---|---|---|---|
+| **008** | [**DGM SENTINEL**](OCAF-AGENT-008/docs/README.md) | `AM-OCAF-AI-0008` | `AM-DGM-SNT-2026-000008` | `AM-OCAF-DGM-008` | [DGM gate Python](../tools/dgm_cycle_gate.py) | INCOMPLETE_DEVELOPMENT; `CERT-AM-2026-0008` NIEWYDANY |
+| **009** | [**CLOUD FISCALIS**](OCAF-AGENT-009/docs/README.md) | `AM-OCAF-AI-0009` | `AM-CLD-FIS-2026-000009` | `AM-OCAF-CLD-009` | [Cloud budget gate Python](../tools/cloud_operation_budget_gate.py) | INCOMPLETE_DEVELOPMENT; `CERT-AM-2026-0009` NIEWYDANY |
+
+To porty rzeczywistych źródeł Python z niezmienionymi oryginałami i testami. Testy nie stanowią podpisu poświadczenia. **Żaden z agentów 001–009 nie ma wydanego certyfikatu ani produkcyjnej akceptacji**. Kanoniczne numery w `AGENT_IDENTITY_REGISTRY.json`.
