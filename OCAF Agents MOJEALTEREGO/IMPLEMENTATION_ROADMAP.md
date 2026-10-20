@@ -128,11 +128,16 @@ GitHub [run 39419346496](https://github.com/mojealterego/Knowledge-projects/acti
 | ID | Zakres | Status |
 |---|---|---|
 | KA-049 | Analiza prawdziwego źródła `tools/osint_provenance_gate.py` i jego unittest | SOURCE REVIEWED |
-| KA-050 | Rust 010 VERITAS TRACE: simulated/observed/verified, metadane, hash i brak samoweryfikacji | IMPLEMENTED LOCAL / CI PENDING |
+| KA-050 | Rust 010 VERITAS TRACE: simulated/observed/verified, metadane, hash i brak samoweryfikacji | TESTED LOCAL — RUN 39422100249 |
 | KA-051 | Analiza prawdziwego źródła `tools/single_repository_scope_gate.py` i unittest | SOURCE REVIEWED |
-| KA-052 | Rust 011 LIMES GIT: operacje read vs write, tylko docelowe repo, PR base main, brak direct main writes | IMPLEMENTED LOCAL / CI PENDING |
+| KA-052 | Rust 011 LIMES GIT: operacje read vs write, tylko docelowe repo, PR base main, brak direct main writes | TESTED LOCAL — RUN 39422100249 |
 | KA-053 | Unikatowa ewidencja i seriale 010–011, pełne dossier i rejestry certyfikacyjne | DOCUMENTED DEV |
-| KA-054 | Rust fmt, all-features, clippy, source Python regressions, prawdziwe SHA i job logs | CI PENDING / PR #33 |
+| KA-054 | Rust fmt, all-features, clippy, source Python regressions, prawdziwe SHA i job logs | SOURCE CI SUCCESS / RUN 39422100249 / PR #33 |
 | KA-055 | Przegląd bezpieczeństwa, real OMAs/OMAt, podpisy Zenoh, OSTc i multi-host acceptance | NOT IMPLEMENTED / OSTc BLOCKED |
 
 Nie oznaczać portów 010–011 jako pełnych, produkcyjnych agentów OSINT ani rzeczywistego enforcement GitHub. Ocena polityki ma charakter lokalny i nie zastępuje host-owned authorization.
+
+
+### Potwierdzenie KA-050, KA-052 i KA-054
+
+[GitHub Actions #39422100249](https://github.com/mojealterego/Knowledge-projects/actions/runs/39422100249), SHA `5d36fb120f0250a957cc7279e40b4ec1e3c65127`: agent 010 **16 Rust + 8 Python PASS**, agent 011 **16 Rust + 16 Python PASS**. Razem **56/56**, fmt, Clippy i lokalne CLI PASS. Testy nie są produkcyjnymi dowodami autentyczności źródeł OSINT ani przechwycenia write API GitHub. Po dokumentacji należy powtórzyć CI i wykonać weryfikację na `main`.

@@ -20,3 +20,12 @@ Workflow: `.github/workflows/ocaf-agents-010-011.yml`, Rust fmt, `cargo test --a
 | T13–T15 — observability/revoke/operator acceptance | NOT RUN |
 
 **Dopisać wyłącznie rzeczywiste run ID, job ID i commit** po zakończeniu GitHub Actions. Brak certyfikatu; `production_approved=false`.
+
+
+## Rzeczywisty wynik kodu — 20.10.2026
+
+- [GitHub Actions #39422100249 — SUCCESS](https://github.com/mojealterego/Knowledge-projects/actions/runs/39422100249), SHA `5d36fb120f0250a957cc7279e40b4ec1e3c65127`, job `118625348857`.
+- **16/16 testów Rust PASS, 0 failed**: domena, tożsamość, testowy OCAF, security.
+- **8/8 pierwotnych testów Python PASS**, źródło bez modyfikacji.
+- Format PASS, strict Clippy PASS, CLI smoke PASS. Wynik nie potwierdza pełnej równoważności z Python ani produkcyjnego OMAs/OMAt, TLS, OSTc, multi-host, operator acceptance czy certyfikacji.
+- Dodatkowo wymagana weryfikacja na SHA ostatniej rewizji PR (dokumentacja/registries), oraz po merge na `main`.

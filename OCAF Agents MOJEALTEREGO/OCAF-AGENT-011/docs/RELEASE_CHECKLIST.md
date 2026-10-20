@@ -5,9 +5,9 @@
 | Zakres | Status |
 |---|---|
 | Odrębny folder, nazwa, serial, katalog, Agent ID, TOML, manifest | IMPLEMENTED DEV |
-| Kod domenowy Rust i lokalny OCAF ToolExecutor | IMPLEMENTED; CI TO VERIFY |
-| Testy bezpieczeństwa i negatywne | IMPLEMENTED; CI TO VERIFY |
-| Testy oryginalnego Python i porównanie kontraktu | CI TO VERIFY |
+| Kod domenowy Rust i lokalny OCAF ToolExecutor | IMPLEMENTED; TESTED LOCAL — RUN 39422100249 |
+| Testy bezpieczeństwa i negatywne | IMPLEMENTED; TESTED LOCAL — RUN 39422100249 |
+| Testy oryginalnego Python i porównanie kontraktu | TESTED LOCAL — RUN 39422100249 |
 | Dokumentacja, instrukcja, cert record i projekty trzech umów | DOCUMENTED DEV |
 | Produkcyjny OMAs z podpisaną tożsamością RPC | NOT IMPLEMENTED |
 | Produkcyjny OMAt z odrębną autoryzacją narzędzi | NOT IMPLEMENTED |
