@@ -8,6 +8,15 @@
 
 ---
 
+<!-- MOJEALTEREGO:PROJECT-STATUS:START -->
+> [!IMPORTANT]
+> **MojeAlterego project status:** `RESEARCH`  
+> **Domain:** Research  
+> **Verification:** Repository is a research and project knowledge base; entries may describe proposed or experimental systems rather than deployed products.  
+> **Status policy:** [MojeAlterego project status model](https://github.com/mojealterego/mojealterego/blob/main/docs/PROJECT-STATUS.md)
+<!-- MOJEALTEREGO:PROJECT-STATUS:END -->
+
+
 # Knowledge & Projects — Omni-Architect Repository
 
 ## [2026-09-09 / Iteration 11] — Compound reasoning, GEM, Apeiron/AURA lineage and voice-native AI game runtime
